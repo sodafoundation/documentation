@@ -11,28 +11,24 @@ Follow this opensds wiki link to install opensds with telemetry and
 
 **Download opensds-installer code**
 
-    ```
     
-     git clone https://github.com/opensds/opensds-installer.git
-    cd opensds-installer/ansible
+    git clone https://github.com/opensds/opensds-installer.git
+    cd opensds-installer
     # Checkout the latest release, give master by defualt or specfy the branch 
     git checkout master
-    ```
+   
     
   **How to enable Telemetry installation**
   
-   Update the file : ansible/group_vars/telemetry.yml for install_telemetry_tools
-   
+   Update the file : ansible/group_vars/telemetry.yml to install telemetry tools
    
     
-    ```
     # Do you need to install telemetry tools?
     install_telemetry_tools: true
-    ```
+    
 Detailed instruction is in this link
 
 - [OpenSDS Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
-
 
 ### Make environment ready for metric collection
 
@@ -206,7 +202,7 @@ Ans:
 ```
  systemctl status lvm_exporter.service 
 ```
-* Check lvm metrics are recieved in prometheus , by typing lvm metric names
+* Check lvm metrics are received in prometheus , by typing lvm metric names
 
  ![prometheus ](Prometheus.PNG?raw=true)
 
