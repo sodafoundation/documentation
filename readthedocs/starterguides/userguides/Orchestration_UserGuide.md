@@ -35,6 +35,8 @@ OpenSDS installation will provide the services available for orchestrating the t
 
 ### Volume Provisioning
 To create a volume and attach it to the required Host, user can create an instance of "volume provision" Service under Provisioning.
+
+####  Creating an instance
     a) Click on 'Create' button to provide required inputs
     b) In 'Instance Details', provide the Name and Description of this service instance
     c) Provide the 'Parameters' required for the volume provisioning
@@ -51,7 +53,7 @@ To create a volume and attach it to the required Host, user can create an instan
 ### Bucket Migration
 To move objects from bucket of one cloud provider to the other, user can create an instance of "migration bucket" Service under Migration.
 
-#### Pre-requisites:
+#### Prerequisites:
     a) All the required cloud backends are added into OpenSDS
     b) Required buckets are created in the respective cloud backends. Check this under 'Resource->Buckets'
 
