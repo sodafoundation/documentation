@@ -31,7 +31,7 @@ http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/orches
 
 ## Services
 OpenSDS installation will provide the services available for orchestrating the tasks.
-[Services](orchestration_services.PNG?raw=true)
+![Services](orchestration_services.PNG?raw=true "Services")
 
 ### Volume Provisioning
 To create a volume and attach it to the required Host, user can create an instance of "volume provision" Service under Provisioning.
@@ -46,7 +46,7 @@ To create a volume and attach it to the required Host, user can create an instan
     e) This will take you to the 'instances' page where the status can be tracked for the instance execution
     f) Once the status is 'success', user can navigate to 'Resource->Volumes' to verify the volume created and it's status being 'inUse'. 'inUse' status signifies that the volume is attached
 
-[volume provision](volume_provision.PNG?raw=true)
+![volume provision](volume_provision.PNG?raw=true "volume provision")
 
 ### Bucket Migration
 To move objects from bucket of one cloud provider to the other, user can create an instance of "migration bucket" Service under Migration.
@@ -69,7 +69,7 @@ To move objects from bucket of one cloud provider to the other, user can create 
     e) This will take you to the 'instances' page where the status can be tracked for the instance execution
     f) Once the status is 'success', user can navigate to the 'Dataflow' and check the migration and also check 'Resource->Buckets' to          check if the objects has been migrated to the destination cloud bucket
 
-[migration bucket](migration_bucket.PNG?raw=true)
+![migration bucket](migration_bucket.PNG?raw=true "migration bucket")
 
 ### Customized workflow
 If user writes their own Mistral workflows and corresponding actions they can follow following steps to orchestrate it through OpenSDS dashboard. All these steps need to be executed from the OpenSDS ssh console.
