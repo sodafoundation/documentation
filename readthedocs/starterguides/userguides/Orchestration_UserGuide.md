@@ -75,13 +75,14 @@ To move objects from bucket of one cloud provider to the other, user can create 
 
 ### Customized workflow
 If user writes their own Mistral workflows and corresponding actions they can follow following steps to orchestrate it through OpenSDS dashboard. All these steps need to be executed from the OpenSDS ssh console.
+
+#### Steps to follow:
     a) Copy the custom workflow into the '/opt/stackstorm/packs/opensds/actions/workflows/' directory of stackstorm/stackstorm:latest docker container. Ex: docker cp custom_wf.yaml 58d22927c38f:/opt/stackstorm/packs/opensds/actions/workflows/
     b) Copy all corresponding actions and their runner scripts into '/opt/stackstorm/packs/opensds/actions/'.
     c) Go into the bash of StackStorm container (Ex: docker exec -it 85bea886a8c5 /bin/bash)
     d) Run 'st2ctl reload --register-all'
     e) Run 'st2 action list|grep opensds' to check if the custom workflow is loaded successfully
-    f) Go the CURL/Postman login and execute /v1beta/{tenant_id}/orchestration/services POST API with required inputs. Check the openapi-specs for details.
-Ex: Request body for registering service:
+    f) Go the CURL/Postman login and execute /v1beta/{tenant_id}/orchestration/services POST API with required inputs. Check the openapi-specs for details. Ex: Request body for registering service:
     {
         "name": "custom workflow",
         "description": "Create and Resize a volume",
@@ -96,8 +97,8 @@ Ex: Request body for registering service:
                 "wfe_type": "st2"
             }
         ]
-
     }
+
 Please note that the wfe_type should be 'st2' as OpenSDS supports only 'StackStorm' as Orchestration Manager currently. You can specify any existing group like 'Provisioning' or 'Migration' or create a new group altogether.
 
 Once these steps are done, user can go into the OpenSDS dashboard and create and execute an instance.
