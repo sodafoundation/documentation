@@ -221,6 +221,12 @@ Once it has been loaded successfully, it can be checked using:
     | opensds.migration-bucket         | opensds | Bucket Migration Multi-Cloud Service          |
     | opensds.provision-volume         | opensds | Provision an OpenSDS Volume                   |
 
+# Verify if the workflows are working fine
+To verify you can login into the StackStorm UI and execute the workflow by provising the required inputs.
+Alternatively, you can use StackStorm CLI to verify:
+## St2 command to verify
+    $ st2 action execute opensds.<Your workflow name>  <All input parameters separated by space>
+
 # Adding Services into OpenSDS
 OpenSDS has different Services for Orchestrating the tasks. These services are grouped under a category. Ex: provision-volume Service is grouped under 'Provisioning'. 
 Each service consists of workflow. Like the provision-volume service under the 'Provisioning' group consist of 'opensds.provision-volume'. bucket-migration service under the 'Migration' group consist of 'opensds.bucket-migration' workflow
