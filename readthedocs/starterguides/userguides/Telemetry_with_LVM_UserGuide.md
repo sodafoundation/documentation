@@ -34,9 +34,9 @@ Detailed instruction is in this link
 
 **export required OPENSDS environment variables**
 ```
-export OPENSDS_ENDPOINT=http://{{ apiserver_cluster_ip }}:50040
+export OPENSDS_ENDPOINT=http://{{ host_ip }}:50040
 export OPENSDS_AUTH_STRATEGY=keystone
-export OS_AUTH_URL=http://{{ authchecker_cluster_ip }}/identity
+export OS_AUTH_URL=http://{{ host_ip }}/identity
 export OS_USERNAME=admin
 export OS_PASSWORD=opensds@123
 export OS_TENANT_NAME=admin
