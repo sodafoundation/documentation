@@ -9,8 +9,9 @@ Workflows are sequence of actions stitched together to achieve an Orchestrated t
 Before starting to write the workflows, it is required to have basic understanding of YAML syntax.
 
 ## How to write the workflows
-Workflows are series of actions definitions put into a YAML file. 
-There are three major steps involved:
+Workflows are series of actions definitions put into a YAML file.
+
+### There are three major steps involved:
     a) All workflows goes into the 'opensds' namespace of the StackStorm pack, i.e. /opt/stackstorm/packs/opensds/actions/workflows/ dir
     b) The corresponding actions are defined in a YAML file in the same namespace, i.e. /opt/stckstorm/packs/opensds/actions
     c) For every action there is corresponding runner. These runners can be written in shell/python. The action YAML should specify the runner type.
@@ -81,7 +82,7 @@ workflows:
                     print_status : <% task(attach_volume).result.stdout %>
 
 ```
-Points to remember:
+#### Points to remember:
     a) 'name' should always prefix with 'opensds.' Ex: "opensds.provision-volume"
     b) Follow Mistral workflow syntax
     c) All the required parameters for the respective actions should be listed under 'input' tag
@@ -134,7 +135,7 @@ parameters:
     required: false
 runner_type: "python-script"
 ```
-Points to remember:
+### Points to remember:
     a) For every action/task, there should be an entry point. entry_point is the script to execute this action. This can either be a python script or a shell script. OpenSDS prefers python script for using the rich python libraries, as required
     b) All the parameters of this actions are detailed here. It should define the 'type' of the parameter, whether this parameter is 'required' or not and if the pramaeter can have some 'default' value
     c) The action should specify 'runner_type'. Ex: runner_type: "python_script"
@@ -186,7 +187,7 @@ class CreateVolumeAction(Action):
         resp = r.json()
         return resp["id"]
 ```
-Points to remember:
+### Points to remember:
     a) Every python script need to import 'Action' from st2common.eunners.base_action
     b) Define your action class which inherits from 'Action' base class
     c) This class must define the 'run' function
@@ -195,14 +196,17 @@ Points to remember:
 
 ## How to load it into the Orchestration Manager
 Once the workflows, actions and runners are defined, these workflows need to be registered into the Orchestration Manager, StackStorm.
-To do that go to the command prompt and execute: 
+To do that go to the command prompt and execute:
+### register service command 
     $ st2ctl reload --register-all
 This will register the new workflows and actions into the StackStorm DB
 
 Once it has been loaded successfully, it can be checked using:
+### list action command
     $ st2 action list 
     (or "st2 action list |grep opensds" to check all the opensds pack workflows and actions
-Example:
+
+#### Example:
     $ st2 action list |grep opensds
     | opensds.attach-volume            | opensds | Attach Volume                                 |
     | opensds.create-bucket            | opensds | Create Bucket for s3 interface of multi-cloud |
@@ -224,6 +228,7 @@ Developer can define their own 'Group' and Service name.
 To Add a service for a workflow in OpenSDS, orchestration cli 'orchctl'
 Check 'orchctl' help options for register a service
     $ orchctl service add <service_reg_data>
+
 Example of service_reg_data:
 ```json
 {
