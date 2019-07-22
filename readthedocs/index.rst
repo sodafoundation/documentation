@@ -1,5 +1,5 @@
 .. OpenSDS documentation master file, created by
-   sphinx-quickstart on Thu Mar  1 10:50:05 2018.
+   sphinx-quickstart on Mon Jul 22 14:53:59 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -15,12 +15,38 @@ software-defined storage management, which promotes the use of simplified storag
 interfaces using a scalable storage controller architecture with open standard
 APIs, with the objective of providing applicaiton-oriented storage services.
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Introduction:
 
+   doc/getting_started
+   doc/try_opensds
 
 .. toctree::
-   :maxdepth: 1
-   :caption: ReadMe
+   :maxdepth: 2
+   :caption: Documentation:
 
-   ReadMe
+   doc/features
+   doc/architecture
+   doc/apispec_and_guides
+   doc/release_and_contribute
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Community:
 
+   doc/governance
+   doc/join_and_contribute
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Blog
+
+   doc/blog
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
