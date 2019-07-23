@@ -1,3 +1,0 @@
-# Try OpenSDS #
-
-Try
