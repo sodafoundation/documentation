@@ -1,3 +1,0 @@
-# Governance #
-
-Overall Project Organisation

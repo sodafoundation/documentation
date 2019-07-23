@@ -1,3 +1,0 @@
-# Join and Contribute #
-
-Join
