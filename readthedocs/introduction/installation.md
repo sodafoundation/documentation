@@ -1,6 +1,4 @@
-# Try OpenSDS #
-
-## Installation Guide ##
+# Installation Guide ##
 
 This guide explains how to install the OpenSDS Projects with its components and test basic features.
 
