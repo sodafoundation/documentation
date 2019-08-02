@@ -73,6 +73,99 @@ To move objects from bucket of one cloud provider to the other, user can create 
 
 ![migration bucket](migration_bucket.PNG?raw=true "migration bucket")
 
+### Orchestration using CLI (orchctl)
+    CLI for Orchestration
+
+
+#### Steps to run CLI:
+
+* Deploy OpenSDS (https://github.com/opensds/opensds/wiki)
+* Deploy StackStorm with OpenSDS packs (https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
+* Start Orchestrator (https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
+* Update input parameters in util.py file (OPENSDS_IP, ORCHESTRATOR_IP, etc.)
+* Also, if the StackStorm is installed using Docker image, 
+    * go to /opt/st2-installer-linux-amd64/conf
+    * copy the ST2_PASSWORD from stackstorm.env file
+    * replace above password in util.py of Orchestration
+    
+
+Orchestration CLI can be used for registering service, Querying service, creating/deleting instance, querying instance
+
+#### Usage Help:
+
+usage: orchctl [-h] [-a ADDRESS] [-u USER] [-p PASSWORD] [-t PROJECT_ID]
+               [--orch_ip ORCH_IP] [--orch_port ORCH_PORT]
+               {service,instance,workflow,task} ...
+
+    CLI for OpenSDS Orchestration Manager
+
+    Example:
+
+    ./orchctl --help
+    ./orchctl service list
+    ./orchctl service add --data '{"name":"volume provision","description":"Volume Service","tenant_id":"94b280022d0c4401bcf3b0ea85870519","user_id":"558057c4256545bd8a307c37464003c9","input":"","constraint":"","group":"provisioning","workflows":[{"definition_source":"opensds.provision-volume","wfe_type":"st2"},{"definition_source":"opensds.snapshot-volume","wfe_type":"st2"}]}'
+    ./orchctl service get --id d8360a8a-6c5e-4533-a18a-b446db8caac8
+    ./orchctl instance list
+    ./orchctl instance get --id 2723347b-9af8-451a-a7f8-62d40b10ad6f
+    ./orchctl instance delete --id 2723347b-9af8-451a-a7f8-62d40b10ad6f
+    ./orchctl instance run --data '{"service_id":"08e8a8a3-7a78-43d3-9ab1-45fe7a60d4eb","action":"opensds.provision-volume","name":"Volume Provision name","description":"Volume Provision description","user_id":"558057c4256545bd8a307c37464003c9","parameters":{"ip_addr":"127.0.0.1","port":"50040","tenant_id":"94b280022d0c4401bcf3b0ea85870519","size":1,"name":"test"}}'
+
+positional arguments:
+  {service,instance,workflow,task}
+    service             Registers/Shows services in Orchestrator
+    instance            Executes/Shows/Deletes workflow instances
+    workflow            Shows workflow definitions in Orchestrator
+    task                Status of the task in Orchestrator
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a ADDRESS, --address ADDRESS
+                        ip address of opensds hotpot
+  -u USER, --user USER  username for opensds hotpot
+  -p PASSWORD, --password PASSWORD
+                        password for opensds hotpot
+  -t PROJECT_ID, --project_id PROJECT_ID
+                        project_id for opensds hotpot
+  --orch_ip ORCH_IP     Orchestration server ip address
+  --orch_port ORCH_PORT
+                        Orchestration server port
+
+#### Services
+List all the services:
+    ./orchctl service list
+
+Register a service:
+    ./orchctl service add --data <All required params in JSON format>
+    ex:
+    ./orchctl service add --data '{"name":"volume provision","description":"Volume Service","tenant_id":"94b280022d0c4401bcf3b0ea85870519","user_id":"558057c4256545bd8a307c37464003c9","input":"","constraint":"","group":"provisioning","workflows":[{"definition_source":"opensds.provision-volume","wfe_type":"st2"},{"definition_source":"opensds.snapshot-volume","wfe_type":"st2"}]}'
+
+Query a registered service by id:
+    ./orchctl service get --id <service id>
+    ex:
+    ./orchctl service get --id d8360a8a-6c5e-4533-a18a-b446db8caac8
+
+#### Instances
+List all instances:
+    ./orchctl instance list
+
+Create an instance of the service:
+    Get the service id of the service whose instance is being created. Say the service id is: 08e8a8a3-7a78-43d3-9ab1-45fe7a60d4eb
+    Service instance creation will need the parameter values required to execute.
+    The values are accepted as key value in JSON format.
+    ./orchctl instance run --data <Input parameters>
+    ex:
+    ./orchctl instance run --data '{"service_id":"08e8a8a3-7a78-43d3-9ab1-45fe7a60d4eb","action":"opensds.provision-volume","name":"Volume Provision name","description":"Volume Provision description","user_id":"558057c4256545bd8a307c37464003c9","parameters":{"ip_addr":"127.0.0.1","port":"50040","tenant_id":"94b280022d0c4401bcf3b0ea85870519","size":1,"name":"test"}}'
+
+Get an instance by instance id:
+    ./orchctl instance get --id <instance id>
+    ex:
+    ./orchctl instance get --id 2723347b-9af8-451a-a7f8-62d40b10ad6f
+
+Delete an isntance:
+    ./orchctl instance delete --id <instance id to be deleted>
+    ex:
+    ./orchctl instance delete --id 2723347b-9af8-451a-a7f8-62d40b10ad6f
+
 ### Customized workflow
 If user writes their own Mistral workflows and corresponding actions they can follow following steps to orchestrate it through OpenSDS dashboard. All these steps need to be executed from the OpenSDS ssh console.
 
@@ -103,8 +196,8 @@ Please note that the wfe_type should be 'st2' as OpenSDS supports only 'StackSto
 
 Once these steps are done, user can go into the OpenSDS dashboard and create and execute an instance.
 
-### Checking created instacnes
-Click on the 'instacnes' button on 'Services' page to get the list of all instances of the services being created and its status.
+### Checking created instances
+Click on the 'instances' button on 'Services' page to get the list of all instances of the services being created and its status.
 
 ## Known issues
 ### Multiple service registration in a loop may fail sometime
@@ -114,5 +207,5 @@ Workaround: If service registration is done through CURL/Postman from a script, 
 Please refer to https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md for some of the known issues while installting some dependent components.
 
 ## References
-
+[TODO: Add developer guide reference]
 

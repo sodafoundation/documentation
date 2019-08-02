@@ -1,6 +1,6 @@
 # Developer Guide: Orchestration and automation
 # Overview
-This guide is intended for Orchstration and Automation developers. It provides detailed steps to write new workflows for sequence of actions and Orchestrate them through OpenSDS. To undestand the feature and requirements in detail, please refer to the Orchestration user guide and Orchestration design doc. OpenSDS currently uses StackStorm as the Orchestration manager. It uses Mistral workflows of StackStorm. 
+This guide is intended for Orchestration and Automation developers. It provides detailed steps to write new workflows for sequence of actions and Orchestrate them through OpenSDS. To undestand the feature and requirements in detail, please refer to the Orchestration user guide and Orchestration design doc. OpenSDS currently uses StackStorm as the Orchestration manager. It uses Mistral workflows of StackStorm. 
 
 # Workflows and Actions
 Workflows are sequence of actions stitched together to achieve an Orchestrated task.
@@ -196,7 +196,10 @@ class CreateVolumeAction(Action):
 
 ## How to load it into the Orchestration Manager
 Once the workflows, actions and runners are defined, these workflows need to be registered into the Orchestration Manager, StackStorm.
-To do that go to the command prompt and execute:
+If the StackStorm is installed using Docker image:
+Go to the interactive bash cell of the StackStorm docker instance and follow the steps below
+Else
+Go to the command prompt and execute:
 ### register service command 
     $ st2ctl reload --register-all
 This will register the new workflows and actions into the StackStorm DB
