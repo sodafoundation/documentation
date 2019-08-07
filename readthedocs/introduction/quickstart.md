@@ -1,11 +1,20 @@
 # Quick Start Guide
 
-This is a quickstart guide for users and new contributors to get familiar with [OpenSDS](https://github.com/opensds/opensds) by installing a simple containerized local cluster. More detailed installation steps with full features is provided in [Installation Guide](installation.md)
+This is a quickstart guide for users and new contributors to get familiar with [OpenSDS](https://github.com/opensds/opensds) by installing a simple containerized local cluster. The required OS environment is Ubuntu 16.04 with docker and docker-compose installed.
 
-## Pre-configuration
-Ensure following configurations are added:
-### 1. Create file /etc/opensds/opensds.conf as below
-```ini
+More detailed installation steps with full features is provided in [Installation Guide](installation.md)
+
+## Install OpenSDS
+```bash
+chmod +x install_opensds.sh
+./install_opensds.sh
+```
+where `install_opensds.sh` is file below
+```bash
+#!/bin/bash -e
+
+# Create file /etc/opensds/opensds.conf
+mkdir -p /etc/opensds && sudo cat > /etc/opensds/opensds.conf <<OPENSDS_GLOABL_CONFIG_DOC
 [osdsapiserver]
 api_endpoint = 0.0.0.0:50040
 auth_strategy = keystone
@@ -60,10 +69,10 @@ host_based_replication_driver = DRBD
 [database]
 endpoint = 127.0.0.1:2379,127.0.0.1:2380
 driver = etcd
-```
+OPENSDS_GLOABL_CONFIG_DOC
 
-### 2. Create file /etc/opensds/driver/lvm.yaml as below
-```yaml
+# Create file /etc/opensds/driver/lvm.yaml
+mkdir -p /etc/opensds/driver && sudo cat > /etc/opensds/driver/lvm.yaml <<OPENSDS_DRIVER_CONFIG_DOC
 tgtBindIp: 127.0.0.1 # change tgtBindIp to your real host ip, run 'ifconfig' to check
 tgtConfDir: /etc/tgt/conf.d
 pool:
@@ -81,16 +90,11 @@ pool:
       advanced:
         diskType: SSD
         latency: 5ms
+OPENSDS_DRIVER_CONFIG_DOC
 
-```
-### 3. Create lvm volume group by executing following commands
-```bash
-chmod +x create_vg.sh
-./create_vg.sh
-```
-where `create_vg.sh` is file below
-```bash
-#!/bin/bash
+# Create lvm volume group by executing following commands
+modprobe dm_thin_pool
+
 function _create_lvm_volume_group {
     local vg=$1
     local size=$2
@@ -111,33 +115,48 @@ function _create_lvm_volume_group {
         fi
     fi
 }
-modprobe dm_thin_pool
+
 _create_lvm_volume_group opensds-volumes 10G
-```
-### 4. Download policy.json file to folder /etc/opensds 
-```bash
-wget -P /etc/opensds https://github.com/opensds/opensds-installer/blob/stable/capri/conf/policy.json
-```
-## OpenSDS Installation
-Use `docker-compose` and bringup OpenSDS as below
-```bash
-wget https://raw.githubusercontent.com/opensds/opensds/development/docker-compose.yml
+
+# Download policy.json file
+wget -P /etc/opensds https://raw.githubusercontent.com/opensds/opensds-installer/stable/capri/conf/policy.json
+
+# Download docker-compose file and bring up OpenSDS
+wget https://raw.githubusercontent.com/opensds/opensds/stable/capri/docker-compose.yml
 
 docker-compose up -d
+
 ```
+The above script does following things to install OpenSDS
+* Create OpenSDS configuration file `/etc/opensds/opensds.conf`
+* Create lvm backend configuration file `/etc/opensds/driver/lvm.yaml`
+* Create lvm volume group `opensds-volumes`
+* Download `/etc/opensds/policy.json` for Authorization
+* Download docker-compose.yml file and bring up OpenSDS docker containers
 
 ## Test
 Either use OpenSDS CLI tool or OpenSDS dashboard for testing
 ### 1. OpenSDS CLI tool
-#### Download cli tool
+
 ```bash
-wget https://github.com/opensds/opensds/releases/download/v0.6.0/opensds-hotpot-v0.6.0-linux-amd64.tar.gz
-tar zxvf opensds-hotpot-v0.6.0-linux-amd64.tar.gz
-cp opensds-hotpot-v0.6.0-linux-amd64/bin/* /usr/local/bin
-chmod +x /usr/local/bin/osdsctl
+chmod +x setup_opensds.sh
+source setup_opensds.sh
 ```
-#### Export environment variables for CLI
+where `setup_opensds.sh` is file below
 ```bash
+#!/bin/bash -e
+
+if [ -f "/usr/local/bin/osdsctl" ]; then
+  echo "osdsctl file exists"
+else
+  # Download OpenSDS CLI tool
+  wget https://github.com/opensds/opensds/releases/download/v0.6.0/opensds-hotpot-v0.6.0-linux-amd64.tar.gz
+  tar zxvf opensds-hotpot-v0.6.0-linux-amd64.tar.gz
+  cp opensds-hotpot-v0.6.0-linux-amd64/bin/* /usr/local/bin
+  chmod +x /usr/local/bin/osdsctl
+fi
+
+# Export environment variables for CLI
 export OPENSDS_ENDPOINT=http://127.0.0.1:50040
 export OPENSDS_AUTH_STRATEGY=keystone
 export OS_AUTH_URL=http://127.0.0.1/identity
@@ -146,16 +165,15 @@ export OS_PASSWORD=opensds@123
 export OS_TENANT_NAME=admin
 export OS_PROJECT_NAME=admin
 export OS_USER_DOMAIN_ID=default
-```
-#### Check if the pool resource is available 
-```bash
+
+# Check if the pool resource is available
 osdsctl pool list
-```
-#### Create a default profile
-```bash
+
+# Create a default profile
 osdsctl profile create '{"name": "default", "description": "default policy", "storageType": "block"}'
 ```
-#### Create/List/Delete a volume
+
+#### Create/List/Delete a volume using OpenSDS CLI
 ```bash
 osdsctl volume create 1 --name=test-001
 osdsctl volume list
@@ -166,7 +184,7 @@ OpenSDS UI dashboard is available at `http://{your_host_ip}:8088`, please login 
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
 
-#### Volume Service
+#### Use Volume Service UI for performing following OpenSDS operations
 * Create volume
 * Create snapshot
 * Expand volume size

@@ -29,7 +29,8 @@ APIs, with the objective of providing applicaiton-oriented storage services.
    documentation/features
    documentation/architecture
    documentation/apispec_and_guides
-   documentation/release_and_contribute
+   documentation/contribute
+   documentation/releases
 
 .. toctree::
    :maxdepth: 2
