@@ -74,7 +74,8 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store',
 'ReadMe.md', 'starterguides/ReadMe.md',
 'starterguides/installerguides/ReadMe.md',
-'starterguides/userguides/ReadMe.md'
+'starterguides/userguides/ReadMe.md',
+'readthedocs-orig'
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
