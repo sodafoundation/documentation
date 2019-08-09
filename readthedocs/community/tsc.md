@@ -1,4 +1,4 @@
-# TSC
+# Technical Steering Commitee
 OpenSDS Technical Steering Commitee
 
 ## Mission

@@ -1,4 +1,4 @@
-# EUAC
+# End User Advisory Committee
 OpenSDS End User Advisory Committee
 
 ## Mission
