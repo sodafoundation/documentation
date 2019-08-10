@@ -12,7 +12,7 @@ Before starting to write the workflows, it is required to have basic understandi
 Workflows are series of actions definitions put into a YAML file.
 
 ### There are three major steps involved:
-    a) All workflows goes into the 'opensds' namespace of the StackStorm pack, i.e. /opt/stackstorm/packs/opensds/actions/workflows/ dir
+    a) All workflows goes into the 'opensds' namespace of the StackStorm pack, i.e. /opt/stackstorm/packs/opensds/actions/workflows/ directory
     b) The corresponding actions are defined in a YAML file in the same namespace, i.e. /opt/stckstorm/packs/opensds/actions
     c) For every action there is corresponding runner. These runners can be written in shell/python. The action YAML should specify the runner type.
 
@@ -196,10 +196,7 @@ class CreateVolumeAction(Action):
 
 ## How to load it into the Orchestration Manager
 Once the workflows, actions and runners are defined, these workflows need to be registered into the Orchestration Manager, StackStorm.
-If the StackStorm is installed using Docker image:
-Go to the interactive bash cell of the StackStorm docker instance and follow the steps below
-Else
-Go to the command prompt and execute:
+If the StackStorm is installed using Docker image, Go to the interactive bash shell of the StackStorm docker instance and follow the steps below or else go to the host command prompt and follow following steps:
 ### register service command 
     $ st2ctl reload --register-all
 This will register the new workflows and actions into the StackStorm DB
