@@ -1,7 +1,7 @@
 # Opensds Orchestration
 
 ## Introduction
-OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environmnet and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. OpenSDS provides orchestrating these process to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplied execution of tasks. 
+OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. OpenSDS provides orchestrating these process to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplied execution of tasks.
 
 ### Intended Readers
 OpenSDS users who plan to orchestrate complex tasks in a distributed environment
