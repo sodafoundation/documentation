@@ -1,0 +1,49 @@
+baseURL = "https://opensds-docs.netlify.com/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "OpenSDS Documentation"
+theme = "hugo-theme-learn"
+themesdir = "themes/"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "https://github.com/anvithks/documentation/edit/migrate-hugo/content/"
+  description = "Documentation for OpenSDS"
+  author = "OpenSDS Authors"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = false
+   # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "opensds"
+  disableLanguageSwitchingButton = false
+  # Order sections in menu by "weight" or "title". Default to "weight"
+  ordersectionsby = "weight"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation for OpenSDS Project"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/opensds/opensds"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-anchor'></i> OpenSDS Website"
+url = "https://opensds.io"
+weight = 11
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
+
+
