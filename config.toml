@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/anvithks/documentation/edit/migrate-hugo/content/"
+  editURL = "https://github.com/opensds/documentation/edit/master/content/"
   description = "Documentation for OpenSDS"
   author = "OpenSDS Authors"
   showVisitedLinks = false
