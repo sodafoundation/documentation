@@ -1,7 +1,7 @@
 ---
 title: Official Releases
-weight: 50
-pre: "<b>5. </b>"
+weight: 60
+pre: "<b>6. </b>"
 chapter: true
 ---
 

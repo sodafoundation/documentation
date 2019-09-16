@@ -3,6 +3,7 @@ title: File Share feature User Guide
 description: "User guide for File Share feature."
 weight: 10
 disableToc: false
+tags: ["user guide", "file share"] 
 ---
 ## File Share Introduction
 File share in opensds facilitates the user to create file share, set access permission for that file share and user can also create snapshot. Opensds provides both CLI and Dashboard to operate or play with file share feature.

@@ -6,7 +6,7 @@ weight: 20
 
 This is a quickstart guide for users and new contributors to get familiar with [OpenSDS](https://github.com/opensds/opensds) by installing a simple containerized local cluster. The required OS environment is Ubuntu 16.04 with docker and docker-compose installed.
 
-More detailed installation steps with full features is provided in [Installation Guide](installation.md)
+More detailed installation steps with full features is provided in [Installation Guide](/introduction/installation/)
 
 ## Install OpenSDS  
 

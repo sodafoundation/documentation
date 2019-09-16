@@ -95,14 +95,14 @@ workflows:
 
 ### Points to remember  
 
-1. `name` should always prefix with `opensds`. Ex: "`opensds.provision-volume`"  
+1. `name` should always prefix with `opensds`. Ex: `opensds.provision-volume`  
 2. Follow Mistral workflow syntax  
-3. All the required parameters for the respective actions should be listed under 'input' tag  
-4. Actions are defined under '`tasks`'. Note that the action name should always be prefixed with '`opensds`'. Ex: `opensds.create-volume`  
+3. All the required parameters for the respective actions should be listed under `input` tag  
+4. Actions are defined under `tasks`. Note that the action name should always be prefixed with `opensds`. Ex: `opensds.create-volume`  
 5. Every action/tasks will list their own input parameters. This is the subset of the 'input' list defined under 'main'  
 6. If the output of one task is input for the other task, provide that variable name under 'publish'  
-7. You can define the task being called '`on-success`' or '`on-failure`'  
-8. If the output needs to be sent to the caller of the workflow, it can be published under '`print_status`'  
+7. You can define the task being called `on-success` or `on-failure`  
+8. If the output needs to be sent to the caller of the workflow, it can be published under `print_status`  
 
 #### Example of action (create_volume.yaml)  
 
@@ -152,8 +152,8 @@ runner_type: "python-script"
 ### Points to remember  
 
 1. For every action/task, there should be an entry point. entry_point is the script to execute this action. This can either be a python script or a shell script. OpenSDS prefers python script for using the rich python libraries, as required
-2. All the parameters of this actions are detailed here. It should define the '`type`' of the parameter, whether this parameter is '`required`' or not and if the pramaeter can have some '`default`' value
-3. The action should specify '`runner_type`'. Ex: `runner_type: "python_script"`
+2. All the parameters of this actions are detailed here. It should define the `type` of the parameter, whether this parameter is `required` or not and if the pramaeter can have some `default` value
+3. The action should specify `runner_type`. Ex: `runner_type: "python_script`
 
 #### Example of python runner script (create_volume.py)  
 
@@ -206,11 +206,11 @@ class CreateVolumeAction(Action):
 
 ### Points to remember  
 
-1. Every python script need to import '`Action`' from `st2common.eunners.base_action`
-2. Define your action class which inherits from '`Action`' base class
-3. This class must define the '`run`' function
-4. All the business logic to execute the action goes into this '`run`' method
-5. Parameters for the '`run`' method is the class object ('`self`' here) and all the required parameters for this action. These parameters are same that was defined in the corresponding action YAML
+1. Every python script need to import `Action` from `st2common.eunners.base_action`
+2. Define your action class which inherits from `Action` base class
+3. This class must define the `run` function
+4. All the business logic to execute the action goes into this `run` method
+5. Parameters for the `run` method is the class object (`self` here) and all the required parameters for this action. These parameters are same that was defined in the corresponding action YAML
 
 ## How to load it into the Orchestration Manager  
 
@@ -272,10 +272,10 @@ $ st2 action execute opensds.<Your workflow name>  <All input parameters separat
 
 ## Adding Services into OpenSDS
 OpenSDS has different Services for Orchestrating the tasks. These services are grouped under a category. Ex: provision-volume Service is grouped under 'Provisioning'.  
-Each service consists of workflow. Like the provision-volume service under the 'Provisioning' group consist of `'opensds.provision-volume'`. bucket-migration service under the 'Migration' group consist of `'opensds.bucket-migration'` workflow
+Each service consists of workflow. Like the provision-volume service under the 'Provisioning' group consist of `opensds.provision-volume`. bucket-migration service under the 'Migration' group consist of `opensds.bucket-migration` workflow
 Developer can define their own 'Group' and Service name.
-To Add a service for a workflow in OpenSDS, orchestration cli '`orchctl`'
-Check '`orchctl`' help options for register a service
+To Add a service for a workflow in OpenSDS, orchestration cli `orchctl`
+Check `orchctl` help options for register a service
 ```
 $ orchctl service add <service_reg_data>
 ```

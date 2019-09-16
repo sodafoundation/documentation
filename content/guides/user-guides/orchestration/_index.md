@@ -3,6 +3,7 @@ title: Orchestration User Guide
 description: "User guide for Orchestration and automation."
 weight: 10
 disableToc: false
+tags: ["user guide", "orchestration"] 
 ---
 
 ## Introduction

@@ -1,11 +1,11 @@
 ---
 title: Community
-weight: 30
-pre: "<b>3. </b>"
+weight: 40
+pre: "<b>4. </b>"
 chapter: true
 ---
 
-### Chapter 3
+### Chapter 4
 
 # Community
 

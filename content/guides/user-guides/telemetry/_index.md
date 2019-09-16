@@ -3,6 +3,7 @@ title: Telemetry with LVM User Guide
 description: "User guide for Telemetry with LVM."
 weight: 10
 disableToc: false
+tags: ["user guide", "telemetry"] 
 ---
 
 
