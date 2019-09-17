@@ -45,14 +45,6 @@ export OS_AUTH_URL=http://{{ authchecker_cluster_ip }}/identity
    ```
    Note: check if multi-cloud services are running in the docker container.
 
-## Database for testing multi-cloud lifecycle feature
-Install MongoDB compass and follow these steps:
-1. Create new connection providing hostname, port and other information.
-2. Switch to metadatastore.
-
-    ![mongo connection image  ](opensds_mongo.PNG?raw=true)
-3. Click on the specific bucket to get object and lifecycle configuration information.
-
 ## Open OpenSDS Object lifecycle management UI
 
 OpenSDS Object lifecycle management feature specific UI can be accessed via
