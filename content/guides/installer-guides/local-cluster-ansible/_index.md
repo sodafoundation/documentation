@@ -3,6 +3,7 @@ title: Using Ansible
 description: "A guide for installing OpenSDS on a local cluster using Ansible."
 weight: 10
 disableToc: false
+tags: ["installer guide", "ansible"] 
 ---
 This document describe how to install and use OpenSDS projects by using Ansible Installer. 
 This document builds upon installer wiki https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible

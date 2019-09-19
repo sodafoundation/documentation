@@ -3,6 +3,7 @@ title: File Share
 description: "Installation & Developer Guide for File Share"
 weight: 10
 disableToc: false
+tags: ["developer guide", "file share"] 
 ---
 
 This tutorial guides users and new contributors to get familiar with OpenSDS by installing a simple local cluster and enabling NFS to use file share feature. You can also use the ansible script to install automatically. See details in OpenSDS Local Cluster Installation through ansible.
