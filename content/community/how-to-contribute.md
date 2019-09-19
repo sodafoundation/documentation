@@ -1,7 +1,7 @@
 ---
 title: How to Contribute
 description: "This guide explains how to contribute to the OpenSDS project."
-weight: 30
+weight: 2
 ---
 
 If you are a beginner and expect opensds project as the gate to open source world, this tutorial is one of the best

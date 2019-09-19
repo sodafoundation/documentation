@@ -1,0 +1,7 @@
+#swagger-ui .information-container pre{
+    background: none !important;
+}
+
+#swagger-ui .swagger-ui .topbar{
+    display: none !important;
+}

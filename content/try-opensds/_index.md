@@ -1,13 +1,12 @@
 ---
-title: Introduction
-weight: 5
-pre: "<b>1. </b>"
+title: Try OpenSDS
+weight: 2
+pre: ""
 chapter: true
 ---
 
-### Chapter 1
 
-# Introduction
+# Try OpenSDS
 
 Discover what OpenSDS is all about and the core-concepts behind it.
 

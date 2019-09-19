@@ -1,13 +1,12 @@
 ---
-title: Components
-weight: 30
-pre: "<b>3. </b>"
+title: Component Projects
+weight: 7
+pre: ""
 chapter: true
 ---
 
-### Chapter 3
 
-# Components  
+# Component Projects  
 
 This chapter contains information on all the components that comprise OpenSDS.
 

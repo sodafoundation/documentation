@@ -1,7 +1,7 @@
 ---
-title: Official Releases
-weight: 60
-pre: "<b>6. </b>"
+title: Releases and Roadmaps
+weight: 6
+pre: ""
 chapter: true
 ---
 

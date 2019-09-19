@@ -1,7 +1,7 @@
 ---
 title: Aruba
 description: "This is the v0.2.0 release of OpenSDS"
-weight: 30
+weight: 3
 ---
 
 The OpenSDS Aruba release completed June 30, 2018.
@@ -24,6 +24,10 @@ The Aruba release adds the following functionality:
 * Storage backend capabilities reporting
 * Storage pool capability reporting
 * Volume groups
+
+## OpenAPI Spec
+
+* [Aruba](/guides/api-spec/aruba/)
 
 ## Downloads  
 

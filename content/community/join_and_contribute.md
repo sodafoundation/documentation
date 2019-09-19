@@ -1,7 +1,7 @@
 ---
 title: Join and Contribute
 description: "How to join OpenSDS and contribute"
-weight: 40
+weight: 1
 ---
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/opensds/opensds?branch=master)](https://goreportcard.com/report/github.com/opensds/opensds)
@@ -15,10 +15,13 @@ weight: 40
 
 opensds is Apache 2.0 licensed and accepts contributions via GitHub pull requests. This document outlines some of the conventions on commit message formatting, contact points for developers and other resources to make getting your contribution into opensds easier.
 
-## Email and chat
+## Talk to us
+
+You can reach out to the OpenSDS team anytime on the following channels. Someone will get back to you and you can always raise issues on GitHub that will be accissible at all times.
 
 - Email: [opensds-dev](https://groups.google.com/forum/?hl=en#!forum/opensds-dev)
-- Slack: #[opensds](https://opensds.slack.com) 
+- Slack: [Join OpenSDS Slack](https://opensds.io/slack) 
+- Twitter: [@opensds_io](https://twitter.com/opensds_io)
 
 Before you start, NOTICE that ```master``` branch is the relatively stable version
 provided for customers and users. So all code modifications SHOULD be submitted to
@@ -30,6 +33,17 @@ provided for customers and users. So all code modifications SHOULD be submitted 
 - Read the README.md and INSTALL.md for project information and build instructions.
 
 For those who just get in touch with this project recently, here is a proposed contributing [tutorial](https://github.com/leonwanghui/installation-note/blob/master/opensds_fork_contribute_tutorial.md).
+
+## Repositories
+
+The following is the list of the main repositories that comprise OpenSDS project.  
+
+- [Hotpot - OpenSDS Controller Project](https://github.com/opensds/opensds)
+- [Gelato - OpenSDS Multi-Cloud Data Control](https://github.com/opensds/multi-cloud)
+- [Sushi - OpenSDS Northbound Plugin Project](https://github.com/opensds/nbp)
+- [Orchestration](https://github.com/opensds/orchestration)
+- [Installer](https://github.com/opensds/opensds-installer)
+- [Dashboard](https://github.com/opensds/opensds-dashboard)
 
 ## Contribution Workflow
 

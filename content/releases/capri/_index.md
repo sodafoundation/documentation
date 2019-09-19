@@ -1,11 +1,11 @@
 ---
 title: Capri
 description: "This is the v0.6.1 release of OpenSDS"
-weight: 10
+weight: 2
 ---
 
 
-The OpenSDS Capri release completed June 21, 2019.
+The OpenSDS Capri release was completed on June 21, 2019.
 
 ## Features  
 
@@ -58,6 +58,10 @@ The Capri release adds the following functionality:
       - List/Show/Create/Update/Extend/Delete volume.
       - List/Show/Create/Delete volume attachment.
       - Create/Delete snapshot.
+
+
+## OpenAPI Spec
+* [Capri](/guides/api-spec/capri/)
 
 ## Downloads  
 

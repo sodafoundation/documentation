@@ -1,7 +1,7 @@
 ---
 title: Bali
 description: "This is the v0.4.0 release of OpenSDS"
-weight: 20
+weight: 2
 ---
 
 The OpenSDS Bali release completed December 19, 2018.
@@ -27,6 +27,9 @@ The Bali release adds the following functionality:
 * Add API support for AvailabilityZone.
 * Installation with Helm (tested with LVM)
 
+## OpenAPI Spec
+
+* [Bali](/guides/api-spec/bali/)
 ## Downloads  
 
 The OpenSDS controller (Hotpot), the north bound plugins (Sushi), the multiple cloud(Gelato), 

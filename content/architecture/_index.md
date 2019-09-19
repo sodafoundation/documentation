@@ -1,7 +1,7 @@
 ---
 title: OpenSDS Architecture
 description: ""
-weight: 30
+weight: 4
 disableToc: false
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: Getting Started
 description: "Quick access links to tutorials and concepts."
-weight: 10
+weight: 1
 disableToc: false
 ---
 
 {{% notice note %}}
-This document will be updated shortly.
+Our documentation is being updated. This document will be updated shortly. Please check back later.
 {{% /notice %}}
 
 ## Community
@@ -20,7 +20,7 @@ The OpenSDS community welcomes anyone who is interested in software defined stor
 * Ideas/Bugs: [issues](https://github.com/opensds/opensds/issues)
 
 ## OpenAPI Swagger Spec
-* [Capri](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/opensds/v0.6.1/openapi-spec/swagger.yaml)
-* [Bali](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/opensds/v0.4.0/openapi-spec/swagger.yaml)
-* [Aruba](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/opensds/v0.2.0/openapi-spec/swagger.yaml)
-* [Zealand](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/opensds/v0.1.0/openapi-spec/swagger.yaml)
+* [Capri](/guides/api-spec/capri/)
+* [Bali](/guides/api-spec/bali/)
+* [Aruba](/guides/api-spec/aruba/)
+* [Zealand](/guides/api-spec/zealand/)

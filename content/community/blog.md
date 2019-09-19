@@ -1,7 +1,7 @@
 ---
 title: Contribute to the OpenSDS Blog
 description: "How to Contribute to the OpenSDS Blog"
-weight: 20
+weight: 3
 ---
 
 
