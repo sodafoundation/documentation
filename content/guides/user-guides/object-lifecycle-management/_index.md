@@ -10,7 +10,7 @@ tags: ["user guide", "object lifecycle"]
 OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment. OpenSDS multi-cloud allows user to manage distributed cloud environment on a single platform. Object lifecycle management feature gives freedom to user to manage buckets and objects in the cloud using OpenSDS interface.
 
 ## Getting Started!
-This guide is a tutorial which shows how to install, configure, and use Object lifecycle management feature in a simple OpenSDS setup.
+This is a guide that shows how to install, configure, and use Object lifecycle management feature in a simple OpenSDS setup.
 By following this guide you will be able to install OpenSDS multi-cloud with creating backends and buckets, uploading object and setting up the lifecycle for those objects.
 
 ## Installing Opensds multi-cloud
@@ -50,6 +50,17 @@ docker-compose up -d
 docker ps 
    ```
 Note: check if multi-cloud services are running in the docker container.
+```cassandraql
+# docker ps
+CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS              PORTS                                                NAMES
+3222f0b4c25d        opensdsio/multi-cloud-dataflow    "/dataflow"              2 minutes ago       Up 2 minutes                                                             multi-cloud_dataflow_1_4a975c39f8ff
+33de3d47b1ef        opensdsio/multi-cloud-datamover   "/datamover"             2 minutes ago       Up 2 minutes                                                             multi-cloud_datamover_1_8ccb3d34f551
+3d3661466b3d        wurstmeister/kafka:2.11-2.0.1     "start-kafka.sh"         2 minutes ago       Up 2 minutes        0.0.0.0:9092->9092/tcp                               multi-cloud_kafka_1_e399b2c2167a
+e370acd6c922        mongo                             "docker-entrypoint.s…"   2 minutes ago       Up 2 minutes        0.0.0.0:27017->27017/tcp                             multi-cloud_datastore_1_a8c5edcc4e62
+6d5239b01503        wurstmeister/zookeeper            "/bin/sh -c '/usr/sb…"   2 minutes ago       Up 2 minutes        22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp   multi-cloud_zookeeper_1_82daeecd7252
+7d9f01911356        opensdsio/multi-cloud-backend     "/backend"               2 minutes ago       Up 2 minutes                                                             multi-cloud_backend_1_b9cbaa8bcf83
+f139d2e383ab        opensdsio/multi-cloud-s3          "/s3"                    2 minutes ago       Up 2 minutes                                                             multi-cloud_s3_1_3c7878089fa4
+```
 
 ## Open OpenSDS Object lifecycle management UI
 
@@ -92,4 +103,4 @@ After configuring lifecycle in dashboard, a routine scheduler will run and it wi
 1. How to check if the lifecycle rule is applied on bucket/object ?
 
 Ans: 
-OpenSDS does not create the rule in the cloud backend (CSP) , so once the bucket/object satisfies the rule OpenSDS will automatically call cloud API and the action will be taken place. If there are any sort of errors or issues in rule, user will know at the time of lifecycle action.
+OpenSDS does not create the rule in the cloud backend (CSP). Once the bucket/object satisfies the rule, OpenSDS will automatically call cloud API and the action will be performed. If there are any errors or issues in rule, user will know at the time of lifecycle action.
