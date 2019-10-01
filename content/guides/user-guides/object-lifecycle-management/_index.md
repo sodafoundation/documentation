@@ -15,7 +15,7 @@ By following this guide you will be able to install OpenSDS multi-cloud with cre
 
 ## Installing Opensds multi-cloud
 
-###Download opensds-installer code
+### Download opensds-installer code
 
 ```cassandraql
 git clone https://github.com/opensds/opensds-installer.git
@@ -23,7 +23,8 @@ cd opensds-installer
 # Checkout the latest release, give master by default or specify the branch 
 git checkout master
 ```
-####How to enable multi-cloud installation
+
+#### How to enable multi-cloud installation
   
 Install docker container to run multi-cloud in container environment.
  
@@ -36,14 +37,14 @@ Detailed instruction is in this link
 
 - [OpenSDS Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
 
-#####export required OPENSDS  environment variables
+##### export required OPENSDS  environment variables
 ```
 export HOST_IP={your_real_host_ip}
 export OPENSDS_ENDPOINT=http://{{ apiserver_cluster_ip }}:50040
 export OPENSDS_AUTH_STRATEGY=keystone
 export OS_AUTH_URL=http://{{ authchecker_cluster_ip }}/identity
 ```
-#####run OPENSDS multi-cloud in docker container**
+##### run OPENSDS multi-cloud in docker container**
 ```
 docker-compose up -d
 docker ps 
