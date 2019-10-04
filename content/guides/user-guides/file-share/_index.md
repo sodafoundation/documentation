@@ -84,7 +84,7 @@ Logout of the dashboard as admin and login the dashboard again as a non-admin us
 * Create a file share
 
 Post login into the OpenSDS UI, File share can be created from: Resource -> File share -> Create
-![Fileshare create menu](https://github.com/Shruthi-1MN/documentation/blob/fileshare-userguide/readthedocs/starterguides/userguides/fileshare_menu.PNG)
+![Fileshare create menu](fileshare_menu.PNG?raw=true)
 
 * Create snapshot
 
@@ -102,7 +102,7 @@ Also the quick option
 a) Click on file share resource menu, and on file share name
 b) Under fileshare name menu in same row you can find Create Access link to create access
 
-![Fileshare snapshot and access](https://github.com/Shruthi-1MN/documentation/blob/fileshare-userguide/readthedocs/starterguides/userguides/snapshot_access.PNG)
+![Fileshare snapshot and access](snapshot_access.PNG?raw=true)
 
 ### Some file share standards and limitations
 
