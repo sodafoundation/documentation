@@ -11,12 +11,12 @@ The blog is based on the [Nederburg Theme](https://github.com/appernetic/hugo-ne
 {{% /notice %}}  
 
 ## 1. Fork and Clone
-Fork the blog repository from [here](https://github.com/opensds/blog). Clone the fork.
+  - Fork the blog repository from [here](https://github.com/opensds/blog).  
+  - Clone the fork.  
+
 ```
-#Replace <your-github-id> with your real id.
-git clone git@github.com:<your-github-id>/blog.git
 cd blog
-#This website uses the learn theme for Hugo. It is added as a git submodule and needs to be initialized.
+#The blog website uses the [Nederburg theme](https://github.com/appernetic/hugo-nederburg-theme) for Hugo. It is added as a git submodule and needs to be initialized.
 git submodule --init --recursive
 ```
 ## 2. Add writer  
@@ -93,7 +93,7 @@ tags = ["orchestration"]
 
 ## 4. Adding post excerpt  
 
-The post excerpt is visible in the post listing page. This content is derived from the first 200 characters of the article immediately after the end of the front matter `+++`.  
+The post excerpt is visible in the post listing page. This content is derived from the first 200 characters of the article immediately after the end of the front matter `+++` and end with `<!-- more -->`.
 For example:  
 
 ```
@@ -112,6 +112,7 @@ To reduce manual intervention and provide ease of use, Orchestration helps to st
 ![Post Excerpt](post_excerpt.png)
 
 
+
 ## 5. Adding post content  
 
 - Please use standard markdown formatting to write your post.
@@ -119,11 +120,26 @@ To reduce manual intervention and provide ease of use, Orchestration helps to st
 - Avoid using first level heading (#).
 - Use second level headings (##) for important sections.
 - Use URL hyperlinking with readable titles for long URLS. for example  
-[Click here](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
-instead of  
-Click Here [https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
+{{% notice note %}}
+  [Click here](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
+  *instead of*    
+  Click Here [https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
+{{% /notice %}}
+- To include images in the post use the standard markdown way to display images. Place the images under the `/static/img/` folder and link using the relative path. For Example:  
+  ```
+  #Usage: 
+  ![OpenSDS Orchestration Manager Architecture diagram](/img/orchestration-arch-design.png)
+  ``` 
+- Alternatively you can also use the hugo shortcode `figure`. 
 
-## 6. Run a local build
+  ```
+  # Usage: 
+  # Remove the space after the {{ and before the }}
+  {{ < figure src="/img/orchestration-arch-design.png" title="OpenSDS Orchestration Manager Architecture diagram" > }}
+  ``` 
+- More Hugo Shortcodes for content management can be found [here](https://gohugo.io/content-management/shortcodes/)
+
+## 6. Run a local build (optional)
 
 Run the following commands in the root directory to view the site locally. You can  verify the content and styling is as per the style guide before raising the PR.
 ```
