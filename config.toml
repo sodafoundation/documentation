@@ -1,6 +1,7 @@
 baseURL = "https://opensds-docs.netlify.com/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
+googleAnalytics = "UA-138679091-1"
 
 title = "OpenSDS Documentation"
 theme = "hugo-theme-learn"
