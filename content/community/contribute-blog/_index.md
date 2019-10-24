@@ -14,9 +14,11 @@ The blog is based on the [Nederburg Theme](https://github.com/appernetic/hugo-ne
 Fork the blog repository from [here](https://github.com/opensds/blog). Clone the fork.
 ```
 #Replace <your-github-id> with your real id.
-git clone git@github.com:<your-github-id>/opensds-blog.git
-```  
-
+git clone git@github.com:<your-github-id>/blog.git
+cd blog
+#This website uses the learn theme for Hugo. It is added as a git submodule and needs to be initialized.
+git submodule --init --recursive
+```
 ## 2. Add writer  
 
 If you are going to contribute regularly you can add yourself as an author on the blog repository. In the root directory navigate to the `config.toml` file. Look for the section  `[params.writers]` and add your bio.  The format looks like the following:  
@@ -121,8 +123,14 @@ To reduce manual intervention and provide ease of use, Orchestration helps to st
 instead of  
 Click Here [https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
 
+## 6. Run a local build
 
-## 6. Raise a PR  
-- After the blog is written raise a pull request to the `master` branch on the `opendsds/blog` repository.  
+Run the following commands in the root directory to view the site locally. You can  verify the content and styling is as per the style guide before raising the PR.
+```
+hugo server
+```
+## 7. Raise a PR  
+- After the blog is written raise a pull request to the `master` branch on the `opendsds/blog` repository. 
+- Netlify will create a preview build and the actual page can be viewed in this preview.  
 - The blog will be reviewed by atleast 2 reviewers which may include one technical writer and one developer.  
 - After the blog is reviewed and merged it will be added as the latest post and can be viewed at [blog.opensds.io](http://blog.opensds.io)
