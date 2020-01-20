@@ -11,7 +11,7 @@ The OpenSDS Daito release was completed on January 10, 2020.
 
 This is an incremental stable release after v0.6.1 (Capri with fix). All the features of Capri are expected to work unless otherwise mentioned. This release is named as Daito. This release has improved E2E tests along with Basic tests on all features. This release can be used for trials; however not yet production ready.  
 We are continuing to test with some of the real hardware and environments needed. If you are interested to help in providing any support please contact us. Also if you are planning to do a product integration, our community can support you directly. 
-(Email)[mailto:lfopensds@gmail.com] OR (Slack)[https://www.opensds.io/slack/] OR on Twitter (@opensds_io)[https://twitter.com/opensds_io]
+[Email](mailto:lfopensds@gmail.com) OR [Slack](https://www.opensds.io/slack/) OR on Twitter [@opensds_io](https://twitter.com/opensds_io)
 
 ## Release Information
 ### Opensds Changes
@@ -110,19 +110,44 @@ _The dashboard is mainly intended to showcase the features of opensds. It is onl
 
 ### From Release Binaries of OpenSDS Installer
 
-Steps:
+#### Steps:
+
+
+1. Download the installer binaries from [here](https://github.com/opensds/opensds-installer/releases/tag/v0.10.0) (Use wget or direct download using browser)  
 
 ```
-#Download the installer binaries from https://github.com/opensds/opensds-installer/releases/tag/v0.10.0 (Use wget or direct download using browser)
-
 wget https://github.com/opensds/opensds-installer/releases/download/v0.10.0/opensds-installer-v0.10.0.tar.gz
+```
+
+2. Extract the downloaded file and change directory to opensds-installer/ansible  
+
+```
 tar xvzf opensds-installer-v0.10.0.tar.gz
 cd opensds-installer/ansible
-chmod +x ./install_ansible.sh && ./install_ansible.sh
+```  
+
+3. Change the permission of the Ansible install script. 
+
+```
+chmod +x ./install_ansible.sh
+```
+4. Run the Ansible install script. This will install Ansible.  
+
+```
+./install_ansible.sh
 # Ansible version 2.4.x is required.
 ansible --version 
-# Modify IP address if needed
+```  
+
+5. Modify IP address, if needed, to the IP of the host machine.  
+
+```
 vim group_vars/common.yml 
+```  
+
+6. Run the Ansible playbook to install OpenSDS  
+
+```
 ansible-playbook site.yml -i local.hosts
 ```  
 
@@ -134,9 +159,9 @@ If you want more config control, you can follow these steps:
 ### Advanced Usages or Development
 Please refer our detailed [documentation](https://docs.opensds.io/)
 
-[Installer Guides](https://docs.opensds.io/guides/installer-guides/)
-[User Guides](https://docs.opensds.io/guides/user-guides/)
-[Developer Guides](https://docs.opensds.io/guides/developer-guides/)
+[Installer Guides](https://docs.opensds.io/guides/installer-guides/)  
+[User Guides](https://docs.opensds.io/guides/user-guides/)  
+[Developer Guides](https://docs.opensds.io/guides/developer-guides/)  
 
 ## Issues and Suggestions
 Please raise the issues, ideas and suggestions in the respective repository under issues section.
