@@ -6,3 +6,4 @@ disableToc: false
 ---
 
 ![OpenSDS Architecture](opensds-data-platform-architecture.png)
+![OpenSDS Design Docs]
