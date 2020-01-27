@@ -2,7 +2,7 @@
 title: Bali API Spec
 menuTitle: Bali Release (v0.4.0)
 description: "Check out the API spec for the Bali Release and try out the APIs without having to install the system."
-weight: 3
+weight: 5
 disableToc: false
 ---
 

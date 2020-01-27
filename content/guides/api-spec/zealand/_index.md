@@ -2,7 +2,7 @@
 title: Zealand API Spec
 menuTitle: Zealand Release (v0.1.0)
 description: "Check out the API spec for the Zealand Release and try out the APIs without having to install the system."
-weight: 5
+weight: 6
 disableToc: false
 ---
 
