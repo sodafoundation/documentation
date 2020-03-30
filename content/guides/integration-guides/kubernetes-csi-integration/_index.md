@@ -69,8 +69,8 @@ hack/install-etcd.sh
 ENABLE_DAEMON=true ALLOW_PRIVILEGED=true FEATURE_GATES=VolumeSnapshotDataSource=true RUNTIME_CONFIG="storage.k8s.io/v1alpha1=true" LOG_LEVEL=5 hack/local-up-cluster.sh -O
 ```
 
-### [OpenSDS](https://github.com/opensds/opensds) local cluster
-For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Installation through Ansible](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible).
+### [OpenSDS](https://github.com/sodafoundation/opensds) local cluster
+For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Installation through Ansible](https://github.com/sodafoundation/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible).
 
 ## Testing steps
 
@@ -79,35 +79,62 @@ For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Install
 	```
 	cd /opt/opensds-sushi-linux-amd64
 	```
-* Update profile id of StorageClass in nginx.yml according to actual profile you created, it looks like this:
-	```
-	apiVersion: storage.k8s.io/v1
-        kind: StorageClass
-        metadata:
-          name: csi-sc-opensdsplugin
-        provisioner: csi-opensdsplugin
-        parameters:
-          attachMode: rw
-          profile: d10ec339-3357-43ff-8626-4ccdb854af3d
-	```
-* Create example nginx application
+* Opensds supports csi plugin for both block and file storage types
+
+* For csi block plugin:
+
+	* Update profile id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you created, it looks like this:
+		```
+		apiVersion: storage.k8s.io/v1
+		kind: StorageClass
+		metadata:
+		  name: csi-sc-opensdsplugin-block
+		provisioner: csi-opensdsplugin-block
+		parameters:
+		  attachMode: rw
+		  profile: d10ec339-3357-43ff-8626-4ccdb854af3d
+		```
+	* Create example nginx application
+
+		```
+		kubectl create -f csi/examples/kubernetes/block/nginx.yaml
+		```
+
+* For csi file plugin:
+
+	* Update profile id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you created, it looks like this:
+		```
+		apiVersion: storage.k8s.io/v1
+		kind: StorageClass
+		metadata:
+		  name: csi-sc-opensdsplugin-file
+		provisioner: csi-opensdsplugin-file
+		parameters:
+		  attachMode: rw
+		  profile: d10ec339-3357-43ff-8626-4ccdb854af3d
+		```
+	* Create example nginx application
+
+		```
+		kubectl create -f csi/examples/kubernetes/file/nginx.yaml
+		```
+  This example will mount a opensds volume into `/var/lib/www/html`.
+
+  You can use the following command to inspect into nginx container to verify it.
 
 	```
-	kubectl create -f csi/examples/kubernetes/nginx.yaml
-	```
-
-	This example will mount a opensds volume into `/var/lib/www/html`.
-
-	You can use the following command to inspect into nginx container to verify it.
-
-	```
-	docker exec -it <nginx container id> /bin/bash
+	kubectl exec -it nginx /bin/bash
 	```
 
 ## Clean up steps
-
 Clean up example nginx application and opensds CSI pods by the following commands:
-```bash
-kubectl delete -f csi/examples/kubernetes/nginx.yaml
-kubectl delete -f csi/deploy/kubernetes
-```
+* For csi block plugin:
+	```bash
+	kubectl delete -f csi/examples/kubernetes/block/nginx.yaml
+	kubectl delete -f csi/deploy/kubernetes/block
+	```
+* For csi file plugin:
+	```bash
+	kubectl delete -f csi/examples/kubernetes/file/nginx.yaml
+	kubectl delete -f csi/deploy/kubernetes/file
+	```
