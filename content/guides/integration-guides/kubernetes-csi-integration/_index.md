@@ -135,7 +135,6 @@ Clean up example nginx application and opensds CSI pods by the following command
 	kubectl delete -f csi/examples/kubernetes/block/nginx.yaml
 	kubectl delete -f csi/deploy/kubernetes/block
 	```
-	
 * For csi file plugin:
 
 	```bash
