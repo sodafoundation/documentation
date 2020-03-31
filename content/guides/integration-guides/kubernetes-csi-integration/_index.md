@@ -5,7 +5,7 @@ weight: 1
 disableToc: false
 tags: ["integration guide", "kubernetes csi"] 
 ---
-## Prerequisite ##
+## Prerequisite
 
 ### Ubuntu
 version information:
