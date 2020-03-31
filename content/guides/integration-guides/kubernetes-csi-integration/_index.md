@@ -127,7 +127,8 @@ For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Install
 	```
 
 ## Clean up steps
-Clean up example nginx application and opensds CSI pods by the following commands:
+Clean up example nginx application and opensds CSI pods by the following commands:  
+
 * For csi block plugin:
 	```bash
 	kubectl delete -f csi/examples/kubernetes/block/nginx.yaml
