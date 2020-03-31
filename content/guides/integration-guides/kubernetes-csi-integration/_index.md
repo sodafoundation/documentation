@@ -1,5 +1,6 @@
 ---
 title: OpenSDS Integration with Kubernetes CSI
+menuTitle: "With Kubernetes CSI"
 description: "A guide for integrating OpenSDS with Kubernetes CSI."
 weight: 1
 disableToc: false
@@ -119,7 +120,6 @@ For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Install
 		kubectl create -f csi/examples/kubernetes/file/nginx.yaml
 		```
   This example will mount a opensds volume into `/var/lib/www/html`.  
-  
   You can use the following command to inspect into nginx container to verify it.
 
 	```
@@ -130,11 +130,13 @@ For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Install
 Clean up example nginx application and opensds CSI pods by the following commands:  
 
 * For csi block plugin:
+
 	```bash
 	kubectl delete -f csi/examples/kubernetes/block/nginx.yaml
 	kubectl delete -f csi/deploy/kubernetes/block
 	```
 * For csi file plugin:
+
 	```bash
 	kubectl delete -f csi/examples/kubernetes/file/nginx.yaml
 	kubectl delete -f csi/deploy/kubernetes/file
