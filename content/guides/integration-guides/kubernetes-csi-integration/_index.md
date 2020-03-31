@@ -118,8 +118,8 @@ For testing purposes you can deploy OpenSDS refering to [OpenSDS Cluster Install
 		```
 		kubectl create -f csi/examples/kubernetes/file/nginx.yaml
 		```
-  This example will mount a opensds volume into `/var/lib/www/html`.
-
+  This example will mount a opensds volume into `/var/lib/www/html`.  
+  
   You can use the following command to inspect into nginx container to verify it.
 
 	```
