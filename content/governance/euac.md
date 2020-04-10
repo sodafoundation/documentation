@@ -1,21 +1,24 @@
 ---
 title: End User Advisory Committee
-description: "OpenSDS End User Advisory Committee"
+description: "SODA Foundation End User Advisory Committee"
 weight: 2
 ---
-OpenSDS End User Advisory Committee
+SODA Foundation End User Advisory Committee
 
 ## Mission
 The End User Advisory Committee (EUAC) is to assist and support the OpenSDS community in its objectives by providing technical and strategic guidance real-world storage challenges
 
 ## Members
 * Cosimo Rosetti (Vodafone)
-* Kei Kusunoki (NTT Communications)
 * Yusuke Sato (Yahoo Japan)
 * Yuji Yazawa (Toyota)
 * Wim Jacobs (KPN)
 * Shinya Tsunematsu (GMO Pepabo)
-
+* Brian Dunlap (Southwest Airlines)
+* Tomoko Kondo (Softbank Corp)
+* Terada Mitchitaka (Internet Initiative Japan)
+* Michiharu Nakazawa (Sakura Internet)
+* Zhan Shu (CCB Fintech)
 
 
 ## Bi-Weekly Meetings
@@ -32,4 +35,4 @@ Meeting ID: `477 192 859`
 International numbers available: https://zoom.us/zoomconference?m=h0x5xsxAwYr_grrKRsEx_7PLkOfvL3bm  
 
 ## Meeting Minutes
-* [EUAC Meeting Minutes](https://github.com/opensds/euac)
+* [EUAC Meeting Minutes](https://github.com/sodafoundation/euac)

@@ -8,6 +8,6 @@ chapter: true
 
 # Official Releases
 
-All the official releases of OpenSDS.
+All the official releases of OpenSDS/SODA Foundation.
 
 {{%children style="h3" description="true" %}}  

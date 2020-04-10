@@ -1,21 +1,25 @@
 ---
 title: Technical Steering Commitee
-description: "OpenSDS Technical Steering Commitee"
+description: "SODA Foundation Technical Steering Commitee"
 weight: 1
 ---
-OpenSDS Technical Steering Commitee
+SODA Foundation Technical Steering Commitee
 
 ## Mission
-To provide technical guidance for OpenSDS community development.
+To provide technical guidance for SODA Foundation community development.
 
 ## Members
-* Anjaneya Chagam (Intel)
 * Rakesh Jain (IBM)
-* Allen Samuels (WD/SanDisk)
-* Steven Tan (Huawei)
-* Jay Bryant (Lenovo)
-* Shinya Hamano (Fujitsu)
-
+* Kei Kusunoki (NTT Communications)
+* Vinod E (Wipro/SNIA)
+* Sheng Lin Wu (ProphetStor)
+* Hiroki Kimura (Fujitsu)
+* Masanori Itoh (Toyota)
+* Xin Zhong (China Unicom)
+* Sanil Kumar D (Huawei)
+* Kiran Mova (MayaData)
+* Prashant Mishra (Click2Cloud Inc)
+* Yusuf Yildiz (LinBit)
 
 ## Bi-Weekly Meetings
 This meeting is hosted on zoom. Join the TSC mailing list for info on meetings
@@ -31,7 +35,7 @@ Meeting ID: `477 192 859`
 International numbers available: https://zoom.us/zoomconference?m=h0x5xsxAwYr_grrKRsEx_7PLkOfvL3bm  
 
 ## Meeting Minutes
-* [TSC Meeting Minutes](https://github.com/opensds/tsc)
+* [TSC Meeting Minutes](https://github.com/sodafoundation/tsc)
 
 
 ## Kubernetes Storage SIG

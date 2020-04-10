@@ -11,15 +11,16 @@ Our documentation is being updated. This document will be updated shortly. Pleas
 
 ## Community
 
-The OpenSDS community welcomes anyone who is interested in software defined storage and shaping the future of cloud-era storage. If you are a company, you should consider joining the [OpenSDS Project](https://opensds.io/). If you are a developer and want to be part of the code development that is happening now, please refer to the Contributing sections below.
+The SODA Foundation community welcomes anyone who is interested in software defined storage and shaping the future of cloud-era storage. If you are a company, you should consider joining the [SODA Foundation Project](https://sodafoundation.io/). If you are a developer and want to be part of the code development that is happening now, please refer to the Contributing sections below.
 
 ## Contact
 
 * Mailing list: [opensds-tech-discuss](https://lists.opensds.io/mailman/listinfo/opensds-tech-discuss)
-* slack: #[opensds](https://opensds.io/slack)
-* Ideas/Bugs: [issues](https://github.com/opensds/opensds/issues)
+* slack: #[sodafoundation](https://sodafoundation.io/slack)
+* Ideas/Bugs: [issues](https://github.com/sodafoundation/api/issues)
 
 ## OpenAPI Swagger Spec
+* [Daito](/guides/api-spec/daito/)
 * [Capri](/guides/api-spec/capri/)
 * [Bali](/guides/api-spec/bali/)
 * [Aruba](/guides/api-spec/aruba/)
