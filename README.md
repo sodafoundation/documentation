@@ -7,7 +7,7 @@
 
 ## Introduction
 
-SODA Documentation provides all the SODA Foundation level documentations and also provides all the SODA Core projects documentations.
+SODA Documentation provides documentation for SODA Foundation and all the SODA Core projects.
 
 This repo consists of all the code to generate the documentation website and repsective contents. ([https://docs.sodafoundation.io](https://docs.sodafoundation.io/))
 
