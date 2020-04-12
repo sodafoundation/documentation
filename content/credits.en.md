@@ -61,4 +61,18 @@ Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a be
 
 Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
 
+<<<<<<< HEAD
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/blog/contributors?per_page=100" %}}
+=======
+## Documentation Contributors
+
+Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
+
+{{% ghcontributors "https://api.github.com/repos/opensds/documentation/contributors?per_page=100" %}}
+
+## Blog Contributors
+
+Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
+
+{{% ghcontributors "https://api.github.com/repos/opensds/blog/contributors?per_page=100" %}}
+>>>>>>> bdc5d40701cd4b609cf0999a9da401830e7ec683
