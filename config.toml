@@ -34,7 +34,7 @@ languageName = "English"
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
-url = "https://github.com/isodafoundation/opensds"
+url = "https://github.com/sodafoundation/api"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
