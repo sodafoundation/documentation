@@ -1,8 +1,8 @@
 ---
-title: OpenSDS Architecture
+title: SODA Architecture
 description: ""
 weight: 4
 disableToc: false
 ---
 
-![OpenSDS Architecture](opensds-data-platform-architecture.png)
+![SODA Architecture](opensds-data-platform-architecture.png)

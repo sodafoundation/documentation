@@ -8,6 +8,6 @@ chapter: true
 
 # Community
 
-Read about how you can join the community and start contributing to OpenSDS.
+Read about how you can join the community and start contributing to SODA Foundation.
 
 {{%children style="h3" description="true" %}}  

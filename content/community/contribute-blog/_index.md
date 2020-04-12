@@ -1,6 +1,6 @@
 ---
-title: Contribute to the OpenSDS Blog
-description: "This guide explains how to contribute an entry to the OpenSDS Blog at http://blog.opensds.io."
+title: Contribute to the SODA Foundation Blog
+description: "This guide explains how to contribute an entry to the SODA Foundation Blog at http://blog.sodafoundation.io."
 weight: 3
 ---
 {{% notice note %}}
@@ -11,7 +11,7 @@ The blog is based on the [Nederburg Theme](https://github.com/appernetic/hugo-ne
 {{% /notice %}}  
 
 ## 1. Fork and Clone
-  - Fork the blog repository from [here](https://github.com/opensds/blog).  
+  - Fork the blog repository from [here](https://github.com/sodafoundation/blog).  
   - Clone the fork.  
 
 ```
@@ -76,7 +76,7 @@ image = "img/orchestration-arch-design.png"
 #The post date in GMT +5.30
 date = "2019-09-17T10:30:00+05:30"
 #Post Title
-title = "OpenSDS Orchestration - Simplifying Complex Data Management Tasks"
+title = "SODA Foundation Orchestration - Simplifying Complex Data Management Tasks"
 #The slug is visible in the URL and helps make the URL readable.
 slug = "orchestration-simplifying-complex-data-management-tasks"
 #Post Description. Max 200 characters.
@@ -121,21 +121,21 @@ To reduce manual intervention and provide ease of use, Orchestration helps to st
 - Use second level headings (##) for important sections.
 - Use URL hyperlinking with readable titles for long URLS. for example  
 {{% notice note %}}
-  [Click here](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
+  [Click here](https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md) for the SODA Foundation Orchestration Manager Installation:  
   *instead of*    
-  Click Here [https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md) for the OpenSDS Orchestration Manager Installation:  
+  Click Here [https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md](https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md) for the SODA Foundation Orchestration Manager Installation:  
 {{% /notice %}}
 - To include images in the post use the standard markdown way to display images. Place the images under the `/static/img/` folder and link using the relative path. For Example:  
   ```
   #Usage: 
-  ![OpenSDS Orchestration Manager Architecture diagram](/img/orchestration-arch-design.png)
+  ![SODA Foundation Orchestration Manager Architecture diagram](/img/orchestration-arch-design.png)
   ``` 
 - Alternatively you can also use the hugo shortcode `figure`. 
 
   ```
   # Usage: 
   # Remove the space after the {{ and before the }}
-  {{ < figure src="/img/orchestration-arch-design.png" title="OpenSDS Orchestration Manager Architecture diagram" > }}
+  {{ < figure src="/img/orchestration-arch-design.png" title="SODA Foundation Orchestration Manager Architecture diagram" > }}
   ``` 
 - More Hugo Shortcodes for content management can be found [here](https://gohugo.io/content-management/shortcodes/)
 
@@ -149,4 +149,4 @@ hugo server
 - After the blog is written raise a pull request to the `master` branch on the `opendsds/blog` repository. 
 - Netlify will create a preview build and the actual page can be viewed in this preview.  
 - The blog will be reviewed by atleast 2 reviewers which may include one technical writer and one developer.  
-- After the blog is reviewed and merged it will be added as the latest post and can be viewed at [blog.opensds.io](http://blog.opensds.io)
+- After the blog is reviewed and merged it will be added as the latest post and can be viewed at [blog.sodafoundation.io](http://blog.sodafoundation.io)
