@@ -5,4 +5,4 @@ weight: 4
 disableToc: false
 ---
 
-![SODA Architecture](opensds-data-platform-architecture.png)
+[Refer Overall SODA Architecture and High Level Design for SODA Projects](https://github.com/sodafoundation/design-specs/blob/master/SODAHighLevelArchitecture.pptx)
