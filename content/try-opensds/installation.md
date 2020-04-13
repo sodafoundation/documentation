@@ -1,40 +1,40 @@
 ---
 title: Installation Guide
-description: "This guide explains how to install the OpenSDS Projects with its components and test basic features."
+description: "This guide explains how to install the SODA Foundation Projects with its components and test basic features."
 weight: 30
 ---
 
-This guide explains how to install the OpenSDS Projects with its components and test basic features.
+This guide explains how to install the SODA Foundation Projects with its components and test basic features.
 
-OpenSDS Projects may be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [opensds-installer](https://github.com/opensds/opensds-installer) project contains resources and tools for this guide.
+SODA Foundation Projects may be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [SODA-installer](https://github.com/sodafoundation/installer) project contains resources and tools for this guide.
 
 ## 1. Installation using Ansible
 
 The recommended method of installation is using ansible in Ubuntu 16.04. Detailed steps are provided below.
 
-* [Local Cluster installation using ansible](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible)
-* [Install OpenSDS in multiple nodes (Eg. 3 nodes, 1 Controller and 2 Backends)](https://github.com/opensds/opensds-installer/blob/master/ansible/docs/OpenSDS%20Multi-nodes%20installation%20using%20Ansible.md)
+* [Local Cluster installation using ansible](https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-through-Ansible)
+* [Install OpenSDS in multiple nodes (Eg. 3 nodes, 1 Controller and 2 Backends)](https://github.com/sodafoundation/installer/blob/master/ansible/docs/OpenSDS%20Multi-nodes%20installation%20using%20Ansible.md)
 
 ## 2. Installation using Salt
 
-* [https://github.com/opensds/opensds-installer/tree/master/salt](https://github.com/opensds/opensds-installer/tree/master/salt)
-* [https://github.com/opensds/opensds-installer/blob/master/salt/HACKING.md](https://github.com/opensds/opensds-installer/blob/master/salt/HACKING.md)
+* [https://github.com/sodafoundation/installer/tree/master/salt](https://github.com/sodafoundation/installer/tree/master/salt)
+* [https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md](https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md)
 
-## 3. Deploy OpenSDS using Helm
+## 3. Deploy SODA Foundation projects using Helm
 
-* [https://github.com/opensds/opensds-installer/tree/master/charts](https://github.com/opensds/opensds-installer/tree/master/charts)
-* [https://github.com/opensds/opensds-installer/blob/master/charts/OpenSDS Installation using Helm.md](https://github.com/opensds/opensds-installer/blob/master/charts/OpenSDS%20Installation%20using%20Helm.md)
+* [https://github.com/sodafoundation/installer/tree/master/charts](https://github.com/sodafoundation/installer/tree/master/charts)
+* [https://github.com/sodafoundation/installer/blob/master/charts/OpenSDS Installation using Helm.md](https://github.com/sodafoundation/installer/blob/master/charts/OpenSDS%20Installation%20using%20Helm.md)
 
 ## 4. Local cluster installation using Bash
 
-* [https://github.com/opensds/opensds/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation](https://github.com/opensds/opensds/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation)
+* [https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation](https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation)
 
 ## 5. Miscellaneous
 
-* [https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux)
-* [https://github.com/opensds/opensds/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work](https://github.com/opensds/opensds/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work)
-* [https://github.com/opensds/opensds/wiki/OpenSDS-Integration-with-Kubernetes-CSI](https://github.com/opensds/opensds/wiki/OpenSDS-Integration-with-Kubernetes-CSI)
+* [https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux](https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux)
+* [https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work](https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work)
+* [https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI](https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI)
 
 ## Reference
 
-* [https://github.com/opensds/opensds/wiki](https://github.com/opensds/opensds/wiki)
+* [https://github.com/sodafoundation/api/wiki](https://github.com/sodafoundation/api/wiki)
