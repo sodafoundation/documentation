@@ -1,9 +1,9 @@
-baseURL = "https://opensds-docs.netlify.com/"
+baseURL = "https://soda-docs.netlify.com/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 googleAnalytics = "UA-138679091-1"
 
-title = "SODA Documentation"
+title = "SODA Foundation Documentation"
 theme = "hugo-theme-learn"
 themesdir = "themes/"
 metaDataFormat = "yaml"
@@ -11,8 +11,8 @@ defaultContentLanguageInSubdir= true
 
 [params]
   editURL = "https://github.com/sodafoundation/documentation/edit/master/content/"
-  description = "Documentation for SODA"
-  author = "SODA Authors"
+  description = "Documentation for SODA Foundation"
+  author = "SODA Foundation Authors"
   showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = false
