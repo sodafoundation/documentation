@@ -6,7 +6,7 @@ chapter: true
 ---
 
 
-# Try OpenSDS
+# Try SODA
 
 Discover what SODA Foundation is all about and the core-concepts behind it.
 
