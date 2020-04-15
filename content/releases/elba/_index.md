@@ -112,29 +112,30 @@ _Multicloud s3 compatible API integration with dashboard has a signature mismatc
 
 
 - ## Projects/Repos part of this release:
-Key projects part of this SODA Release
-**SODA Core Projects:**
+    Key projects part of this SODA Release  
 
-| Project | Release Link | Issues Link |
-| ------- | ------------ | ----------- |
-| [api](https://github.com/sodafoundation/api) | [api release v0.12.0](https://github.com/sodafoundation/api/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/api/issues)|
-| [controller](https://github.com/sodafoundation/controller) | [controller release v0.12.0](https://github.com/sodafoundation/controller/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/controller/issues) |
-| [dock](https://github.com/sodafoundation/dock) | [dock release v0.12.](https://github.com/sodafoundation/dock/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/dock/issues) |
-| [nbp](https://github.com/sodafoundation/nbp)	| [nbp release v0.12.0](https://github.com/sodafoundation/nbp/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/nbp/issues) |
-| [multi-cloud](https://github.com/sodafoundation/multi-cloud)	| [multicloud release v0.12.0](https://github.com/sodafoundation/multi-cloud/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/multi-cloud/issues) |
-| [orchestration](https://github.com/sodafoundation/orchestration)	| [orchestration release v0.10.0](https://github.com/sodafoundation/orchestration/releases/tag/v0.10.0) | [Raise Issue](https://github.com/sodafoundation/orchestration/issues) |
-| [anomaly-detection](https://github.com/sodafoundation/anomaly-detection)	| [anomaly detection release v0.10.0](https://github.com/sodafoundation/anomaly-detection/releases/tag/v0.10.0) | [Raise Issue](https://github.com/sodafoundation/anomaly-detection/issues) |
+    **SODA Core Projects:**
+
+    | Project | Release Link | Issues Link |
+    | ------- | ------------ | ----------- |
+    | [api](https://github.com/sodafoundation/api) | [api release v0.12.0](https://github.com/sodafoundation/api/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/api/issues)|
+    | [controller](https://github.com/sodafoundation/controller) | [controller release v0.12.0](https://github.com/sodafoundation/controller/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/controller/issues) |
+    | [dock](https://github.com/sodafoundation/dock) | [dock release v0.12.](https://github.com/sodafoundation/dock/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/dock/issues) |
+    | [nbp](https://github.com/sodafoundation/nbp)	| [nbp release v0.12.0](https://github.com/sodafoundation/nbp/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/nbp/issues) |
+    | [multi-cloud](https://github.com/sodafoundation/multi-cloud)	| [multicloud release v0.12.0](https://github.com/sodafoundation/multi-cloud/releases/tag/v0.12.0) | [Raise Issue](https://github.com/sodafoundation/multi-cloud/issues) |
+    | [orchestration](https://github.com/sodafoundation/orchestration)	| [orchestration release v0.10.0](https://github.com/sodafoundation/orchestration/releases/tag/v0.10.0) | [Raise Issue](https://github.com/sodafoundation/orchestration/issues) |
+    | [anomaly-detection](https://github.com/sodafoundation/anomaly-detection)	| [anomaly detection release v0.10.0](https://github.com/sodafoundation/anomaly-detection/releases/tag/v0.10.0) | [Raise Issue](https://github.com/sodafoundation/anomaly-detection/issues) |
 
 - ## SODA Native Projects:
 Projects are under review. Will be added from next release. If you want to submit your project to SODA Foundation to leverage better branding, networking, users, testing and enhance the community OR you want to know more about it, please mail to [project-submit@sodafoundation.io](mailto:project-submit@sodafoundation.io)
 
 - ## Other Projects/Repos:
 
-| Project | Release Link | Issues Link |
-| ------- | ------------ | ----------- |
-| [installer](https://github.com/sodafoundation/installer)	| [installer release v0.12.0](https://github.com/sodafoundation/installer/releases/tag/v0.12.0)| [Raise Issue](https://github.com/sodafoundation/installer/issues) |
-| [dashboard](https://github.com/sodafoundation/dashboard)	| [dashboard release v0.10.0](https://github.com/sodafoundation/dashboard/releases/tag/v0.10.0)| [Raise Issue](https://github.com/sodafoundation/dashboard/issues) |
-| [documentation](https://github.com/sodafoundation/documentation)	| [documentation release v0.12.0](https://github.com/sodafoundation/documentation/releases/tag/v0.12.0)| [Raise Issue](https://github.com/sodafoundation/documentation/issues) |
+    | Project | Release Link | Issues Link |
+    | ------- | ------------ | ----------- |
+    | [installer](https://github.com/sodafoundation/installer)	| [installer release v0.12.0](https://github.com/sodafoundation/installer/releases/tag/v0.12.0)| [Raise Issue](https://github.com/sodafoundation/installer/issues) |
+    | [dashboard](https://github.com/sodafoundation/dashboard)	| [dashboard release v0.10.0](https://github.com/sodafoundation/dashboard/releases/tag/v0.10.0)| [Raise Issue](https://github.com/sodafoundation/dashboard/issues) |
+    | [documentation](https://github.com/sodafoundation/documentation)	| [documentation release v0.12.0](https://github.com/sodafoundation/documentation/releases/tag/v0.12.0)| [Raise Issue](https://github.com/sodafoundation/documentation/issues) |
 
 ## How to use the Release:  
 
