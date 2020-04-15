@@ -1,7 +1,7 @@
 ---
-title: Zealand
+title: Zealand (v0.1.0)
 description: "This is the v0.1.0 release of OpenSDS"
-weight: 6
+weight: 7
 ---
 
 This was the first release of OpenSDS and was completed on 29th December 2017.
