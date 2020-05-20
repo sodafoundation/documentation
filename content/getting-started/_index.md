@@ -15,7 +15,7 @@ The SODA Foundation community welcomes anyone who is interested in software defi
 
 ## Contact
 
-* Mailing list: [sodafoundation-tech-discuss](https://lists.opensds.io/mailman/listinfo/opensds-tech-discuss)
+* Mailing list: [sodafoundation-general](https://lists.sodafoundation.io/g/general/topics)
 * slack: #[sodafoundation](https://sodafoundation.io/slack)
 * Ideas/Bugs: [issues](https://github.com/sodafoundation/api/issues)
 
