@@ -1,7 +1,7 @@
 ---
 title: Daito
 description: "This is the v0.10.1 release of OpenSDS"
-weight: 2
+weight: 3
 ---
 
 
