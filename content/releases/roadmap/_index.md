@@ -1,8 +1,8 @@
 ---
-title: OpenSDS Roadmap
+title: SODA Foundation Release Roadmap
 description: "The project roadmap."
 weight: 1
 disableToc: false
 ---
 
-![OpenSDS Roadmap v0.24](roadmap.png)
+[SODA Roadmap](https://github.com/sodafoundation/releases/blob/master/roadmap.md)

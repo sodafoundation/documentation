@@ -1,12 +1,12 @@
 ---
 title: Quick Start Guide
-description: "This is a quickstart guide for users and new contributors to get familiar with OpenSDS by installing a simple containerized local cluster."
+description: "This is a quickstart guide for users and new contributors to get familiar with SODA Foundation by installing a simple containerized local cluster."
 weight: 20
 ---
 
-This is a quickstart guide for users and new contributors to get familiar with [OpenSDS](https://github.com/opensds/opensds) by installing a simple containerized local cluster. The required OS environment is Ubuntu 16.04 with docker and docker-compose installed.
+This is a quickstart guide for users and new contributors to get familiar with [SODA Foundation](https://github.com/opensds/opensds) by installing a simple containerized local cluster. The required OS environment is Ubuntu 16.04 with docker and docker-compose installed.
 
-More detailed installation steps with full features is provided in [Installation Guide](/introduction/installation/)
+More detailed installation steps with full features is provided in [Installation Guide](/try-opensds/installation)
 
 ## Install OpenSDS  
 
@@ -133,7 +133,7 @@ docker-compose up -d
 
 ```
 
-The above script does following things to install OpenSDS  
+The above script does following things to install SODA Foundation  
 
 - Create OpenSDS configuration file `/etc/opensds/opensds.conf`  
 - Create lvm backend configuration file `/etc/opensds/driver/lvm.yaml`  

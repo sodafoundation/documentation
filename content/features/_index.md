@@ -1,31 +1,31 @@
 ---
-title: OpenSDS Features
+title: SODA Foundation project Features
 description: ""
 weight: 3
 disableToc: false
 ---
 
 {{% notice note %}}
-All the OpenSDS features are listed here. More information  will be updated here shortly. Keep checking this space.
+All the SODA features are listed here. More information  will be updated here shortly. Keep checking this space.
 {{% /notice %}}
 
 ## File Share  
 
-File share in opensds facilitates the user to create file share, set access permission for that file share and user can also create snapshot. Opensds provides both CLI and Dashboard to operate or play with file share feature. Goals of file share in opensds are Facilitating File Share Service by providing Standard API to manage multiple vendors, simplify File Share API definition File share across the users based on access capability File share facilitates with profiling Scope for now is to support only NFS, SMB file share protocols.
+File share in sodafoundation facilitates the user to create file share, set access permission for that file share and user can also create snapshot. Opensds provides both CLI and Dashboard to operate or play with file share feature. Goals of file share in sodafoundation are Facilitating File Share Service by providing Standard API to manage multiple vendors, simplify File Share API definition File share across the users based on access capability File share facilitates with profiling Scope for now is to support only NFS, SMB file share protocols.
 
 {{% button href="/guides/user-guides/file-share" target="_self" icon="fas fa-file-alt" icon-position="right" %}}User Guide{{% /button %}}
 {{% button href="/guides/developer-guides/file-share" icon="fas fa-file-code" icon-position="right" %}}Developer Guide{{% /button %}}
 
 ## Orchestration & Automation  
 
-OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. OpenSDS provides orchestrating these processes to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
+SODA Foundation project is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. SODA Foundation provides orchestrating these processes to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
 
 {{% button href="/guides/user-guides/orchestration" target="_self" icon="fas fa-file-alt" icon-position="right" %}}User Guide{{% /button %}}
 {{% button href="/guides/developer-guides/orchestration" icon="fas fa-file-code" icon-position="right" %}}Developer Guide{{% /button %}}
 
 ## Telemetry  
 
-Install OpenSDS with telemetry tools, create test volumes, create sample grafana dashboard, create sample alert rules and view dashboards.
+Install SODA Foundation with telemetry tools, create test volumes, create sample grafana dashboard, create sample alert rules and view dashboards.
 
 {{% button href="/guides/user-guides/telemetry" target="_self" icon="fas fa-file-alt" icon-position="right" %}}User Guide{{% /button %}}
 
@@ -60,13 +60,13 @@ In Telemetry, volume metrics will be collected to reflect the state of the stora
 
 ## Governance  
 
-OpenSDS is an industry-wide open source project under Linux Foundation for software-defined storage management, which promotes the use of simplified storage interfaces using a scalable storage controller architecture with open standard APIs, with the objective of providing applicaiton-oriented storage services
+SODA Foundation is an industry-wide open source project under Linux Foundation for software-defined storage management, which promotes the use of simplified storage interfaces using a scalable storage controller architecture with open standard APIs, with the objective of providing applicaiton-oriented storage services
 
 ## Volume Drivers  
 
 ## CSI Driver  
 
-OpenSDS implements Container Storage Interface (CSI) which provided a powerful volume plugin system, making it easier for integrating with Kubernetes.
+SODA Foundation implements Container Storage Interface (CSI) which provided a powerful volume plugin system, making it easier for integrating with Kubernetes.
 
 ## Multiple Storage Backends  
 
