@@ -20,6 +20,7 @@ The SODA Foundation community welcomes anyone who is interested in software defi
 * Ideas/Bugs: [issues](https://github.com/sodafoundation/api/issues)
 
 ## OpenAPI Swagger Spec
+* [Elba](/guides/api-spec/elba/)
 * [Daito](/guides/api-spec/daito/)
 * [Capri](/guides/api-spec/capri/)
 * [Bali](/guides/api-spec/bali/)
