@@ -16,7 +16,7 @@ Make sure you have all the following:
 * Some tools (git, make and gcc) prepared.
 
 ### Step by Step Installation
-There are two projects provided to user, if user only wants file share feature: OpenSDS(Hotpot), Dashboard. If user wants more opensds services they can refer https://github.com/opensds/documentation for user guide and install guide
+There are two projects provided to user, if user only wants file share feature: OpenSDS(Hotpot), Dashboard. If user wants more sodafoundation services they can refer https://github.com/sodafoundation/documentation for user guide and install guide
 
 #### OpenSDS (Hotpot)
 Bootstrap
