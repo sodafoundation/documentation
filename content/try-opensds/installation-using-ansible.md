@@ -10,24 +10,27 @@ This document describes how to install SODA projects local cluster, including Ho
 ### Pre-config (Ubuntu 16.04)
 All the installation work is tested on `Ubuntu 16.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
 
-##### Install following packages:
+<br /> Install following packages:
 
 ```bash
 apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk
 ```
-##### Install docker:
+<br />Install docker:
+
 ```bash
 wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 ```
 ```bash
 dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 ```
-##### Install docker-compose:
+<br /> Install docker-compose:
+
 ```bash
 curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-##### Install golang
+<br /> Install golang
+
 ```bash
 wget https://storage.googleapis.com/golang/go1.12.1.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.12.1.linux-amd64.tar.gz
@@ -49,14 +52,21 @@ cd installer/ansible
 git checkout v0.12.0
 ```
 
-##### Install ansible tool
-`This step is needed to upgrade ansible to version 2.4.2 which is required for the "include_tasks" ansible command.`
+<br /> Install ansible tool
+<br />
+
+This step is needed to upgrade ansible to version 2.4.2 which is required for the "include_tasks" ansible command.
+<br />
+
 ```bash
 chmod +x ./install_ansible.sh && ./install_ansible.sh
 ansible --version # Ansible version 2.4.x is required.
 ```
-##### Configure soda hotpot install variables:
-`Firstly you need to modify host_ip in group_vars/common.yml, and you can specify which project (hotpot or gelato) to be deployed:`
+<br />Configure soda hotpot install variables:
+
+Firstly you need to modify host_ip in `group_vars/common.yml`, and you can specify which project (hotpot or gelato) to be deployed:
+<br />
+
 ```bash
 # This field indicates local machine host ip
 host_ip: 127.0.0.1
@@ -70,7 +80,7 @@ deploy_project: all  #all refers to hotpot + gelato
 # or 'flexvolume'
 nbp_plugin_type: hotpot_only
 ```
-##### LVM
+<Strong> LVM
 <br/>
 
 If lvm is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
@@ -78,7 +88,7 @@ If lvm is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
 ```bash
 enabled_backends: lvm
 ```
-##### NFS
+<Strong> NFS
 <br/>
 
 If nfs is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
@@ -86,7 +96,7 @@ If nfs is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
 ```bash
 enabled_backends: nfs
 ```
-##### ceph
+<Strong>ceph
 <br/>
 
 If ceph is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
@@ -110,7 +120,7 @@ devices: # For ceph devices, append ONE or MULTIPLE devices like the example bel
   #- '/dev/sdb'  # Ensure this device exists and available if ceph is chosen
 osd_scenario: collocated
 ```
-##### cinder
+<Strong> cinder
 <br />
 
 If cinder is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
@@ -124,7 +134,7 @@ use_cinder_standalone: true
 <br />
 
 Configure the auth and pool options to access cinder in `group_vars/cinder/cinder.yaml`. Do not need to make additional configure changes if using cinder standalone.<br />
-##### How to enable Telemetry installation
+<Strong>How to enable Telemetry installation
 <strong>NOTE : Please ensure that you are using hotpot version >= v0.6.1.
 <br />
 
@@ -134,7 +144,7 @@ Update the file `ansible/group_vars/telemetry.yml` and change the value of enabl
 # Do you need to install or clean up telemetry tools?
 enable_telemetry_tools: false
 ```
-##### How to enable Orchestration installation
+<br /> How to enable Orchestration installation
 
 <br />
 
@@ -144,19 +154,21 @@ Update the file `ansible/group_vars/orchestration.yml` and change the value of `
 # Install Orchestration Manager (true/false)
 enable_orchestration: false
 ```
-### Set HOST_IP environment variable
+<br /> Set HOST_IP environment variable
+
 The `HOST_IP` environment variable has to be set to your local machine IP address
 
 ```bash
 export HOST_IP={your_real_host_ip}
 echo $HOST_IP 
 ```
-##### Check if the hosts can be reached
+<br /> Check if the hosts can be reached
 
 ```bash
 ansible all -m ping -i local.hosts
 ```
-### Run SODA installer ansible playbook to start deploy
+<br /> Run SODA installer ansible playbook to start deploy
+
 ```bash
 ansible-playbook site.yml -i local.hosts
 # You can use the -vvv or -vv option to enable verbose display and debug mode.
@@ -164,7 +176,8 @@ ansible-playbook site.yml -i local.hosts
 ansible-playbook site.yml -i local.hosts -vvv
 ```
 # How to test SODA projects cluster
-### SODA projects CLI
+<br />SODA projects CLI
+
 Firstly configure SODA projects CLI tool:
 ```bash
 sudo cp /opt/opensds-hotpot-linux-amd64/bin/osdsctl /usr/local/bin/
@@ -180,7 +193,8 @@ export OS_USER_DOMAIN_ID=default
 
 osdsctl pool list # Check if the pool resource is available
 ```
-##### Volume creation steps
+<br /> Volume creation steps
+
 Then create a default profile
 
 ```bash 
@@ -198,7 +212,7 @@ Delete the volume:
 ```bash
 osdsctl volume delete <your_volume_id>
 ```
-##### Fileshare creation steps
+<br /> Fileshare creation steps
 Create a default profiles
 ```bash
 osdsctl profile create '{"name":"default_fileshare", "description":"default policy for fileshare", "storageType":"file"}'
@@ -216,21 +230,26 @@ Delete the Fileshare
 osdsctl fileshare delete <fileshare id>
 ```
 ### SODA Dashboard UI
+<br />
+
 SODA Dashboard UI dashboard is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud service is also supported by dashboard.
 <br />
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
-### Volume Service
+<br />Volume Service
+
 1. Create volume.
 2. Create snapshot.
 3. Expand volume size.
 4. Create volume from snapshot.
 5. Create volume group.
-### FileShare service
+<br /> FileShare service
+
 1. Create fileshare.
 2. Create snapshot.
 3. Set access permission on fileshare (ip based access permissions are allowed).
-### Multi Cloud Service
+<br />Multi Cloud Service
+
 1. Register object storage backend.
 2. Create bucket.
 3. Upload object.
@@ -238,20 +257,20 @@ Logout of the dashboard as admin and login the dashboard again as a non-admin us
 5. Migrate objects based on bucket across cloud.
 6. Create lifecycle for buckets.
 # How to purge and clean SODA projects cluster
-### Run SODA installer ansible playbook to clean the environment
+<br />Run SODA installer ansible playbook to clean the environment
 ``` bash
 ansible-playbook clean.yml -i local.hosts
 # You can use the -vvv option to enable verbose display and debug mode.
 ansible-playbook clean.yml -i local.hosts -vvv
 ```
-### Run ceph-ansible playbook to clean ceph cluster if ceph is deployed
+<br />Run ceph-ansible playbook to clean ceph cluster if ceph is deployed
 ```bash
 cd /opt/ceph-ansible
 sudo ansible-playbook infrastructure-playbooks/purge-cluster.yml -i ceph.hosts
 ```
 In addition, clean up the logical partition on the physical block device used by ceph, using the fdisk tool.
 
-### Remove ceph-ansible source code (optional)
+<br />Remove ceph-ansible source code (optional)
 ```bash
 sudo rm -rf /opt/ceph-ansible
 ```
