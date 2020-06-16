@@ -80,7 +80,7 @@ deploy_project: all  #all refers to hotpot + gelato
 # or 'flexvolume'
 nbp_plugin_type: hotpot_only
 ```
-<Strong> LVM
+<Strong> LVM</Strong>
 <br/>
 
 If lvm is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
@@ -88,7 +88,7 @@ If lvm is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
 ```bash
 enabled_backends: lvm
 ```
-<Strong> NFS
+<Strong> NFS</Strong>
 <br/>
 
 If nfs is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
@@ -96,7 +96,7 @@ If nfs is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
 ```bash
 enabled_backends: nfs
 ```
-<Strong>ceph
+<Strong>ceph</Strong>
 <br/>
 
 If ceph is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br/>
@@ -120,7 +120,7 @@ devices: # For ceph devices, append ONE or MULTIPLE devices like the example bel
   #- '/dev/sdb'  # Ensure this device exists and available if ceph is chosen
 osd_scenario: collocated
 ```
-<Strong> cinder
+<Strong> cinder</Strong>
 <br />
 
 If cinder is chosen as storage backend, modify `group_vars/osdsdock.yml:`<br />
@@ -134,8 +134,8 @@ use_cinder_standalone: true
 <br />
 
 Configure the auth and pool options to access cinder in `group_vars/cinder/cinder.yaml`. Do not need to make additional configure changes if using cinder standalone.<br />
-<Strong>How to enable Telemetry installation
-<strong>NOTE : Please ensure that you are using hotpot version >= v0.6.1.
+<Strong>How to enable Telemetry installation</Strong>
+<strong>NOTE</Strong> : Please ensure that you are using hotpot version >= v0.6.1.
 <br />
 
 Update the file `ansible/group_vars/telemetry.yml` and change the value of enable_telemetry_tools to true
@@ -236,26 +236,27 @@ SODA Dashboard UI dashboard is available at `http://{your_host_ip}:8088`, please
 <br />
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
-<br />Volume Service
+##### Volume Service
 
-1. Create volume.
-2. Create snapshot.
-3. Expand volume size.
-4. Create volume from snapshot.
-5. Create volume group.
-<br /> FileShare service
+1 Create volume.<br />
+2 Create snapshot.<br />
+3 Expand volume size.<br />
+4 Create volume from snapshot.<br />
+5 Create volume group.
 
-1. Create fileshare.
-2. Create snapshot.
-3. Set access permission on fileshare (ip based access permissions are allowed).
-<br />Multi Cloud Service
+##### FileShare service
 
-1. Register object storage backend.
-2. Create bucket.
-3. Upload object.
-4. Download object.
-5. Migrate objects based on bucket across cloud.
-6. Create lifecycle for buckets.
+1 Create fileshare.<br />
+2 Create snapshot.<br />
+3 Set access permission on fileshare (ip based access permissions are allowed).
+##### Multi Cloud Service
+
+1 Register object storage backend.<br />
+2 Create bucket.<br />
+3 Upload object.<br />
+4 Download object.<br />
+5 Migrate objects based on bucket across cloud.<br />
+6 Create lifecycle for buckets.
 # How to purge and clean SODA projects cluster
 <br />Run SODA installer ansible playbook to clean the environment
 ``` bash
@@ -264,6 +265,7 @@ ansible-playbook clean.yml -i local.hosts
 ansible-playbook clean.yml -i local.hosts -vvv
 ```
 <br />Run ceph-ansible playbook to clean ceph cluster if ceph is deployed
+
 ```bash
 cd /opt/ceph-ansible
 sudo ansible-playbook infrastructure-playbooks/purge-cluster.yml -i ceph.hosts
