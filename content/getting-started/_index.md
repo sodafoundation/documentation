@@ -2,7 +2,7 @@
 title: Getting Started
 description: "Quick access links to tutorials and concepts."
 weight: 1
-disableToc: false
+disableToc: true
 ---
 
 {{% notice note %}}
