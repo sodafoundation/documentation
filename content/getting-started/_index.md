@@ -6,7 +6,7 @@ _disableToc: true
 ---
 
 {{% notice note %}}
-Our documentation is being updated. This document will be updated shortly. Please check back later.
+Our documentation is getting updated. This document will be updated shortly. Please check back later.
 {{% /notice %}}
 
 ## Community
