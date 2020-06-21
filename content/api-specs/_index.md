@@ -1,5 +1,5 @@
 ---
-title: API Specifications
+title: SODA API Specifications
 description: "Provides all the API Specifications of SODA Foundation."
 weight: 5
 disableToc: false
