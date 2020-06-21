@@ -1,13 +1,12 @@
 ---
-title: API Spec and Guides
-weight: 5
+title: Docs and Guides
+weight: 6
 pre: ""
 chapter: true
 ---
 
 
-# API Spec and Guides  
-
-Find the API Spec, all the user guides, developer guides, installer guides and tutorials related to SODA Foundation.
+# Detailed Documentations and Guides
+This section provides all the detailed documentaions and guides, like user guides, developer guides, integration guides, tutorials and more.
 
 {{%children style="h3" description="true" %}}  
