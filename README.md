@@ -2,6 +2,7 @@
 
 [![Releases](https://img.shields.io/github/release/sodafoundation/documentation/all.svg?style=flat-square)](https://github.com/sodafoundation/documentation/releases)
 [![LICENSE](https://img.shields.io/github/license/sodafoundation/documentation.svg?style=flat-square)](https://github.com/sodafoundation/documentation/blob/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/906dc6ab-8f72-4d7e-ae9f-93326086589b/deploy-status)](https://app.netlify.com/sites/soda-docs/deploys)
 
 <img src="https://sodafoundation.io/wp-content/uploads/2020/01/SODA_logo_outline_color_800x800.png" width="200" height="200">
 
@@ -55,6 +56,6 @@ Website : [https://sodafoundation.io](https://sodafoundation.io/)
 
 Slack  : [https://sodafoundation.io/slack/](https://sodafoundation.io/slack/)
 
-Twitter  : @sodafoundation
+Twitter  : [@sodafoundation](https://twitter.com/sodafoundation)
 
-Mailinglist  : [https://lists.opensds.io](https://lists.opensds.io/groups)
+Mailinglist  : [https://lists.sodafoundation.io](https://lists.sodafoundation.io/)

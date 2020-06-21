@@ -12,8 +12,8 @@ SODA Foundation Projects may be installed, deployed and tested using multiple to
 
 The recommended method of installation is using ansible in Ubuntu 16.04. Detailed steps are provided below.
 
-* [Local Cluster installation using ansible](https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-through-Ansible)
-* [Install OpenSDS in multiple nodes (Eg. 3 nodes, 1 Controller and 2 Backends)](https://github.com/sodafoundation/installer/blob/master/ansible/docs/OpenSDS%20Multi-nodes%20installation%20using%20Ansible.md)
+* [Local Cluster installation using ansible](https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible)
+* [Multitenant installation](https://github.com/sodafoundation/api/wiki/SODA-Projects-Local-Cluster-with-Multi-tenants-Installation)
 
 ## 2. Installation using Salt
 
