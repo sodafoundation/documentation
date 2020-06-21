@@ -7,7 +7,7 @@ This document describes how to install SODA projects local cluster, including Ho
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
-### Pre-config (Ubuntu 16.04)
+#### Pre-config (Ubuntu 16.04)
 All the installation work is tested on `Ubuntu 16.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
 
 <br /> Install following packages:
@@ -32,7 +32,7 @@ chmod +x /usr/local/bin/docker-compose
 <br /> Install golang
 
 ```bash
-wget https://storage.googleapis.com/golang/go1.12.1.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.13.0.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.12.1.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 echo 'export GOPATH=$HOME/gopath' >> /etc/profile
@@ -42,15 +42,17 @@ source /etc/profile
 ```bash
 go version
 ```
-<br />It should be go1.12.1 linux/amd64
+<br />It should be go1.13.0 linux/amd64
 
-### Download SODA installer code
+#### Download SODA installer code
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the latest stable release. Current stable release: stable/elba. If you want to get the master branch of all components, you can skip this step. (<span style="color:red"> Attn:</span> Master may not be stable or tested fully)
 git checkout v0.12.0
 ```
+{{% notice warning %}}
+Checkout the latest stable release. Current stable release: stable/elba. If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+{{% /notice %}}
 
 <br /> Install ansible tool
 <br />
@@ -62,9 +64,9 @@ This step is needed to upgrade ansible to version 2.4.2 which is required for th
 chmod +x ./install_ansible.sh && ./install_ansible.sh
 ansible --version # Ansible version 2.4.x is required.
 ```
-<br />Configure soda hotpot install variables:
+<br />Configure SODA hotpot install variables:
 
-Firstly you need to modify host_ip in `group_vars/common.yml`, and you can specify which project (hotpot or gelato) to be deployed:
+Firstly you need to modify host_ip in `group_vars/common.yml`( Modify host_ip and change it to the actual machine IP of the host.), You can also specify which projects to deploy; only hotpot, only gelato or all.
 <br />
 
 ```bash
@@ -175,10 +177,10 @@ ansible-playbook site.yml -i local.hosts
 [verbosity level: -vv < -vvv]
 ansible-playbook site.yml -i local.hosts -vvv
 ```
-# How to test SODA projects cluster
+#### How to test SODA projects cluster
 <br />SODA projects CLI
 
-Firstly configure SODA projects CLI tool:
+Firstly configure --> SODA projects CLI tool:
 ```bash
 sudo cp /opt/opensds-hotpot-linux-amd64/bin/osdsctl /usr/local/bin/
 
@@ -232,7 +234,7 @@ osdsctl fileshare delete <fileshare id>
 ### SODA Dashboard UI
 <br />
 
-SODA Dashboard UI dashboard is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud service is also supported by dashboard.
+SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud service is also supported by dashboard.
 <br />
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
