@@ -14,7 +14,7 @@ File share facilitates with profiling
 Scope for now is to support only NFS, SMB file share protocols
 
 ### Install file share feature with opensds
-Follow the wiki link to install opensds https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible
+Follow the wiki link to install opensds https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible
 
 Make sure backend nfs is enable to use file share feature 
 ###### NFS
