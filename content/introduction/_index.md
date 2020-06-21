@@ -21,7 +21,11 @@ Find more details [here](https://sodafoundation.io/)
 ## SODA Projects
 SODA Foundation is a home of all the projects for data. It hosts many projects and also extends the ecosystem through partners and third party projects which can help to build unified data solutions for various use cases.
 
-Fine more details [here](https://sodafoundation.io/)
+The project details can be found:
+
+ - [SODA Project Ecosystem and Brief Information at Project section of SODA Website](https://sodafoundation.io/projects/)
+ - [SODA Framework Archicture and Project Brief]([https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md](https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md))
+ - [Project Source Code Repository and Readme](https://github.com/sodafoundation/)
 
 ## Want to be part of this initiative?
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
