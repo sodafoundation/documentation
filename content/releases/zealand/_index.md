@@ -1,5 +1,5 @@
 ---
-title: Zealand
+title: Zealand (v0.1.0)
 description: "This is the v0.1.0 release of OpenSDS"
 weight: 7
 ---

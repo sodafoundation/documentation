@@ -1,4 +1,4 @@
-baseURL = "https://opensds-docs.netlify.com/"
+baseURL = "https://soda-docs.netlify.com/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 googleAnalytics = "UA-138679091-1"

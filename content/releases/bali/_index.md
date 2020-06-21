@@ -1,5 +1,5 @@
 ---
-title: Bali
+title: Bali (v0.4.0)
 description: "This is the v0.4.0 release of OpenSDS"
 weight: 5
 ---

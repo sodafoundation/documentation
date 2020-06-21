@@ -1,5 +1,5 @@
 ---
-title: Aruba
+title: Aruba (v0.2.0)
 description: "This is the v0.2.0 release of OpenSDS"
 weight: 6
 ---
