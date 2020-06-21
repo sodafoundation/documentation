@@ -1,8 +1,8 @@
 ---
 title: SODA Projects
-weight: 3
-pre: ""
-chapter: true
+description: "This page provides the details of SODA Projects"
+weight: 1
+disableToc: false
 ---
 
 
