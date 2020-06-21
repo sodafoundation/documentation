@@ -1,8 +1,8 @@
 ---
 title: SODA Foundation project Features
 description: ""
-weight: 3
-disableToc: false
+weight: 0
+disableToc: true
 ---
 
 {{% notice note %}}
@@ -58,17 +58,6 @@ Multi-cloud data engine provides policy-based data mobility across public and pr
 
 In Telemetry, volume metrics will be collected to reflect the state of the storage systems. The next step is to interpret these metrics and figure out if something goes wrong and trigger alerts. Once users are notified with the alerts, they can take actions to fix the problems and keep the storage systems healthy  
 
-## Governance  
-
-SODA Foundation is an industry-wide open source project under Linux Foundation for software-defined storage management, which promotes the use of simplified storage interfaces using a scalable storage controller architecture with open standard APIs, with the objective of providing applicaiton-oriented storage services
-
-## Volume Drivers  
-
-## CSI Driver  
-
-SODA Foundation implements Container Storage Interface (CSI) which provided a powerful volume plugin system, making it easier for integrating with Kubernetes.
-
-## Multiple Storage Backends  
 
 
 

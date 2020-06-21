@@ -1,12 +1,14 @@
 ---
 title: Installation Guide
-description: "This guide explains how to install the SODA Foundation Projects with its components and test basic features."
+description: "This guide explains how to configure and install the SODA Foundation Projects with its components and test basic features."
 weight: 30
 ---
 
-This guide explains how to install the SODA Foundation Projects with its components and test basic features.
+This guide explains how to install the SODA Foundation Projects with its components and test basic features. This provides the detailed cofiguration and installation steps.
 
 SODA Foundation Projects may be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [SODA-installer](https://github.com/sodafoundation/installer) project contains resources and tools for this guide.
+
+*Note : All the methods described below may not be verified for all the releases. We recommend the ansible install method and ensure to test it in all the releases.*
 
 ## 1. Installation using Ansible
 

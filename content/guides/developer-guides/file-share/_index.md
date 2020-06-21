@@ -16,9 +16,9 @@ Make sure you have all the following:
 * Some tools (git, make and gcc) prepared.
 
 ### Step by Step Installation
-There are two projects provided to user, if user only wants file share feature: OpenSDS(Hotpot), Dashboard. If user wants more opensds services they can refer https://github.com/opensds/documentation for user guide and install guide
+There are two projects provided to user, if user only wants file share feature, they need to have github.com/sodafoundation/api, github.com/sodafoundation/controller, github.com/sodafoundation/dock and github.com/sodafoundation/dashboard (if you need GUI). 
 
-#### OpenSDS (Hotpot)
+#### OpenSDS (Hotpot) FIXME-SODA
 Bootstrap
 First you need to download bootstrap script and run it locally with root access.
 ```

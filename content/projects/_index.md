@@ -1,13 +1,17 @@
 ---
-title: Component Projects
-weight: 7
-pre: ""
-chapter: true
+title: SODA Projects
+description: "This page provides the details of SODA Projects"
+weight: 4
+disableToc: false
 ---
 
 
-# Component Projects  
+# SODA Projects 
+[SODA Foundation](https://sodafoundation.io) is a home for multiple projects for building a unified data framework to support various data and storage solutions. All the projects maintained by SODA Foundation will be described under this documentation. All other projects part of SODA Foundation ecosystem, please refer to the respective project page.
 
-This chapter contains information on all the components that comprise SODA Foundation Projects.
+All the projects maintained by SODA Foundation are hosted under [SODA Foundation github organization](https://github.com/sodafoundation)
 
-{{%children style="h3" description="true" %}}  
+## Projects maintained by SODA Foundation
+Please find the main projects maintained under SODA Foundation below:
+
+ - [SODA Framework and SODA Projects](https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md)

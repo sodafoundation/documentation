@@ -1,12 +1,21 @@
 ---
 title: Quick Start Guide
-description: "This is a quickstart guide for users and new contributors to get familiar with SODA Foundation by installing a simple containerized local cluster."
+description: "This is a quickstart guide for users and new contributors to get familiar with SODA Foundation by installing a simple containerized local cluster. It also gives the install steps for old OpenSDS releases currently"
 weight: 20
 ---
 
-This is a quickstart guide for users and new contributors to get familiar with [SODA Foundation](https://github.com/opensds/opensds) by installing a simple containerized local cluster. The required OS environment is Ubuntu 16.04 with docker and docker-compose installed.
+This is a quickstart guide for users and new contributors to try and get familiar with [SODA Foundation Release](https://github.com/sodafoundation/releases) and its [projects](https://github.com/sodafoundation).
 
-More detailed installation steps with full features is provided in [Installation Guide](/try-opensds/installation)
+***Note**: *Currently this document also provides the information to install old OpenSDS releases and try. Soon, the support for old opensds releases will be removed.**
+
+If you are interested to have more magement control on the installaton cofigurations OR you are a developer on SODA Foundation projects, you can refer a detailed installation guide [here](/soda-gettingstarted/installation)
+
+## Quick Installation and experience of SODA releases
+ - Elba Release (First Release of SODA) : Refer the "How to use the Release" section of [Elba Release Notes](https://github.com/sodafoundation/releases/releases/tag/v0.20.0)
+ 
+
+## How to install Older versions of OpenSDS releases
+If you are interested to try old versions of opensds, please follow the below steps. However, please note that we are currently supporting SODA Fondation releases only. You have any queries, please discuss at #general slack channel of [soda foundation slack](https://sodafoundation.io/slack)
 
 ## Install OpenSDS  
 
@@ -14,7 +23,7 @@ More detailed installation steps with full features is provided in [Installation
 chmod +x install_opensds.sh
 ./install_opensds.sh
 ```
-where `install_opensds.sh` is file below
+where `install_opensds.sh` is  file below
 ```bash
 #!/bin/bash -e
 
