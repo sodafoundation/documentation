@@ -10,7 +10,9 @@ chapter: true
 SODA Foundation is overseen by the Governing Board and supported by the Technical Steering Committee (TSC), End User Advisory Committee (EUAC) and Outreach Committee (OC). 
 
 ## Governance Structure
+
 <img src="https://github.com/sodafoundation/documentation/blob/master/content/governance/soda_govstructure.png">
+
 
 Find more details [here](https://sodafoundation.io/the-foundation/governance/)
 
