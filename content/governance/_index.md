@@ -4,8 +4,6 @@ description: "SODA Foundation Introduction"
 weight: 7
 disableToc: false
 ---
-
-## Governance
 SODA Foundation is overseen by the Governing Board and supported by the Technical Steering Committee (TSC), End User Advisory Committee (EUAC) and Outreach Committee (OC). 
 
 ## Governance Structure
