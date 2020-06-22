@@ -2,77 +2,67 @@
 title: Credits
 disableToc: false
 ---
+This provides the contributors lists fetched from the github for various projects of SODA Foundation. Other than these members there are many other contributors supporting this documentation by providing offline suggestions, inputs and content inputs. We thank all of them. <i class="fas fa-heart"></i>  <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> 
 
-## Api Contributors
+Please continue to collaborate and support SODA Foundation Initiatives.
+List fetched from the key projects under github.com/sodafoundation
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [API Project](https://github.com/sodafoundation/api) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/api/contributors?per_page=100" %}}
 
-## Controller Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Controller Project](https://github.com/sodafoundation/controller) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/controller/contributors?per_page=100" %}}
 
-## Dock Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Dock Project](https://github.com/sodafoundation/dock) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/dock/contributors?per_page=100" %}}
 
-## Sushi Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [NBP Project](https://github.com/sodafoundation/nbp) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/nbp/contributors?per_page=100" %}}
 
-## Gelato Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Multicloud Project](https://github.com/sodafoundation/multi-cloud) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/multi-cloud/contributors?per_page=100" %}}
 
-## Installer Contributors
+## [SODA Infrastructure Manager Project](https://github.com/sodafoundation/sim) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/sim/contributors?per_page=100" %}}
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Installer Project](https://github.com/sodafoundation/installer) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/installer/contributors?per_page=100" %}}
 
-## Dashboard Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Dashboard Project](https://github.com/sodafoundation/dashboard) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/dashboard/contributors?per_page=100" %}}
 
-## Orchestration Contributors
-
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Orchestration Project](https://github.com/sodafoundation/orchestration) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/orchestration/contributors?per_page=100" %}}
 
-## Documentation Contributors
+## [Anomaly Detection Project](https://github.com/sodafoundation/anomaly-detection) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/anomaly-detection/contributors?per_page=100" %}}
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
-
+## [Documentation Project](https://github.com/sodafoundation/documentation) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/documentation/contributors?per_page=100" %}}
 
-## Blog Contributors
+## [SODA Releases Project](https://github.com/sodafoundation/releases) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/releases/contributors?per_page=100" %}}
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
+## [Design Specifications Project](https://github.com/sodafoundation/design-specs) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/design-specs/contributors?per_page=100" %}}
 
-<<<<<<< HEAD
-{{% ghcontributors "https://api.github.com/repos/sodafoundation/blog/contributors?per_page=100" %}}
-=======
-## Documentation Contributors
+## [QA Project](https://github.com/sodafoundation/qa) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/qa/contributors?per_page=100" %}}
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
+## [Examples Project](https://github.com/sodafoundation/examples) Contributors
+{{% ghcontributors "https://api.github.com/repos/sodafoundation/examples/contributors?per_page=100" %}}
 
-{{% ghcontributors "https://api.github.com/repos/opensds/documentation/contributors?per_page=100" %}}
+## Other contributors
+ - SODA Foundation Governance Members
+	 - [Governance Board Members](https://sodafoundation.io/the-foundation/governing-board/)
+	 - [TSC / Architecture WG Members](https://sodafoundation.io/the-foundation/technical-steering-committee/)
+	 - [EUAC Members](https://sodafoundation.io/the-foundation/end-user-advisory-committee/)
+	 - [OC Members](https://sodafoundation.io/the-foundation/outreach-committee/)
+ - Supporting Organizations
+	 - [SODA Member Organizations](https://sodafoundation.io/the-foundation/members/)
 
-## Blog Contributors
 
-Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place !
 
-{{% ghcontributors "https://api.github.com/repos/opensds/blog/contributors?per_page=100" %}}
->>>>>>> bdc5d40701cd4b609cf0999a9da401830e7ec683
+
+
+
