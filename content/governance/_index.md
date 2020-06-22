@@ -11,7 +11,7 @@ SODA Foundation is overseen by the Governing Board and supported by the Technica
 
 ## Governance Structure
 
-<img src="https://github.com/sodafoundation/documentation/blob/master/content/governance/soda_govstructure.png">
+<img src="https://sodafoundation.io/wp-content/uploads/2020/04/soda_sodagoverning021960@2x.png">
 
 
 Find more details [here](https://sodafoundation.io/the-foundation/governance/)
