@@ -1,11 +1,9 @@
 ---
 title: Releases and Roadmaps
-weight: 6
-pre: ""
-chapter: true
+description: "SODA Releases and Roadmap"
+weight: 7
+disableToc: false
 ---
-
-
 ## Releases
 Please find the summary of all the major official releases here. If you need to know the details of the project releases or pre releases, refer the release section of specific project repository in github.com/sodafoundation.
 
