@@ -27,6 +27,9 @@ The project details can be found:
  - [SODA Framework Archicture and Project Brief]([https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md](https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md))
  - [Project Source Code Repository and Readme](https://github.com/sodafoundation/)
 
+## Official Charter
+Please find the official charter for SODA Foundation under Linux Foundation can be found [here](https://sodafoundation.io/the-foundation/charter/)
+
 ## Want to be part of this initiative?
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
 Contact us through any of the following channels:
