@@ -13,10 +13,10 @@ There are different value propositions based on End Users , Vendors or Developer
 ### Developers
 Please join us through one of the following channels:
 
-- Contribute through github projects: 
+- **Contribute through github projects**: 
 	- Using your github id, you can raise issues, contribute code, do review, test the soda projects under github.com/sodafoundation
 	- Basic steps of contributing to one project is explained here -["How to contribute"](https://github.com/sodafoundation/documentation/blob/master/content/community/how-to-contribute.md)
-- SODA Slack: 
+- **SODA Slack**: 
 	- Join the [SODA Foundation Slack](%28https://sodafoundation.io/slack%29) and contact us through #general channel. We will guide you.
 
 ### Partners / Vendors / Supporters
