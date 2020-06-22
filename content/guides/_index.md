@@ -1,12 +1,12 @@
 ---
-title: Docs and Guides
+title: Guides and Docs
 weight: 6
 pre: ""
 chapter: true
 ---
 
 
-# Detailed Documentations and Guides
-This section provides all the detailed documentaions and guides, like user guides, developer guides, integration guides, tutorials and more.
+# Guides and Docs
+This section provides different guides and documentaions, like user guides, developer guides, integration guides, tutorials and more.
 
 {{%children style="h3" description="true" %}}  
