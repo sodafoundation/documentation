@@ -1,6 +1,6 @@
 ---
 title: Developer Guides
-description: "Start here if you want to know about developing for OpenSDS."
+description: "Start here if you want to know about developing for/with SODA Foundation Projects."
 weight: 30
 disableToc: true
 ---
