@@ -25,7 +25,7 @@ You can join SODA Foundation in various capacities individual or organization le
 ## Community Meetings
 We have a global community meeting for SODA Foundation projects which open for all. We discuss technical and ecosystem related topics during this meeting. 
 
-You can find the meeting details [here](bit.ly/sodaglobalcommunitymeeting)
+You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeeting)
 
 ## Common Community Channels
  - [SODA Website](https://sodafoundation.io/)
