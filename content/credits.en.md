@@ -2,10 +2,9 @@
 title: Credits
 disableToc: false
 ---
-This provides the contributors lists fetched from the github for various projects of SODA Foundation. Other than these members there are many other contributors supporting this documentation by providing offline suggestions, inputs and content inputs. We thank all of them. <i class="fas fa-heart"></i>  <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> 
+This provides the contributors lists fetched from the github and other known links. Other than these members there are many other contributors supporting SODA Foundation Projects and its vision in various ways. We thank all of them. <i class="fas fa-heart"></i>  <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> 
 
 Please continue to collaborate and support SODA Foundation Initiatives.
-List fetched from the key projects under github.com/sodafoundation
 
 ## [API Project](https://github.com/sodafoundation/api) Contributors
 {{% ghcontributors "https://api.github.com/repos/sodafoundation/api/contributors?per_page=100" %}}
