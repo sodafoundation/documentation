@@ -32,4 +32,3 @@ You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeetin
  - [SODA Slack](https://sodafoundation.io/slack)
  - [SODA Twitter](https://twitter.com/sodafoundation)
  - [SODA Mailing List](https://lists.sodafoundation.io)
- 
