@@ -1,6 +1,6 @@
 ---
 title: User Guides
-description: "Read all the feature wise user guides."
+description: "The user guides of features of different SODA Projects"
 weight: 20
 disableToc: true
 ---
