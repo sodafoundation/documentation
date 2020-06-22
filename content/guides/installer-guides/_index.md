@@ -1,6 +1,6 @@
 ---
 title: SODA Installer Guides
-description: "All the installation guides and documentation go here"
+description: "All the installation guides and documentation"
 weight: 10
 disableToc: false
 ---
