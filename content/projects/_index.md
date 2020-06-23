@@ -8,6 +8,7 @@ disableToc: false
 
 ## Projects maintained by SODA Foundation
 Please find the projects details:
+
  - [SODA Framework and SODA Projects](https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md)
  - Source code maintained under [SODA Foundation github organization](https://github.com/sodafoundation)
  
