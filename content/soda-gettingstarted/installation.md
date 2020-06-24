@@ -29,7 +29,7 @@ The recommended method of installation is using ansible in Ubuntu 16.04. Detaile
 
 ## 4. Local cluster installation using Bash
 
-* [https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation](https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation)
+* [https://github.com/sodafoundation/api/wiki/SODA-Projects-Local-Cluster-with-Multi-tenants-Installation](https://github.com/sodafoundation/api/wiki/SODA-Projects-Local-Cluster-with-Multi-tenants-Installation)
 
 ## 5. Miscellaneous
 
