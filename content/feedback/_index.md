@@ -5,7 +5,7 @@ weight: 10
 disableToc: false
 ---
 ## General Feedback
-Any general feedback or suggestions for SODA Foundation, please check [Community](../community/) page and use any of the community channels to contact us
+Any general feedback or suggestions for SODA Foundation, please check [Community](../community/_index.md) page and use any of the community channels to contact us
 
 ## Feedback or Issues for Projects
 Please raise issues in the respective project repository issues section under github.com/sodafoundation.
