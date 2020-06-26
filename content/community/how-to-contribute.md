@@ -1,11 +1,5 @@
----
-title: How to Contribute
-description: "This guide explains how to contribute to the SODA Foundation project."
-weight: 2
----
-
-If you are a beginner and expect SODA Foundation project as the gate to open source world, this tutorial is one of the best
-choices for you. Just follow the guidance and you will find the pleasure to becoming a contributor.
+# How to Contribute to SODA Projects
+This is an example of basic steps of contributing to any project under SODA Foundation through github.
 
 ## Step 1: Fork  repository
 
@@ -54,4 +48,8 @@ git push origin new_branch_name
 In the last step, your need to pull a compare request between your new branch and respective repo development branch. After
 finishing the pull request, the travis CI will be automatically set up for building test.
 
+## Still you need support?
+Please join [SODA Foundation Slack](https://sodafoundation.io/slack) and ping us in #general channel. We are happy to support you.
+
+Wish you good luck as an open source developer!
 The tutorial is done, enjoy your contributing work!

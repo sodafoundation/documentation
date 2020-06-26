@@ -14,6 +14,7 @@ SODA Foundation Projects may be installed, deployed and tested using multiple to
 
 The recommended method of installation is using ansible in Ubuntu 16.04. Detailed steps are provided below.
 
+
 * [Local Cluster installation using ansible](installation-using-ansible.md)
 * [Multitenant installation](https://github.com/sodafoundation/api/wiki/SODA-Projects-Local-Cluster-with-Multi-tenants-Installation)
 
@@ -21,7 +22,7 @@ The recommended method of installation is using ansible in Ubuntu 16.04. Detaile
 
 * [https://github.com/sodafoundation/installer/tree/master/salt](https://github.com/sodafoundation/installer/tree/master/salt)
 * [https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md](https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md)
-
+https://gitlab.com/cdli/framework
 ## 3. Deploy SODA Foundation projects using Helm
 
 * [https://github.com/sodafoundation/installer/tree/master/charts](https://github.com/sodafoundation/installer/tree/master/charts)
@@ -29,7 +30,7 @@ The recommended method of installation is using ansible in Ubuntu 16.04. Detaile
 
 ## 4. Local cluster installation using Bash
 
-* [https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation](https://github.com/sodafoundation/api/wiki/OpenSDS-Local-Cluster-with-Multi-tenants-Installation)
+* [https://github.com/sodafoundation/api/wiki/SODA-core-projects-Local-Cluster-with-Multi-tenants-Installation](https://github.com/sodafoundation/api/wiki/SODA-core-projects-Local-Cluster-with-Multi-tenants-Installation)
 
 ## 5. Miscellaneous
 

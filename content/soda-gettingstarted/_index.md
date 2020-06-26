@@ -1,10 +1,9 @@
 ---
 title: SODA Getting Started
+description: "SODA Getting Started"
 weight: 2
-pre: ""
-chapter: true
+disableToc: false
 ---
-
 
 ## How to get started with SODA Release with SODA Projects
 This page provides you the steps to start installation and trials on SODA Releases (with SODA Projects)

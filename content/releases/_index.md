@@ -1,13 +1,17 @@
 ---
 title: Releases and Roadmaps
-weight: 6
-pre: ""
-chapter: true
+description: "SODA Releases and Roadmap"
+weight: 8
+disableToc: false
 ---
+## Releases
+Please find the summary of all the major official releases here. If you need to know the details of the project releases or pre releases, refer the release section of specific project repository in github.com/sodafoundation.
 
-
-# Official Releases
-
-All the official releases of SODA Foundation. (OpenSDS Releases till Daito)
+The releases Zealand, Aruba, Bali, Capri and Daito were made under OpenSDS project (previous name for SODA Foundation). The releases from Elba on wards, the releases are from SODA Foundation.The soda foundation releases are released from the repository: github.com/sodafoundation/releases
 
 {{%children style="h3" description="true" %}}  
+
+## Roadmap
+[The SODA Foundation Release Roadmap is available here](https://github.com/sodafoundation/releases/blob/master/roadmap.md)
+
+

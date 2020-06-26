@@ -1,6 +1,6 @@
 ---
 title: Integration Guides
-description: "All the integration guides and documentation go here"
+description: "All the integration guides and documentation"
 weight: 15
 disableToc: true
 ---
