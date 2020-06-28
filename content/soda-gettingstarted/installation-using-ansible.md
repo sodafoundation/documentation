@@ -3,7 +3,7 @@ title: Installation Using ansible
 description: "This is a  guide for users and new contributors to install Local Cluster using ansible."
 weight: 30
 ---
-This document describes how to install SODA projects local cluster, including Hotpot (API, Controller, Dock), Gelato, Telemetry, Orchestration, and Dashboard components.
+This document describes how to install SODA projects in a local cluster. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
