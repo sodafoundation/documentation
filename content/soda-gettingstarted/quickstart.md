@@ -1,4 +1,4 @@
-#SODA Quick Start Guide
+# SODA Quick Start Guide
 This is a quickstart guide for users and new contributors to try and get familiar with [SODA Foundation Release](https://github.com/sodafoundation/releases) and its [projects](https://github.com/sodafoundation). It will help to test the SODA Releases directly from binaries with minimum configurations or settings.
 
 ***Note**: *Currently this document also provides the information to install old OpenSDS releases and try. Soon, the support for old opensds releases will be removed.**
