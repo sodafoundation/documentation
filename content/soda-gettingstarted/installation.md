@@ -12,7 +12,7 @@ SODA Foundation Projects may be installed, deployed and tested using multiple to
 
 ## 1. Installation using Ansible
 
-The recommended method of installation is using ansible in Ubuntu 16.04. Detailed steps are provided below.
+The recommended method of installation is using ansible in Ubuntu 16.04 or Ubuntu 18.04. Detailed steps are provided below.
 
 
 * [Local Cluster installation using ansible](https://github.com/sodafoundation/documentation/blob/master/content/soda-gettingstarted/installation-using-ansible.md)
