@@ -7,8 +7,8 @@ This document describes how to install SODA projects local cluster, including Ho
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
-#### Pre-config (Ubuntu 16.04)
-All the installation work is tested on `Ubuntu 16.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
+#### Pre-config (Ubuntu 16.04 or Ubuntu 18.04)
+All the installation work is tested on `Ubuntu 16.04` and `Ubuntu 18.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
 
 <br /> Install following packages:
 
@@ -29,11 +29,11 @@ dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-<br /> Install golang
+<br /> Install golang [golang 1.13.x is supported. To install golang 1.13.9, please follow these steps]
 
 ```bash
-wget https://storage.googleapis.com/golang/go1.13.0.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.12.1.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.13.9.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.13.9.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 echo 'export GOPATH=$HOME/gopath' >> /etc/profile
 source /etc/profile
@@ -42,13 +42,13 @@ source /etc/profile
 ```bash
 go version
 ```
-<br />It should be go1.13.0 linux/amd64
+<br />It should be go1.13.9 linux/amd64
 
 #### Download SODA installer code
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-git checkout v0.12.0
+git checkout v1.0.0
 ```
 {{% notice warning %}}
 Checkout the latest stable release. Current stable release: stable/elba. If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
@@ -66,7 +66,17 @@ ansible --version # Ansible version 2.4.x is required.
 ```
 <br />Configure SODA hotpot install variables:
 
-You need to modify host_ip in `group_vars/common.yml`( Modify host_ip and change it to the actual machine IP of the host.), You can also specify which projects to deploy; only hotpot, only gelato or all.
+<br /> Set HOST_IP environment variable
+
+The `HOST_IP` environment variable has to be set to your local machine IP address
+
+```bash
+export HOST_IP={your_real_host_ip}
+echo $HOST_IP 
+```
+
+You need to modify host_ip in `group_vars/common.yml`( Modify host_ip and change it to the actual machine IP of the host). For example, here the HOST_IP is set to 127.0.0.1 i.e. localhost. You can set it to <Strong>your real host ip</Strong> 
+You can also specify which projects to deploy; only hotpot, only gelato or all. 
 <br />
 
 ```bash
@@ -156,14 +166,17 @@ Update the file `ansible/group_vars/orchestration.yml` and change the value of `
 # Install Orchestration Manager (true/false)
 enable_orchestration: false
 ```
-<br /> Set HOST_IP environment variable
+<br /> How to enable `delfin` installation
 
-The `HOST_IP` environment variable has to be set to your local machine IP address
+<br />
+
+Update the file `ansible/group_vars/delfin.yml` and change the value of `enable_delfin` to true
 
 ```bash
-export HOST_IP={your_real_host_ip}
-echo $HOST_IP 
+# Install delfin (true/false)
+enable_delfin: true
 ```
+
 <br /> Check if the hosts can be reached
 
 ```bash
@@ -178,9 +191,9 @@ ansible-playbook site.yml -i local.hosts
 ansible-playbook site.yml -i local.hosts -vvv
 ```
 #### How to test SODA projects cluster
-<br />SODA projects CLI
+<br />SODA projects 
 
-Configure SODA projects CLI tool:
+Configure SODA projects env variable required for CLI as well as Dashboard access:
 ```bash
 sudo cp /opt/opensds-hotpot-linux-amd64/bin/osdsctl /usr/local/bin/
 
