@@ -1,13 +1,9 @@
----
-title: Installation Using ansible
-description: "This is a  guide for users and new contributors to install Local Cluster using ansible."
-weight: 30
----
-This document describes how to install SODA projects in a local cluster. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
+# SODA Installer based on Ansible.
+This document describes how to install SODA projects in a local cluster with detailed configuraiton options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
-#### Pre-config (Ubuntu 16.04 or Ubuntu 18.04)
+## Pre-config (Ubuntu 16.04 or Ubuntu 18.04)
 All the installation work is tested on `Ubuntu 16.04` and `Ubuntu 18.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
 
 <br /> Install following packages:
@@ -45,7 +41,7 @@ go version
 ```
 <br />It should be go1.13.9 linux/amd64
 
-#### Download SODA installer code
+## Download SODA installer code
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
@@ -191,7 +187,7 @@ ansible-playbook site.yml -i local.hosts
 [verbosity level: -vv < -vvv]
 ansible-playbook site.yml -i local.hosts -vvv
 ```
-#### How to test SODA projects cluster
+## How to test SODA projects cluster
 <br />SODA projects 
 
 Configure SODA projects env variable required for CLI as well as Dashboard access:
@@ -245,14 +241,14 @@ Delete the Fileshare
 ```bash
 osdsctl fileshare delete <fileshare id>
 ```
-### SODA Dashboard UI
+## SODA Dashboard UI
 <br />
 
 SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud service is also supported by dashboard.
 <br />
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
-##### Volume Service
+### Volume Service
 
 1 Create volume.<br />
 2 Create snapshot.<br />
@@ -260,12 +256,12 @@ Logout of the dashboard as admin and login the dashboard again as a non-admin us
 4 Create volume from snapshot.<br />
 5 Create volume group.
 
-##### FileShare service
+### FileShare service
 
 1 Create fileshare.<br />
 2 Create snapshot.<br />
 3 Set access permission on fileshare (ip based access permissions are allowed).
-##### Multi Cloud Service
+### Multi Cloud Service
 
 1 Register object storage backend.<br />
 2 Create bucket.<br />
@@ -273,7 +269,8 @@ Logout of the dashboard as admin and login the dashboard again as a non-admin us
 4 Download object.<br />
 5 Migrate objects based on bucket across cloud.<br />
 6 Create lifecycle for buckets.
-# How to purge and clean SODA projects cluster
+
+## How to purge and clean SODA projects cluster
 <br />Run SODA installer ansible playbook to clean the environment
 ``` bash
 ansible-playbook clean.yml -i local.hosts
