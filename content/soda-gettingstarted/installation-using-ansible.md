@@ -29,7 +29,8 @@ dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-<br /> Install golang [golang 1.13.x is supported. To install golang 1.13.9, please follow these steps]
+<br /> Install golang
+[golang 1.13.x is supported. To install golang 1.13.9, please follow these steps]
 
 ```bash
 wget https://storage.googleapis.com/golang/go1.13.9.linux-amd64.tar.gz
