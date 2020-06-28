@@ -22,7 +22,7 @@ The recommended method of installation is using ansible in Ubuntu 16.04 or Ubunt
 
 * [https://github.com/sodafoundation/installer/tree/master/salt](https://github.com/sodafoundation/installer/tree/master/salt)
 * [https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md](https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md)
-  https://gitlab.com/cdli/framework
+  ( https://gitlab.com/cdli/framework )
 ## 3. Deploy SODA Foundation projects using Helm
 
 * [https://github.com/sodafoundation/installer/tree/master/charts](https://github.com/sodafoundation/installer/tree/master/charts)
