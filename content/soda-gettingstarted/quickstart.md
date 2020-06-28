@@ -11,7 +11,7 @@ This is a quickstart guide for users and new contributors to try and get familia
 If you are interested to have more magement control on the installaton cofigurations OR you are a developer on SODA Foundation projects, you can refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ## Quick Installation and experience of SODA releases
-### SODA v1.0.0 Faroe Release Jun 2020
+### Install SODA v1.0.0 Faroe Release Jun 2020
 Quick installation from SODA Faroe Release:
 
  - **Prerequisite**
@@ -62,7 +62,7 @@ Quick installation from SODA Faroe Release:
      -   You will login to the UI Dashboard and you can verify the features through various menu options
 
 
-### SODA v0.20.0 Elba Release Apr 2020
+### Install SODA v0.20.0 Elba Release Apr 2020
  - Elba Release (First Release of SODA) : Refer the "How to use the Release" section of [Elba Release Notes](https://github.com/sodafoundation/releases/releases/tag/v0.20.0)
  
 
