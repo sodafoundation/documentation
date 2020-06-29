@@ -31,8 +31,8 @@ Quick installation from SODA Faroe Release:
 	    -   If the required version is not installed on the system, install golang,1.13.9 using:
 		   - wget **[https://storage.googleapis.com/golang/go1.13.9.linux-amd64.tar.gz](https://storage.googleapis.com/golang/go1.13.9.linux-amd64.tar.gz)**
 		- tar -C /usr/local -xzf go1.13.9.linux-amd64.tar.gz
-		- echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
-		- echo 'export GOPATH=$HOME/gopath' >> /etc/profile
+		- echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile
+		- echo "export GOPATH=$HOME/gopath" >> /etc/profile
 		- source /etc/profile
 
  - **Get and Install Release Binaries**
