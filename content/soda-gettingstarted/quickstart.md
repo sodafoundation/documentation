@@ -22,7 +22,7 @@ Quick installation from SODA Faroe Release:
 	    - apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk
     - Install Docker
 	    - wget **[https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb](https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb)**
-	    - dpkg -i docker-ce_18.06.1ce3-0~ubuntu_amd64.deb
+	    - dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
     - Install docker-compose:
 	    -   curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 		-   chmod +x /usr/local/bin/docker-compose
