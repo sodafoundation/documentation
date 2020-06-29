@@ -207,10 +207,10 @@ osdsctl pool list # Check if the pool resource is available
 ```
 <br /> Volume creation steps
 
-Then create a default profile
+Then create a default block profile for block service
 
 ```bash 
-osdsctl profile create '{"name": "default", "description": "default policy", "storageType": "block"}'
+osdsctl profile create '{"name": "default_block", "description": "default policy", "storageType": "block"}'
 ```
 Create a volume:
 ```bash
