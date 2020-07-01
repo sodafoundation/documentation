@@ -30,7 +30,7 @@ Quick installation from SODA Faroe Release:
 	    
     - dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
     - Install docker-compose:
-	    -   curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	    -   curl -L https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 		-   chmod +x /usr/local/bin/docker-compose
     -   Required golang version: 1.13.x
 	    -   Run following command `go version` and check the version
