@@ -4,9 +4,9 @@ description: "This guide explains how to configure and install the SODA Foundati
 weight: 30
 ---
 
-This guide explains how to install the SODA Foundation Projects with its components and test basic features. This provides the detailed cofiguration and installation steps.
+This guide lists the installation steps for the SODA Foundation Projects and its components.It provides the cofiguration steps and enable users to test the basic features.
 
-SODA Foundation Projects may be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [SODA-installer](https://github.com/sodafoundation/installer) project contains resources and tools for this guide.
+SODA Foundation Projects can be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [SODA-installer](https://github.com/sodafoundation/installer) project contains resources and tools listed in this guide.
 
 *Note : All the methods described below may not be verified for all the releases. We recommend the ansible install method and ensure to test it in all the releases.*
 
@@ -22,6 +22,7 @@ The recommended method of installation is using ansible in Ubuntu 16.04 or Ubunt
 * [https://github.com/sodafoundation/installer/tree/master/salt](https://github.com/sodafoundation/installer/tree/master/salt)
 * [https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md](https://github.com/sodafoundation/installer/blob/master/salt/HACKING.md)
   ( https://gitlab.com/cdli/framework )
+  
 ## 3. Deploy SODA Foundation projects using Helm
 
 * [https://github.com/sodafoundation/installer/tree/master/charts](https://github.com/sodafoundation/installer/tree/master/charts)
