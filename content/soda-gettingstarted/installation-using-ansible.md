@@ -270,9 +270,11 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login the
 **_To use the Block and File service, respective profile must be created before using these services. To do this you can follow the steps below:_**  <br />
 1. Go to Profiles<br />
 2. Click on Create button.<br />
-3. Enter the details and select the Storage type as Block or File. Create one profile for Block type and one for File.<br />
-4. Save the profile and select it when you are creating a new volume or file share.<br />
-5. Make sure you enable the snapshot policy and replication policy in the profile if you intend to create either.<br />
+3. Enter the details and select the Storage type as Block or File. 
+4. Create one profile for Block type and  name it `default_block`.<br />
+5. Create one profile for File type and  name it `default_file`.<br />
+6. Save the profile and select it when you are creating a new volume or file share.<br />
+7. Make sure you enable the snapshot policy and replication policy in the profile if you intend to create either.<br />
 {{% /notice %}}
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource:
