@@ -267,7 +267,7 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login the
 {{% /notice %}}
 
 {{% notice info %}}
-**_To use the Block and File service a profile must be created before anything else. To do this you can follow the steps below:_**  <br />
+**_To use the Block and File service, respective profile must be created before using these services. To do this you can follow the steps below:_**  <br />
 1. Go to Profiles<br />
 2. Click on Create button.<br />
 3. Enter the details and select the Storage type as Block or File. Create one profile for Block type and one for File.<br />
