@@ -1,16 +1,16 @@
 ---
 title: Quick Start Guide
-description: "This is a quickstart guide for users and new contributors to get familiar with SODA Foundation by installing a simple containerized local cluster. It also gives the install steps for old OpenSDS versions"
+description: "The quickstart guide is for users and new contributors to get familiar with SODA Foundation, by installing a simple containerized local cluster. It also gives the installation steps for old OpenSDS versions"
 weight: 20
 ---
 
-This is a quickstart guide for users and new contributors to try and get familiar with [SODA Foundation Release](https://github.com/sodafoundation/releases) and its [projects](https://github.com/sodafoundation). It will help to test the SODA Releases directly from binaries with minimum configurations or settings.
+This is a quickstart guide for users and new contributors to get familiar with [SODA Foundation Releases](https://github.com/sodafoundation/releases) and its [projects](https://github.com/sodafoundation). It will help to try out the SODA Releases using the binaries with minimum configurations.
 
-***Note**: *Currently this document also provides the information to install old OpenSDS releases and try. Soon, the support for old opensds releases will be removed.**
+***Note**: *At present, this document also provides the installation steps to try out older OpenSDS releases. Soon, the support for old opensds releases shall be removed.**
 
-If you are interested to have more magement control on the installaton cofigurations OR you are a developer on SODA Foundation projects, you can refer a detailed installation guide [here](/soda-gettingstarted/installation)
+To have more magement control on the installaton cofigurations, or to try out various configurations refer to the detailed installation guide [here](/soda-gettingstarted/installation)
 
-## Quick Installation and experience of SODA releases
+## Quick Installation
 ### Install SODA v1.0.0 Faroe Release Jun 2020
 Quick installation from SODA Faroe Release:
 
