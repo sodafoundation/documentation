@@ -34,7 +34,9 @@ You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeetin
  - [SODA Mailing List](https://lists.sodafoundation.io)
  
  ## How to Start
+ 
   ### Starting Pointers / Tips for developers
+  
   - Have a github id and learn to fork and work on a github repository
 	  - You can get the basic information from internet or refer the basic information at [How to contribute](https://github.com/sodafoundation/documentation/blob/master/content/community/how-to-contribute.md)
   - Ensure you have the slack account of SODA Workspace (Join [here](https://sodafoundation.io/slack/))
