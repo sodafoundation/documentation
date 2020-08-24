@@ -32,6 +32,8 @@ You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeetin
  - [SODA Slack](https://sodafoundation.io/slack)
  - [SODA Twitter](https://twitter.com/sodafoundation)
  - [SODA Mailing List](https://lists.sodafoundation.io)
+ - [SODA Documentation](https://docs.sodafoundation.io/)
+ - [SODA Github](https://github.com/sodafoundation)
  
 ## How to Start your contributions
  
@@ -54,5 +56,6 @@ You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeetin
 	  - You can do @ to any members or author of the issues to notify them specifically
 	  - Raise the PR to fix the documentaion
 	  - This procedure you can follow for any other project repository in the [SODA github](https://github.com/sodafoundation)
+	  - Complete SODA Documentation is available [here](https://docs.sodafoundation.io/)
   - If you are think, we can add more inputs to this document or additional documentation links for developers including setup etc, please raise issue under [SODA Documentation](https://github.com/sodafoundation/documentation/issues)
   - Any other support please request at soda slack #general channel
