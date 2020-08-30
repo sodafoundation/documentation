@@ -29,7 +29,6 @@ It envisions to provide data autonomy through its open source solutions and stan
 
 More details [here](https://sodafoundation.io/)
 
-
 ## SODA Projects
 SODA Foundation is a home of all the projects for storage and data. It hosts many projects and also extends the ecosystem through partners and third party projects which can help to build unified data solutions for various use cases.
 
@@ -95,7 +94,7 @@ More details [here](https://sodafoundation.io/projects/soda-experiments/)
 
 
 ## Official Charter
-Please find the official charter for SODA Foundation under Linux Foundation can be found [here](https://sodafoundation.io/the-foundation/charter/)
+The official charter for SODA Foundation under Linux Foundation can be found [here](https://sodafoundation.io/the-foundation/charter/)
 
 ## Want to be part of this initiative?
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
