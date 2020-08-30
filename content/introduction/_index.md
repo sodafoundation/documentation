@@ -14,9 +14,21 @@ SODA is SODA Open Data Autonomy. It is an open source unified autonomous data fr
 <img src="https://sodafoundation.io/wp-content/uploads/2020/04/sodaautonomy1960-1536x1138.jpg">
 
 ## Focus Areas
-SODA Foundation focuses to build unified frameworks, APIs and solutions in the areas of Data Mobility, Data Protection, Data Lifecycle, Unified Storage Platform, Cloud Native Storage, Data Governance, Data Orchestration, Data Energy and more. It envisions to provide data autonomy through its open source solutions and standards.
 
-Find more details [here](https://sodafoundation.io/)
+SODA Foundation focuses to build unified frameworks, APIs and solutions in the areas of 
+
+- Data Mobility
+- Data Protection
+- Data Lifecycle
+- Unified Storage Platform
+- Cloud Native Storage
+- Data Governance
+- Data Orchestration
+- Data Energy and more.
+It envisions to provide data autonomy through its open source solutions and standards.
+
+More details [here](https://sodafoundation.io/)
+
 
 ## SODA Projects
 SODA Foundation is a home of all the projects for storage and data. It hosts many projects and also extends the ecosystem through partners and third party projects which can help to build unified data solutions for various use cases.
@@ -91,4 +103,4 @@ Contact us through any of the following channels:
  - [SODA Twitter](https://twitter.com/sodafoundation)  
  - [SODA Mailing List](https://lists.sodafoundation.io)
 
-
+## For more details, please refer to the [SODA Foundation](https://sodafoundation.io/).
