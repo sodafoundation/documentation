@@ -33,6 +33,7 @@ More details [here](https://sodafoundation.io/)
 ## SODA Projects
 SODA Foundation is a home of all the projects for storage and data. It hosts many projects and also extends the ecosystem through partners and third party projects which can help to build unified data solutions for various use cases.
 
+
 ## SODA Architecture
 <!--- TODO : Brief description and architecture snapshot needed here...-->
 SODA (SODA Open Data Autonomy) Architecture is getting evolved to realize a challenging goal of building a unified framework for data and storage management. It connects the application platforms and solutions to the backend storages seamlessly, be it on prem or cloud through unified API layer. This enables the application platforms to focus to build more valuable use cases rather than worrying about managing the underlying storage backends and data management.
@@ -46,6 +47,8 @@ The key architecture tenets are:
 - Seamless vendor agnostic storage backends
 
 As mentioned, SODA Architecture is getting refined and optimized for different application technologies, use cases, platforms and storage backends. If you have any comments and inputs, please join us [here](https://github.com/sodafoundation/).
+
+<img src="https://sodafoundation.io/wp-content/uploads/2020/04/soda_overview1960@2x-e1596783881567.jpg">
 
 
 ## SODA Source Code Repository 
