@@ -105,4 +105,4 @@ Contact us through any of the following channels:
  - [SODA Twitter](https://twitter.com/sodafoundation)  
  - [SODA Mailing List](https://lists.sodafoundation.io)
 
-## For more details, please refer to the [SODA Foundation](https://sodafoundation.io/).
+## For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) page.
