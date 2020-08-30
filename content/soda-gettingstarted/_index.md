@@ -6,9 +6,9 @@ disableToc: false
 ---
 
 ## SODA Installation Guides
-SODA Projects can be installed in different ways. If you want to quickly install using release binaries without much of configuration controls, then you can go to Quick Start Guide below. It will help you to install directly from a specific release binaries.
+SODA Projects can be installed in different ways. To quickly install using release binaries without much of configuration controls,  use the [Quick Start Guide](https://docs.sodafoundation.io/soda-gettingstarted/quickstart/). It lists the steps to install directly from a specific release binaries.
 
-If you want to configure according to your solution requirements and also would like to more control on the projects, you can go to Installation Guide below.
+To configure according to a solution requirement and to have more control on the projects, use the Installation Guide (https://docs.sodafoundation.io/soda-gettingstarted/installation/) .
 
 ### [Quick Start Guide](https://docs.sodafoundation.io/soda-gettingstarted/quickstart/)
 This is a quickstart guide for users and new contributors to get the first and quick experience of SODA Release.
