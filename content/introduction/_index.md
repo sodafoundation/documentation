@@ -57,38 +57,38 @@ The Public Source Code repository is located [here](https://github.com/sodafound
 The SODA Ecosystem has many projects under its umbrella, which work in unison to solve the various data and storage challenges.
 Some of the important ones are :
 
-- ### SODA Dashboard
+- **SODA Dashboard**
 SODA Dashboard provides a front end UI which integrates with the different APIs provided by SODA API. This dashboard can be used to test basic SODA functionality.
 More details [here](https://sodafoundation.io/projects/soda-dashboard/)
 
-- ### SODA API
+- **SODA API**
 The key external interface to platforms, which can do a seamless integration with heterogeneous storage backends. Provides the standardization for Data / Storage Management APIs. More details [here](https://sodafoundation.io/projects/soda-api/)
 
-- ### SODA Controller
+- **SODA Controller**
 In the API flow, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements.
 More details [here](https://sodafoundation.io/projects/soda-controller/)
 
-- ### SODA Dock
+- **SODA Dock**
 It is a docking station for heterogeneous storage backends! This is where all the different storage vendors’ drivers for various backends get attached.
 More details [here](https://sodafoundation.io/projects/soda-dock/)
 
-- ### SODA Plugin 
+- **SODA Plugin**
 SODA North-Bound Plugin Project focuses to extend all the industry platforms and application solutions to interface with SODA API or be compliant with it.
 More details [here](https://sodafoundation.io/projects/soda-plugins/)
 
-- ### SODA Multicloud
+- **SODA Multicloud**
 SODA Multicloud project provides a cloud vendor agnostic data management for hybrid cloud, crosscloud or incloud. It can be hosted on prem or cloud native.
 More details [here](https://sodafoundation.io/projects/soda-multicloud-dds/)
 
-- ### SODA Telemetry
+- **SODA Telemetry**
 Provides monitoring  via standard interfaces to pull the statistical and health data from the infrastructure (including storage, host, ports) and a highly configurable alert management system
 More details [here](https://sodafoundation.io/projects/soda-experiments/)
 
-- ### SODA Orchestration
+- **SODA Orchestration**
 The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
 More details [here](https://sodafoundation.io/projects/soda-experiments/)
 
-- ### SODA Intelligence 
+- **SODA Intelligence**
 It is a reference implementation of intelligent monitoring which can utilize SODA Telemetry, exporter with Kafka (or similar) and a standard ML algorithm.
 More details [here](https://sodafoundation.io/projects/soda-experiments/)
 
