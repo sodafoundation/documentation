@@ -96,7 +96,7 @@ More details [here](https://sodafoundation.io/projects/soda-experiments/)
 ## Official Charter
 The official charter for SODA Foundation under Linux Foundation can be found [here](https://sodafoundation.io/the-foundation/charter/)
 
-## Want to be part of this initiative?
+**Want to be part of this initiative?**
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
 Contact us through any of the following channels:
 
@@ -105,4 +105,4 @@ Contact us through any of the following channels:
  - [SODA Twitter](https://twitter.com/sodafoundation)  
  - [SODA Mailing List](https://lists.sodafoundation.io)
 
-## For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) website.
+ **For more details, please refer to the [SODA Foundation]**(https://sodafoundation.io/) website.
