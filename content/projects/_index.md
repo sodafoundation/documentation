@@ -6,7 +6,7 @@ disableToc: false
 ---
 [SODA Foundation](https://sodafoundation.io) is a home for multiple projects for building a unified data framework to support various data and storage solutions. Here is a brief description of all the projects maintained by SODA Foundation. 
 
-<!-- TODO : Add Soda Project Architecutre picture here.. -->
+<!-- Soda Project Architecutre Diagram -->
 ![SODA Projects Architecture](soda-project-architecture.png)
 
 - ### SODA Dashboard 
@@ -55,10 +55,10 @@ disableToc: false
     SODA Plugins enable awareness and seamless integration between SODA and compute platforms or application frameworks.
 
     SODA provides plugins for Kubernetes, OpenStack and VMWare.
-    <!-- TODO : Add links -->
-    SODA Cloud Native Storage For Kubernetes CSI
-    SODA Cinder Block & Manila File Services For OpenStack
-    SODA VASA For Vmware
+    
+    [SODA Cloud Native Storage For Kubernetes CSI](https://sodafoundation.io/projects/soda-plugins/kubernetes/)
+    [SODA Cinder Block & Manila File Services For OpenStack](https://sodafoundation.io/projects/soda-plugins/openstack/)
+    [SODA VASA For Vmware](https://sodafoundation.io/projects/soda-plugins/vmware/)
 
 - ### SODA Multicloud
     SODA Multicloud provides a cloud vendor agnostic data management for hybrid cloud, intercloud, or intracloud. The goal is to provide a unified interface to support file, block,and object services across multiple cloud vendors. It can be hosted on-premise or in the cloud.
