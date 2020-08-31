@@ -7,6 +7,7 @@ disableToc: false
 [SODA Foundation](https://sodafoundation.io) is a home for multiple projects for building a unified data framework to support various data and storage solutions. Here is a brief description of all the projects maintained by SODA Foundation. 
 
 <!-- TODO : Add Soda Project Architecutre picture here.. -->
+![SODA Projects Architecture](soda-project-architecture.png)
 
 - ### SODA Dashboard 
     SODA Dashboard provides a unified interface to the underlying capabilities from the SODA Framework components. This dashboard is built mainly to illustrate/showcase various use cases that could run on SODA ecosystem projects.
