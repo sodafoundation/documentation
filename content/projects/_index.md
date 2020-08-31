@@ -56,9 +56,11 @@ disableToc: false
 
     SODA provides plugins for Kubernetes, OpenStack and VMWare.
     
-    [SODA Cloud Native Storage For Kubernetes CSI](https://sodafoundation.io/projects/soda-plugins/kubernetes/)
-    [SODA Cinder Block & Manila File Services For OpenStack](https://sodafoundation.io/projects/soda-plugins/openstack/)
-    [SODA VASA For Vmware](https://sodafoundation.io/projects/soda-plugins/vmware/)
+     [SODA Cloud Native Storage For Kubernetes CSI](https://sodafoundation.io/projects/soda-plugins/kubernetes/)
+
+     [SODA Cinder Block & Manila File Services For OpenStack](https://sodafoundation.io/projects/soda-plugins/openstack/)
+
+     [SODA VASA For Vmware](https://sodafoundation.io/projects/soda-plugins/vmware/)
 
 - ### SODA Multicloud
     SODA Multicloud provides a cloud vendor agnostic data management for hybrid cloud, intercloud, or intracloud. The goal is to provide a unified interface to support file, block,and object services across multiple cloud vendors. It can be hosted on-premise or in the cloud.
