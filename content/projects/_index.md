@@ -16,29 +16,37 @@ disableToc: false
 
     Every SODA release will have the SODA Dashboard with new use cases integrated based on the new features or projects integrated to SODA project ecosystem.
 
-- ### SODA Infrastructure Manager
-    delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open source project to provide unified, intelligent and scalable resource management, alert and performance monitoring. It will cover the resource management of all the storage backends & other infrastructures under SODA deployment. It will also provide the alert management and metric data(performance/health) for monitoring and further analysis.
+    [Source Code Repository](https://github.com/sodafoundation/dashboard)
 
-    It will provide a scalable framework where more and more backends as well as client exporters can be added. This will enable to add more storage and infrastructure backends and also support different management clients for monitoring and health prediction.
+- ### SODA Infrastructure Manager
+    delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open source project to provide unified, intelligent and scalable resource management, alert and performance monitoring. It covers the resource management of all the backends & other infrastructures under SODA deployment. It also provides  alert management and metric data (performance/health) for monitoring and further analysis.
+
+    It provides a scalable framework where more and more backends as well as client exporters can be added. This enables to add more storage and infrastructure backends and also support different management clients for monitoring and health prediction.
 
     It provides unified APIs to access, export and connect with clients as well as a set of interfaces for various driver additions.
-    The vision is to build a unified intelligent and scalable infrastructure management framework for resource management (config, add, remove, update), alert management, and performance metrics management with standardized APIs across any storage and application platforms, with connectors for data analysis and prediction.
+    The vision is to build a unified intelligent and scalable infrastructure management framework for resource management (config, add, remove, update), alert management and performance metrics management with standardized APIs across any storage and application platforms with connectors for data analysis and prediction.
+
+    [Source Code Repository](https://github.com/sodafoundation/delfin) 
 
 - ### SODA API
-    Provides the standardization for Data / Storage Management APIs. Currently we support block and file APIs for key features of data management (provisioning, migration, fileshare, etc). Working to add the storage management APIs.
+     The SODA API, Provides the standardization for Data / Storage Management APIs. At present, block and file APIs for key features of data management (provisioning, migration, fileshare, etc) are supported. 
 
-    This is the key external interface to platforms, which can do a seamless integration with heterogeneous storage backends. 
+    This is the key external interface to platforms which can do a seamless integration with heterogeneous storage backends. 
 
     Users can develop SODA North-Bound Plugins (SODA NBP) under SODA NBP project to connect any platform or application solutions to SODA API from north for all storage/data requirements.
 
-    We envision this to be the reference implementation of SODA Data Standard API Specification, which we plan to work with our industry partners and standards bodies. At that stage, this layer will upgraded to support Block, File and Object APIs across the Edge, Core and Cloud.
+    This is envisioned to be the reference implementation of SODA Data Standard API Specification, with contributions from industry partners and standards bodies. At that stage, this layer will upgraded to support Block, File and Object APIs across the Edge, Core and Cloud.
+
+    [Source Code Repository](https://github.com/sodafoundation/api)
 
 - ### SODA Controller
-    Provides metadata management, control/configurations, scheduler and all such bookkeeping features and utilities. In the API flow from SODA API to SODA Dock, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements. This will be a layer to keep addons to new facilities or utilities for the soda platform.
+    The SODA Controller, provides metadata management, control/configurations, scheduler and all such book-keeping features and utilities. In the API flow from SODA API to SODA Dock, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements. This is a layer to keep addons to new facilities or utilities for the SODA platform.
 
-    Currently we think, this layer can be optional or similar modules can be used from users(if they have such software components). However, the users needs to do certain integration with SODA API and SODA Dock for their controller modules.
+    At present, this layer can be optional or similar modules can be used from users(if they have such software components). However, users need to integrate the Controller modules with SODA API and SODA Dock.
 
-    Controller interfaces with SODA API and SODA Dock. Currently uses grpc and we are working to refine this interface (REST/Msg etc)
+    The Controller interfaces with SODA API and SODA Dock.
+
+    [Source Code Repository](https://github.com/sodafoundation/controller)
 
 - ### SODA Dock
     SODA Dock is a docking station for heterogeneous storage backends! This is where all the different storage vendors drivers for various storage backend models get attached.
@@ -50,6 +58,8 @@ disableToc: false
     SODA Dock can interface directly to SODA API or via Controller. However, it is recommended through the controller for a complete end to end solution, as it can provide the metadata management, handling multiple docks, etc.
 
     The roadmap is to have multiple instances, multi-driver docks to support multi-cluster, multi-platform, or multi-cloud scenarios in the future.
+
+    [Source Code Repository](https://github.com/sodafoundation/dock)
 
 - ### SODA Plugin
     SODA Plugins enable awareness and seamless integration between SODA and compute platforms or application frameworks.
@@ -73,10 +83,7 @@ disableToc: false
 
     The technical team is exploring to extend SODA Multicloud and other key layers of SODA into a distributed data store which can support block, file and object data management across the edge, on-premise, and cloud 
 
+    [Source Code Repository](https://github.com/sodafoundation/multi-cloud)
 
-<!-- TODO : These can be removed -->
-Please find the projects details:
-
- - [SODA Framework and SODA Projects](https://github.com/sodafoundation/design-specs/blob/master/SODAFrameworkAndSODAProjects.md)
- - Source code maintained under [SODA Foundation github organization](https://github.com/sodafoundation)
+ - Source code for other projects are maintained under [SODA Foundation github organization](https://github.com/sodafoundation)
  
