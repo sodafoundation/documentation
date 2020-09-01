@@ -69,4 +69,5 @@ file, and object storage(s3 compatible) types in different use case domains.
 - **Unified API for Multi-Cloud**
     https://github.com/sodafoundation/multi-cloud
 
-### [Download SODA API Draft - v0.0.1](https://github.com/sodafoundation/documentation/raw/master/content/api-specs/SODA_API_Standards_for_Data_and_Storage.pdf)
+
+{{% button href="https://github.com/sodafoundation/documentation/raw/master/content/api-specs/SODA_API_Standards_for_Data_and_Storage.pdf" icon="fas fa-download" icon-position="right" %}}Download SODA API Draft - v0.0.1{{% /button %}}
