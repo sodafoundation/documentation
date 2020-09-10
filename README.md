@@ -4,7 +4,20 @@
 [![LICENSE](https://img.shields.io/github/license/sodafoundation/documentation.svg?style=flat-square)](https://github.com/sodafoundation/documentation/blob/master/LICENSE)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/906dc6ab-8f72-4d7e-ae9f-93326086589b/deploy-status)](https://app.netlify.com/sites/soda-docs/deploys)
 
-<img src="https://sodafoundation.io/wp-content/uploads/2020/01/SODA_logo_outline_color_800x800.png" width="200" height="200">
+<img src="https://sodafoundation.io/wp-content/uploads/2020/01/SODA_logo_outline_color_800x800.png" width="200" height="200">  
+
+## Table of Contents  
+
+* [Introduction](#introduction)  
+* [Documentation](#documentation)  
+* [Quick Start - For Users](#quick-start---to-useexperience)
+* [Quick Start - For Developers](#quick-start---to-develop)
+* [Latest Releases](#latest-releases)  
+* [Support and Issues](#support-and-issues)  
+* [Project Community](#project-community)
+* [How to Contribute to this Project](#how-to-contribute-to-this-project)
+* [Project Roadmap](#project-roadmap)  
+* [Join SODA Foundation](#join-soda-foundation)  
 
 ## Introduction
 
