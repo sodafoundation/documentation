@@ -94,6 +94,7 @@
 {{ define "section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
 {{ $currentNode := .currentnode }}
+{{ $parent := .page.Parent }}
  {{with .sect}}
   {{if .IsSection}}
     {{safeHTML .Params.head}}
@@ -118,7 +119,7 @@
           {{ end }}
       </a>
       
-      {{ if ne $numberOfPages 0 }}
+      {{ if and (ne $numberOfPages 0) (.IsAncestor $currentNode) }}
         
         <ul>
           {{ $currentNode.Scratch.Set "pages" .Pages }}

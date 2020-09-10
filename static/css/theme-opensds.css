@@ -128,3 +128,10 @@ a:hover {
 #sidebar #shortcuts h3{
     color: #f3f3f3 !important;
 }
+
+div#menu-footer-social-links-container{
+    margin: 1rem 0 0 3rem;
+}
+a.footer-social-links{
+    padding: 0.35rem;
+}

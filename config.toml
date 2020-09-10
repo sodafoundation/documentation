@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir= true
   author = "SODA Authors"
   showVisitedLinks = false
   disableBreadcrumb = false
-  disableNextPrev = false
+  disableNextPrev = true
    # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "opensds"
   disableLanguageSwitchingButton = false
