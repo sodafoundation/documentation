@@ -35,6 +35,7 @@ var pdfjsLib = window['pdfjs-dist/build/pdf'];
 // The workerSrc property shall be specified.
 pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdf-js/build/pdf.worker.js';
 
+// Change the Scale value for lower or higher resolution.
 var pdfDoc = null,
     pageNum = 1,
     pageRendering = false,
