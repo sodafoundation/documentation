@@ -1,5 +1,5 @@
 ---
-title: Orchestration User Guide
+title: Orchestration
 description: "User guide for Orchestration and automation."
 weight: 10
 disableToc: false
@@ -7,10 +7,10 @@ tags: ["user guide", "orchestration"]
 ---
 
 ## Introduction
-OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environmnet and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. OpenSDS provides orchestrating these process to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplied execution of tasks. 
+SODA is aimed at addressing the storage integration challenges of both the Cloud Native environmnet and traditional IT environment.In a distributed environment, the business processes consist of several interconnected steps which may require streamline the process. SODA provides orchestrating these process to ensure accurate and faster execution with minimal manual intervention. The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplied execution of tasks. 
 
 ## Intended Readers
-OpenSDS users who plan to orchestrate complex tasks in a distributed environment
+SODA users who plan to orchestrate complex tasks in a distributed environment
 
 ## Purpose
 
@@ -18,27 +18,27 @@ OpenSDS users who plan to orchestrate complex tasks in a distributed environment
 Please refer to this guide or release notes first for any known issues or workarounds available. Issues related to Orchestration can be raised at https://github.com/opensds/orchestration/issues
 
 ## Overview
-OpenSDS Capri release provides pre-defined service catalogs. Service catalogs serves specific purpose and abstracts the underlying actions from end-user. End user can create instances of these services and check the status. User can see the entities through OpenSDS dashboard or use OpenSDS CLIs to check it from console.
-OpenSDS Orchestration service acts as the facilitator to orchestrate actions between OpenSDS dashboard, Orchestration Manager and the OpenSDS backend. Currently OpenSDS supports StackStorm (https://docs.stackstorm.com/overview.html) as the Orchestration Manager. It uses Mistral workflows in StackStorm.
+SODA Capri release provides pre-defined service catalogs. Service catalogs serves specific purpose and abstracts the underlying actions from end-user. End user can create instances of these services and check the status. User can see the entities through SODA dashboard or use SODA CLIs to check it from console.
+SODA Orchestration service acts as the facilitator to orchestrate actions between SODA dashboard, Orchestration Manager and the SODA backend. Currently SODA supports StackStorm (https://docs.stackstorm.com/overview.html) as the Orchestration Manager. It uses Mistral workflows in StackStorm.
 
 ## Installation
-Please refer https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md to install OpenSDS and all the required components of Orchestration.
+Please refer https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md to install SODA and all the required components of Orchestration.
 
 ## Orchestrating workflows
-OpenSDS currently have two types of pre-defined services to orchestrate the workflows. Volume Provisioning and Bucket Migration.
-User can define their own customized workflows and write the actions to orchestrate it through OpenSDS. Check 'Customized workflows' section below.
-Apart from OpenSDS dashboard, user can directly use the REST Apis to achieve the required tasks.
+SODA currently have two types of pre-defined services to orchestrate the workflows. Volume Provisioning and Bucket Migration.
+User can define their own customized workflows and write the actions to orchestrate it through SODA. Check 'Customized workflows' section below.
+Apart from SODA dashboard, user can directly use the REST Apis to achieve the required tasks.
 
 {{% notice note %}}
 Please refer to the OpenAPI-specs of Orchestration for more details. [Click Here <i class="fas fa-external-link-alt"></i>](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/opensds/orchestration/master/openapi-spec/swagger.yaml)
 {{% /notice%}}
 
 #### Prerequisites
-    a) OpenSDS is installed and user can log-in into the Dashboard
+    a) SODA is installed and user can log-in into the Dashboard
     b) All the required components are installed and running properly
 
 ## Services
-OpenSDS installation will provide the services available for orchestrating the tasks.
+SODA installation will provide the services available for orchestrating the tasks.
 ![Services](orchestration_services.PNG?raw=true "Services")
 
 ### Volume Provisioning
@@ -62,7 +62,7 @@ To create a volume and attach it to the required Host, user can create an instan
 To move objects from bucket of one cloud provider to the other, user can create an instance of "migration bucket" Service under Migration.
 
 #### Prerequisites:
-    a) All the required cloud backends are added into OpenSDS
+    a) All the required cloud backends are added into SODA
     b) Required buckets are created in the respective cloud backends. Check this under 'Resource->Buckets'
 
 ####  Creating an instance
@@ -87,8 +87,8 @@ CLI for Orchestration
 
 ### Steps to run CLI:
 
-* Deploy OpenSDS (https://github.com/opensds/opensds/wiki)
-* Deploy StackStorm with [OpenSDS packs](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
+* Deploy SODA (https://github.com/opensds/opensds/wiki)
+* Deploy StackStorm with [SODA packs](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
 * [Start Orchestrator](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
 * Update input parameters in util.py file (OPENSDS_IP, ORCHESTRATOR_IP, etc.)
 * Also, if the StackStorm is installed using Docker image, 
@@ -99,7 +99,7 @@ CLI for Orchestration
 
 Orchestration CLI can be used for registering service, Querying service, creating/deleting instance, querying instance
 
-### CLI for OpenSDS Orchestration Manager:
+### CLI for SODA Orchestration Manager:
     usage: orchctl [-h] [-a ADDRESS] [-u USER] [-p PASSWORD] [-t PROJECT_ID]
                 [--orch_ip ORCH_IP] [--orch_port ORCH_PORT]
                 {service,instance,workflow,task} ...
@@ -115,12 +115,12 @@ Orchestration CLI can be used for registering service, Querying service, creatin
     optional arguments:
     -h, --help            show this help message and exit
     -a ADDRESS, --address ADDRESS
-                            ip address of opensds hotpot
-    -u USER, --user USER  username for opensds hotpot
+                            ip address of SODA hotpot
+    -u USER, --user USER  username for SODA hotpot
     -p PASSWORD, --password PASSWORD
-                            password for opensds hotpot
+                            password for SODA hotpot
     -t PROJECT_ID, --project_id PROJECT_ID
-                            project_id for opensds hotpot
+                            project_id for SODA hotpot
     --orch_ip ORCH_IP     Orchestration server ip address
     --orch_port ORCH_PORT
                             Orchestration server port
@@ -204,7 +204,7 @@ Orchestration CLI can be used for registering service, Querying service, creatin
 ```
 
 ### Customized workflow
-If user writes their own Mistral workflows and corresponding actions they can follow following steps to orchestrate it through OpenSDS dashboard. All these steps need to be executed from the OpenSDS ssh console.
+If user writes their own Mistral workflows and corresponding actions they can follow following steps to orchestrate it through SODA dashboard. All these steps need to be executed from the SODA ssh console.
 
 ### Steps to follow:
     a) Copy the custom workflow into the '/opt/stackstorm/packs/opensds/actions/workflows/' directory of stackstorm/stackstorm:latest docker container. Ex: docker cp custom_wf.yaml 58d22927c38f:/opt/stackstorm/packs/opensds/actions/workflows/
@@ -229,9 +229,9 @@ If user writes their own Mistral workflows and corresponding actions they can fo
         ]
     }
 {{% notice note %}}
-Please note that the **`wfe_type`** should be **`st2`** as OpenSDS supports only **StackStorm** as Orchestration Manager currently. You can specify any existing group like 'Provisioning' or 'Migration' or create a new group altogether.
+Please note that the **`wfe_type`** should be **`st2`** as SODA supports only **StackStorm** as Orchestration Manager currently. You can specify any existing group like 'Provisioning' or 'Migration' or create a new group altogether.
 {{% /notice %}}
-Once these steps are done, user can go into the OpenSDS dashboard and create and execute an instance.
+Once these steps are done, user can go into the SODA dashboard and create and execute an instance.
 
 ### Checking created instances
 Click on the 'Instances' button on 'Services' page to get the list of all instances of the services being created and its status.

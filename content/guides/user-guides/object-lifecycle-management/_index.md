@@ -1,5 +1,5 @@
 ---
-title: Object Lifecycle Management
+title: Object Lifecycle
 description: "User guide for Object Lifecycle Management."
 weight: 40
 disableToc: false
@@ -7,15 +7,15 @@ tags: ["user guide", "object lifecycle"]
 ---
 
 ## Introduction to Object lifecycle
-OpenSDS is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment. OpenSDS multi-cloud allows user to manage distributed cloud environment on a single platform. Object lifecycle management feature gives freedom to user to manage buckets and objects in the cloud using OpenSDS interface.
+SODA is aimed at addressing the storage integration challenges of both the Cloud Native environment and traditional IT environment. SODA multi-cloud allows user to manage distributed cloud environment on a single platform. Object lifecycle management feature gives freedom to user to manage buckets and objects in the cloud using SODA interface.
 
 ## Getting Started!
-This is a guide that shows how to install, configure, and use Object lifecycle management feature in a simple OpenSDS setup.
-By following this guide you will be able to install OpenSDS multi-cloud with creating backends and buckets, uploading object and setting up the lifecycle for those objects.
+This is a guide that shows how to install, configure, and use Object lifecycle management feature in a simple SODA setup.
+By following this guide you will be able to install SODA multi-cloud with creating backends and buckets, uploading object and setting up the lifecycle for those objects.
 
-## Installing Opensds multi-cloud
+## Installing SODA multi-cloud
 
-### Download opensds-installer code
+### Download SODA-installer code
 
 ```cassandraql
 git clone https://github.com/opensds/opensds-installer.git
@@ -35,16 +35,16 @@ gelato_repo_branch: master
 ```
 Detailed instruction is in this link
 
-- [OpenSDS Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
+- [SODA Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
 
-#### Export required OpenSDS  environment variables
+#### Export required SODA  environment variables
 ```
 export HOST_IP={your_real_host_ip}
 export OPENSDS_ENDPOINT=http://{{ apiserver_cluster_ip }}:50040
 export OPENSDS_AUTH_STRATEGY=keystone
 export OS_AUTH_URL=http://{{ authchecker_cluster_ip }}/identity
 ```
-#### Run OpenSDS multi-cloud in docker container
+#### Run SODA multi-cloud in docker container
 ```
 docker-compose up -d
 docker ps 
@@ -62,9 +62,9 @@ e370acd6c922        mongo                             "docker-entrypoint.s…"  
 f139d2e383ab        opensdsio/multi-cloud-s3          "/s3"                    2 minutes ago       Up 2 minutes                                                             multi-cloud_s3_1_3c7878089fa4
 ```
 
-## Open OpenSDS Object lifecycle management UI
+## Open SODA Object lifecycle management UI
 
-OpenSDS Object lifecycle management feature specific UI can be accessed via
+SODA Object lifecycle management feature specific UI can be accessed via
 
 `http://{your_host_ip}:8088/#/home`
 
@@ -79,7 +79,7 @@ Click on (+) for registering a storage backend
 
 ### Create bucket and upload the object
 After creating new backend follow the steps given below to create a bucket and upload an object in that bucket:
-1. Launch Resource from OpenSDS home page
+1. Launch Resource from SODA home page
 
 2. Create a new bucket with appropriate backend
 
@@ -103,4 +103,4 @@ After configuring lifecycle in dashboard, a routine scheduler will run and it wi
 1. How to check if the lifecycle rule is applied on bucket/object ?
 
 Ans: 
-OpenSDS does not create the rule in the cloud backend (CSP). Once the bucket/object satisfies the rule, OpenSDS will automatically call cloud API and the action will be performed. If there are any errors or issues in rule, user will know at the time of lifecycle action.
+SODA does not create the rule in the cloud backend (CSP). Once the bucket/object satisfies the rule, SODA will automatically call cloud API and the action will be performed. If there are any errors or issues in rule, user will know at the time of lifecycle action.
