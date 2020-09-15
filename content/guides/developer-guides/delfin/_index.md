@@ -38,16 +38,166 @@ Existing Delfin Drivers for reference:
 ### Code changes needed
 
 * Add driver plugin 'entry points' to the file 'setup.py'.
+  ```python
+
+    'delfin.storage.drivers': [
+        ...
+        'sample_vendor sample_model = delfin.drivers.sample_vendor:SampleStorageDriver',
+        ...
+    ]
+
+  ```
 
 * Create driver source code folder under <delfin path>/delfin/drivers/
+  ```bash
+  mkdir -p /path-to-delfin/delfin/drivers/sample_vendor
+  touch /path-to-delfin/delfin/drivers/sample_vendor/__init__.py
+  ```
 
 * Extend base class StorageDriver defined in <delfin path>/delfin/drivers/driver.py, to implement a new driver.
 
+  ```python
+  # Copyright 2020 The SODA Authors.
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  #     http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+
+
+  from delfin.drivers import driver
+
+
+  class SampleStorageDriver(driver.StorageDriver):
+    """SampleStorageDriver shows how to implement the StorageDriver,
+    it also plays a role as sample to fake data for being tested by clients.
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def reset_connection(self, context, **kwargs):
+        pass
+
+
+  ```
+
 * Implement all the interfaces defined in <delfin path>/delfin/drivers/driver.py, in the new driver.
+
+  ```python
+
+    def get_storage(self, context):
+        # Do something here
+        return {
+            'name': 'sample',
+            'description': 'sample',
+            'vendor': 'sample_vendor',
+            'model': 'sample_model',
+            'status': 'normal',
+            'serial_number': 123,
+            'firmware_version': '1.0.0',
+            'location': 'HK',
+            'total_capacity': 123,
+            'used_capacity': 0,
+            'free_capacity': 123,
+            'raw_capacity': 123,
+            'subscribed_capacity': 123
+        }
+
+    def list_storage_pools(self, ctx):
+        pool_list = []
+        for idx in range(3):
+            p = {
+                "name": "sample_pool_" + str(idx),
+                "storage_id": self.storage_id,
+                "native_storage_pool_id": "sample_original_id_" + str(idx),
+                "description": "Sample Pool",
+                "status": "normal",
+                "total_capacity": 123,
+                "used_capacity": 0,
+                "free_capacity": 123,
+            }
+            pool_list.append(p)
+        return pool_list
+
+    def list_volumes(self, ctx):
+      volume_list = []
+      for i in range(1, 5):
+          v = {
+              "name": "sample_vol_" + str(i),
+              "storage_id": self.storage_id,
+              "description": "Sample Volume",
+              "status": "normal",
+              "native_volume_id": "sample_original_id_" + str(i),
+              "wwn": "fake_wwn_" + str(i),
+              "total_capacity": 12,
+              "used_capacity": 2,
+              "free_capacity": 10,
+          }
+          volume_list.append(v)
+          return volume_list
+
+    def add_trap_config(self, context, trap_config):
+        pass
+
+    def remove_trap_config(self, context, trap_config):
+        pass
+
+    def parse_alert(self, context, alert):
+        pass
+
+    def clear_alert(self, context, alert):
+        pass
+
+    def list_alerts(self, context, query_para=None):
+        pass
+
+  ```
 
 * Ensure create storages API call from Delfin, can load the driver successfully.
 
+  ```bash
+  curl -H "Content-Type: application/json" -X POST http://localhost:8190/v1/storages -d '
+  {
+    "rest": {
+      "host": "127.0.0.1",
+      "port": "22",
+      "username": "username",
+      "password": "password",
+      "vendor": "sample_vendor",
+      "model": "sample_model"
+    }
+  }'
+
+  # Example Response:
+
+  '{"created_at": "2020-09-15T14:10:10.692091", "updated_at": null, "id": "849e0e90-35bd-4d23-8155-53a5a583bcbf", "name": "sample", "vendor": "sample_vendor", "description": "sample", "model": "sample_model", "status": "normal", "serial_number": 123, "firmware_version": "1.0.0", "location": "HK", "total_capacity": 123, "used_capacity": 0, "free_capacity": 123, "raw_capacity": 123, "subscribed_capacity": 123, "sync_status": "SYNCED", "deleted_at": null, "deleted": false}'
+
+
+  curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages
+
+  # Example Response:
+
+  {"storages": [{"created_at": "2020-09-15T14:11:05.611150", "updated_at": "2020-09-15T14:11:05.919163", "id": "2021529b-0235-4a75-b358-0779189d6463", "name": "fake_driver", "vendor": "fake_vendor", "description": "fake driver.", "model": "fake_model", "status": "normal", "serial_number": "1f8d0680-491d-4b13-9b08-996e1ef8ae6d", "firmware_version": "1.0.0", "location": "HK", "total_capacity": 1355, "used_capacity": 934, "free_capacity": 421, "raw_capacity": 2423, "subscribed_capacity": 3884, "sync_status": "SYNCED", "deleted_at": null, "deleted": false}, {"created_at": "2020-09-15T14:10:10.692091", "updated_at": "2020-09-15T14:10:10.970153", "id": "849e0e90-35bd-4d23-8155-53a5a583bcbf", "name": "sample", "vendor": "sample_vendor", "description": "sample", "model": "sample_model", "status": "normal", "serial_number": "123", "firmware_version": "1.0.0", "location": "HK", "total_capacity": 123, "used_capacity": 0, "free_capacity": 123, "raw_capacity": 123, "subscribed_capacity": 123, "sync_status": "SYNCED", "deleted_at": null, "deleted": false}]}
+
+  ```
 * Ensure APIs of list_*() and alert*() works as expected.
+
+  ``` bash
+
+  curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages
+  curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages-pools
+  curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/volumes
+  curl -H "Content-Type: application/json" -X POST http://localhost:8190/v1/storages/<storage_id>/sync
+  ...
+  ```
 
 * Raise PR with test reports to Delfin repository.
 
