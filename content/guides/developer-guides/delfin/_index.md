@@ -26,6 +26,10 @@ Delfin is an Infrastructure Management framework developed in Python programming
   - Support backend specific implementation details 
   - Explain internal or higher level framework specific details
 
+## License
+
+Delfin project is Licensed under the *Apache License, Version 2.0*. For a third party driver to be merged to Delfin project repository, please ensure it uses compatible License.
+
 ## Third party driver integration
 
 SODA Delfin project already contains some [drivers](https://github.com/sodafoundation/delfin/tree/master/delfin/drivers), which can be used as reference by the new third party driver developers.
@@ -48,13 +52,13 @@ Existing Delfin Drivers for reference:
 
   ```
 
-* Create driver source code folder under <delfin path>/delfin/drivers/
+* Create driver source code folder under `<delfin path>/delfin/drivers/`
   ```bash
   mkdir -p /path-to-delfin/delfin/drivers/sample_vendor
   touch /path-to-delfin/delfin/drivers/sample_vendor/__init__.py
   ```
 
-* Extend base class StorageDriver defined in <delfin path>/delfin/drivers/driver.py, to implement a new driver.
+* Extend base class StorageDriver defined in `<delfin path>/delfin/drivers/driver.py`, to implement a new driver.
 
   ```python
   # Copyright 2020 The SODA Authors.
@@ -89,7 +93,19 @@ Existing Delfin Drivers for reference:
 
   ```
 
-* Implement all the interfaces defined in <delfin path>/delfin/drivers/driver.py, in the new driver.
+* Implement all the interfaces defined in `<delfin path>/delfin/drivers/driver.py`, in the new driver.
+
+| Driver Interfaces | Input args | Output | Comment |
+| ------ | ------ | ------ | ------ |
+| **get_storage()** | `context`: Delfin framework context | Storage dict with schema defined in `delfin/db/sqlalchemy/model.py` `Storage` |  Get storage device information from storage system |
+| **reset_connection()** | `context`: Delfin framework context, kwargs: access info | None |  Reset connection with backend with new args |
+| **list_storage_pools()** | `context`: Delfin framework context | StoragePool dict with schema defined in `delfin/db/sqlalchemy/model.py` `StoragePool` |  List all storage pools from storage system |
+| **list_volume()** | `context`: Delfin framework context | Volume dict with schema defined in `delfin/db/sqlalchemy/model.py` `Volume` |  List all storage volumes from storage system |
+| **add_trap_config()** | `context`: Delfin framework context, `trap_config`: trap configuration | None |  Config the trap receiver in storage system |
+| **remove_trap_config()** | `context`: Delfin framework context, `trap_config`: trap configuration | None |  Remove trap receiver configuration from storage system |
+| **parse_alert()** | `context`: Delfin framework context, `alert`: alert to parse | Alert dict as shown in `delfin/drivers/driver.py` |  Parse alert data got from snmp trap server |
+| **list_alerts()** | `context`: Delfin framework context, `query_para`: optional, contains 'begin_time' and 'end_time' | Alert dict as shown in `delfin/drivers/driver.py` |  List all current alerts from storage system |
+| **clear_alert()** | `context`: Delfin framework context, `alert`: alert to clear | Success/Failure |   Clear alert from storage system |
 
   ```python
 
@@ -111,7 +127,7 @@ Existing Delfin Drivers for reference:
             'subscribed_capacity': 123
         }
 
-    def list_storage_pools(self, ctx):
+    def list_storage_pools(self, context):
         pool_list = []
         for idx in range(3):
             p = {
@@ -127,7 +143,7 @@ Existing Delfin Drivers for reference:
             pool_list.append(p)
         return pool_list
 
-    def list_volumes(self, ctx):
+    def list_volumes(self, context):
       volume_list = []
       for i in range(1, 5):
           v = {
@@ -161,9 +177,20 @@ Existing Delfin Drivers for reference:
 
   ```
 
+* Install delfin and start delfin services of api.py, task.py and alert.py.
+
+  ```bash
+  cd <delfin directory>
+  python setup.py install
+  python delfin/cmd/api.py --config-file ./etc/delfin/delfin.conf &
+  python delfin/cmd/task.py --config-file ./etc/delfin/delfin.conf &
+  python delfin/cmd/alert.py --config-file ./etc/delfin/delfin.conf
+
+  ```
 * Ensure create storages API call from Delfin, can load the driver successfully.
 
   ```bash
+  # Sample driver with dummy values for create storage body
   curl -H "Content-Type: application/json" -X POST http://localhost:8190/v1/storages -d '
   {
     "rest": {
@@ -191,7 +218,7 @@ Existing Delfin Drivers for reference:
 * Ensure APIs of list_*() and alert*() works as expected.
 
   ``` bash
-
+  # Example delfin APIs that can be used with Sample driver
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages-pools
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/volumes
