@@ -26,7 +26,7 @@ Before starting to write the APIs, it is required to have basic understanding of
 ## How to write the APIs
 
 ### There are three major steps involved:
-    a) All APIs goes into the 's3' module of the SODA multi-cloud package, i,e. opensds/multi-cloud/api/pkg/s3 directory
+    a) All APIs goes into the 's3' module of the SODA multi-cloud package, i,e. sodafoundation/multi-cloud/api/pkg/s3 directory
     b) The corresponding router for the API are defined same directory.
     c) For every API there must be a function defined in proto file.
 Example of adding API router (router.go):
