@@ -87,7 +87,7 @@ CLI for Orchestration
 
 ### Steps to run CLI:
 
-* Deploy SODA (https://github.com/opensds/opensds/wiki)
+* [Deploy SODA](https://docs.sodafoundation.io/soda-gettingstarted/quickstart/)
 * Deploy StackStorm with [SODA packs](https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md)
 * [Start Orchestrator](https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md)
 * Update input parameters in util.py file (OPENSDS_IP, ORCHESTRATOR_IP, etc.)
