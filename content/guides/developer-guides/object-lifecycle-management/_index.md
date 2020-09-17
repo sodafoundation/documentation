@@ -18,7 +18,7 @@ APIs are a set of functions and procedures that allow for the creation of applic
 Before starting to write the APIs, it is required to have basic understanding of XML and JSON syntax.
 
 #### There are three major steps involved:
-    a) All APIs go into the 's3' module of the SODA multi-cloud package, i,e. opensds/multi-cloud/api/pkg/s3 directory
+    a) All APIs go into the 's3' module of the SODA multi-cloud package, i,e. sodafoundation/multi-cloud/api/pkg/s3 directory
 =======
 ## Write new API
 Before starting to write the APIs, it is required to have basic understanding of XML and JSON syntax.
