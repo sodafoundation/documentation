@@ -22,7 +22,7 @@ SODA Capri release provides pre-defined service catalogs. Service catalogs serve
 SODA Orchestration service acts as the facilitator to orchestrate actions between SODA dashboard, Orchestration Manager and the SODA backend. Currently SODA supports StackStorm (https://docs.stackstorm.com/overview.html) as the Orchestration Manager. It uses Mistral workflows in StackStorm.
 
 ## Installation
-Please refer https://github.com/opensds/orchestration/blob/master/docs/INSTALL.md to install SODA and all the required components of Orchestration.
+Please refer https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md to install SODA and all the required components of Orchestration.
 
 ## Orchestrating workflows
 SODA currently have two types of pre-defined services to orchestrate the workflows. Volume Provisioning and Bucket Migration.
