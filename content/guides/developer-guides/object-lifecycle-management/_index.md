@@ -7,7 +7,7 @@ tags: ["developer guide", "object lifecycle"]
 ---
 ## Overview
 
-This guide is intended for Object Lifecycle feature developers. It provides detailed steps to write new API using SODA. To understand the feature and requirements in detail, please refer to the Object Lifecycle Management [user guide](/guides/user-guides/object-lifecycle-management/) and Object Lifecycle [design spec](https://github.com/opensds/design-specs/blob/master/specs/capri/object_lifecycle_management.md). 
+This guide is intended for Object Lifecycle feature developers. It provides detailed steps to write new API using SODA. To understand the feature and requirements in detail, please refer to the Object Lifecycle Management [user guide](/guides/user-guides/object-lifecycle-management/) and Object Lifecycle [design spec](https://github.com/sodafoundation/design-specs/blob/master/specs/capri/object_lifecycle_management.md). 
 
 
 ## APIs
