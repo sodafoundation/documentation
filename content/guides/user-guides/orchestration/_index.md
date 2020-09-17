@@ -15,7 +15,7 @@ SODA users who plan to orchestrate complex tasks in a distributed environment
 ## Purpose
 
 ## Problem reporting instructions
-Please refer to this guide or release notes first for any known issues or workarounds available. Issues related to Orchestration can be raised at https://github.com/opensds/orchestration/issues
+Please refer to this guide or release notes first for any known issues or workarounds available. Issues related to Orchestration can be raised at https://github.com/sodafoundation/orchestration/issues
 
 ## Overview
 SODA Capri release provides pre-defined service catalogs. Service catalogs serves specific purpose and abstracts the underlying actions from end-user. End user can create instances of these services and check the status. User can see the entities through SODA dashboard or use SODA CLIs to check it from console.
@@ -247,4 +247,3 @@ Please refer to https://github.com/opensds/orchestration/blob/master/docs/INSTAL
 
 ## References
 [TODO: Add developer guide reference]
-
