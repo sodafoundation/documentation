@@ -1,5 +1,5 @@
 ﻿---
-title: Telemetry with LVM User Guide
+title: Telemetry with LVM
 description: "User guide for Telemetry with LVM."
 weight: 10
 disableToc: false
