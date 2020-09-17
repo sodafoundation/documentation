@@ -181,12 +181,10 @@ Existing Delfin Drivers for reference:
 
   ```bash
   cd <delfin directory>
-  python setup.py install
-  python delfin/cmd/api.py --config-file ./etc/delfin/delfin.conf &
-  python delfin/cmd/task.py --config-file ./etc/delfin/delfin.conf &
-  python delfin/cmd/alert.py --config-file ./etc/delfin/delfin.conf
+  ./script/start.sh
 
   ```
+
 * Ensure create storages API call from Delfin, can load the driver successfully.
 
   ```bash
@@ -222,7 +220,7 @@ Existing Delfin Drivers for reference:
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/storages-pools
   curl -H "Content-Type: application/json" -X GET http://localhost:8190/v1/volumes
-  curl -H "Content-Type: application/json" -X POST http://localhost:8190/v1/storages/<storage_id>/sync
+  curl -X POST http://localhost:8190/v1/storages/<storage_id>/sync
   ...
   ```
 
