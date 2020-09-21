@@ -52,6 +52,7 @@ go version
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
+# Checkout the required version. For example, to checkout v1.0.0 follow
 git checkout v1.0.0
 ```
 {{% notice warning %}}
