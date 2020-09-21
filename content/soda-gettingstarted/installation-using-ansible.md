@@ -149,6 +149,52 @@ use_cinder_standalone: true
 
 Configure the auth and pool options to access cinder in `group_vars/cinder/cinder.yaml`. Do not need to make additional configure changes if using cinder standalone.
 
+**NetApp NAS**
+
+If NetApp NAS is chosen as storage backend, modify `group_vars/osdsdock.yml`
+
+```bash
+enable_backends: netapp_ontap_nas
+```
+
+Configure `ansible/group_vars/netapp/ontap/ontap_nas.yaml` with an example below. (Check the comments in the script below):
+
+```bash
+backendOptions:
+  version: 1
+  username: "username"                 # USERNAME of the DATA ONTAP cluster access
+  password: "password"                 # PASSWORD of the DATA ONTAP Cluster access
+  storageDriverName: "ontap-nas"
+  managementLIF: "1.2.3.4"             # This should be the IP ADDRESS of the DATA ONTAP Cluster
+  dataLIF: "1.2.3.5"                   # This should be the IP ADDRESS of the NETAPP SVM NFS Server 
+  svm: "soda-svm"                      # Name of the SVM which has above NFS server associated
+pool:
+  soda-pool:                           # Change "soda-pool" to the name of the aggregate associated with above SVM
+    storageType: file
+    availabilityZone: default
+    multiAttach: true
+    extras:
+      dataStorage:
+        provisioningPolicy: Thin
+        compression: false
+        deduplication: false
+        storageAccessCapability:
+          - Read
+          - Write
+          - Execute
+      ioConnectivity:
+        accessProtocol: nfs
+        maxIOPS: 7000000
+        maxBWS: 600
+        minIOPS: 1000000
+        minBWS: 100
+        latency: 100
+      advanced:
+        diskType: SSD
+        latency: 5ms
+```
+
+
 **How to enable Telemetry installation**
 **NOTE :** Please ensure that you are using hotpot version >= v0.6.1.
 
