@@ -1,20 +1,20 @@
 ---
-title: File Share feature User Guide
+title: File Share
 description: "User guide for File Share feature."
 weight: 10
 disableToc: false
 tags: ["user guide", "file share"] 
 ---
 ## File Share Introduction
-File share in opensds facilitates the user to create file share, set access permission for that file share and user can also create snapshot. Opensds provides both CLI and Dashboard to operate or play with file share feature.
-Goals of file share in opensds are
-Facilitating File Share Service by providing Standard API to manage multiple vendors, simplify File Share API definition
-File share across the users based on access capability
-File share facilitates with profiling
+File share in SODA facilitates the user to create file share, set access permission for that file share and user can also create snapshot. SODA provides both CLI and Dashboard to operate or play with file share feature.
+Goals of file share in SODA are
+- Facilitating File Share Service by providing Standard API to manage multiple vendors, simplify File Share API definition
+- File share across the users based on access capability
+- File share facilitates with profiling
 Scope for now is to support only NFS, SMB file share protocols
 
-### Install file share feature with opensds
-Follow the wiki link to install opensds https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible
+### Install file share feature with SODA
+Follow the wiki link to install SODA https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible
 
 Make sure backend nfs is enable to use file share feature 
 ###### NFS
@@ -25,8 +25,8 @@ enabled_backends: nfs
 
 ## Set the environment to start use of file share feature
 
-### OpenSDS CLI
-Firstly configure opensds CLI tool:
+### SODA CLI
+Firstly configure SODA CLI tool:
 ```bash
 sudo cp /opt/opensds-hotpot-linux-amd64/bin/osdsctl /usr/local/bin/
 
@@ -75,15 +75,15 @@ Create snapshot of file share
 osdsctl fileshare snapshot create <fileshare_id> -n <snapshot_name> -d "description of file share snapshot"
 ```
 
-### OpenSDS UI
-OpenSDS UI dashboard is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123`. Create `tenant`, `user`, and `profiles` as admin.
+### SODA UI
+SODA UI dashboard is available at `http://{your_host_ip}:8088`, please login the dashboard using the default admin credentials: `admin/opensds@123`. Create `tenant`, `user`, and `profiles` as admin.
 
 Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resource
 
 #### File Share Services
 * Create a file share
 
-Post login into the OpenSDS UI, File share can be created from: Resource -> File share -> Create
+Post login into the SODA UI, File share can be created from: Resource -> File share -> Create
 ![Fileshare create menu](fileshare_menu.PNG?raw=true)
 
 * Create snapshot

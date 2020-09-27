@@ -6,18 +6,27 @@ disableToc: false
 tags: ["developer guide", "object lifecycle"] 
 ---
 ## Overview
-This guide is intended for Object Lifecycle feature developers. It provides detailed steps to write new API using OpenSDS. To understand the feature and requirements in detail, please refer to the Object Lifecycle Management user guide and Object Lifecycle design doc. 
+
+This guide is intended for Object Lifecycle feature developers. It provides detailed steps to write new API using SODA. To understand the feature and requirements in detail, please refer to the Object Lifecycle Management [user guide](/guides/user-guides/object-lifecycle-management/) and Object Lifecycle [design spec](https://github.com/sodafoundation/design-specs/blob/master/specs/capri/object_lifecycle_management.md). 
+
 
 ## APIs
-APIs are a set of functions and procedures that allow for the creation of applications that access data and features of other applications, services or operating system. In OpenSDS lifecycle management feature we are using APIs to communicate with different storage backend.
+APIs are a set of functions and procedures that allow for the creation of applications that access data and features of other applications, services or operating system. In SODA lifecycle management feature we are using APIs to communicate with different storage backend.
 
+
+### Write new API
+Before starting to write the APIs, it is required to have basic understanding of XML and JSON syntax.
+
+#### There are three major steps involved:
+    a) All APIs go into the 's3' module of the SODA multi-cloud package, i,e. sodafoundation/multi-cloud/api/pkg/s3 directory
+=======
 ## Write new API
 Before starting to write the APIs, it is required to have basic understanding of XML and JSON syntax.
 
 ## How to write the APIs
 
 ### There are three major steps involved:
-    a) All APIs goes into the 's3' module of the OpenSDS multi-cloud package, i,e. opensds/multi-cloud/api/pkg/s3 directory
+    a) All APIs goes into the 's3' module of the SODA multi-cloud package, i,e. sodafoundation/multi-cloud/api/pkg/s3 directory
     b) The corresponding router for the API are defined same directory.
     c) For every API there must be a function defined in proto file.
 Example of adding API router (router.go):
@@ -76,7 +85,9 @@ eea40a48de97        wurstmeister/zookeeper            "/bin/sh -c '/usr/sb…"  
 
 To check if the API changes are reflected in database, install mongoDB compass and check the metadata of the buckets
 
-![mongo connection image  ](opensds_mongo.PNG?raw=true)
+
+![mongo connection image  ](opensds_mongo.png?raw=true)
+
 
 #### The postman request for API call:
 

@@ -6,7 +6,7 @@ disableToc: false
 tags: ["developer guide", "file share"] 
 ---
 
-This tutorial guides users and new contributors to get familiar with OpenSDS by installing a simple local cluster and enabling NFS to use file share feature. You can also use the ansible script to install automatically. See details in OpenSDS Local Cluster Installation through ansible.
+This tutorial guides users and new contributors to get familiar with SODA by installing a simple local cluster and enabling NFS to use file share feature. You can also use the ansible script to install automatically. See details in SODA Local Cluster Installation through ansible.
 
 ### Prerequisite
 Make sure you have all the following:
@@ -16,10 +16,9 @@ Make sure you have all the following:
 * Some tools (git, make and gcc) prepared.
 
 ### Step by Step Installation
-There are two projects provided to user, if user only wants file share feature: OpenSDS(Hotpot), Dashboard. If user wants more opensds services they can refer https://github.com/opensds/documentation for user guide and install guide
+There are two projects provided to user, if user only wants file share feature, they need to have github.com/sodafoundation/api, github.com/sodafoundation/controller, github.com/sodafoundation/dock and github.com/sodafoundation/dashboard (if you need GUI). 
 
-#### OpenSDS (Hotpot)
-Bootstrap
+#### SODA Bootstrap
 First you need to download bootstrap script and run it locally with root access.
 ```
 curl -sSL https://raw.githubusercontent.com/opensds/opensds/master/install/devsds/bootstrap.sh | sudo bash
