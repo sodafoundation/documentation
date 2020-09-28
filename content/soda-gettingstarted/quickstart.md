@@ -11,8 +11,8 @@ This is a quickstart guide for users and new contributors to try and get familia
 To have more magement control on the installaton cofigurations,  or to try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ## Quick Installation and experience of SODA releases
-### Install SODA v1.0.0 Faroe Release Jun 2020
-Quick installation from SODA Faroe Release:
+### Install SODA v1.1.0 Greenland Release September 2020
+Quick installation from SODA Greenland Release:
 
  - **Prerequisite**
 	 - OS: Ubuntu 16.04 or Ubuntu 18.04
@@ -42,12 +42,12 @@ Quick installation from SODA Faroe Release:
 		- source /etc/profile
 
  - **Get and Install Release Binaries**
-	 - wget  **[https://github.com/sodafoundation/installer/releases/download/v1.0.0/installer-v1.0.0.tar.gz](https://github.com/sodafoundation/installer/releases/download/v1.0.0/installer-v1.0.0.tar.gz)**
+	 - wget  **[https://github.com/sodafoundation/installer/releases/download/v1.1.0/installer-v1.1.0.tar.gz](https://github.com/sodafoundation/installer/releases/download/v1.1.0/installer-v1.1.0.tar.gz)**
  **OR** Download the installer binaries from  
- [https://github.com/sodafoundation/installer/releases/tag/v1.0.0](https://github.com/sodafoundation/installer/releases/tag/v1.0.0)
+ [https://github.com/sodafoundation/installer/releases/tag/v1.1.0](https://github.com/sodafoundation/installer/releases/tag/v1.1.0)
 
-	 - tar xvzf installer-v1.0.0.tar.gz
-	 - cd installer-v1.0.0/ansible/
+	 - tar xvzf installer-v1.1.0.tar.gz
+	 - cd installer-v1.1.0/ansible/
 	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
 	 - ansible --version # Ansible version 2.4.x is required
 	 - The HOST_IP need to be set to the real_host_ip of your host (ex: 192.168.1.10 or 127.0.0.1 for localhost)
