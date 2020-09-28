@@ -19,9 +19,15 @@ apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 lib
 ```
 #### Install docker:
 
+##### For Ubuntu 16.04
 ```bash
 wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 ```
+##### For Ubuntu 18.04
+```bash
+wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
+```
+
 ```bash
 dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 ```
