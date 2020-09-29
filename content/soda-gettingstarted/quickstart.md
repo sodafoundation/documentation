@@ -50,13 +50,13 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 		- echo export GOPATH=$HOME/gopath >> /etc/profile
 		- source /etc/profile
 
- - **Get and Install Release Binaries**
-		|-------------|------------|
-        |**RELEASE NAME** | **RELEASE TAG**|
-		|Greenland        | v1.1.0         |
-		|Faroe            | v1.0.0         |
-		|Elba             | v0.20.0        |
-    	Use the **RELEASE TAG** in the commands below.
+	- **Get and Install Release Binaries**
+			|-----------------|----------------|
+			|**RELEASE NAME** | **RELEASE TAG**|
+			|Greenland        | v1.1.0         |
+			|Faroe            | v1.0.0         |
+			|Elba             | v0.20.0        |
+			Use the **RELEASE TAG** in the commands below.
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz](https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz)**
  **OR** Download the installer binaries from  
  [https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>](https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>)
