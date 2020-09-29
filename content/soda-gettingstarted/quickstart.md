@@ -8,28 +8,37 @@ This is a quickstart guide for users and new contributors to try and get familia
 
 ***Note**: *At present, this document also provides the installation steps to try out older OpenSDS releases. Soon, the support for old opensds releases shall be removed.**
 
-To have more magement control on the installaton cofigurations,  or to try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
+To have more control of the installaton cofigurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ## Quick Installation and experience of SODA releases
+
 ### Install SODA v1.1.0 Greenland Release September 2020
 Quick installation from SODA Greenland Release:
 
- - **Prerequisite**
-	 - OS: Ubuntu 16.04 or Ubuntu 18.04
-	 - `root` user rights is REQUIRED 
-    -   Make sure the following packages are installed or use the steps to install them.
-    - Install Basic Dependency:
-	    - apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk
+
+This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
+
+- **Prerequisite**
+ 
+   - Get superuser priviledges:
+    
+      `sudo -s`
+    
+    - Install Basic Dependencies:
+      
+      `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
 	    
-   - Install Docker
-   	 - For Ubuntu 16.04:
-	    - wget **[https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb](https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb)**
+     - Install Docker:
+       - Ubuntu 16.04:
+
+       `wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
 	
-	 - For Ubuntu 18.04:
-	    - wget **[https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb)**
-	    
-    - dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
+       - Ubuntu 18.04:
+
+       `wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
+    
     - Install docker-compose:
+
 	    -   curl -L https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 		-   chmod +x /usr/local/bin/docker-compose
     -   Required golang version: 1.13.x
@@ -66,18 +75,21 @@ Quick installation from SODA Greenland Release:
 		 - ansible-playbook clean.yml -i local.hosts -vvv
 	 - and then run:
 		 - ansible-playbook site.yml -i local.hosts
+
  -   **How to do a quick test**
-		- Open Your Browser and use the http://< actual host ip>:8088 to access the SODA Dashboard
-    (This IP should be the IP Address of the host if you have updated the config file) Ex: [http://127.0.0.1:8088](http://127.0.0.1:8088)
+
+      - Open Your Browser and use the http://< actual host ip>:8088 to access the SODA Dashboard (this IP should be the IP Address of the host if you have updated the config file) Example: [http://127.0.0.1:8088](http://127.0.0.1:8088)
   
-	 - Use admin/opensds@123 credentials to login
-     -   You will login to the UI Dashboard and you can verify the features through various menu options
+      - Use admin/opensds@123 credentials to login
+      
+      - You will login to the UI Dashboard and you can verify the features through various menu options
 
 
+### Previous Release
 
-### Install SODA v0.20.0 Elba Release Apr 2020
- - Elba Release (First Release of SODA) : Refer the "How to use the Release" section of [Elba Release Notes](https://github.com/sodafoundation/releases/releases/tag/v0.20.0)
- 
+**Install SODA v0.20.0 Elba Release Apr 2020**
 
-ATTN: We are currently not supporting the older versions before Elba. However, if you have specific reasons to use older versions, please contact at #general  slack channel of [soda foundation slack](https://sodafoundation.io/slack)
+- Elba Release (First Release of SODA) : Refer the "How to use the Release" section of [Elba Release Notes](https://github.com/sodafoundation/releases/releases/tag/v0.20.0) 
+
+Note: We are currently not supporting the older versions before Elba. However, if you have specific reasons to use older versions, please contact at #general  slack channel of [soda foundation slack](https://sodafoundation.io/slack)
 
