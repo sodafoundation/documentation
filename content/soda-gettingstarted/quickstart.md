@@ -42,12 +42,18 @@ Quick installation from SODA Greenland Release:
 		- source /etc/profile
 
  - **Get and Install Release Binaries**
-	 - wget  **[https://github.com/sodafoundation/installer/releases/download/v1.1.0/installer-v1.1.0.tar.gz](https://github.com/sodafoundation/installer/releases/download/v1.1.0/installer-v1.1.0.tar.gz)**
+		|-------------|------------|
+        |**RELEASE NAME** | **RELEASE TAG**|
+		|Greenland        | v1.1.0         |
+		|Faroe            | v1.0.0         |
+		|Elba             | v0.20.0        |
+    	
+	 - wget  **[https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz](https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz)**
  **OR** Download the installer binaries from  
- [https://github.com/sodafoundation/installer/releases/tag/v1.1.0](https://github.com/sodafoundation/installer/releases/tag/v1.1.0)
+ [https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>](https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>)
 
-	 - tar xvzf installer-v1.1.0.tar.gz
-	 - cd installer-v1.1.0/ansible/
+	 - tar xvzf installer-<RELEASE_TAG>.tar.gz
+	 - cd installer-<RELEASE_TAG>/ansible/
 	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
 	 - ansible --version # Ansible version 2.4.x is required
 	 - The HOST_IP need to be set to the real_host_ip of your host (ex: 192.168.1.10 or 127.0.0.1 for localhost)
