@@ -53,7 +53,7 @@ disableToc: false
 
     The goal is to make most of the protocols and backends supported as close as ‘plug n play’. Currently, each storage backend needs a thin, easy to develop SODA Driver Plugin to connect the storage backend to the Dock. SODA Driver Plugin and Storage vendor driver together it can be called SODA Driver for xxx vendor yy model storage.SODA Driver can support one or more or multiple classes of storage backends.
 
-    To connect more and more cloud-native storages seamlessly with the SODA Platform,there is an experimental feature for CSI PlugNPlay is getting developed. This will immediately enable any CSI driver to work with SODA using a single SODA CSI plugin for the application platform (like Kubernetes), in turn, support all the storage vendors supporting CSI.
+    To connect more and more cloud-native storages seamlessly with the SODA Platform,there is an experimental feature for CSI PlugNPlay is developed. This will immediately enable any CSI driver to work with SODA using a single SODA CSI plugin for the application platform (like Kubernetes), in turn, support all the storage vendors supporting CSI.
 
     SODA Dock can interface directly to SODA API or via Controller. However, it is recommended through the controller for a complete end to end solution, as it can provide the metadata management, handling multiple docks, etc.
 
@@ -79,7 +79,7 @@ disableToc: false
 
     It also supports Ceph backed to enable on-prem. China Unicom has integrated their YIG project into SODA Multicloud, enabling Ceph to be used as a massively scalable backend object storage.
 
-    Basic file service support is added and block support is in pipeline.
+    Basic file service support is added for AWS, Azure and GCP and basic block service support is added for AWS EBS.
 
     The technical team is exploring to extend SODA Multicloud and other key layers of SODA into a distributed data store which can support block, file and object data management across the edge, on-premise, and cloud 
 
