@@ -71,12 +71,10 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
       - Run the installer:
       
       `ansible-playbook site.yml -i local.hosts`
+            
+      - Rerun a clean install if desired:
       
-      - Repeat the above command several times if Ansible fails to find unarchive command (see https://github.com/ansible/ansible/issues/35645#issuecomment-402207861) 
-      
-      - You can also run a clean install if desired:
-      
-      `ansible-playbook clean.yml -i local.hosts -vvv &&& ansible-playbook site.yml -i local.hosts`
+      `ansible-playbook clean.yml -i local.hosts -vvv && ansible-playbook site.yml -i local.hosts`
       
  -   **How to do a quick test**
 
