@@ -11,9 +11,9 @@ This is a quickstart guide for users and new contributors to try and get familia
 To have more control of the installaton cofigurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ## Supported SODA releases
-The following releases are supported using the installation steps given below.
 
-- 
+- The following releases are supported using the installation steps given below.
+
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
 	|Greenland        | v1.1.0         |
