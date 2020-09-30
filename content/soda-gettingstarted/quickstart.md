@@ -10,11 +10,18 @@ This is a quickstart guide for users and new contributors to try and get familia
 
 To have more control of the installaton cofigurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
+## Supported SODA releases
+The following releases are supported using the installation steps given below.
+
+- 
+	|**RELEASE NAME** | **RELEASE TAG**|
+	|-----------------|----------------|
+	|Greenland        | v1.1.0         |
+	|Faroe            | v1.0.0         |
+	|Elba             | v0.20.0        |
+	Use the **RELEASE TAG** in the commands below.
+
 ## Quick Installation and experience of SODA releases
-
-### Install SODA v1.1.0 Greenland Release September 2020
-Quick installation from SODA Greenland Release:
-
 
 This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
@@ -51,14 +58,7 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 		- source /etc/profile
 
 	- **Get and Install Release Binaries**
-
-		
-		|**RELEASE NAME** | **RELEASE TAG**|
-		|-----------------|----------------|
-		|Greenland        | v1.1.0         |
-		|Faroe            | v1.0.0         |
-		|Elba             | v0.20.0        |
-		Use the **RELEASE TAG** in the commands below.
+	
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz](https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz)**
  **OR** Download the installer binaries from  
  [https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>](https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>)
@@ -88,10 +88,6 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
 
 ### Previous Release
-
-**Install SODA v0.20.0 Elba Release Apr 2020**
-
-- Elba Release (First Release of SODA) : Refer the "How to use the Release" section of [Elba Release Notes](https://github.com/sodafoundation/releases/releases/tag/v0.20.0) 
 
 Note: We are currently not supporting the older versions before Elba. However, if you have specific reasons to use older versions, please contact at #general  slack channel of [soda foundation slack](https://sodafoundation.io/slack)
 
