@@ -1,7 +1,7 @@
 ---
 title: Faroe
 description: "SODA Foundation release v1.0.0"
-weight: 1
+weight: 2
 ---
 
 
