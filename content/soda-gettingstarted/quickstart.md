@@ -36,11 +36,11 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
       `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
 	    
      - Install Docker:
-       - Ubuntu 16.04:
+       	- Ubuntu 16.04:
 
        `wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
 	
-       - Ubuntu 18.04:
+       	- Ubuntu 18.04:
 
        `wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
     
