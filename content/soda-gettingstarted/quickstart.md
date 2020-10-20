@@ -59,12 +59,12 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
 	- **Get and Install Release Binaries**
 	
-	 - wget  **[https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz](https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz)**
+	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)**
  **OR** Download the installer binaries from  
- [https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>](https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>)
+ [https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG]](https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG])
 
-	 - tar xvzf installer-<RELEASE_TAG>.tar.gz
-	 - cd installer-<RELEASE_TAG>/ansible/
+	 - tar xvzf installer-[RELEASE_TAG].tar.gz
+	 - cd installer-[RELEASE_TAG]/ansible/
 	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
 	 - ansible --version # Ansible version 2.4.x is required
 	 - The HOST_IP need to be set to the real_host_ip of your host (ex: 192.168.1.10 or 127.0.0.1 for localhost)
