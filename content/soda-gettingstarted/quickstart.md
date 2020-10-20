@@ -19,7 +19,7 @@ To have more control of the installaton cofigurations, or try out various config
 	|Greenland        | v1.1.0         |
 	|Faroe            | v1.0.0         |
 	|Elba             | v0.20.0        |
-	Use the **RELEASE TAG** in the commands below.
+	Use the **RELEASE TAG** in the commands below wherever mentioned RELEASE-TAG.
 
 ## Quick Installation and experience of SODA releases
 
