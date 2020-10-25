@@ -33,7 +33,7 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
     
     - Install Basic Dependencies:
       
-      `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
+      `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk python3-pip`
 	    
      - Install Docker:
        - Ubuntu 16.04:
