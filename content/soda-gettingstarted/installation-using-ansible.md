@@ -231,6 +231,70 @@ Update the file `ansible/group_vars/delfin.yml` and change the value of `enable_
 enable_delfin: true
 ```
 
+To enable the Prometheus or Kafka Exporter in delfin change the value of `performance_exporters` to `PerformanceExporterPrometheus` or `PerformanceExporterKafka` or a comma separated list if both.
+
+
+```
+
+performance_exporters: PerformanceExporterPrometheus, PerformanceExporterKafka
+
+```
+
+To enable delfin to push alerts to Alertmanager change the value of `alert_exporters`
+```
+alert_exporters: AlertExporterPrometheus
+```
+
+The Kafka or Prometheus exporters endpoints can be configured here
+
+```
+# Exporter configurations for Kafka
+delfin_exporter_kafka_ip: 'localhost'
+delfin_exporter_kafka_port: 9092
+delfin_exporter_kafka_topic: 'delfin-kafka'
+
+# Exporter configurations for Prometheus
+delfin_exporter_prometheus_ip: 0.0.0.0
+delfin_exporter_prometheus_port: 8195
+delfin_exporter_prometheus_cache_file: '/var/lib/delfin/delfin_exporter.txt'
+```
+
+The delfin alertmanager exporter endpoint can be configured here
+
+```
+#Exporter configurations for Alert Manager
+delfin_exporter_alertmanager_host: 'localhost'
+delfin_exporter_alertmanager_port: 9093
+```
+
+**Enable SRM Toolchain installation**
+The SRM Toolchain is required to view the metrics and visualization in the SODA Dashboard.
+Update the file `ansible/group_vars/srm-toolchain.yml` and change the value of `install_srm_toolchain` to `true`
+If this value is set to false then the metrics and visualization will not be available using SODA Dashboard. 
+
+```
+install_srm_toolchain: true
+```
+
+This will install Prometheus, AlertManager and Grafana versions as per the configuration below and can be changed. 
+
+```
+prometheus_image_tag: v2.23.0
+prometheus_port: 9090
+
+alertmanager_image_tag: v0.21.0
+alertmanager_port: 9093
+
+grafana_image_tag: 7.3.5
+grafana_port: 3000
+```
+{{% notice warning %}}
+
+Please note this will install the SRM Toolchain as docker containers. 
+If you already have any of the above running then please make the appropriate changes to the docker container name and ports in the `ansible/srm-toolchain/docker-compose.yml`
+
+{{% /notice %}}
+
 Check if the hosts can be reached
 
 ```bash
@@ -245,6 +309,13 @@ ansible-playbook site.yml -i local.hosts
 [verbosity level: -vv < -vvv]
 ansible-playbook site.yml -i local.hosts -vvv
 ```
+
+SODA ansible installer supports installation using tags. To install a particular service use the playbook as follows
+```bash
+#This installs only delfin
+ansible-playbook site.yml -i local.hosts -vvv --tags delfin
+```
+Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
 
 ### How to test SODA projects cluster
 
@@ -363,6 +434,14 @@ ansible-playbook clean.yml -i local.hosts
 # You can use the -vvv option to enable verbose display and debug mode.
 ansible-playbook clean.yml -i local.hosts -vvv
 ```
+
+SODA ansible installer supports uninstallation using tags. To uninstall a particular service use the playbook as follows
+```bash
+#This uninstalls only delfin
+ansible-playbook clean.yml -i local.hosts -vvv --tags delfin
+```
+Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
+
 Run ceph-ansible playbook to clean ceph cluster if ceph is deployed
 
 ```bash
