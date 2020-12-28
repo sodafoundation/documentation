@@ -195,17 +195,6 @@ pool:
         latency: 5ms
 ```
 
-
-**How to enable Telemetry installation**
-**NOTE :** Please ensure that you are using hotpot version >= v0.6.1.
-
-Update the file `ansible/group_vars/telemetry.yml` and change the value of enable_telemetry_tools to true
-
-```bash
-# Do you need to install or clean up telemetry tools?
-enable_telemetry_tools: false
-```
-
 **How to enable Orchestration installation**
 
 
