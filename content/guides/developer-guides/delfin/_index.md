@@ -9,7 +9,7 @@ tags: ["developer guide", "delfin"]
 # Driver Development Guide
 
 
-Delfin is an Infrastructure Management framework under SODA foundation projects for Heterogeneous storage backends (cloud-enabled, offline-storage, etc.) for management, status collection and alerting.
+Delfin is an Infrastructure Management framework under SODA foundation projects for Heterogeneous storage backends (cloud-enabled, offline-storage, etc.) for management, status collection, telemetry and alerting.
 
 ## Goals
 
