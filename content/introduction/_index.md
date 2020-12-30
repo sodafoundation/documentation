@@ -80,10 +80,6 @@ More details [here](https://sodafoundation.io/projects/soda-plugins/)
 SODA Multicloud project provides a cloud vendor agnostic data management for hybrid cloud, crosscloud or incloud. It can be hosted on prem or cloud native.
 More details [here](https://sodafoundation.io/projects/soda-multicloud-dds/)
 
-- **SODA Telemetry**
-Provides monitoring  via standard interfaces to pull the statistical and health data from the infrastructure (including storage, host, ports) and a highly configurable alert management system
-More details [here](https://sodafoundation.io/projects/soda-experiments/)
-
 - **SODA Orchestration**
 The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
 More details [here](https://sodafoundation.io/projects/soda-experiments/)
