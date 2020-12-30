@@ -3,8 +3,6 @@ title: Installation Guide using Ansible
 description: "This document describes how to install SODA projects in a local cluster with detailed configuraiton options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI"
 weight: 40
 ---
-
-# SODA Installer based on Ansible.
 This document describes how to install SODA projects in a local cluster with detailed configuraiton options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
@@ -52,7 +50,49 @@ source /etc/profile
 ```bash
 go version
 ```
+***
 
+{{% notice warning %}}
+**Python3.6 is a pre-requisite for installation of delfin.If python3.6 is not installed, use the following commands to install python3.6 and other dependencies.**
+{{% /notice %}}
+
+#### Install Python 3.6 on Ubuntu 16.04
+
+```bash
+apt-get install software-properties-common python-software-properties -y
+
+# Add Python3.6 apt repository
+add-apt-repository ppa:deadsnakes/ppa
+apt-get update
+
+# Install python3.6
+apt-get install python3.6 -y
+
+# Install and keep both python3.5.2 and python3.6
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
+
+# Workaround for Gnome terminal not working after upgrading python3
+sudo rm /usr/bin/python3
+sudo ln -s python3.5 /usr/bin/python3
+
+# switch between the two python versions for python3 via command
+sudo update-alternatives --config python3
+
+# Install python3.6 virtual env and python3.6-dev
+apt install python3.6-venv -y
+apt install python3.6-dev -y
+wget https://bootstrap.pypa.io/get-pip.py
+python3.6 get-pip.py
+sudo ln -s /usr/bin/python3.6 /usr/local/bin/python3
+sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
+
+# Install python3.6 distutils
+apt-get install python-distutils-extra -y
+python3 -V
+```
+
+***
 
 #### Download SODA installer code
 ```bash
