@@ -10,8 +10,8 @@ OpenSDS dashboard uses the front-end development framework Angular5 (https://ang
 
 ## Prerequisite 
 
-### 1. Ubuntu
-* Version information
+### 1. This developer guide is written for the Ubuntu OS (16.04/18.04)
+Get the OS version
 ```shell
 root@proxy:~# cat /etc/issue
 Ubuntu 16.04.2 LTS \n \l
