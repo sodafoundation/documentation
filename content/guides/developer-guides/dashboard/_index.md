@@ -6,7 +6,7 @@ disableToc: false
 tags: ["developer guide", "dashboard"]
 ---
 
-OpenSDS dashboard uses the front-end development framework Angular5 (https://angular.io/) and relies on PrimeNG UI Components (https://www.primefaces.org/primeng/). 
+SODA dashboard uses the front-end development framework Angular5 (https://angular.io/) and relies on PrimeNG UI Components (https://www.primefaces.org/primeng/). 
 
 ## Prerequisite 
 
@@ -191,3 +191,10 @@ service nginx restart
 ```shell
 http://localhost/
 ```
+
+
+## PrimeNG Components
+
+SODA Dashboard makes use of [PrimeNG v5.2.7 ](https://github.com/primefaces/primeng/tree/5.2.7) components.  
+All the components that are used in the UI are included in the `src\app\components` folder.  
+The detailed documentation with API interface and usage examples for the components can be found [here](https://www.primefaces.org/primeng/v5.2.7/#/)
