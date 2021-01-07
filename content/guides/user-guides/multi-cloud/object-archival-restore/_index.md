@@ -3,7 +3,7 @@ title: Archival and Retrieval
 description: "User guide for Object Archival and Retrieval"
 weight: 40
 disableToc: false
-tags: ["user guide", "archival and retrieval"] 
+tags: ["user guide", "archival and retrieval", "multi-cloud"]
 ---
 
 ## Introduction to Object archival and retrieval
@@ -18,11 +18,13 @@ This guide shows how to archive objects into Cloud object storage and restore th
 
 To refer the API specs, please check [Cloud Object Archival API Specs](https://github.com/sodafoundation/multi-cloud/blob/master/openapi-spec/swagger.yaml)
 
-> \[*NOTE*\]: Currently this feature is available only for AWS cloud
+{{% notice note %}}
+ Currently this feature is available only for AWS cloud
+{{% /notice %}}
 
 ## Installing SODA multi-cloud
 Please refer [SODA installation using Ansible](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)
-Or Check the developer guide [multi-cloud lcoal cluster installation through repo](https://docs.sodafoundation.io/guides/developer-guides/multi-cloud/)
+Or Check the developer guide [multi-cloud local cluster installation through repo](https://docs.sodafoundation.io/guides/developer-guides/multi-cloud/)
 
 ##### SODA Dashboard UI can be accessed via
 	http://{your_host_ip}:8088/#/home
@@ -71,8 +73,9 @@ To restore an object:
 * Select the **Retrieval Tier**. Please refer the Cloud vendor docs for more details on the **Retrieval Tier** and the SLAs and costing for the same
 * Click *OK* 
 	![multi-cloud object restore](soda_object_restore.png?raw=true)
-
-> **Once the restoration of object is inititated, it may take time for the availability of the object to be downloaded. Refer cloud vendor docs for the availability corresponding to the chosen Retrieval Tier**
+{{% notice note %}}
+Once the restoration of object is inititated, it may take time for the availability of the object to be downloaded. Refer cloud vendor docs for the availability corresponding to the chosen Retrieval Tier
+{{% /notice %}}
 
 ## Download of archived object
 Once the restoration of object is complete, the object can be downloaded by clicking on the **Download** Operation

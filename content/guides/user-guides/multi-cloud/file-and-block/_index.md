@@ -3,7 +3,7 @@ title: File and Block service
 description: "User guide for File and Block storage service in multi-cloud"
 weight: 40
 disableToc: false
-tags: ["user guide", "File and Block service"] 
+tags: ["user guide", "File and Block service", "multi-cloud"]
 ---
 
 ## Introduction to File and Block storage service in multi-cloud
@@ -53,7 +53,9 @@ Click on (+) for registering a storage backend. Choose appropriate backend type 
 * Select corresponding Backend name registered from **Backend** drop down
 * Fill required details for creating the volumes
 
-> Tags and Metadata need to be chosen appropriately
+{{% notice note %}}
+Tags and Metadata need to be chosen appropriately
+{{% /notice %}}
 
 ![multi-cloud create cloud volume](soda_cloud_vol_create.png)
 
@@ -83,7 +85,9 @@ The volume should be deleted
 * Select corresponding Backend name registered from **Backend** drop down
 * Fill required details for creating the file share
 
-> Tags and Metadata need to be chosen appropriately
+{{% notice note %}}
+Tags and Metadata need to be chosen appropriately
+{{% /notice %}}
 
 ![multi-cloud create cloud fileshare](soda_create_fs.png)
 
