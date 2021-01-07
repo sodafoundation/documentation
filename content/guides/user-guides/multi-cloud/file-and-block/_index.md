@@ -1,7 +1,7 @@
 ---
 title: File and Block service
 description: "User guide for File and Block storage service in multi-cloud"
-weight: 40
+weight: 30
 disableToc: false
 tags: ["user guide", "File and Block service", "multi-cloud"]
 ---

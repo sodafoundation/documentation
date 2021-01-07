@@ -1,7 +1,7 @@
 ---
 title: Object Lifecycle
 description: "User guide for Object Lifecycle Management."
-weight: 40
+weight: 10
 disableToc: false
 tags: ["user guide", "object lifecycle"] 
 ---

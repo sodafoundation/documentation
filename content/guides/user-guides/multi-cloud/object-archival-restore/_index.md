@@ -1,7 +1,7 @@
 ---
 title: Archival and Retrieval
 description: "User guide for Object Archival and Retrieval"
-weight: 40
+weight: 20
 disableToc: false
 tags: ["user guide", "archival and retrieval", "multi-cloud"]
 ---
