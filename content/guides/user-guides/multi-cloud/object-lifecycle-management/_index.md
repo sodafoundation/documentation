@@ -19,7 +19,7 @@ By following this guide you will be able to install SODA multi-cloud with creati
 
 ```cassandraql
 git clone https://github.com/sodafoundation/installer.git
-cd opensds-installer
+cd installer
 # Checkout the latest release, give master by default or specify the branch 
 git checkout master
 ```
