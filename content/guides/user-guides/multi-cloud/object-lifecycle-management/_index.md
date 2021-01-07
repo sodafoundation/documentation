@@ -3,7 +3,7 @@ title: Object Lifecycle
 description: "User guide for Object Lifecycle Management."
 weight: 10
 disableToc: false
-tags: ["user guide", "object lifecycle"] 
+tags: ["user guide", "object lifecycle", "multi-cloud"]
 ---
 
 ## Introduction to Object lifecycle
