@@ -60,6 +60,10 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
 	- **Get and Install Release Binaries**
 	
+	{{% notice info %}}
+	 Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.2.0 etc)*
+	{{% /notice %}}
+
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)**
  **OR** Download the installer binaries from  
  [https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG]](https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG])
