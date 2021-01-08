@@ -60,7 +60,8 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
 	- **Get and Install Release Binaries**
 	
-	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/{{ RELEASE_TAG }}/installer-{{ RELEASE_TAG }}.tar.gz)** . For example, you can get latest release from https://github.com/sodafoundation/installer/releases/download/v1.2.0
+	 - wget  **[https://github.com/sodafoundation/installer/releases/download/{{ RELEASE_TAG }}/installer-{{ RELEASE_TAG }}.tar.gz](https://github.com/sodafoundation/installer/releases/download/{{ RELEASE_TAG }}/installer-{{ RELEASE_TAG }}.tar.gz)** . For example, you can get latest release from https://github.com/sodafoundation/installer/releases/download/v1.2.0
+	 
  **OR** Download the installer binaries from  
  [https://github.com/sodafoundation/installer/releases/tag/{{ RELEASE_TAG }}]
  For example, to download latest release binaries [Hawaii (v1.2.0) release installer binaries](https://github.com/sodafoundation/installer/releases/tag/v1.2.0)
