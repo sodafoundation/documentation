@@ -1,7 +1,7 @@
 ---
-title: Delfin User Guides
+title: Delfin
 menuTitle: Delfin
-description: "All user guides for the Delfin service can be found here"
+description: "All user guides for the Delfin project can be found here"
 weight: 10
 disableToc: false
 tags: ["user guide", "delfin", "dashboard"] 
