@@ -314,4 +314,4 @@ A Sample exporter implementation is provided in Delfin repo for reference. Also,
 - [Exporter writing guide]()
 - Delfin [Developer Guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/) 
 - [Alert Spec](https://github.com/sodafoundation/architecture-analysis/pull/67)
-- [Performance metrics Spec](https://github.com/sodafoundation/architecture-analysis/pull/77)
+- [Performance metrics Spec](https://github.com/sodafoundation/architecture-analysis/pull/77)  
