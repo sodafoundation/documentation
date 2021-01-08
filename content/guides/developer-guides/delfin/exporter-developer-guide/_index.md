@@ -52,7 +52,9 @@ class PerformanceExporterThirParty(base_exporter.BaseExporter):
 
   ```
 
-Note : Delfin performance data model and example can be find [here](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/PerfomanceMontoringDesign.md#data-model)
+{{% notice note %}}
+Delfin performance data model and example can be find [here](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/PerfomanceMontoringDesign.md#data-model)
+{{% /notice %}}
 
 * Step 4: Modify Delfin  configuration:
 Third party platform configurations and exporter class name has to be provided in <path_to_delfin>/etc/delfin/delfin.conf as below.
@@ -217,4 +219,3 @@ Third party exporter modules are installed with delfin . Delfin framework pushes
 ## Conclusion
 
 Pluggable design of exporter makes it easy to add third party exporters expanding infrastructure management capabilities of SODA Delfin to multiple data consumers.
-
