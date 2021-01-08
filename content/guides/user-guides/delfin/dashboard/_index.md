@@ -233,10 +233,39 @@ The following actions are supported:
 
 ### Configure Alert Source 
 ##### [\[Back to top\]](#delfin-features)  
-**SNMPV2C**
+
+**SNMPV2C**  
+
+{{% notice tip %}}
+**The parameters that are needed for Registering a SNMPV2C alert source**  
+    - **Host**: IP address of the Host  
+    - **Commnity String**:   Community string. This should be filled if version is V2C  
+    - **Port**:  Port for connecting to alert source By default, set to 161  
+    - **Max retries**: Maximum number of retries while connecting to alert source By default, set to 1  
+    - **Context name**:  Context name of the alert source  
+    - **Expiration time (sec)**  : Expiration time (in sec) for one alert source connect request By default, set to 2  
+{{% /notice %}}
+
 ![Delfin User Guide - 19](delfin-user-guide-19.png)
 
 **SNMPV3**
+
+{{% notice tip %}}
+**The parameters that are needed for registering a SNMPV3 alert source**  
+    - **Host**: IP address of the Host  
+    - **Username**:   SNMPV3 username.  
+    - **Engine ID**: Engind ID of the device which will be sending the traps. Must be a hexadecimal octet string.  
+    - **Security Level**: Security level for the user. Supported Security levels are `noAuthnoPriv`, `authNoPriv`, `authPriv`.  
+    - **Auth Protocol**: Enabled if security level is `authNoPriv` or `authPriv`. Supported protocols are `HMACSHA`, `HMACMD5`, `HMCSHA2224`, `HMCSHA2256`, `HMCSHA2384`, `HMCSHA2512`.  
+    - **Auth Key**: The appropriate authentication key based on the selected auth protocol.  
+    - **Privacy Protocol**: Enabled if security level is `authPriv`. Supported protocols are `DES`, `AES`, `AES192`, `AES256`, `3DES`.  
+    - **Privacy Key**: The appropriate privacy key based on the selected privacy protocol.  
+    - **Port**:  Port for connecting to alert source By default, set to 161  
+    - **Max retries**: Maximum number of retries while connecting to alert source By default, set to 1  
+    - **Context name**:  Context name of the alert source  
+    - **Expiration time (sec)**  : Expiration time (in sec) for one alert source connect request By default, set to 2  
+{{% /notice %}}
+
 ![Delfin User Guide - 20](delfin-user-guide-20.png)
 ![Delfin User Guide - 21](delfin-user-guide-21.png)
 ![Delfin User Guide - 21](delfin-user-guide-21-1.png)
