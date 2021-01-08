@@ -1,7 +1,7 @@
 ---
 title: Capri (v0.6.1)
 description: "This is the v0.6.1 release of OpenSDS"
-weight: 5
+weight: 6
 ---
 
 

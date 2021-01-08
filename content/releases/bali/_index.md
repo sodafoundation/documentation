@@ -1,7 +1,7 @@
 ---
 title: Bali (v0.4.0)
 description: "This is the v0.4.0 release of OpenSDS"
-weight: 6
+weight: 7
 ---
 
 The OpenSDS Bali release completed December 19, 2018.
