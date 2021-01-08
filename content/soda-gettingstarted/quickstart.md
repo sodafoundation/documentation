@@ -62,10 +62,9 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 	
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/{{ RELEASE_TAG }}/installer-{{ RELEASE_TAG }}.tar.gz](https://github.com/sodafoundation/installer/releases/download/{{ RELEASE_TAG }}/installer-{{ RELEASE_TAG }}.tar.gz)** . For example, you can get latest release from https://github.com/sodafoundation/installer/releases/download/v1.2.0
 	 
- **OR** Download the installer binaries from  
- [https://github.com/sodafoundation/installer/releases/tag/{{ RELEASE_TAG }}]
- For example, to download latest release binaries [Hawaii (v1.2.0) release installer binaries](https://github.com/sodafoundation/installer/releases/tag/v1.2.0)
-
+ 	**OR** Download the installer binaries from  
+ 	[https://github.com/sodafoundation/installer/releases/tag/{{ RELEASE_TAG }}]
+ 	For example, to download latest release binaries [Hawaii (v1.2.0) release installer binaries](https://github.com/sodafoundation/installer/releases/tag/v1.2.0)
 	 - tar xvzf installer-{{ RELEASE_TAG }}.tar.gz
 	 - cd installer-{{ RELEASE_TAG }}/ansible/
 	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
@@ -73,6 +72,13 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 	 - The HOST_IP need to be set to the real_host_ip of your host (ex: 192.168.1.10 or 127.0.0.1 for localhost)
 		 - export HOST_IP = <your_real_host_ip>
 		 - vim group_vars/common.yml # Modify `host_ip` address if needed
+	{{% notice info %}}
+	For the release with RELEASE_TAG v1.2.0
+	 - tar xvzf installer-v1.2.0.tar.gz
+	 - cd installer-v1.2.0/ansible/
+	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
+	 - ansible --version # Ansible version 2.4.x is required
+	{{% /notice %}}
 
  - **Run the installer**
 	 - ansible-playbook site.yml -i local.hosts
