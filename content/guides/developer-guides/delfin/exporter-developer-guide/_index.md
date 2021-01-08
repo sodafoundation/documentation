@@ -207,7 +207,7 @@ Register storage (fake storage for test)
 '
   ```
   
- Ensure alert datas are dispatched to third party throgh new exporter
+ Ensure alert data are dispatched to third party through new exporter
 verfiy from third party platform or through DEBUG print statements in exporter log to confirm the exporter is picked and data is pushed to third party.
 
 * Step 7 : Raise PR with test reports to Delfin repository.
