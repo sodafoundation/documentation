@@ -22,12 +22,12 @@ It provides unified APIs to access, export and connect with clients as well as a
         - [Array Raw Capacity Widget](#array-raw-capacity-widget)
     - [List View](#list-view)
 - [Storage Device Actions](#storage-device-actions)
-    - Update access Info
-    - Configure Alert Source
-    - Remove Alert Source
-    - Sync Storage Device
-    - Configure Metric collection
-    - Delete Storage Device
+    - [Update access Info](#update-access-info)
+    - [Configure Alert Source](#configure-alert-source)
+    - [Remove Alert Source](#remove-alert-source)
+    - [Sync Storage Device](#sync-storage-device)
+    - [Configure Metric collection](#configure-metric-collection)
+    - [Delete Storage Device](#delete-storage-device)
 - [Storage Device Details](#storage-device-details)
     - [Storage Device Basic Details](#storage-device-basic-details)
     - [Storage Device Capacity Summary](#storage-device-capacity-summary)
@@ -66,7 +66,7 @@ Depending on the vendor and model enter the access info. Delfin supports both RE
 ##### [\[Back to top\]](#delfin-features)  
 
 {{% notice tip %}}
-**For devices that utilise the REST access mechanism the following parameters are needed:**  
+**For devices that utilise the SSH access mechanism the following parameters are needed:**  
     - **Host IP**: IP address of the storage device  
     - **Port**: Port on the device which is accessible  
     - **Username**: Valid username  
@@ -212,7 +212,6 @@ Switching to the list view displays all the storage devices and alerts ina tabul
 ##### [\[Back to top\]](#delfin-features)  
 
 
-
 Actions are available in the right-click menu in tree view and by clicking on "More" under the operations column in the list view table.  
 The following actions are supported:  
 1. Update access Info
@@ -228,28 +227,36 @@ The following actions are supported:
 **Tree View Actions**
 ![Delfin User Guide - 16](delfin-user-guide-16.png)
 
-**Update Access Info**
+### Update Access Info
+##### [\[Back to top\]](#delfin-features)  
 ![Delfin User Guide - 18](delfin-user-guide-18.png)
 
-**Configure Alert Source - SNMPV2**
+### Configure Alert Source 
+##### [\[Back to top\]](#delfin-features)  
+**SNMPV2C**
 ![Delfin User Guide - 19](delfin-user-guide-19.png)
 
-**Configure Alert Source - SNMPV3**
+**SNMPV3**
 ![Delfin User Guide - 20](delfin-user-guide-20.png)
 ![Delfin User Guide - 21](delfin-user-guide-21.png)
 ![Delfin User Guide - 21](delfin-user-guide-21-1.png)
 
-**Remove Alert Source**
+### Remove Alert Source
+##### [\[Back to top\]](#delfin-features)  
 ![Delfin User Guide - 22](delfin-user-guide-22.png)
 
-**Sync Storage Device**
+### Sync Storage Device
+##### [\[Back to top\]](#delfin-features)  
 ![Delfin User Guide - 23](delfin-user-guide-23.png)
 
-**Configure Metric Collection**
+### Configure Metric Collection
+##### [\[Back to top\]](#delfin-features)  
 ![Delfin User Guide - 24](delfin-user-guide-24.png)
 ![Delfin User Guide - 25](delfin-user-guide-25.png)
 
-
+### Delete Storage Device
+##### [\[Back to top\]](#delfin-features)  
+![Delfin User Guide - 52](delfin-user-guide-52.png)
 
 ### Storage Device Details
 ##### [\[Back to top\]](#delfin-features)  
