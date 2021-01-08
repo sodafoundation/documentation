@@ -6,6 +6,7 @@ disableToc: false
 tags: ["user guide", "delfin", "api-clients"] 
 ---
 
+# Delfin Thirdparty Integration Guide
 
 ## Scope
 
@@ -25,18 +26,21 @@ This document is to help third party clients who wants to integrate [Delfin](htt
 - Ubuntu 16.04+
 - Python 3.6+
 - Delfin and its dependencies [installed](https://docs.sodafoundation.io/soda-gettingstarted/installation)
-(Delfin supports Ansible and Docker based installation for its deployment with all dependencies)
+
+##### Installation Note:
+
+- Delfin supports Ansible and Docker based installation for its deployment with all dependencies
+- If external exporter configurations are enabled (Prometheus, Kafka or Aler Manager), SODA Ansible Installer option, 'SRM_Toolchain' needs to be enabled for installation of Kafka, Prometheus & Alert Manager tools. Default Delfin installation will not install these exporters
 
 ## Configurations
 
 Delfin and its features/services are configured using configuration file `<delfin source path>/etc/delfin/delfin.conf`.
 
-
 Important configurations that users want change may be,
 
 - Database path
 - Enable/Disable metrics exporters
-- IP and Ports exporters
+- IP and Ports of exporters
 - Cryptor used for encrypt sensitive data
 - Certificate file paths to interface with storage backends
 
@@ -227,7 +231,7 @@ Lists all alerts in the storage from the specified interval
 
 ```bash
 curl -X POST \
-http://<Delfin_IP>:8190/v1/storages/<storage_id>/alert-source -H 'content-type: application/json' \
+http://<Delfin_IP>:8190/v1/storages/<storage_id>/alerts -H 'content-type: application/json' \
 -d '{
   "begin_time": "13577777777777766",
   "end_time": "13577777777777776"
