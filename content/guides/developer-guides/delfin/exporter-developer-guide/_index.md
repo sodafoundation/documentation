@@ -150,7 +150,9 @@ class AlertExporterThirParty(base_exporter.BaseExporter):
 
   ```
 
+{{% notice note %}}
 Note:  Delfin Alert data model can be refered [here](https://github.com/sodafoundation/architecture-analysis/blob/8549aa6ca5bf7296dedbba7b62ef63e0550a83f2/specs/SIM/alert_manager/SODA_AlertManagerDesign.md#data-model)
+{{% /notice %}}
 
 * Step 4: Modify Delfin configuration
 Thir party platform configurations and exporter class name has to be provided in <path_to_delfin>/etc/delfin/delfin.conf as below.

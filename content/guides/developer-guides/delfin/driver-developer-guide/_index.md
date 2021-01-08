@@ -36,8 +36,12 @@ SODA Delfin project already contains some [drivers](https://github.com/sodafound
 
 Existing Delfin Drivers for reference:
   - fake_driver - This is a dummy/sample driver used for testing purpose
-  - Huawei - This driver implements Huawei's OeanStor backend
-  - VMAX - This driver implements Dell EMC's VMAX storage backend
+  - Huawei Oceanstor- This driver implements Huawei's OeanStor backend
+  - DELL EMC VMAX - This driver implements Dell EMC's VMAX storage backend
+  - DELL EMC UNITY - This driver implements Dell EMC's Unity backend
+  - HPE 3PAR - This driver implements HPE 3PAR backend
+  - Hitachi VSP -  This driver implements Hitachi VSP backend
+  - IBM storewize/SVC - This driver implements IBM storewize and SVC backends.
 
 ### Code changes needed
 
@@ -61,27 +65,13 @@ Existing Delfin Drivers for reference:
 * Extend base class StorageDriver defined in `<delfin path>/delfin/drivers/driver.py`, to implement a new driver.
 
   ```python
-  # Copyright 2020 The SODA Authors.
-  #
-  # Licensed under the Apache License, Version 2.0 (the "License");
-  # you may not use this file except in compliance with the License.
-  # You may obtain a copy of the License at
-  #
-  #     http://www.apache.org/licenses/LICENSE-2.0
-  #
-  # Unless required by applicable law or agreed to in writing, software
-  # distributed under the License is distributed on an "AS IS" BASIS,
-  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  # See the License for the specific language governing permissions and
-  # limitations under the License.
-
 
   from delfin.drivers import driver
 
 
   class SampleStorageDriver(driver.StorageDriver):
     """SampleStorageDriver shows how to implement the StorageDriver,
-    it also plays a role as sample to fake data for being tested by clients.
+    
     """
 
     def __init__(self, **kwargs):
