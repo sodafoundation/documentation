@@ -1,0 +1,50 @@
+baseURL = "https://soda-docs.netlify.com/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+googleAnalytics = "UA-138679091-1"
+
+title = "SODA Documentation"
+theme = "hugo-theme-learn"
+themesdir = "themes/"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "https://github.com/sodafoundation/documentation/edit/master/content/"
+  description = "Documentation for SODA"
+  author = "SODA Authors"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = true
+   # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "opensds"
+  disableLanguageSwitchingButton = false
+  # Order sections in menu by "weight" or "title". Default to "weight"
+  ordersectionsby = "weight"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation for SODA Project"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/sodafoundation/api"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-anchor'></i> SODA Website"
+url = "https://sodafoundation.io"
+weight = 11
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+url = "https://docs.sodafoundation.io/credits"
+weight = 30
+
+
