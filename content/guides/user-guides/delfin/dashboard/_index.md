@@ -1,5 +1,5 @@
 ---
-title: SRM using SODA Dashboard
+title: Storage Infrastructure Management using SODA Dashboard
 description: "User guide for Monitoring through Delfin integrated SODA Dashboard"
 weight: 10
 disableToc: false
