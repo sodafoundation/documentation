@@ -6,11 +6,6 @@ weight: 20
 
 This is a quickstart guide for users and new contributors to try and get familiar with [SODA Foundation Release](https://github.com/sodafoundation/releases) and its [projects](https://github.com/sodafoundation). It will help to install and try out the SODA Releases using the binaries with minimum configurations or settings.
 
-{{% notice note %}}
-At present, this document also provides the installation steps to try out older OpenSDS releases. 
-Soon, the support for old opensds releases shall be deprecated.
-{{% /notice %}}
-
 To have more control of the installaton cofigurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ### Supported SODA releases
