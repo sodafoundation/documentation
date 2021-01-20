@@ -3,6 +3,7 @@ title: Installation Guide using Ansible
 menuTitle: Using Ansible (Recommended)
 description: "This document describes how to install SODA projects in a local cluster with detailed configuration options using the ansible tool."
 weight: 10
+tags: ['installer guide', 'ansible']
 ---
 This document describes how to install SODA projects in a local cluster with detailed configuration options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 

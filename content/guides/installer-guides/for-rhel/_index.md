@@ -3,6 +3,7 @@ title: Guide for installing SODA on Red Hat Enterprise Linux
 menuTitle: Install on Red Hat
 description: "This document describes how to install SODA projects in a local cluster on Red Hat Enterprise Linux"
 weight: 70
+tags: ['installer guide', 'rhel']
 ---
 ### Install SODA in Redhat 7.5 manually
 

@@ -3,6 +3,7 @@ title: Installation Guide using Helm
 menuTitle: Using Helm
 description: "This is an installation tool for SODA using Helm. With different charts folder shown below, we provide a simplified and flexible way to deploy SODA cluster."
 weight: 50
+tags: ['installer guide', 'helm']
 ---
 ### Pre-requisites
 

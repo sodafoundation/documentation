@@ -2,6 +2,7 @@
 title: Hacking
 description: "Deploy SODA using Salt. This is an experimental solution using repeatable patterns of jinja/yaml to deploy cloud-native stack using infrastructure as code."
 weight: 40
+tags: ['installer guide', 'salt']
 ---
 
 ### Site specific deployment values

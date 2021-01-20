@@ -3,6 +3,7 @@ title: How to Run Containerized SODA for Testing
 menuTitle: Run Containerized SODA
 description: "Here is a tutorial guiding users and new contributors to get familiar with SODA by installing a simple containerized local cluster"
 weight: 60
+tags: ['installer guide', 'containerized']
 ---
 Here is a tutorial guiding users and new contributors to get familiar with [SODA](https://github.com/sodafoundation/soda) by installing a simple containerized local cluster. You can also use the ansible script to install automatically, see detail in [SODA Local Cluster Installation through ansible](/guides/installer-guides/using-ansible/).
 

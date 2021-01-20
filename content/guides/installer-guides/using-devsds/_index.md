@@ -3,6 +3,7 @@ title: Installation Guide for simple Local Cluster using devsds
 menuTitle: Using Devsds
 description: "This document describes how to install SODA projects in a local cluster with detailed configuration options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI"
 weight: 20
+tags: ['installer guide', 'devsds']
 ---
 
 Here is a tutorial guiding users and new contributors to get familiar with [SODA Projects](https://github.com/sodafoundation/<projects>) by installing a simple local cluster and managing lvm device. You can also use the ansible script to install automatically. See details in [OpenSDS Local Cluster Installation through ansible](https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible).

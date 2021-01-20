@@ -3,6 +3,7 @@ title: Installation Guide using Salt
 menuTitle: Using Salt
 description: "Deploy SODA using Salt. This is an experimental solution using repeatable patterns of jinja/yaml to deploy cloud-native stack using infrastructure as code."
 weight: 30
+tags: ['installer guide', 'salt']
 ---
 
 Deploy SODA using Salt. This is an experimental solution using repeatable patterns of jinja/yaml to deploy cloud-native stack using infrastructure as code.

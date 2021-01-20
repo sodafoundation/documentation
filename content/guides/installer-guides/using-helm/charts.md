@@ -2,6 +2,7 @@
 title: Helm Charts
 description: "The SODA Helm charts"
 weight: 20
+tags: ['installer guide', 'helm']
 ---
 
 This is an installation tool for SODA using [helm](https://github.com/kubernetes/helm). With different charts folder shown below, we provide a simplified and flexible way to deploy SODA cluster.
