@@ -98,7 +98,7 @@ python3 -V
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.1.0 follow
+# Checkout the required version. For example, to checkout v1.2.0 follow
 git checkout v1.2.0
 ```
 {{% notice warning %}}
