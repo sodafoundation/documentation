@@ -1,10 +1,10 @@
 ---
-title: Storwize
-menuTitle: Storwize
-description: "Storwize Support Matrix"
+title: 3PAR StoreServ
+menuTitle: 3PAR StoreServ 
+description: "3PAR StoreServ Support Matrix"
 weight: 20
 disableToc: false
-tags: ["support matrix", "delfin", "drivers", "ibm"]
+tags: ["support matrix", "delfin", "drivers", "hpe"]
 ---
 
 ### Model and versions supported

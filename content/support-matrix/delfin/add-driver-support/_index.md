@@ -32,7 +32,7 @@ Step 3, 4 and 5 are not required if there is already vendor folder name exists i
 {{% /notice %}}
 
 6. Under vendor folder name, create a new folder with `model` name. For example `VNX`. 
-7. Create a new file `_index.md`
+7. Create a new file `_index.md`.
 8. Add the frontmatter as follows to add new model support matrix data. Change the content as required.
 ```
 ---
@@ -56,7 +56,7 @@ Please ensure you copy the entire frontmatter including both the `---`
     <thead>
         <tr>
             <th>Models</th>
-            <th>Firmware Versions</th>
+            <th>Management Software Versions</th>
         </tr>
     </thead>
     <tbody>
@@ -224,3 +224,4 @@ Please ensure you copy the entire frontmatter including both the `---`
 
 ```
 10. Raise a PR to the documentation repository(https://github.com/sodafoundation/documentation.git)
+11. Please find sample data filled [template](/support-matrix/delfin/add-driver-support/_index.files/template.odt)

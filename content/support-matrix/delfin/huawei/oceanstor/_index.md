@@ -10,171 +10,508 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
 ### Model and versions supported
 
 <table>
-    <thead>
-        <tr>
-            <th>Models</th>
-            <th>Firmware Versions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Models</th>
+         <th>Management Software Versions</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Storage Management Software</td>
+         <td>OceanStor DeviceManager V100R002C20SPC100 or later</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Access information to register storage
 
 <table>
-    <thead>
-        <tr>
-            <th>Access Type</th>
-            <th>Attributes</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td rowspan="2"></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Access Type</th>
+         <th>Attributes</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="4">REST</td>
+         <td>Host</td>
+         <td>OceanStor device manager host name supported with ipv4/ipv6</td>
+      </tr>
+      <tr>
+         <td>Port</td>
+         <td>OceanStor device manager port</td>
+      </tr>
+      <tr>
+         <td>Username</td>
+         <td>OceanStor device manager username</td>
+      </tr>
+      <tr>
+         <td>Password</td>
+         <td>OceanStor device manager password</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Supported alert source registration information
 
 <table>
-    <thead>
-        <tr>
-            <th>Alert Source</th>
-            <th>Supported Protocols</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Alert Source</th>
+         <th>Supported Protocols</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>OceanStor Device</td>
+         <td>SNMP</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
 ### Performance registration information
 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Default Interval</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Default Interval</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
 ### Resource data matrix
 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Attribute</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=3></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Attribute</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan=12>Device</td>
+         <td>Name</td>
+         <td>Name of storage resource</td>
+      </tr>
+      <tr>
+         <td>Vendor</td>
+         <td>Vendor</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Model</td>
+         <td>Model</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>Serial Number</td>
+         <td>It is serial number id</td>
+      </tr>
+      <tr>
+         <td>Firmware Version</td>
+         <td>Firmware Version</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td>Device Location</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Raw Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td rowspan="9">Pool</td>
+         <td>Name</td>
+         <td>Name of the pool</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>Id in the delfin system</td>
+      </tr>
+      <tr>
+         <td>Storage pool id</td>
+         <td>Unique id to represent which storage pool it belongs to</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status of the pool. Ex: available</td>
+      </tr>
+      <tr>
+         <td>Storage Type</td>
+         <td>Type of storage. Ex: Block, file, hybrid</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td rowspan=14>Volume</td>
+         <td>Id</td>
+         <td>It represents system resource id</td>
+      </tr>
+      <tr>
+         <td>Name</td>
+         <td>Volume Name</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>It is id in the delfin system</td>
+      </tr>
+      <tr>
+         <td>Volume Id</td>
+         <td>It is LUN id on the device</td>
+      </tr>
+      <tr>
+         <td>Storage pool id</td>
+         <td>It maps to pool within delfin system</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Type</td>
+         <td>Logical Type. Ex:Common LUN, Thin LUN</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>wwn</td>
+         <td>World wide name is to identify network storage devices</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>It is measured in terms of Tera byte</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>It is measured in terms of Tera byte</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>It is measured in terms of Tera byte</td>
+      </tr>
+      <tr>
+         <td>Compressed</td>
+         <td>Whether to support compression</td>
+      </tr>
+      <tr>
+         <td>Deduplicated</td>
+         <td>Deduplication is supported</td>
+      </tr>
+      <tr>
+         <td rowspan=9>Controller</td>
+         <td>Id</td>
+         <td>It represents system resource id</td>
+      </tr>
+      <tr>
+         <td>Name</td>
+         <td>Volume Name</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>It is id in the delfin system</td>
+      </tr>
+      <tr>
+         <td>Controller Id</td>
+         <td>It is LUN id on the device</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td>Controller location</td>
+      </tr>
+      <tr>
+         <td>Software Version</td>
+         <td>Software Version</td>
+      </tr>
+      <tr>
+         <td>CPU Info</td>
+         <td>CPU processor information</td>
+      </tr>
+      <tr>
+         <td>Memory Size</td>
+         <td>Memory size measure in terms of bytes</td>
+      </tr>
+      <tr>
+         <td rowspan=17>Port</td>
+         <td>Name</td>
+         <td>Name of storage resource</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>It is Id within delfin system</td>
+      </tr>
+      <tr>
+         <td>Port id</td>
+         <td>Specifies port id.</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Connection Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>Health Status</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Type</td>
+         <td>Type of port</td>
+      </tr>
+      <tr>
+         <td>Logical type</td>
+         <td>Port logical type. Ex:frontend, maintenance, service, management, etc.</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Speed of the ports</td>
+      </tr>
+      <tr>
+         <td>Max Speed</td>
+         <td>Maximum speed of the ports</td>
+      </tr>
+      <tr>
+         <td>Parent Id</td>
+         <td>Name of controller</td>
+      </tr>
+      <tr>
+         <td>WWN</td>
+         <td>WWN</td>
+      </tr>
+      <tr>
+         <td>mac address</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>ipv4</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>ipv4 mask</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>ipv6</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>ipv6 mask</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td rowspan=17>Disk</td>
+         <td>Name</td>
+         <td>Name of storage resource</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>It is storage id within delfin system</td>
+      </tr>
+      <tr>
+         <td>Disk id</td>
+         <td>Specifies the disk ID.</td>
+      </tr>
+      <tr>
+         <td>Serial number</td>
+         <td>Serial Number</td>
+      </tr>
+      <tr>
+         <td>Manufacturer</td>
+         <td>Manufacturer</td>
+      </tr>
+      <tr>
+         <td>Model</td>
+         <td>Model</td>
+      </tr>
+      <tr>
+         <td>Firmware</td>
+         <td>Firmware Version</td>
+      </tr>
+      <tr>
+         <td>Speed</td>
+         <td>Speed of the port</td>
+      </tr>
+      <tr>
+         <td>Capacity</td>
+         <td>It is measured in terms of bytes</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>Physical type</td>
+         <td>Disk physical type. Ex:sata, sas, ssd, etc.</td>
+      </tr>
+      <tr>
+         <td>Logical type</td>
+         <td>Disk logical type. Ex:frontend, maintenance, service, management, etc. </td>
+      </tr>
+      <tr>
+         <td>Health Score</td>
+         <td>Disk health score</td>
+      </tr>
+      <tr>
+         <td>Disk group id</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
-
 
 ### Alert data matrix
 
 <table>
-    <thead>
-        <tr>
-            <th>Attribute</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Attribute</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Alert id</td>
+         <td>Identification of alarm</td>
+      </tr>
+      <tr>
+         <td>Alert name</td>
+         <td>Name of the alert</td>
+      </tr>
+      <tr>
+         <td>Severity</td>
+         <td>Severity of the alert</td>
+      </tr>
+      <tr>
+         <td>Category</td>
+         <td>Type of the reported alarm notification. Ex: Fault, Event, Recovery</td>
+      </tr>
+      <tr>
+         <td>Type</td>
+         <td>Alarm clearance type Ex:Communication Alarm, ProcessingErrorsAlarm</td>
+      </tr>
+      <tr>
+         <td>Sequence number</td>
+         <td>Sequence number for the alert, uniquely identifies a
+         given alert instance used for clearing the alert</td>
+      </tr>
+      <tr>
+         <td>Occur time</td>
+         <td>UTC time when the alarm is generated (in milliseconds)</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Recovery advice</td>
+         <td>Some suggestion for handling the given alert</td>
+      </tr>
+      <tr>
+         <td>Recovery type</td>
+         <td>Resource type of device/source generating alert</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td>Detailed info about the tracing the alerting device such as slot, rack, etc.</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Performance metric data
 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Metric</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=3></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Metric</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan=3></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
