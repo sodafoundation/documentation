@@ -24,7 +24,7 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
    </tbody>
 </table>
 
-### Access information to register storage
+### Access information to register storage device
 
 <table>
    <thead>
@@ -55,26 +55,33 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
    </tbody>
 </table>
 
-### Supported alert source registration information
+### Alert management information
 
 <table>
-   <thead>
-      <tr>
-         <th>Alert Source</th>
-         <th>Supported Protocols</th>
-         <th>Additional information</th>
-      </tr>
-   </thead>
    <tbody>
       <tr>
-         <td>OceanStor Device</td>
-         <td>SNMP</td>
-         <td></td>
+          <th>SNMP trap processing</th> 
+          <td>Supported</td> 
       </tr>
       <tr>
-         <td></td>
-         <td></td>
-         <td></td>
+         <th>Query backend alert</th>
+         <td>Supported</td>
+      </tr>
+      <tr>
+         <th>Clear backend alert</th>
+         <td>Supported</td>
+      </tr>
+      <tr>
+         <th>SNMP versions for trap</th>
+         <td>V1/V2/V3</td>
+      </tr>
+      <tr>
+         <th>SNMP trap source</th>
+         <td>OceanStor Device</td>
+      </tr>
+      <tr>
+         <th>Query alert source</th>
+         <td>OceanStor Device Manager</td>
       </tr>
    </tbody>
 </table>
@@ -149,19 +156,19 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>Storage total capacity(bytes)</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>It is measured in bytes</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>It is measured in bytes</td>
       </tr>
       <tr>
          <td>Raw Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>Member disk capacity(bytes)</td>
       </tr>
       <tr>
          <td rowspan="9">Pool</td>
@@ -170,11 +177,11 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Storage Id</td>
-         <td>Id in the delfin system</td>
+         <td>Id in the delfin system for storage device</td>
       </tr>
       <tr>
          <td>Storage pool id</td>
-         <td>Unique id to represent which storage pool it belongs to</td>
+         <td>Actual storage pool id received from backend</td>
       </tr>
       <tr>
          <td>Description</td>
@@ -190,15 +197,15 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>User total capacity(bytes)</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>User consumed capacity(bytes)</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>User free capacity(bytes)</td>
       </tr>
       <tr>
          <td rowspan=14>Volume</td>
@@ -211,15 +218,15 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Storage Id</td>
-         <td>It is id in the delfin system</td>
+         <td>It is id in the delfin system for storage device</td>
       </tr>
       <tr>
          <td>Volume Id</td>
-         <td>It is LUN id on the device</td>
+         <td>Actual volume id received from backend</td>
       </tr>
       <tr>
          <td>Storage pool id</td>
-         <td>It maps to pool within delfin system</td>
+         <td>Original pool id received from backend</td>
       </tr>
       <tr>
          <td>Description</td>
@@ -227,27 +234,27 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Type</td>
-         <td>Logical Type. Ex:Common LUN, Thin LUN</td>
+         <td>Logical Type. Ex:Thick, Thin</td>
       </tr>
       <tr>
          <td>Status</td>
          <td>Status</td>
       </tr>
       <tr>
-         <td>wwn</td>
-         <td>World wide name is to identify network storage devices</td>
+         <td>WWN</td>
+         <td>WWN</td>
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>It is measured in terms of Tera byte</td>
+         <td>Allocated total volume capacity(bytes)</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in terms of Tera byte</td>
+         <td>Used capacity from allocated capacity(bytes)<td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in terms of Tera byte</td>
+         <td>NA. It is none</td>
       </tr>
       <tr>
          <td>Compressed</td>
@@ -268,11 +275,11 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Storage Id</td>
-         <td>It is id in the delfin system</td>
+         <td>It is id in the delfin system for storage device</td>
       </tr>
       <tr>
          <td>Controller Id</td>
-         <td>It is LUN id on the device</td>
+         <td>Oceanstor controller id</td>
       </tr>
       <tr>
          <td>Status</td>
@@ -292,20 +299,20 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Memory Size</td>
-         <td>Memory size measure in terms of bytes</td>
+         <td>Memory size measure in bytes</td>
       </tr>
       <tr>
          <td rowspan=17>Port</td>
          <td>Name</td>
-         <td>Name of storage resource</td>
+         <td>Name</td>
       </tr>
       <tr>
          <td>Storage Id</td>
-         <td>It is Id within delfin system</td>
+         <td>It is Id within delfin system for storage device</td>
       </tr>
       <tr>
          <td>Port id</td>
-         <td>Specifies port id.</td>
+         <td>Actual port id received from backend</td>
       </tr>
       <tr>
          <td>Location</td>
@@ -313,15 +320,15 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Connection Status</td>
-         <td>Status</td>
+         <td>Status of port connection. Ex: disconnected</td>
       </tr>
       <tr>
          <td>Health Status</td>
-         <td></td>
+         <td>Port health status </td>
       </tr>
       <tr>
          <td>Type</td>
-         <td>Type of port</td>
+         <td>Type of port. Ex:fc, iscsi, fcoe, etc.</td>
       </tr>
       <tr>
          <td>Logical type</td>
@@ -337,7 +344,7 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Parent Id</td>
-         <td>Name of controller</td>
+         <td>Id of parent object(controller/host)</td>
       </tr>
       <tr>
          <td>WWN</td>
@@ -374,7 +381,7 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Disk id</td>
-         <td>Specifies the disk ID.</td>
+         <td>Actual disk id received from backend</td>
       </tr>
       <tr>
          <td>Serial number</td>
@@ -394,11 +401,11 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Speed</td>
-         <td>Speed of the port</td>
+         <td>Speed of the disk(rpm)</td>
       </tr>
       <tr>
          <td>Capacity</td>
-         <td>It is measured in terms of bytes</td>
+         <td>Total number of disk sectors multiply by disk sector size(bytes)</td>
       </tr>
       <tr>
          <td>Status</td>
@@ -422,7 +429,7 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Location</td>
-         <td></td>
+         <td>Location of the disk</td>
       </tr>
    </tbody>
 </table>
@@ -451,11 +458,11 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Category</td>
-         <td>Type of the reported alarm notification. Ex: Fault, Event, Recovery</td>
+         <td>Category of the reported alarm notification. Ex: Fault, Event, Recovery</td>
       </tr>
       <tr>
          <td>Type</td>
-         <td>Alarm clearance type Ex:Communication Alarm, ProcessingErrorsAlarm</td>
+         <td>Type of the alert generated such as CommunicationsAlarm, EquipmentAlarm etc.</td>
       </tr>
       <tr>
          <td>Sequence number</td>
@@ -464,7 +471,7 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
       </tr>
       <tr>
          <td>Occur time</td>
-         <td>UTC time when the alarm is generated (in milliseconds)</td>
+         <td>Time at which alert is generated from device. Specified in epoch format</td>
       </tr>
       <tr>
          <td>Description</td>
@@ -475,12 +482,12 @@ tags: ["support matrix", "delfin", "drivers", "huawei"]
          <td>Some suggestion for handling the given alert</td>
       </tr>
       <tr>
-         <td>Recovery type</td>
-         <td>Resource type of device/source generating alert</td>
+         <td>Resource type</td>
+         <td>Resource type of device/source generating alert.This is always set to "Storage"</td>
       </tr>
       <tr>
          <td>Location</td>
-         <td>Detailed info about the tracing the alerting device such as slot, rack, etc.</td>
+         <td>Location of an alarm. Specified in name/value format</td>
       </tr>
    </tbody>
 </table>

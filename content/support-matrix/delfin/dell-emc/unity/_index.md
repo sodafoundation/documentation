@@ -28,7 +28,7 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
    </tbody>
 </table>
 
-### Access information to register storage
+### Access information to register storage device
 
 <table>
    <thead>
@@ -51,25 +51,32 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
    </tbody>
 </table>
 
-### Supported alert source registration information
+### Alert management information
 
 <table>
-   <thead>
-      <tr>
-         <th>Alert Source</th>
-         <th>Supported Protocols</th>
-         <th>Additional information</th>
-      </tr>
-   </thead>
    <tbody>
       <tr>
-         <td></td>
-         <td></td>
+          <th>SNMP trap processing</th> 
+          <td></td> 
+      </tr>
+      <tr>
+         <th>Query backend alert</th>
          <td></td>
       </tr>
       <tr>
+         <th>Clear backend alert</th>
          <td></td>
+      </tr>
+      <tr>
+         <th>SNMP versions for trap</th>
          <td></td>
+      </tr>
+      <tr>
+         <th>SNMP trap source</th>
+         <td></td>
+      </tr>
+      <tr>
+         <th>Query alert source</th>
          <td></td>
       </tr>
    </tbody>
