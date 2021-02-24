@@ -9,18 +9,19 @@ tags: ["support matrix", "delfin", "drivers"]
 Find below steps to add new delfin driver support matrix
 1. Clone the documentation repository (https://github.com/sodafoundation/documentation.git) 
 2. Navigate to the folder structure content/support-matrix/delfin
-3. Create a new folder and follow the naming format `vendor`. For example `dell-emc`. 
+3. Create a new folder with `vendor` name. For example `dell-emc`. 
 4. Create a new file `_index.md`
 5. Add the frontmatter as follows to add new Vendor. Change the content as required.
 ```
 ---
-title: IBM
-description: "All supported matrix data for IBM Models can be found here"
+title: Dell EMC
+description: "Support matrix data for Dell EMC Models can be found here"
 weight: 5
 disableToc: false
 ---
 
-All supported matrix data for IBM Models which are supported by Delfin Project of SODA can be found here
+Support matrix data for Dell EMC Models can be found here
+
 ```
 
 {{% notice note %}}
@@ -32,196 +33,402 @@ Step 3, 4 and 5 are not required if there is already vendor folder name exists i
 {{% /notice %}}
 
 6. Under vendor folder name, create a new folder with `model` name. For example `VNX`. 
-7. Create a new file `_index.md`.
-8. Add the frontmatter as follows to add new model support matrix data. Change the content as required.
+7. Create a new file `_index.md`. 
+8. Add the frontmatter as follows. Change the content as required.
 ```
 ---
-title: Storwize
-description: "All supported matrix data for IBM Models can be found here"
-weight: 5
+title: VNX
+menuTitle: VNX 
+description: "VNX Support Matrix"
+weight: 20
 disableToc: false
+tags: ["support matrix", "delfin", "drivers", "dell emc"]
 ---
+```
 
-All supported matrix data for IBM Models which are supported by Delfin Project of SODA can be found here
-``` 
 {{% notice note %}}
 Please ensure you copy the entire frontmatter including both the `---`
 {{% /notice %}}
 
-9. Use the following support matrix table template and populate it with appropriate drivers data
-```
-### Model and versions supported
+9. To add the support matrix table content, copy lines from 57 to 432 from a file content/support-matrix/delfin/add-driver-support/_index.md 
+10. Fill appropriate driver data to support matrix tables. 
+11. Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.
+
+### Model and management software versions supported
 
 <table>
-    <thead>
-        <tr>
-            <th>Models</th>
-            <th>Management Software Versions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Models</th>
+         <th>Management Software Versions</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Sample model name</td>
+         <td>Management software version</td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
-### Access information to register storage
+### Access information to register storage device
 
 <table>
-    <thead>
-        <tr>
-            <th>Access Type</th>
-            <th>Attributes</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td rowspan="2"></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Access Type</th>
+         <th>Attributes</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="4">REST</td>
+         <td>Host</td>
+         <td>Management software version host name</td>
+      </tr>
+      <tr>
+         <td>Port</td>
+         <td>Management software version port name</td>
+      </tr>
+      <tr>
+         <td>Username</td>
+         <td>Management software version Username</td>
+      </tr>
+      <tr>
+         <td>Password</td>
+         <td>Management software version Password</td>
+      </tr>
+      <tr>
+         <td rowspan="4">SSH</td>
+         <td>Host</td>
+         <td>Management software version host name</td>
+      </tr>
+      <tr>
+         <td>Port</td>
+         <td>Management software version port name</td>
+      </tr>
+      <tr>
+         <td>Username</td>
+         <td>Management software version Username</td>
+      </tr>
+      <tr>
+         <td>Password</td>
+         <td>Management software version Password</td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
-### Supported alert source registration information
-
+### Alert management information
 <table>
-    <thead>
-        <tr>
-            <th>Alert Source</th>
-            <th>Supported Protocols</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <tbody>
+      <tr>
+          <th>SNMP trap processing</th> 
+          <td>Specify whether SNMP trap is supported or not supported</td> 
+      </tr>
+      <tr>
+         <th>Query backend alert</th>
+         <td>Specify whether Query alert is supported or not supported</td>
+      </tr>
+      <tr>
+         <th>Clear backend alert</th>
+         <td>Specify whether Clear alert is supported or not supported</td>
+      </tr>
+      <tr>
+         <th>SNMP versions for trap</th>
+         <td>Specify SNMP supported version by driver</td>
+      </tr>
+      <tr>
+         <th>SNMP trap source</th>
+         <td>Alert source name supported by driver</td>
+      </tr>
+      <tr>
+         <th>Query alert source</th>
+         <td>Query alert source name supported by driver</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Performance registration information
 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Default Interval</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Metric</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan=3></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
 ### Resource data matrix
-
+ 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Attribute</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=3></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Attribute</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      <tr>
+         <td rowspan=10>Pool</td>
+         <td>Id</td>
+         <td>Delfin system resource id for pool</td>
+      </tr>
+      <tr>
+         <td>Name</td>
+         <td>Name</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>Id generated by delfin to identify the storage device</td>
+      </tr>
+      <tr>
+         <td>Storage Pool Id</td>
+         <td>It is actual storage pool(storage resource pool) name which is received from backend</td>
+      </tr>
+      <tr>
+         <td>Storage Type</td>
+         <td>Type of storage. Ex: Block, file, hybrid</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status of the pool. Ex: available</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>SRP(Storage resource pool) usable total capacity(TB)</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>SRP usable used capacity(TB)</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>Total-Used capacity(TB)</td>
+      </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+      <tr>
+         <td rowspan=11>Volume</td>
+         <td>Id</td>
+         <td>Delfin system resource id for volume</td>
+      </tr>
+      <tr>
+         <td>Name</td>
+         <td>Volume Name</td>
+      </tr>
+      <tr>
+         <td>Storage Id</td>
+         <td>Id generated by delfin to identify the storage device</td>
+      </tr>
+      <tr>
+         <td>Volume Id</td>
+         <td>Actual volume id received from backend drivers</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>Type</td>
+         <td>Logical Type. Ex:Thin or Thick</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>Status</td>
+      </tr>
+      <tr>
+         <td>WWN</td>
+         <td>Volume's WWN</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>Volume total capacity(TB)</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>It is measured in TB</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>It is measured in TB</td>
+      </tr>
+      <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      <tr>
+         <td rowspan=18>Device</td>
+         <td>Name</td>
+         <td>Device Name</td>
+      </tr>
+      <tr>
+         <td>Vendor</td>
+         <td>Vendor</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Device Description</td>
+      </tr>
+      <tr>
+         <td>Model</td>
+         <td>Device Model</td>
+      </tr>
+      <tr>
+         <td>Firmware version</td>
+         <td>Firmware version</td>
+      </tr>
+      <tr>
+         <td>Status</td>
+         <td>It shows availability of device ex: offline, normal etc.</td>
+      </tr>
+      <tr>
+         <td>Serial Number</td>
+         <td>It is VMAX array id</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td>Device Location, is name-value pair having component type and component name</td>
+      </tr>
+      <tr>
+         <td>Total Capacity</td>
+         <td>System capacity(TB)</td>
+      </tr>
+      <tr>
+         <td>Used Capacity</td>
+         <td>It is measured in TB</td>
+      </tr>
+      <tr>
+         <td>Free Capacity</td>
+         <td>It is measured in TB</td>
+      </tr>
+      <tr>
+         <td>Raw Capacity</td>
+         <td>Physical capacity(GB)</td>
+      </tr>
+      <tr>
+         <td>Subscribed Capacity</td>
+         <td>Total amount of capacity subscribed(TB)</td>
+      </tr>
+   </tbody>
 </table>
-
-
+ 
 ### Alert data matrix
-
+ 
 <table>
-    <thead>
-        <tr>
-            <th>Attribute</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-           <td></td>
-           <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Attribute</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Alert id</td>
+         <td>Identification of alarm.</td>
+      </tr>
+      <tr>
+         <td>Alert name</td>
+         <td>Name of the alarm</td>
+      </tr>
+      <tr>
+         <td>Severity</td>
+         <td>Severity of the alarm</td>
+      </tr>
+      <tr>
+         <td>Category</td>
+         <td>Category of the reported alarm notification. Ex: Fault, Event or Recovery</td>
+      </tr>
+      <tr>
+         <td>Type</td>
+         <td>Basic classification of the alarm. Ex:CommunicationsAlarm, EquipmentAlarm</td>
+      </tr>
+      <tr>
+         <td>Sequence number</td>
+         <td>Unique identification for the alert instance</td>
+      </tr>
+      <tr>
+         <td>Occur time</td>
+         <td>Time at which alert is generated from device. Specified in epoch format</td>
+      </tr>
+      <tr>
+         <td>Description</td>
+         <td>Alarm Description</td>
+      </tr>
+      <tr>
+         <td>Recovery advice</td>
+         <td>This field does not contain any info. However description field may contain some recovery advice in some cases.</td>
+      </tr>
+      <tr>
+         <td>Resource type</td>
+         <td>Resource type for alert which can be storage subsystem or some other subsystems</td>
+      </tr>
+      <tr>
+         <td>Location</td>
+         <td>Detailed info about tracing the alerting device such as array id, component name, component type</td>
+      </tr>
+   </tbody>
 </table>
-
+ 
 ### Performance metric data
-
+ 
 <table>
-    <thead>
-        <tr>
-            <th>Resource</th>
-            <th>Metric</th>
-            <th>Additional information</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=3></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Metric</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan=3></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+      </tr>
+   </tbody>
 </table>
 
-```
-10. Raise a PR to the documentation repository(https://github.com/sodafoundation/documentation.git)
-11. Please find sample data filled [template](/support-matrix/delfin/add-driver-support/_index.files/template.odt)
+12. Raise a PR to the documentation repository(https://github.com/sodafoundation/documentation.git)
