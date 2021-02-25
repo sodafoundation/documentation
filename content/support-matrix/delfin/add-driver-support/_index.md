@@ -33,23 +33,20 @@ Step 3, 4 and 5 are not required if there is already vendor folder name exists i
 6. Under vendor folder name, create a new folder with `model` name. For example `VNX`.  
 7. Create a new file `_index.md`.  
 8. Add the frontmatter as follows. Change the content as required.  
-  
-    ```
-    ---
-    title: VNX
-    menuTitle: VNX 
-    description: "VNX Support Matrix"
-    weight: 20
-    disableToc: false
-    tags: ["support matrix", "delfin", "drivers", "dell emc"]
-    ---
-    ```
-    
+```
+---
+title: VNX
+menuTitle: VNX 
+description: "VNX Support Matrix"
+weight: 20
+disableToc: false
+tags: ["support matrix", "delfin", "drivers", "dell emc"]
+---
+```  
 {{% notice note %}}
 Please ensure you copy the entire frontmatter including both the `---`
 {{% /notice %}}  
-
-9. To add all the support matrix tables content, copy lines from 57 to 432 from the file content/support-matrix/delfin/add-driver-support/_index.md   
+9. To add all the support matrix tables content, copy lines from 57 to 432 from the file content/support-matrix/delfin/add-driver-support/_index.md     
 10. Fill appropriate driver data to support matrix tables.  
 11. Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.  
 12. Raise a PR to the documentation repository  
