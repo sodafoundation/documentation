@@ -7,52 +7,52 @@ tags: ["support matrix", "delfin", "drivers"]
 ---
 
 Find below steps to add new delfin driver support matrix
-1. Clone the documentation repository (https://github.com/sodafoundation/documentation.git) 
-2. Navigate to the folder structure content/support-matrix/delfin
-3. Create a new folder with `vendor` name. For example `dell-emc`. 
-4. Create a new file `_index.md`
-5. Add the frontmatter as follows to add new Vendor. Change the content as required.
-```
----
-title: Dell EMC
-description: "Support matrix data for Dell EMC Models can be found here"
-weight: 5
-disableToc: false
----
-
-Support matrix data for Dell EMC Models can be found here
-
-```
-
-{{% notice note %}}
-Please ensure you copy the entire frontmatter including both the `---`
-{{% /notice %}}
-
-{{% notice note %}}
-Step 3, 4 and 5 are not required if there is already vendor folder name exists in documentation repository
-{{% /notice %}}
-
-6. Under vendor folder name, create a new folder with `model` name. For example `VNX`. 
-7. Create a new file `_index.md`. 
-8. Add the frontmatter as follows. Change the content as required.
-```
----
-title: VNX
-menuTitle: VNX 
-description: "VNX Support Matrix"
-weight: 20
-disableToc: false
-tags: ["support matrix", "delfin", "drivers", "dell emc"]
----
-```
+1) Clone the [documentation repository](https://github.com/sodafoundation/documentation.git)
+2) Navigate to the folder structure content/support-matrix/delfin
+3) Create a new folder with `vendor` name. For example `dell-emc`. 
+4) Create a new file `_index.md`
+5) Add the frontmatter as follows to add new Vendor. Change the content as required.
+    ```
+    ---
+    title: Dell EMC
+    description: "Support matrix data for Dell EMC Models can be found here"
+    weight: 5
+    disableToc: false
+    ---
+    
+    Support matrix data for Dell EMC Models can be found here
+    
+    ```
 
 {{% notice note %}}
 Please ensure you copy the entire frontmatter including both the `---`
 {{% /notice %}}
+    
+{{% notice note %}}
+Step 3, 4 and 5 are not required if there is already vendor folder name exists in the documentation repository
+{{% /notice %}}
 
-9. To add the support matrix table content, copy lines from 57 to 432 from a file content/support-matrix/delfin/add-driver-support/_index.md 
-10. Fill appropriate driver data to support matrix tables. 
-11. Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.
+6) Under vendor folder name, create a new folder with `model` name. For example `VNX`.
+7) Create a new file `_index.md`. 
+8) Add the frontmatter as follows. Change the content as required.
+    ```
+    ---
+    title: VNX
+    menuTitle: VNX 
+    description: "VNX Support Matrix"
+    weight: 20
+    disableToc: false
+    tags: ["support matrix", "delfin", "drivers", "dell emc"]
+    ---
+    ```
+    
+{{% notice note %}}
+Please ensure you copy the entire frontmatter including both the `---`
+{{% /notice %}}
+
+9) To add all the support matrix tables content, copy lines from 57 to 432 from a file content/support-matrix/delfin/add-driver-support/_index.md 
+10) Fill appropriate driver data to support matrix tables. 
+11) Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.
 
 ### Model and management software versions supported
 
@@ -431,4 +431,4 @@ Please ensure you copy the entire frontmatter including both the `---`
    </tbody>
 </table>
 
-12. Raise a PR to the documentation repository(https://github.com/sodafoundation/documentation.git)
+12. Raise a PR to the documentation repository
