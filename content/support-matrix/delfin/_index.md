@@ -9,6 +9,7 @@ tags: ["support matrix", "delfin", "drivers"]
 
 Delfin project aims to overcome a challenge to manage heterogeneous storage devices on a single platform.
 Delfin has standardized common API services. 
+
 1) Registering the devices for the following operations
     * Alert service
     * Performance monitoring 
@@ -18,6 +19,7 @@ Delfin has standardized common API services.
 
 We have list of vendors, if we click open on vendor name it has all delfin drivers supported data matrix.
 Each driver page has different tables which contains supported data. Below are the tables,
+
 1) Model and management software versions, it has list of management software versions.
 2) Access information to register storage device table illustrates what are all the parameters required to register the storage device.
 3) Supported alert source registration information table has information about what are the alert source and supported protocols.
