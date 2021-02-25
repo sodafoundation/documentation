@@ -10,8 +10,8 @@ tags: ["support matrix", "delfin", "drivers"]
 Delfin project aims to overcome a challenge to manage heterogeneous storage devices on a single platform.
 Delfin has standardized common API services. 
 1) Registering the devices for the following operations
-   * Alert service
-   * Performance monitoring 
+    * Alert service
+    * Performance monitoring 
 2) Query to get the information(capacity, performance, alert) 
 3) Exporter interface, provides class interfaces for external exporters to get data from SIM to third party platforms
 4) DB interfaces to access data
