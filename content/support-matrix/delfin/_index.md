@@ -10,8 +10,8 @@ tags: ["support matrix", "delfin", "drivers"]
 Delfin project aims to overcome a challenge to manage heterogeneous storage devices on a single platform.
 Delfin has standardized common API services. 
 
-Support matrix of each storage drivers are group to their vendor name.
-Each driver support matrix include below topics.
+Support matrix of each storage drivers are grouped by their vendor name.
+Each driver support matrix includes below topics.
 
 
 1. Model and management software versions supported:- List of storage models and required management software versions.  
