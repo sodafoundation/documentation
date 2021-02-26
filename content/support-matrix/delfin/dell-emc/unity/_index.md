@@ -101,7 +101,6 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       <tr>
          <td></td>
          <td></td>
-         <td></td>
       </tr>
    </tbody>
 </table>
@@ -160,7 +159,7 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
    <thead>
       <tr>
          <th>Resource</th>
-         <th>Metric</th>
+         <th>Default Interval</th>
          <th>Additional information</th>
       </tr>
    </thead>

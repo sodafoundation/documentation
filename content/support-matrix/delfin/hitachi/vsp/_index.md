@@ -101,7 +101,6 @@ tags: ["support matrix", "delfin", "drivers", "hitachi"]
       <tr>
          <td></td>
          <td></td>
-         <td></td>
       </tr>
    </tbody>
 </table>

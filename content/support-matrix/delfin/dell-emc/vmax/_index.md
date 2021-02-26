@@ -100,21 +100,13 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
    <thead>
       <tr>
          <th>Resource</th>
-         <th>Metric</th>
+         <th>Default Interval</th>
          <th>Additional information</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td rowspan=3></td>
          <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
          <td></td>
          <td></td>
       </tr>
@@ -172,11 +164,11 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>SRP usable used capacity(TB)</td>
+         <td>SRP usable used capacity(bytes)</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>Total-Used capacity(TB)</td>
+         <td>Total-Used capacity of SRP(bytes)</td>
       </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
       <tr>
          <td rowspan=11>Volume</td>
@@ -209,19 +201,19 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       </tr>
       <tr>
          <td>WWN</td>
-         <td>Volume's WWN</td>
+         <td>LUN WWN</td>
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>Volume total capacity(TB)</td>
+         <td>Volume total capacity(bytes)</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in TB</td>
+         <td>LUN used capacity(bytes)</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in TB</td>
+         <td>LUN free capacity(bytes)</td>
       </tr>
       <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       <tr>
@@ -259,23 +251,23 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>System capacity(TB)</td>
+         <td>System capacity</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Total used capacity</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Total free capacity</td>
       </tr>
       <tr>
          <td>Raw Capacity</td>
-         <td>Physical capacity(GB)</td>
+         <td>Raw capacity(sum of all disks capacity)</td>
       </tr>
       <tr>
          <td>Subscribed Capacity</td>
-         <td>Total amount of capacity subscribed(TB)</td>
+         <td>Total amount of capacity subscribed(bytes)</td>
       </tr>
    </tbody>
 </table>

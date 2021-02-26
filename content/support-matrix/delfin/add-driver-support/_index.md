@@ -65,10 +65,6 @@ Please ensure you copy the entire frontmatter including both the `---`
          <td>Sample model name</td>
          <td>Management software version</td>
       </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
    </tbody>
 </table>
 
@@ -166,22 +162,13 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td rowspan=3></td>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
+         <td>Disk</td>
+         <td>True</td>
          <td></td>
       </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
+      <tr>Pool</tr>
+      <td>True</td>
+      <td></td>
    </tbody>
 </table>
 
@@ -269,7 +256,7 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>WWN</td>
-         <td>Volume's WWN</td>
+         <td>WWN</td>
       </tr>
       <tr>
          <td>Total Capacity</td>
@@ -277,11 +264,11 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Volume used capacity</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Volume free capacity</td>
       </tr>
       <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       <tr>
@@ -311,7 +298,7 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>Serial Number</td>
-         <td>It is VMAX array id</td>
+         <td></td>
       </tr>
       <tr>
          <td>Location</td>
@@ -319,23 +306,23 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>Total Capacity</td>
-         <td>System capacity(TB)</td>
+         <td>Total usable capacity of the array</td>
       </tr>
       <tr>
          <td>Used Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Total used capacity</td>
       </tr>
       <tr>
          <td>Free Capacity</td>
-         <td>It is measured in TB</td>
+         <td>Total free capacity</td>
       </tr>
       <tr>
          <td>Raw Capacity</td>
-         <td>Physical capacity(GB)</td>
+         <td>Total raw capacity(sum of all disk capacity)</td>
       </tr>
       <tr>
          <td>Subscribed Capacity</td>
-         <td>Total amount of capacity subscribed(TB)</td>
+         <td>Total amount of capacity subscribed</td>
       </tr>
    </tbody>
 </table>
@@ -409,20 +396,28 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td rowspan=3></td>
-         <td></td>
+         <td rowspan=3>Storage Pool</td>
+         <td>Bandwidth</td>
+         <td>Total bandwidth in MB/s</td>
+      </tr>
+      <tr>
+         <td>Response time</td>
+         <td>Total read and write response time in MB/s</td>
+      </tr>
+      <tr>
+         <td>Read Bandwidth</td>
          <td></td>
       </tr>
       <tr>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
+         <td>Write Bandwidth</td>
          <td></td>
       </tr>
       <tr>
+         <td>Read throughput</td>
          <td></td>
+      </tr>
+      <tr>
+         <td>Write throughput</td>
          <td></td>
       </tr>
    </tbody>
