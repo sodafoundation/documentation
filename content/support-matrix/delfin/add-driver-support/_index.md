@@ -50,7 +50,7 @@ Please ensure you copy the entire frontmatter including both the `---`
 10. Fill appropriate driver data to support matrix tables.  
 11. Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.  
 12. Raise a PR to the documentation repository  
-# Sample Driver Name 
+# Support matrix template
 ### Model and management software versions supported
 
 <table>
@@ -158,13 +158,19 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td>Disk</td>
+         <td>Storage Node</td>
          <td>True</td>
          <td></td>
       </tr>
       <tr>
-         <td>Pool</td>
+         <td>Storage Pool</td>
          <td>True</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Volume</td>
+         <td>True</td>
+         <td></td>
       </tr>
    </tbody>
 </table>
@@ -393,18 +399,16 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td rowspan=6>Storage Pool</td>
+         <td rowspan=6>Storage Array</td>
          <td>Bandwidth</td>
          <td>Total bandwidth in MB/s</td>
       </tr>
       <tr>
          <td>Response time</td>
          <td>Total read and write response time in MB/s</td>
-         <td></td>
       </tr>
       <tr>
          <td>Read Bandwidth</td>
-         <td></td>
          <td></td>
       </tr>
       <tr>
@@ -417,6 +421,72 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>Write throughput</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td rowspan=9>Storage Pool</td>
+         <td>Read Throughput</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Write Throughput</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Total Throughput</td>
+         <td>Total read and write throughput</td>
+      </tr>
+      <tr>
+         <td>IOPS Read</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>IOPS Write</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>IOPS Total</td>
+         <td>Total read and write IOPS</td>
+      </tr>
+      <tr>
+         <td>Utilization Read</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Utilization Write</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Utilization Total</td>
+         <td>Total read and write utilization</td>
+      </tr>
+      <tr>
+         <td rowspan=7>Volume</td>
+         <td>Read response time</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Write response time</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Cache hit ratio write</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Cache hit ratio read</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Cache hit ration total</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Cache hit read</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Cache hit read</td>
          <td></td>
       </tr>
    </tbody>
