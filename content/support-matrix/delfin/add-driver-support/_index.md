@@ -160,17 +160,17 @@ Please ensure you copy the entire frontmatter including both the `---`
       <tr>
          <td>Storage Node</td>
          <td>True</td>
-         <td></td>
+         <td>Storage Node performance metrics are supported by driver and default interval performance metric collection enabled</td>
       </tr>
       <tr>
          <td>Storage Pool</td>
          <td>True</td>
-         <td></td>
+         <td>Storage Pool performance metrics are supported by driver and default interval performance metric collection enabled</td>
       </tr>
       <tr>
          <td>Volume</td>
          <td>True</td>
-         <td></td>
+         <td>Volume performance metrics are supported by driver and default interval performance metric collection enabled</td>
       </tr>
    </tbody>
 </table>
@@ -301,7 +301,7 @@ Please ensure you copy the entire frontmatter including both the `---`
       </tr>
       <tr>
          <td>Serial Number</td>
-         <td></td>
+         <td>Serial number of the array/disk</td>
       </tr>
       <tr>
          <td>Location</td>
@@ -399,7 +399,7 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td rowspan=6>Storage Array</td>
+         <td rowspan=3>Storage Array</td>
          <td>Bandwidth</td>
          <td>Total bandwidth in MB/s</td>
       </tr>
@@ -408,87 +408,34 @@ Please ensure you copy the entire frontmatter including both the `---`
          <td>Total read and write response time in MB/s</td>
       </tr>
       <tr>
-         <td>Read Bandwidth</td>
-         <td></td>
+         <td>Throughput</td>
+         <td>Total disks throughput(MB/s)</td>
       </tr>
       <tr>
-         <td>Write Bandwidth</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Read throughput</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Write throughput</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td rowspan=9>Storage Pool</td>
-         <td>Read Throughput</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Write Throughput</td>
-         <td></td>
-      </tr>
-      <tr>
+         <td rowspan=3>Storage Pool</td>
          <td>Total Throughput</td>
          <td>Total read and write throughput</td>
       </tr>
       <tr>
-         <td>IOPS Read</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>IOPS Write</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>IOPS Total</td>
+         <td>IOPS</td>
          <td>Total read and write IOPS</td>
       </tr>
       <tr>
-         <td>Utilization Read</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Utilization Write</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Utilization Total</td>
+         <td>Utilization</td>
          <td>Total read and write utilization</td>
       </tr>
       <tr>
-         <td rowspan=7>Volume</td>
-         <td>Read response time</td>
-         <td></td>
+         <td rowspan=3>Volume</td>
+         <td>Response time</td>
+         <td>Total read and write response time in MB/s</td>
       </tr>
       <tr>
-         <td>Write response time</td>
-         <td></td>
+         <td>Cache hits ratio</td>
+         <td>Total read and write cache hit ratio</td>
       </tr>
       <tr>
-         <td>Cache hit ratio write</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Cache hit ratio read</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Cache hit ration total</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Cache hit read</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Cache hit read</td>
-         <td></td>
+         <td>Cache hits</td>
+         <td>A count of the number of cache hits</td>
       </tr>
    </tbody>
 </table>
-
