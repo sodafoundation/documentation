@@ -50,7 +50,7 @@ Please ensure you copy the entire frontmatter including both the `---`
 10. Fill appropriate driver data to support matrix tables.  
 11. Please find below sample driver support matrix data tables with sample data for reference to fill specific driver support matrix data.  
 12. Raise a PR to the documentation repository  
-
+# Sample Driver Name 
 ### Model and management software versions supported
 
 <table>
@@ -166,9 +166,10 @@ Please ensure you copy the entire frontmatter including both the `---`
          <td>True</td>
          <td></td>
       </tr>
-      <tr>Pool</tr>
-      <td>True</td>
-      <td></td>
+      <tr>
+         <td>Pool</td>
+         <td>True</td>
+      </tr>
    </tbody>
 </table>
 
@@ -396,16 +397,18 @@ Please ensure you copy the entire frontmatter including both the `---`
    </thead>
    <tbody>
       <tr>
-         <td rowspan=3>Storage Pool</td>
+         <td rowspan=6>Storage Pool</td>
          <td>Bandwidth</td>
          <td>Total bandwidth in MB/s</td>
       </tr>
       <tr>
          <td>Response time</td>
          <td>Total read and write response time in MB/s</td>
+         <td></td>
       </tr>
       <tr>
          <td>Read Bandwidth</td>
+         <td></td>
          <td></td>
       </tr>
       <tr>
