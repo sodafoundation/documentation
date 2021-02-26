@@ -21,10 +21,6 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
          <td>VMAX 250F, VMAX 450F, VMAX 850F, VMAX 950F, VMAX 100K, VMAX 200K,VMAX 400K</td>
          <td>Unisphere 9.0 or later</td>
       </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
    </tbody>
 </table>
 
@@ -55,10 +51,6 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       <tr>
          <td>Password</td>
          <td>Password</td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
       </tr>
    </tbody>
 </table>

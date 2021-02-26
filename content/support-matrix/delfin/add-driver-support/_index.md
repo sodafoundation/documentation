@@ -113,10 +113,6 @@ Please ensure you copy the entire frontmatter including both the `---`
          <td>Password</td>
          <td>Management software version Password</td>
       </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
    </tbody>
 </table>
 
