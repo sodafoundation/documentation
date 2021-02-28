@@ -86,29 +86,6 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
    </tbody>
 </table>
 
-### Performance registration information
-
-<table>
-   <thead>
-      <tr>
-         <th>Resource</th>
-         <th>Default Interval</th>
-         <th>Additional information</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td></td>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-   </tbody>
-</table>
-
 ### Resource data matrix
  
 <table>
@@ -320,35 +297,3 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       </tr>
    </tbody>
 </table>
- 
-### Performance metric data
- 
-<table>
-   <thead>
-      <tr>
-         <th>Resource</th>
-         <th>Metric</th>
-         <th>Additional information</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan=3></td>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td></td>
-      </tr>
-   </tbody>
-</table>
-
