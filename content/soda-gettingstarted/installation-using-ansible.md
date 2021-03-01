@@ -98,8 +98,8 @@ python3 -V
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.1.0 follow
-git checkout v1.1.0
+# Checkout the required version. For example, to checkout v1.2.0 follow
+git checkout v1.2.0
 ```
 {{% notice warning %}}
 Checkout the latest stable release. Current stable release: stable/faroe. If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
