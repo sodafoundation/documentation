@@ -25,6 +25,9 @@ defaultContentLanguageInSubdir= true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [Languages]
 [Languages.en]
 title = "Documentation for SODA Project"
