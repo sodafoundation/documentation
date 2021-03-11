@@ -1,8 +1,8 @@
 ---
-title: OpenSDS Integration with Kubernetes CSI
-menuTitle: "With Kubernetes CSI"
-description: "A guide for integrating OpenSDS with Kubernetes CSI."
-weight: 1
+title: SODA Integration with Kubernetes via Soda CSI Plugin
+menuTitle: "Soda CSI plugin"
+description: "A guide for integrating SODA with Kubernetes CSI."
+weight: 10
 disableToc: false
 tags: ["integration guide", "kubernetes csi"] 
 ---
