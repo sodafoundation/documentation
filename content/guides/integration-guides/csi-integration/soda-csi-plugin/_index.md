@@ -1,6 +1,6 @@
 ---
-title: SODA Integration with Kubernetes via Soda CSI Plugin
-menuTitle: "Soda CSI plugin"
+title: SODA Integration with Kubernetes via SODA CSI Plugin
+menuTitle: "SODA CSI plugin"
 description: "A guide for integrating SODA with Kubernetes CSI."
 weight: 10
 disableToc: false

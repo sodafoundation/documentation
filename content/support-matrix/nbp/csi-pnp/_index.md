@@ -1,13 +1,13 @@
 ---
 title: Container Storage Interface(CSI) Plug-N-Play provided by SODA
 menuTitle: CSI Plug-N-Play
-description: "User guide for Soda CSI Plug-N-Play feature"
+description: "Support Matrix for SODA CSI Plug-N-Play feature"
 weight: 10
 disableToc: false
 tags: ["user guide", "csi", "plug-n-play"] 
 ---
 
-Soda CSI Plug-N-Play allows users to provision the storage in K8s using SODA way and grab the Data Management capabilities offered by SODA.
+SODA CSI Plug-N-Play allows users to provision the storage in K8s using SODA way and grab the Data Management capabilities offered by SODA.
 SODA CSI PnP let's user to define the profile in SODA and use the profile in the StorageClass of K8s to provision the storage 
 dynamically. It allows user to switch between different heterogeneous CSI drivers via Profile.
     

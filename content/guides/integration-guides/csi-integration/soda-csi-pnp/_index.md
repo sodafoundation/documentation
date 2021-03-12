@@ -1,6 +1,6 @@
 ---
-title: SODA Integration with Vendor CSI Drivers via Soda CSI Plug-N-Play
-menuTitle: "Soda CSI Plug-N-Play"
+title: SODA Integration with Vendor CSI Drivers via SODA CSI Plug-N-Play
+menuTitle: "SODA CSI Plug-N-Play"
 description: "A guide for integrating SODA with Vendor CSI Driver via unified Plugin."
 weight: 10
 disableToc: false
@@ -15,7 +15,7 @@ provisioning the Volumes for Pods.
   
 ## Prerequisite
  - An installation of Kubernetes (V1.17+)  
- - Soda installation (you can refer to quick start guide over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the ports of etcd in osdb.yaml while installation soda on an existing K8s env as the ports causes conflict with k8s etcd.
+ - SODA installation (you can refer to quick start guide over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the ports of etcd in osdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s etcd.
 
 ## Selecting the vendor CSI driver
 You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/guides/user-guides/nbp/csi-pnp/) Once selected follow the instruction 
@@ -30,9 +30,10 @@ We need to do the additional step to make the lvm group for this plugin
 ```go
 truncate -s 1024G /tmp/disk.img
 sudo losetup -f /tmp/disk.img --show
-
+```
 Create the Volume group on all the nodes, which will be used by the LVM Driver for provisioning the volumes
 
+```go
 sudo pvcreate /dev/loop0
 sudo vgcreate lvmvg /dev/loop0
 ```
