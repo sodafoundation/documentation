@@ -44,18 +44,18 @@ You can find the meeting details [here](https://bit.ly/sodaglobalcommunitymeetin
   - Ensure you have the slack account of SODA Workspace (Join [here](https://sodafoundation.io/slack/))
    - Try the latest soda foundation release
 	  - Go to the latest stable release from [here](https://github.com/sodafoundation/releases/releases)
-	  - Follow the instruction for how to use the release
-	  - Make the setup and test (using the quick start steps)
+	  - Follow the instructions for how to use the release
+	  - Make the setup and test (using the quick-start steps)
 	  - Once you are able to do, try developer method of installation from the release notes.
-	  - Any point, if yo is you are facing any issues: 
+	  - At any point, if you are facing any issue: 
 		  - Raise issue in the [release repo](https://github.com/sodafoundation/releases/issues)
 		  - Clarify / Seek help in the soda slack #general channel
   - Other Contribution Channels
 	  - Check the open issues in [Documentation](https://github.com/sodafoundation/documentation/issues)
 	  - If you can fix any of them, just add a comment in the issue saying you want to work on it
 	  - You can do @ to any members or author of the issues to notify them specifically
-	  - Raise the PR to fix the documentaion
-	  - This procedure you can follow for any other project repository in the [SODA github](https://github.com/sodafoundation)
+	  - Raise the PR to fix the documentation
+	  - This procedure you can follow for any other project's repository in the [SODA github](https://github.com/sodafoundation)
 	  - Complete SODA Documentation is available [here](https://docs.sodafoundation.io/)
-  - If you are think, we can add more inputs to this document or additional documentation links for developers including setup etc, please raise issue under [SODA Documentation](https://github.com/sodafoundation/documentation/issues)
+  - If you think, we can add more inputs to this document or additional documentation links for developers including setup etc, please raise issue under [SODA Documentation](https://github.com/sodafoundation/documentation/issues)
   - Any other support please request at soda slack #general channel
