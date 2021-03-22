@@ -1,7 +1,7 @@
 ---
 title: Integration Guides
 description: "All the integration guides and documentation"
-weight: 15
+weight: 30
 disableToc: true
 ---
 
