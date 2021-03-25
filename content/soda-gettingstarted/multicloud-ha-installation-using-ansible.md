@@ -3,6 +3,7 @@ title: SODA Multi Cloud HA - Installation Guide using Ansible
 description: "This document describes how to install SODA Multi Cloud project on a pre-configured Kubernetes cluster. These steps will help you to install / uninstall Multi-Cloud project. After installation using these steps, SODA Multi-Cloud Services will be available in HA mode. You can test either through SODA Dashboard UI or CLI"
 weight: 50
 ---
+
 This document describes how to install SODA Multi Cloud project on a pre-configured Kubernetes cluster. These steps will help you to install / uninstall Multi-Cloud project. After installation using these steps, SODA Multi-Cloud Services will be available in HA mode. You can test either through SODA Dashboard UI or CLI
 
 ## Pre-config for Deploying Multi-Cloud Services on Kubernetes Cluster (Ubuntu 16.04 or Ubuntu 18.04)
