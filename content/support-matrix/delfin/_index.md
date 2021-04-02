@@ -23,7 +23,7 @@ Each driver support matrix includes below topics.
 7. Performance metric data: Table illustrates performance metrics supported for each resource.
 
 {{% notice note %}}
-Support matrix of drivers for hpe 3par, hitachi vsp, ibm storwize svc and unity, vnx, vplex models of dell emc are currently not updated here. 
+Support matrix of drivers for Dell EMC VNX, Dell EMC VPLEX, Dell EMC UNITY, IBM Storewize/SVC, Hitachi VSP, HPE 3PAR are currently not updated here. 
 For details on any of these drivers, please contact slack channel [here](https://app.slack.com/client/T2YSV6N2J/C01FW6Y7YTD/thread/C01D1L72Z8D-1613845945.021400?cdn_fallback=1)  
 {{% /notice %}}
 
