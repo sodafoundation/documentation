@@ -1,12 +1,12 @@
 ---
-title: multi-cloud
-menuTitle: multi-cloud
+title: Multi-cloud support matrix
+menuTitle: Multi-cloud
 description: "Matrix data for supported cloud vendors and features"
 weight: 15
 disableToc: false
 tags: ["support matrix", "multi-cloud", "cloud vendors"] 
 ---
-This section provides the metrics about the supported cloud providers and the features for SODA multi-cloud.
+This section provides the matrix about the supported cloud providers and the features for SODA multi-cloud.
 
 {{%children style="h3" description="true" %}}  
 
