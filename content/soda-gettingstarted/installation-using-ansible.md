@@ -124,6 +124,11 @@ The following commands can be used as a workaround.
 
 ### Configure SODA hotpot install variables:
 
+#### Multi-Cloud installation in HA Mode.
+
+To install SODA Multi-Cloud in HA mode please refer to the [Multi-Cloud HA installation guide](https://docs.sodafoundation.io/soda-gettingstarted/multicloud-ha-installation-using-ansible/)
+
+
 #### Set HOST_IP environment variable
 
 The `HOST_IP` environment variable has to be set to your local machine IP address
