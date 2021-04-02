@@ -16,7 +16,7 @@ To have more control of the installaton cofigurations, or try out various config
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
-	|Isabela         | v1.3.0         |
+	|Isabela          | v1.3.0         |
 	|Hawaii           | v1.2.0         |
 	|Greenland        | v1.1.0         |
 	|Faroe            | v1.0.0         |
