@@ -20,14 +20,14 @@ By following this guide you will be able to install SODA multi-cloud with creati
 ```cassandraql
 git clone https://github.com/sodafoundation/installer.git
 cd installer
-# Checkout the latest release, give master by default or specify the branch 
+# Checkout the latest release, give master by default or specify the branch
 git checkout master
 ```
 
 ### How to enable multi-cloud installation
-  
+
 Install docker container to run multi-cloud in container environment.
- 
+
 Update the file : opensds-installer/ansible/group_vars/gelato.yml to install multi-cloud.
 ```cassandraql
 # repository branch
@@ -47,7 +47,7 @@ export OS_AUTH_URL=http://{{ authchecker_cluster_ip }}/identity
 #### Run SODA multi-cloud in docker container
 ```
 docker-compose up -d
-docker ps 
+docker ps
    ```
 Note: check if multi-cloud services are running in the docker container.
 ```cassandraql
@@ -68,12 +68,23 @@ SODA Object lifecycle management feature specific UI can be accessed via
 
 `http://{your_host_ip}:8088/#/home`
 
-login  using the default admin credentials: `admin/opensds@123`. 
+login  using the default admin credentials: `admin/opensds@123`.
 
-![multi-cloud UI image  ](opensds_home.PNG?raw=true)
+![multi-cloud UI image  ](soda_login_page.png?raw=true)
 
 ### Create  new backend  using remote cloud bucket
 Click on (+) for registering a storage backend
+
+![multi-cloud backend image  ](register-backend-0.png?raw=true)
+
+and then provide valid region, endpoint, Access and Secret Key parameters
+
+##### Note:
+For cloud vendors like Aws, Azure, Huawei and Gcp remote cloud buckets need not be created manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors.
+
+![multi-cloud backend image  ](register-backend.png?raw=true)
+
+For other cloud vendors like IBM, Ceph, YIG and Alibaba, register backend using remote cloud bucket
 
 ![multi-cloud backend image  ](opensds_backend.PNG?raw=true)
 
@@ -102,5 +113,5 @@ After configuring lifecycle in dashboard, a routine scheduler will run and it wi
 ### FAQ
 1. How to check if the lifecycle rule is applied on bucket/object ?
 
-Ans: 
+Ans:
 SODA does not create the rule in the cloud backend (CSP). Once the bucket/object satisfies the rule, SODA will automatically call cloud API and the action will be performed. If there are any errors or issues in rule, user will know at the time of lifecycle action.
