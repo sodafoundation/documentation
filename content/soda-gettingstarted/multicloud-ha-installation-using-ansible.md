@@ -40,22 +40,22 @@ Checkout the latest stable release. Current stable release: stable/isabela. If y
 {{% /notice %}}
 
 
- - cd installer/ansible/group_vars
+ -`cd installer/ansible/group_vars`
  - Open the common.yml file
    - Add the IP of the host (which is reachable from the Kubernetes node)
-   - export the HOST_IP=<IP-of-the-Host>
-   - Change 'gelato_ha: false' to 'gelato_ha: true' to install Multi-Cloud services in HA mode. 
+   - export the `HOST_IP=<IP-of-the-Host>`
+   - Change `gelato_ha: false` to `gelato_ha: true` to install Multi-Cloud services in HA mode. 
 
  - Open the gelato-ha.yml file
    - Add the user that has access to the Kubernete Cluster to deploy the services.
    - The k8suser should be added to sudoers group.
-     - Eg. k8s_user: <k8suser> 
+     - Eg. `k8s_user: <k8suser> `
 
  - Open the local.hosts file in the <installer/ansible> dir.
    - Add the IP and other details of the Kubernetes Master node under the group
     - Eg. [k8smaster]
-          master ansible_port=22 ansible_user=root ansible_host=192.168.xx.yy
-          The above line is commented out in the file installer/ansible/local.hosts.
+          `master ansible_port=22 ansible_user=root ansible_host=192.168.xx.yy`
+          The above line is commented out in the file `installer/ansible/local.hosts`.
           Please un-comment it and replace the ansible_host with the correct IP address.   
      - Ensure the passwordless ssh is configured between the Installer node and the Kubernetes Master nodes.
 
