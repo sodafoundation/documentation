@@ -70,7 +70,7 @@ SODA Object lifecycle management feature specific UI can be accessed via
 
 login  using the default admin credentials: `admin/opensds@123`.
 
-![multi-cloud UI image  ](opensds_home.PNG?raw=true)
+![multi-cloud UI image  ](soda_login_page.png?raw=true)
 
 ### Create  new backend  using remote cloud bucket
 Click on (+) for registering a storage backend
@@ -80,11 +80,12 @@ Click on (+) for registering a storage backend
 and then provide valid region, endpoint, Access and Secret Key parameters
 
 ##### Note:
-For cloud vendors like Aws, Azure, Huawei and Gcp remote cloud bucket need not to create manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors.
+For cloud vendors like Aws, Azure, Huawei and Gcp remote cloud buckets need not be created manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors.
 
 ![multi-cloud backend image  ](register-backend.png?raw=true)
 
-For other 
+For other cloud vendors like IBM, Ceph, YIG and Alibaba, register backend using remote cloud bucket
+
 ![multi-cloud backend image  ](opensds_backend.PNG?raw=true)
 
 ### Create bucket and upload the object
