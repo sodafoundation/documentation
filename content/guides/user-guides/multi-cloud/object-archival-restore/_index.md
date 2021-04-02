@@ -19,7 +19,7 @@ This guide shows how to archive objects into Cloud object storage and restore th
 To refer the API specs, please check [Cloud Object Archival API Specs](https://github.com/sodafoundation/multi-cloud/blob/master/openapi-spec/swagger.yaml)
 
 {{% notice note %}}
- Currently this feature is available only for AWS, Azure and GCP cloud as backend
+ Currently this feature is available only for AWS, Azure and GCP cloud as backend and SONY-ODA as on-premise Cold storage
 {{% /notice %}}
 
 ## Installing SODA multi-cloud
