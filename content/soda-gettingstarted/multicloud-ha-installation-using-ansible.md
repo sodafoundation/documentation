@@ -69,7 +69,7 @@ ansible-playbook site.yml -i local.hosts -vvv
 ```
 
 Here is a block diagram showing the deployment of SODA multi-cloud services in HA mode. 
- ![SODA Mulit-Cloud HA Deployment](resources/multicloud-ha-fig1.png)
+ ![SODA Multi-cloud HA Deployment](resources/multicloud-ha-fig1.png)
 
 
 The namespace 'soda-multi-cloud' is used to deploy the services in the Kubernetes cluster.
