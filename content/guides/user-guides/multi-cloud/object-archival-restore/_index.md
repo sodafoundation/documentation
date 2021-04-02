@@ -33,8 +33,8 @@ Or Check the developer guide [multi-cloud local cluster installation through rep
 	admin/opensds@123 
 
 ## Pre-requisite
-* Cloud Backend is registered. [How to register a cloud backend](/guides/user-guides/multi-cloud/object-archival-restore/#How-to-register-a-Cloud-Backend)
-* multi-cloud Bucket is created. [How to create a multi-cloud bucket](/guides/user-guides/multi-cloud/object-archival-restore/#How-to-create-a-multi-cloud-bucket)
+* Cloud Backend is registered. [How to register a cloud backend](/guides/user-guides/multi-cloud/object-archival-restore/#how-to-register-a-cloud-backend)
+* multi-cloud Bucket is created. [How to create a multi-cloud bucket](/guides/user-guides/multi-cloud/object-archival-restore/#how-to-create-a-multi-cloud-bucket)
 
 <a name="How to register a Cloud backend"></a>
 #### How to register a Cloud backend
