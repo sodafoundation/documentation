@@ -16,6 +16,7 @@ To have more control of the installaton cofigurations, or try out various config
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
+	|Isabella         | v1.3.0         |
 	|Hawaii           | v1.2.0         |
 	|Greenland        | v1.1.0         |
 	|Faroe            | v1.0.0         |
@@ -61,7 +62,7 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 	- **Get and Install Release Binaries**
 	
 	{{% notice info %}}
-	Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.2.0 etc)
+	Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.3.0 etc)
 	{{% /notice %}}
 
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)**
