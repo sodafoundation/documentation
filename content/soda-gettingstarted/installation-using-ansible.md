@@ -115,6 +115,10 @@ ansible --version # Ansible version 2.4.x is required.
 ```
 ### Configure SODA hotpot install variables:
 
+### Multi-Cloud installation in HA Mode.
+
+To install SODA Multi-Cloud in HA mode please refer to the [Multi-Cloud HA installation guide](multicloud-ha-installation-using-ansible.md)
+
 #### Set HOST_IP environment variable
 
 The `HOST_IP` environment variable has to be set to your local machine IP address
