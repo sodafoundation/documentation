@@ -8,7 +8,7 @@ weight: 50
 ---
 
 This document describes how to install SODA Multi Cloud project on a pre-configured Kubernetes cluster. These steps will help you to install / uninstall Multi-Cloud project in HA mode. After installation using these steps, SODA Multi-Cloud Services will be available in HA mode. You can test either through SODA Dashboard UI.
-For installing SODA in default standalone configuration please refer to the [standalone installation guide](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)
+For installing SODA in default standalone configuration please refer to the [standalone installation guide](installation-using-ansible.md)
 
 ## Pre-config for Deploying Multi-Cloud Services on Kubernetes Cluster (Ubuntu 16.04 or Ubuntu 18.04)
 All the installation work is tested on `Ubuntu 16.04` and `Ubuntu 18.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
@@ -17,7 +17,6 @@ The following configuations are required on the Kubernetes Cluster and the SODA 
   2. The Kubernetes Cluster should have atleast three nodes to deploy the services. 
   3. The Kubernetes Master node should have a user, (say 'k8s_user') configured to access the installer node.
   4. [Passwordless SSH](https://help.ubuntu.com/community/SSH/OpenSSH/Keys) should be setup between the Kubernetes Master node and the SODA Installer node.
-  [TODO: Add minimum configuration for K8s nodes.]
 
 
 All the other configurations remain same as the [standalone installation](installation-using-ansible.md). 
