@@ -22,5 +22,9 @@ Each driver support matrix includes below topics.
 6. Alert data matrix : Table illustrates fields available in the alert data
 7. Performance metric data: Table illustrates performance metrics supported for each resource.
 
+{{% notice note %}}
+Support matrix of drivers for Dell EMC VNX/VPLEX/Unity, IBM Storwize/SVC, Hitachi VSP, HPE 3PAR are currently not updated here. 
+For details on any of these drivers, please contact slack channel [here](https://app.slack.com/client/T2YSV6N2J/C01FW6Y7YTD/thread/C01D1L72Z8D-1613845945.021400?cdn_fallback=1)  
+{{% /notice %}}
 
 {{%children style="h3" description="true" %}}  
