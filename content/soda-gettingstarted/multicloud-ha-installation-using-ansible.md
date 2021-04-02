@@ -75,7 +75,7 @@ Here is a block diagram showing the deployment of SODA multi-cloud services in H
 
 The namespace 'soda-multi-cloud' is used to deploy the services in the Kubernetes cluster.
 After deploying check the pods, deployments and services deployed in the Kubernetes Cluster. 
-Use the command "kubectl get pods -n soda-multi-cloud" to get a list of all the pods deployed on the Kubernetes Cluster. For more kubectl commands please refer to https://kubernetes.io/docs/reference/kubectl/
+Use the command `kubectl get pods -n soda-multi-cloud` to get a list of all the pods deployed on the Kubernetes Cluster. For more kubectl commands please refer to https://kubernetes.io/docs/reference/kubectl/
 
 
 
