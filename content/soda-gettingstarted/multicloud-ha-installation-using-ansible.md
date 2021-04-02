@@ -1,6 +1,8 @@
 ---
 title: Multi Cloud HA Installation
 menuTitle: ""
+disableToc: true
+tags: ["user guide", "multi-cloud", "ha"] 
 description: "This document describes how to install SODA Multi Cloud project on a pre-configured Kubernetes cluster. These steps will help you to install / uninstall Multi-Cloud project. After installation using these steps, SODA Multi-Cloud Services will be available in HA mode. You can test either through SODA Dashboard UI or CLI"
 weight: 50
 ---
