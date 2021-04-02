@@ -80,7 +80,7 @@ Click on (+) for registering a storage backend
 and then provide valid region, endpoint, Access and Secret Key parameters
 
 ##### Note:
-For cloud vendors like Aws, Azure, Huawei and Gcp remote cloud buckets need not be created manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors
+For cloud vendors like AWS, Azure, Huawei and GCP remote cloud buckets need not be created manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors
 
 ![multi-cloud backend image  ](register-backend.png?raw=true)
 
