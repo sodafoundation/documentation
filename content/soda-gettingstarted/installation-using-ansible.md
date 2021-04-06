@@ -55,11 +55,11 @@ go version
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.2.0 follow
-git checkout v1.2.0
+# Checkout the required version. For example, to checkout v1.3.0 follow
+git checkout v1.3.0
 ```
 {{% notice warning %}}
-Checkout the latest stable release. Current stable release: [hawaii(v1.2.0)](https://github.com/sodafoundation/soda/releases/tag/v1.2.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+Checkout the latest stable release. Current stable release: [isabela(v1.3.0)](https://github.com/sodafoundation/soda/releases/tag/v1.3.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
 {{% /notice %}}
 
 #### Install ansible tool
