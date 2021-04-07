@@ -19,7 +19,7 @@ This guide shows how to archive objects into Cloud object storage and restore th
 To refer the API specs, please check [Cloud Object Archival API Specs](https://github.com/sodafoundation/multi-cloud/blob/master/openapi-spec/swagger.yaml)
 
 {{% notice note %}}
- Currently this feature is available only for AWS cloud
+ Currently this feature is available only for AWS, Azure and GCP cloud as backend and SONY-ODA as on-premise Cold storage
 {{% /notice %}}
 
 ## Installing SODA multi-cloud
@@ -33,8 +33,9 @@ Or Check the developer guide [multi-cloud local cluster installation through rep
 	admin/opensds@123 
 
 ## Pre-requisite
-* Cloud Backend is registered. [How to register a cloud backend](#How to register a Cloud backend)
-* multi-cloud Bucket is created. [How to create a multi-cloud bucket](#How to create a multi-cloud bucket)
+* Cloud Backend is registered. [How to register a cloud backend](/guides/user-guides/multi-cloud/object-archival-restore/#how-to-register-a-cloud-backend)
+* multi-cloud Bucket is created. [How to create a multi-cloud bucket](/guides/user-guides/multi-cloud/object-archival-restore/#how-to-create-a-multi-cloud-bucket)
+
 <a name="How to register a Cloud backend"></a>
 #### How to register a Cloud backend
 ![multi-cloud U	I image  ](soda_home.png?raw=true)

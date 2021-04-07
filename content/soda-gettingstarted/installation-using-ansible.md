@@ -7,7 +7,7 @@ This document describes how to install SODA projects in a local cluster with det
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
-## Pre-config (Ubuntu 16.04 or Ubuntu 18.04)
+### Pre-config (Ubuntu 16.04 or Ubuntu 18.04)
 All the installation work is tested on `Ubuntu 16.04` and `Ubuntu 18.04`, please make sure you have installed the right one. Also `root` user is REQUIRED before the installation work starts.
 
 #### Install following packages:
@@ -51,6 +51,25 @@ source /etc/profile
 go version
 ```
 ***
+#### Download SODA installer code
+```bash
+git clone https://github.com/sodafoundation/installer.git
+cd installer/ansible
+# Checkout the required version. For example, to checkout v1.3.0 follow
+git checkout v1.3.0
+```
+{{% notice warning %}}
+Checkout the latest stable release. Current stable release: [Isabela(v1.3.0)](https://github.com/sodafoundation/soda/releases/tag/v1.3.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+{{% /notice %}}
+
+#### Install ansible tool
+
+This step is needed to upgrade ansible to version 2.4.2 (2.5.1 for Ubuntu 18.04) which is required for the "include_tasks" ansible command.
+
+```bash
+chmod +x ./install_ansible.sh && ./install_ansible.sh
+ansible --version # Ansible version 2.4.x is required.
+```
 
 {{% notice warning %}}
 **Python3.6 is a pre-requisite for installation of delfin.If python3.6 is not installed, use the following commands to install python3.6 and other dependencies.**
@@ -72,20 +91,12 @@ apt-get install python3.6 -y
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
 
-# Workaround for Gnome terminal not working after upgrading python3
-sudo rm /usr/bin/python3
-sudo ln -s python3.5 /usr/bin/python3
-
-# switch between the two python versions for python3 via command
-sudo update-alternatives --config python3
-
 # Install python3.6 virtual env and python3.6-dev
 apt install python3.6-venv -y
 apt install python3.6-dev -y
 wget https://bootstrap.pypa.io/get-pip.py
 python3.6 get-pip.py
 sudo ln -s /usr/bin/python3.6 /usr/local/bin/python3
-sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
 
 # Install python3.6 distutils
 apt-get install python-distutils-extra -y
@@ -94,26 +105,29 @@ python3 -V
 
 ***
 
-#### Download SODA installer code
-```bash
-git clone https://github.com/sodafoundation/installer.git
-cd installer/ansible
-# Checkout the required version. For example, to checkout v1.1.0 follow
-git checkout v1.1.0
-```
-{{% notice warning %}}
-Checkout the latest stable release. Current stable release: stable/faroe. If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+{{% notice info %}}
+**Switch between the two python versions (3.5.2 and 3.6) for python3 via command**  
+`sudo update-alternatives --config python3`  
+{{% /notice %}}
+{{% notice info %}}
+**Workaround for Gnome terminal not working after upgrading python3**  
+Sometimes Gnome terminal does not work after upgrading to Python3.6 on Ubuntu 16.04 and throws errors on all commands.  
+The following commands can be used as a workaround.  
+`sudo rm /usr/bin/python3`  
+`sudo ln -s python3.5 /usr/bin/python3`  
+{{% /notice %}}
+{{% notice info %}}
+**Workaround for pip3 not updated to latest**  
+`sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3`
 {{% /notice %}}
 
-#### Install ansible tool
 
-This step is needed to upgrade ansible to version 2.4.2 which is required for the "include_tasks" ansible command.
-
-```bash
-chmod +x ./install_ansible.sh && ./install_ansible.sh
-ansible --version # Ansible version 2.4.x is required.
-```
 ### Configure SODA hotpot install variables:
+
+#### Multi-Cloud installation in HA Mode.
+
+To install SODA Multi-Cloud in HA mode please refer to the [Multi-Cloud HA installation guide](https://docs.sodafoundation.io/soda-gettingstarted/multicloud-ha-installation-using-ansible/)
+
 
 #### Set HOST_IP environment variable
 
@@ -329,7 +343,7 @@ Check if the hosts can be reached
 ```bash
 ansible all -m ping -i local.hosts
 ```
-
+### Run the ansible playbook
 Run SODA installer ansible playbook to start deploy
 
 ```bash
@@ -449,14 +463,16 @@ Logout of the dashboard as admin and login the dashboard again as a non-admin us
 
 ### Multi Cloud Service
 
-1 Register object storage backend.
-2 Create bucket.
-3 Upload object.
-4 Download object.
-5 Migrate objects based on bucket across cloud.
-6 Create lifecycle for buckets.
+1. Register object storage backend.
+2. Create bucket.
+3. Upload object.
+4. Download object.
+5. Migrate objects based on bucket across cloud.
+6. Create lifecycle for buckets.
+7. Archive / Retrieve Objects.
+8. File & Block service.
 
-## How to purge and clean SODA projects cluster
+### How to uninstall SODA including purge and clean
 Run SODA installer ansible playbook to clean the environment
 ``` bash
 ansible-playbook clean.yml -i local.hosts
