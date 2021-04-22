@@ -297,3 +297,50 @@ tags: ["support matrix", "delfin", "drivers", "dell emc"]
       </tr>
    </tbody>
 </table>
+
+### Performance metrics matrix
+ 
+<table>
+   <thead>
+      <tr>
+         <th>Resource</th>
+         <th>Metric</th>
+         <th>Additional information</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      <tr>
+         <td rowspan=10>Device</td>
+         <td>throughput</td>
+         <td>Represents how much data is successfully transferred in MB/s"</td>
+      </tr>
+      <tr>
+         <td>readThroughput</td>
+         <td>Represents how much data read is successfully transferred in MB/s</td>
+      </tr>
+      <tr>
+         <td>writeThroughput</td>
+         <td>Represents how much data write is successfully transferred in MB/s</td>
+      </tr>
+      <tr>
+         <td>responseTime</td>
+         <td>Average time taken for an IO operation in ms"</td>
+      </tr>
+      <tr>
+         <td>requests</td>
+         <td>Input/output operations per second (IOPS)</td>
+      </tr>
+      <tr>
+         <td>readRequests</td>
+         <td>Read requests per second (IOPS)</td>
+      </tr>
+      <tr>
+         <td>writeRequests</td>
+         <td>Write requests per second (IOPS)</td>
+      </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      
+   </tbody>
+</table>

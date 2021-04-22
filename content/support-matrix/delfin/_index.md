@@ -10,6 +10,19 @@ tags: ["support matrix", "delfin", "drivers"]
 Delfin project aims to overcome a challenge to manage heterogeneous storage devices on a single platform.
 Delfin has standardized common API services. 
 
+| Vendor                                              | Model          | Type  | Resource | Alert | Performance |
+| --------------------------------------------------- | -------------- | ----- | -------- | ----- | ----------- |
+| Dell EMC                                            | VMAX           | Block | Y        | Y     | Y           |
+| Dell EMC                                            | Unity          | Block | Y        | Y     | N           |
+| Dell EMC                                            | VPLEX          | Block | Y        | Y     | N           |
+| Dell EMC                                            | VNX            | Block | Y        | Y     | N           |
+| Huawei                                              | OceanStor v3   | File  | Y        | Y     | N           |
+| Huawei                                              | OceanStor v3   | Block | Y        | Y     | N           |
+| HPE                                                 | 3Par           | Block | Y        | Y     | N           |
+| Hitachi                                             | VSP            | Block | Y        | Y     | N           |
+| IBM                                                 | SVC / Storwize | Block | Y        | Y     | N           |
+| Simulated Sample Driver (for testing the framework) | NA             | NA    | Y        | Y     | Y           |
+
 Support matrix of each storage drivers are grouped by their vendor name.
 Each driver support matrix includes below topics.
 
