@@ -1,7 +1,7 @@
 ---
 title: Aruba (v0.2.0)
 description: "This is the v0.2.0 release of OpenSDS"
-weight: 7
+weight: 8
 ---
 
 The OpenSDS Aruba release completed June 30, 2018.
