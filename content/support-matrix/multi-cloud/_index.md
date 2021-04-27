@@ -10,6 +10,7 @@ This section provides the matrix about the supported cloud providers and the fea
 
 {{%children style="h3" description="true" %}}  
 
+## Supported Backends
 <table>
     <thead>
        <tr>
@@ -51,16 +52,16 @@ This section provides the matrix about the supported cloud providers and the fea
           <td> N </td>
        </tr>
        <tr>
-          <td> Ceph S3</td>
+          <td> Ceph S3 (on-premise)</td>
           <td> Y </td>
           <td> N </td>
           <td> N </td>
        </tr>
        <tr>
-          <td> YiG</td>
+          <td> YiG S3 (on-premise)</td>
           <td> Y </td>
-          <td> N </td>
-          <td> N </td>
+          <td> N/A </td>
+          <td> N/A </td>
        </tr>
        <tr>
           <td> Alibaba</td>
@@ -71,3 +72,7 @@ This section provides the matrix about the supported cloud providers and the fea
     </tbody>
 </table>
 
+## Supported Frontends (REST based)
+* SODA UI
+* Postman
+* cURL
