@@ -7,4 +7,4 @@ disableToc: false
 ---
 ### Release v1.3.0  
 
-{{< swagger-spec id="multicloud" url="https://raw.githubusercontent.com/sodafoundation/delfin/v1.2.0/openapi-spec/swagger.yaml" >}}
+{{< swagger-spec id="delfin" url="https://raw.githubusercontent.com/sodafoundation/delfin/v1.2.0/openapi-spec/swagger.yaml" >}}
