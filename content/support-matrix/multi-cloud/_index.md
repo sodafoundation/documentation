@@ -71,7 +71,7 @@ This section provides the matrix about the supported cloud providers and the fea
        </tr>
     </tbody>
 </table>
-
+(Y -Yes | N -No | N/A - Not Applicable)
 ## Supported Frontends (REST based)
 * SODA UI
 * Postman
