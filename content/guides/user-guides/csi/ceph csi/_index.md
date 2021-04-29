@@ -332,7 +332,7 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
 * For CSI block plugin:
 
-  `Update profile id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you created, it looks like this:`
+  Update `profile` id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you created, it looks like this:
 
     ```
     apiVersion: storage.k8s.io/v1
@@ -353,7 +353,7 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
 * For CSI file plugin:
 
-  `Update profile id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you created, it looks like this:`
+  Update `profile` id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you created, it looks like this:
 
     ```
     apiVersion: storage.k8s.io/v1
