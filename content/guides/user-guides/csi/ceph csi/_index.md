@@ -82,6 +82,7 @@ osd journal size = 5120
 
 ```
 
+
 #### Deploy CEPH-CSI configmap.
 
 ```yaml
