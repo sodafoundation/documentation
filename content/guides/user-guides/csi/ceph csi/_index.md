@@ -295,8 +295,7 @@ ENABLE_DAEMON=true ALLOW_PRIVILEGED=true FEATURE_GATES=VolumeSnapshotDataSource=
 ### [SODA](https://github.com/sodafoundation/api) local cluster
 
 For testing purposes you can deploy SODA refering
-to [SODA Cluster Installation through Ansible](https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible)
-.
+to [SODA Cluster Installation through Ansible](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/).
 
 ## Testing steps
 
