@@ -1,9 +1,9 @@
 ---
-title: CEPH CSI User Guide
-description: "A user guide for integrating SODA with CEPH CSI Driver via unified Plugin and hotpot project"
+title: CSI
+description: "A user guide for integrating SODA with CSI Driver via unified Plugin and hotpot project"
 weight: 30
 disableToc: false
-tags: ["user guide", "csi", "kubernetes csi", "plug-n-play", "unified plugin"]
+tags: ["user guide", "CSI", "kubernetes CSI", "plug-n-play", "unified plugin"]
 ---
 
 # SODA Integration with Vendor CSI Drivers via SODA CSI Plug-N-Play
@@ -23,13 +23,12 @@ Volumes for Pods.
 
 ## Selecting the vendor CSI driver
 
-You can select the CSI driver supported by SODA Plug-N-Play
-from [here](https://docs.sodafoundation.io/guides/user-guides/nbp/csi-pnp/) Once selected follow the instruction given
-in the document to deploy the CSI driver in K8s.
+You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/support-matrix/nbp/csi-pnp/) Once selected follow the instruction
+given in the document to deploy the CSI driver in K8s.
 
 ##### For this example we are selecting the [CEPH-RBD CSI Driver](https://github.com/ceph/ceph-csi).
 
-Following are some additional steps we need to perform for this plugin
+Following are the pre-requisites for Ceph CSI Driver.
 
 * Setup CEPH Client Authentication.
 
@@ -65,7 +64,6 @@ cat /etc/ceph/ceph.conf
 [global]
 rbd default features = 1
 fsid = a40d71a2-82eb-4f36-a81f-f3d5af2f5bcc
-
 
 
 mon initial members = ubuntu
@@ -295,7 +293,8 @@ ENABLE_DAEMON=true ALLOW_PRIVILEGED=true FEATURE_GATES=VolumeSnapshotDataSource=
 ### [SODA](https://github.com/sodafoundation/api) local cluster
 
 For testing purposes you can deploy SODA refering
-to [SODA Cluster Installation through Ansible](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/).
+to [SODA Cluster Installation through Ansible](https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible)
+.
 
 ## Testing steps
 
@@ -334,16 +333,16 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
   Update `profile` id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you created, it looks like this:
 
-    ```
-    apiVersion: storage.k8s.io/v1
-    kind: StorageClass
-    metadata:
-      name: csi-sc-opensdsplugin-block
-    provisioner: csi-opensdsplugin-block
-    parameters:
-      attachMode: rw
-      profile: d10ec339-3357-43ff-8626-4ccdb854af3d
-    ```
+      ```
+      apiVersion: storage.k8s.io/v1
+      kind: StorageClass
+      metadata:
+        name: csi-sc-opensdsplugin-block
+      provisioner: csi-opensdsplugin-block
+      parameters:
+        attachMode: rw
+        profile: d10ec339-3357-43ff-8626-4ccdb854af3d
+      ```
   * Create example nginx application
 
     ```
@@ -355,16 +354,16 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
   Update `profile` id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you created, it looks like this:
 
-    ```
-    apiVersion: storage.k8s.io/v1
-    kind: StorageClass
-    metadata:
-      name: csi-sc-opensdsplugin-file
-    provisioner: csi-opensdsplugin-file
-    parameters:
-      attachMode: rw
-      profile: d10ec339-3357-43ff-8626-4ccdb854af3d
-    ```
+      ```
+      apiVersion: storage.k8s.io/v1
+      kind: StorageClass
+      metadata:
+        name: csi-sc-opensdsplugin-file
+      provisioner: csi-opensdsplugin-file
+      parameters:
+        attachMode: rw
+        profile: d10ec339-3357-43ff-8626-4ccdb854af3d
+      ```
 
   * Create example nginx application
 

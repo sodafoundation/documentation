@@ -1,7 +1,7 @@
 ---
-title: CSI
-menuTitle: CSI
-description: "All the CEPH CSI user guides for different SODA CSI solutions can be found here"
+title: NBP
+menuTitle: NBP
+description: "All the CSI user guides for different SODA CSI solutions can be found here"
 weight: 10
 disableToc: false
 tags: ["user guide", "csi", "plug-n-play"]
