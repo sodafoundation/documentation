@@ -1,7 +1,9 @@
 ---
-title: CEPH CSI User Guide description: "A user guide for integrating SODA with CEPH CSI Driver via unified Plugin and
-hotpot project"
-weight: 30 disableToc: false tags: ["user guide", "csi", "kubernetes csi", "plug-n-play", "unified plugin"]
+title: CEPH CSI User Guide
+description: "A user guide for integrating SODA with CEPH CSI Driver via unified Plugin and hotpot project"
+weight: 30
+disableToc: false
+tags: ["user guide", "csi", "kubernetes csi", "plug-n-play", "unified plugin"]
 ---
 
 # SODA Integration with Vendor CSI Drivers via SODA CSI Plug-N-Play
@@ -16,7 +18,7 @@ Volumes for Pods.
 - An installation of Kubernetes (V1.17+)
 - SODA installation (you can refer to quick start guide
   over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the
-  ports of etcd in osdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s
+  ports of etcd in osdsdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s
   etcd.
 
 ## Selecting the vendor CSI driver
@@ -51,8 +53,35 @@ rbd pool init osdsrbd
 
 ```
 ceph osd crush tunables hammer
+```
 
+* It will look for rbd default features in this file "/etc/ceph/ceph.conf " if not present it will create one as shown below.
+```
 grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd default features = 1' /etc/ceph/ceph.conf
+```
+
+```
+cat /etc/ceph/ceph.conf
+[global]
+rbd default features = 1
+fsid = a40d71a2-82eb-4f36-a81f-f3d5af2f5bcc
+
+
+
+mon initial members = ubuntu
+mon host = 192.168.1.59
+mon allow pool delete = true
+
+public network = 192.168.1.59/24
+cluster network = 192.168.1.59/24
+
+
+[osd]
+osd mkfs type = xfs
+osd mkfs options xfs = -f -i size=2048
+osd mount options xfs = noatime,largeio,inode64,swalloc
+osd journal size = 5120
+
 ```
 
 #### Deploy CEPH-CSI configmap.
@@ -87,9 +116,9 @@ csi-rbdplugin-provisioner-6b8b9d99fd-x4wn6   7/7     Running   0          7s
 ```
 
 #### Deploy Secret with userid and userkey of the CEPH user.
-
+`
 kubectl create -f deploy/kubernetes/ceph/secret.yaml
-
+`
 ```yaml
 
 apiVersion: v1
@@ -105,7 +134,7 @@ stringData:
 
 #### Creating Profile in SODA
 
-We need to create a Profile in SODA which will have the information of csi driver which needs to be used(eventually this
+We need to create a Profile in SODA which will have the information of CSI driver which needs to be used(eventually this
 step will be automatically done by SODA).
 
 ```
@@ -115,9 +144,9 @@ osdsctl profile create '{"name": "ceph-profile-soda","storageType": "block","des
 
 #### Deploy storage class referencing the secret and profile created above.
 
-```
+`
 kubectl create -f deploy/kubernetes/ceph/sc.yaml
-```
+`
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -263,10 +292,10 @@ hack/install-etcd.sh
 ENABLE_DAEMON=true ALLOW_PRIVILEGED=true FEATURE_GATES=VolumeSnapshotDataSource=true RUNTIME_CONFIG="storage.k8s.io/v1alpha1=true" LOG_LEVEL=5 hack/local-up-cluster.sh -O
 ```
 
-### [OpenSDS](https://github.com/sodafoundation/opensds) local cluster
+### [SODA](https://github.com/sodafoundation/api) local cluster
 
-For testing purposes you can deploy OpenSDS refering
-to [OpenSDS Cluster Installation through Ansible](https://github.com/sodafoundation/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible)
+For testing purposes you can deploy SODA refering
+to [SODA Cluster Installation through Ansible](https://github.com/sodafoundation/api/wiki/SODA-Projects-Cluster-Installation-through-Ansible)
 .
 
 ## Testing steps
@@ -295,51 +324,55 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
 * Change the workplace
 
-  ```
+  `
   cd /opt/opensds-sushi-linux-amd64
-  ```
-* Opensds supports csi plugin for both block and file storage types
+  `
 
-* For csi block plugin:
 
-    * Update profile id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you
-      created, it looks like this:
-      ```
-      apiVersion: storage.k8s.io/v1
-      kind: StorageClass
-      metadata:
-        name: csi-sc-opensdsplugin-block
-      provisioner: csi-opensdsplugin-block
-      parameters:
-        attachMode: rw
-        profile: d10ec339-3357-43ff-8626-4ccdb854af3d
-      ```
-    * Create example nginx application
+* SODA supports CSI plugin for both block and file storage types
 
-      ```
-      kubectl create -f csi/examples/kubernetes/block/nginx.yaml
-      ```
+* For CSI block plugin:
 
-* For csi file plugin:
+  * Update profile id of StorageClass in csi/examples/kubernetes/block/nginx.yaml according to actual profile you created, it looks like this:
 
-    * Update profile id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you
-      created, it looks like this:
-      ```
-      apiVersion: storage.k8s.io/v1
-      kind: StorageClass
-      metadata:
-        name: csi-sc-opensdsplugin-file
-      provisioner: csi-opensdsplugin-file
-      parameters:
-        attachMode: rw
-        profile: d10ec339-3357-43ff-8626-4ccdb854af3d
-      ```
-    * Create example nginx application
+    ```
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: csi-sc-opensdsplugin-block
+    provisioner: csi-opensdsplugin-block
+    parameters:
+      attachMode: rw
+      `profile: d10ec339-3357-43ff-8626-4ccdb854af3d`
+    ```
+  * Create example nginx application
 
-      ```
-      kubectl create -f csi/examples/kubernetes/file/nginx.yaml
-      ```
-  This example will mount a opensds volume into `/var/lib/www/html`. You can use the following command to inspect into
+    ```
+    kubectl create -f csi/examples/kubernetes/block/nginx.yaml
+    ```
+
+
+* For CSI file plugin:
+
+  * Update profile id of StorageClass in csi/examples/kubernetes/file/nginx.yaml according to actual profile you created, it looks like this:
+
+    ```
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: csi-sc-opensdsplugin-file
+    provisioner: csi-opensdsplugin-file
+    parameters:
+      attachMode: rw
+      `profile: d10ec339-3357-43ff-8626-4ccdb854af3d`
+    ```
+
+  * Create example nginx application
+
+    ```
+    kubectl create -f csi/examples/kubernetes/file/nginx.yaml
+    ```
+  This example will mount a SODA volume into `/var/lib/www/html`. You can use the following command to inspect into
   nginx container to verify it.
 
   ```
@@ -348,7 +381,7 @@ grep -q "^rbd default features" /etc/ceph/ceph.conf || sed -i '/\[global\]/arbd 
 
 ## Clean up steps
 
-Clean up example nginx application and opensds CSI pods by the following commands:
+Clean up example nginx application and SODA CSI pods by the following commands:
 
 * For csi block plugin:
 
