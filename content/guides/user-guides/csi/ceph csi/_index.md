@@ -226,7 +226,7 @@ version information:
 
 ```bash
 root@proxy:~# cat /etc/issue
-Ubuntu 16.04.2 LTS \n \l
+Ubuntu 16.04.6 LTS \n \l
 ```
 
 ### Environment packages
@@ -235,11 +235,11 @@ Ubuntu 16.04.2 LTS \n \l
 apt-get update && apt-get install -y gcc make libc6-dev
 ```
 
-### Install Go (v1.12.1)
+### Install Go (v1.15.2)
 
 ```bash
-wget https://storage.googleapis.com/golang/go1.12.1.linux-amd64.tar.gz
-tar -C /usr/local -zxvf go1.12.1.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.15.2.linux-amd64.tar.gz
+tar -C /usr/local -zxvf go1.15.2.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 echo 'export GOPATH=$HOME/gopath' >> /etc/profile
 source /etc/profile
