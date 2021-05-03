@@ -280,11 +280,11 @@ dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 
 ### [Kubernetes](https://github.com/kubernetes/kubernetes) local cluster
 
-You can startup `v1.14.0` k8s local cluster by executing commands blow:
+You can startup `v1.17+` k8s local cluster by executing commands blow:
 
 ```bash
 cd $HOME && git clone https://github.com/kubernetes/kubernetes.git
-cd $HOME/kubernetes && git checkout v1.14.0
+cd $HOME/kubernetes && git checkout v1.20.5
 make
 echo alias kubectl='$HOME/kubernetes/cluster/kubectl.sh' >> /etc/profile
 hack/install-etcd.sh
