@@ -21,6 +21,18 @@ provisioning the Volumes for Pods.
 You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/guides/user-guides/nbp/csi-pnp/) Once selected follow the instruction 
 given in the document to deploy the CSI driver in K8s.  
 
+## Note
+If there are more than one CSI driver from the same storage vendor, it should be deployed in a different namespaces to avoid the soda-csi lock conflicts.
+
+example :
+OPENEBS-LVM CSI driver in Kube-system namespace and OPENEBS-ZFS CSI driver in Kube-system-zfs namespace.
+
+CSI drivers from different storage vendors can be deployed in the same namespace without having any conflict.
+
+example :
+CEPH-RBD CSI driver and IBM CSI driver both in the default namespace and didn't notice any soda-csi lock conflict issue.
+
+
 ##### For this example we are selecting the [OpenEBS LVM CSI Driver](https://github.com/openebs/lvm-localpv).
 
 ```go
