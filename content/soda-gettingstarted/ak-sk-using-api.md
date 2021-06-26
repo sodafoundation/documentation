@@ -5,9 +5,9 @@ weight: 20
 ---
 This document describes how to generate Access Key and Secret Key (AK/SK) using APIs. The AK/SK can be used to authenticate with SODA Identity Service for executing any other APIs in SODA, thereafter.
 
-#### AK: access key ID, which is a unique identifier used in conjunction with a secret access key to sign requests cryptographically.
+##### AK: access key ID, which is a unique identifier used in conjunction with a secret access key to sign requests cryptographically.
   
-#### SK: secret access key used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.
+##### SK: secret access key used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.
 
 {{% notice info %}}
 **_To use the multicloud service, an Access Key, Secret Key (AK/SK) must be generated before anything else. To do this you can follow the steps below:_**  <br />
