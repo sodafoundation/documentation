@@ -1,7 +1,7 @@
 ---
 title: Access Key, Secret Key Generation using APIs.
 description: This document describes how to generate Access Key and Secret Key (AK/SK) using APIs.
-weight: 10
+weight: 20
 ---
 This document describes how to generate Access Key and Secret Key (AK/SK) using APIs. The AK/SK can be used to authenticate with SODA Identity Service for executing any other APIs in SODA, thereafter.
 
