@@ -11,7 +11,7 @@ Assuming that the user have access to cURL, the API execution is displayed using
 {{% /notice %}}
 
 
-1. Create the Token for the "admin" User.
+#### 1. Create the Token for the "admin" User.
 API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
 
     ```bash
@@ -38,7 +38,7 @@ API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
     ```
       Similarly, tokens can be generated for any of the users. To generate token for any specific user, replace the "name": "admin" with the <user-name> of the "user" and the user's corresponding password. 
 
-2. Generate the Scoped Tokens 
+#### 2. Generate the Scoped Tokens 
 API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
 
     ```bash
@@ -69,17 +69,20 @@ API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
 
 Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" user is generated, using the tokens obtained in the Response Header "X-Subject-Token" from Step 1. 
 
-3. Using the token AK/ SK can be generated using the POST API 
+#### 3. Using the token AK/ SK can be generated using the POST API 
 
       After the Scoped Tokens are generated, ProjecID and UserID can be obtained from them. 
       For eg, if the ProjectID and UserID obtained are 
+
       ```bash
         projectId : "94b280022d0c4401bcf3b0ea858777777" 
         userId : "555557c4256555bd8a307c374644444" 
-        ```
+      ```
+
     then the command would look like. 
     API URI Format : 'http://<HOST:PORT>/v1/<project_id>/aksks'
     BODY Format :
+
 
     ```bash
     '{
@@ -110,7 +113,7 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     The AK/SK should be used any further API calls to SODA.
 
 
-4.  Get the AK/SK of a particular user. 
+#### 4.  Get the AK/SK of a particular user. 
 
     To get the AK/SK of a particular user, execute the GET API of AK/SK using the cURL command
 
@@ -120,7 +123,7 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     --data-raw ''
     ```
 
-5.  Download the AK/SK of a particular user. 
+#### 5.  Download the AK/SK of a particular user. 
 
     To download the AK/SK of a particular user, execute the GET API of AK/SK using the cURL command with the -output=<file> option.
 
@@ -131,7 +134,7 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     ```
 
 
-6. Delete AK/SK of user. 
+#### 6. Delete AK/SK of user. 
 
     To delete the AK/SKs of a user, execute the DELETE API of AK/SK using the cURL command.
 
