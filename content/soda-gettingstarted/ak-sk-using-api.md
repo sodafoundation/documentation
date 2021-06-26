@@ -120,8 +120,18 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     --data-raw ''
     ```
 
+5.  Download the AK/SK of a particular user. 
 
-5. Delete AK/SK of user. 
+    To download the AK/SK of a particular user, execute the GET API of AK/SK using the cURL command with the -output=<file> option.
+
+    ```bash
+    curl --location --request GET 'http://192.168.xx.yy:8089/v1/94b280022d0c4401bcf3b0ea858777777/aksks/555557c4256555bd8a307c374644444' \
+    --header 'X-Auth-Token: gAAAAABg1Ybtbnk2NEbyewe_mOILyo5v0PnaTWGoSyMhq75NaWR_L111111111111111111111_I222222222_M3333333333_ICZUHCIDLtU0pIcKGAvN9zJKXaXBQQIf27a3uq2WM8eQroQ-CMc1-riHbCbrs_iFucc2Z4RCGEzxL6YqTvlzBoarjIsx5' \
+    --data-raw '' -output=aksk.txt
+    ```
+
+
+6. Delete AK/SK of user. 
 
     To delete the AK/SKs of a user, execute the DELETE API of AK/SK using the cURL command.
 
@@ -130,3 +140,5 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     --header 'X-Auth-Token: gAAAAABg1Ybtbnk2NEbyewe_mOILyo5v0PnaTWGoSyMhq75NaWR_L111111111111111111111_I222222222_M3333333333_ICZUHCIDLtU0pIcKGAvN9zJKXaXBQQIf27a3uq2WM8eQroQ-CMc1-riHbCbrs_iFucc2Z4RCGEzxL6YqTvlzBoarjIsx5'' \
     --data-raw ''
     ```
+
+    More details about the Keystone Credential APIs can be found here : [https://docs.openstack.org/api-ref/identity/v3/index.html?expanded=create-credential-detail,delete-credential-detail,update-credential-detail#credentials]
