@@ -434,7 +434,7 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login the
 {{% /notice %}}
 
 **_To generate Access Key , Secret Key using ReST APIs, follow the link below:_**
- AK/SK Generation using APIs [https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md](https://github.com/sodafoundation/orchestration/blob/master/docs/INSTALL.md)
+ AK/SK Generation using APIs [https://github.com/sodafoundation/documentation/blob/master/content/soda-gettingstarted/ak-sk-using-api.md](https://github.com/sodafoundation/documentation/blob/master/content/soda-gettingstarted/ak-sk-using-api.md)
 
 {{% notice info %}}
 **_To use the Block and File service, respective profile must be created before using these services. To do this you can follow the steps below:_**  <br />
