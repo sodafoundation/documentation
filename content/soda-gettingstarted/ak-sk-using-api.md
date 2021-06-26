@@ -80,10 +80,11 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
     userId : "555557c4256555bd8a307c374644444" 
   ```
 
-    then the command would look like. 
-    API URI Format : 'http://<HOST:PORT>/v1/<project_id>/aksks'
-    BODY Format :
+  then the command would look like this. 
 
+  API URI Format : 'http://<HOST:PORT>/v1/<project_id>/aksks'
+
+  BODY Format :
 
   ```bash
   '{
@@ -109,14 +110,14 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
  Upon execution of the POST API, the AK/SK would be generated in string format. For example the generated AK/SK would look like 
 ```bash
-      "{\"access\":\"iyxK68dhCM94Js5X\",\"secret\":\"ZgvcRIhPAlb7fm10xX4xzdO8zhuDZu6y\"}"
+"{\"access\":\"iyxK68dhCM94Js5X\",\"secret\":\"ZgvcRIhPAlb7fm10xX4xzdO8zhuDZu6y\"}"
 ```
 The AK/SK should be used any further API calls to SODA.
 
 
 #### 4.  Get the AK/SK of a particular user. 
 
-    To get the AK/SK of a particular user, execute the GET API of AK/SK using the cURL command
+To get the AK/SK of a particular user, execute the GET API of AK/SK using the cURL command
 
   ```bash
   curl --location --request GET 'http://192.168.xx.yy:8089/v1/94b280022d0c4401bcf3b0ea858777777/aksks/555557c4256555bd8a307c374644444' \
