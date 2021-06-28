@@ -77,20 +77,20 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
 #### 3. Using the token AK/ SK can be generated using the POST API 
 
-  After the Scoped Tokens are generated, ProjecID and UserID can be obtained from them. 
+  After the Scoped Tokens are generated, ProjectID and UserID can be obtained from them. 
   For eg, if the ProjectID and UserID obtained are 
 
   ```bash
-    projectId : "94b280022d0c4401bcf3b0ea858777777" 
-    userId : "555557c4256555bd8a307c374644444" 
+    project_id : "94b280022d0c4401bcf3b0ea858777777" 
+    user_id : "555557c4256555bd8a307c374644444" 
   ```
 
   then the command would look like this. 
 
   API URI Format : 'http://"HOST_IP:PORT"/v1/<project_id>/aksks'
                     where HOST_IP is the IP address of the host where Keystone is running.
+ 
   BODY Format :
-
   ```bash
   '{
       "credential": {
