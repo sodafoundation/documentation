@@ -83,19 +83,28 @@ Existing Delfin Drivers for reference:
 
   ```
 
-* Implement all the interfaces defined in `<delfin path>/delfin/drivers/driver.py`, in the new driver.
+* Implement all the mandatory interfaces defined in `<delfin path>/delfin/drivers/driver.py`, in the new driver.
 
 | Driver Interfaces | Input args | Output | Comment |
 | ------ | ------ | ------ | ------ |
 | **get_storage()** | `context`: Delfin framework context | Storage dict with schema defined in `delfin/db/sqlalchemy/model.py` `Storage` |  Get storage device information from storage system |
 | **reset_connection()** | `context`: Delfin framework context, kwargs: access info | None |  Reset connection with backend with new args |
 | **list_storage_pools()** | `context`: Delfin framework context | StoragePool dict with schema defined in `delfin/db/sqlalchemy/model.py` `StoragePool` |  List all storage pools from storage system |
-| **list_volume()** | `context`: Delfin framework context | Volume dict with schema defined in `delfin/db/sqlalchemy/model.py` `Volume` |  List all storage volumes from storage system |
+| **list_volumes()** | `context`: Delfin framework context | Volume dict with schema defined in `delfin/db/sqlalchemy/model.py` `Volume` |  List all storage volumes from storage system |
+| **list_controllers()** | `context`: Delfin framework context | Controller dict with schema defined in `delfin/db/sqlalchemy/model.py` `Controller` |  List all controllers from storage system |
+| **list_ports()** | `context`: Delfin framework context | Port dict with schema defined in `delfin/db/sqlalchemy/model.py` `Port` |  List all ports from storage system |
+| **list_disks()** | `context`: Delfin framework context | Disk dict with schema defined in `delfin/db/sqlalchemy/model.py` `Disk` |  List all disks from storage system |
+| **list_quotas()** | `context`: Delfin framework context | Quota dict with schema defined in `delfin/db/sqlalchemy/model.py` `Quota` |  List all quotas from storage system |
+| **list_filesystems()** | `context`: Delfin framework context | Filesystem dict with schema defined in `delfin/db/sqlalchemy/model.py` `Filesystem` |  List all filesystems from storage system |
+| **list_qtrees()** | `context`: Delfin framework context | Qtree dict with schema defined in `delfin/db/sqlalchemy/model.py` `Qtree` |  List all qtrees from storage system |
+| **list_shares()** | `context`: Delfin framework context | Share dict with schema defined in `delfin/db/sqlalchemy/model.py` `Share` |  List all shares from storage system |
 | **add_trap_config()** | `context`: Delfin framework context, `trap_config`: trap configuration | None |  Config the trap receiver in storage system |
 | **remove_trap_config()** | `context`: Delfin framework context, `trap_config`: trap configuration | None |  Remove trap receiver configuration from storage system |
 | **parse_alert()** | `context`: Delfin framework context, `alert`: alert to parse | Alert dict as shown in `delfin/drivers/driver.py` |  Parse alert data got from snmp trap server |
 | **list_alerts()** | `context`: Delfin framework context, `query_para`: optional, contains 'begin_time' and 'end_time' | Alert dict as shown in `delfin/drivers/driver.py` |  List all current alerts from storage system |
 | **clear_alert()** | `context`: Delfin framework context, `alert`: alert to clear | Success/Failure |   Clear alert from storage system |
+| **get_capabilities()** | `context`: Delfin framework context | Capabilities schema defined in `delfin/api/schemas/storage_capabilities_schema.py` | Return metrics collection capabilites of the storage system |
+| **collect_perf_metrics()** | `context`: Delfin framework context, `storage_id`: delfin storage id, `resource_metrics`: required metrics, `start_time`: metrics start time, `end_time`: metrics end time | Collected metrics |   Collects metrics from storage system |
 
   ```python
 
@@ -150,6 +159,121 @@ Existing Delfin Drivers for reference:
           volume_list.append(v)
           return volume_list
 
+    def list_controllers(self, context):
+      controller_list = []
+      for i in range(1, 3):
+          c = {
+              "name": "sample_ctrl_" + str(i),
+              "storage_id": self.storage_id,
+              "native_controller_id": "sample_original_id_" + str(i),
+              "status": "normal",
+              "memory_size": 10000000,
+              "cpu_info": 'Intel Xenon',
+              "location": 'rack-10',
+              "soft_version": 'v1.0.0',
+          }
+          controller_list.append(c)
+          return controller_list
+
+    def list_ports(self, context):
+      port_list = []
+      for i in range(1, 3):
+          p = {
+              "name": "sample_port_" + str(i),
+              "storage_id": self.storage_id,
+              "native_port_id": "sample_original_id_" + str(i),
+              "health_status": "normal",
+              "type": "fc",
+              "speed": 1000,
+              "max_speed": 10000,
+              "wwn": "wwn12345",
+          }
+          port_list.append(p)
+          return port_list
+
+    def list_disks(self, context):
+      disk_list = []
+      for i in range(1, 3):
+          d = {
+              "name": "sample_disk_" + str(i),
+              "storage_id": self.storage_id,
+              "native_disk_id": "sample_original_id_" + str(i),
+              "serial_number": "serial-123",
+              "manufacturer": "Seagate",
+              "model": "Model-SSD",
+              "status": "normal",
+              "location": "cage-10",
+              "capacity": 1000000,
+              "speed": 20000,
+              "health_score": 98,
+          }
+          disk_list.append(d)
+          return disk_list
+
+    def list_quotas(self, context):
+      quota_list = []
+      for i in range(1, 5):
+          q = {
+              "storage_id": self.storage_id,
+              "native_quota_id": "sample_original_id_" + str(i),
+              "native_qtree_id": "sample_qtree_id_" + str(i),
+              "type": "tree",
+              "capacity_hard_limit": 9000000,
+              "capacity_soft_limit": 7500000,
+              "used_capacity": 1000000,
+              "file_hard_limit": 900000,
+              "file_soft_limit": 750000,
+              "file_count": 200000,
+          }
+          quota_list.append(q)
+          return quota_list
+
+    def list_filesystems(self, context):
+      fs_list = []
+      for i in range(1, 5):
+          f = {
+              "name": "sample_fs_" + str(i),
+              "storage_id": self.storage_id,
+              "native_filesystem_id": "sample_original_id_" + str(i),
+              "native_pool_id": "sample_pool_id_" + str(i),
+              "status": "normal",
+              "type": "non_worm",
+              "total_capacity": 12,
+              "used_capacity": 2,
+              "free_capacity": 10,
+          }
+          fs_list.append(f)
+          return fs_list
+
+    def list_qtrees(self, context):
+      qtree_list = []
+      for i in range(1, 5):
+          q = {
+              "name": "sample_qtree_" + str(i),
+              "storage_id": self.storage_id,
+              "native_qtree_id": "sample_original_id_" + str(i),
+              "native_filesystem_id": "sample_original_id_" + str(i),
+              "security_mode": "ntfs",
+              "path": "\opt\path",
+          }
+          qtree_list.append(q)
+          return qtree_list
+
+    def list_shares(self, context):
+      share_list = []
+      for i in range(1, 5):
+          s = {
+              "name": "sample_share_" + str(i),
+              "storage_id": self.storage_id,
+              "native_share_id": "sample_original_id_" + str(i),
+              "native_filesystem_id": "sample_fs_id_" + str(i),
+              "native_qtree_id": "sample_qt_id_" + str(i),
+              "protocol": "cifs",
+              "path": "\opt\share_path",
+          }
+          share_list.append(s)
+          return share_list
+
     def add_trap_config(self, context, trap_config):
         pass
 
@@ -163,6 +287,12 @@ Existing Delfin Drivers for reference:
         pass
 
     def list_alerts(self, context, query_para=None):
+        pass
+
+    def collect_perf_metrics(self, context, storage_id, metrics, start, stop):
+        pass
+
+    def get_capabilities(self, context):
         pass
 
   ```
@@ -223,6 +353,31 @@ Third party drivers are located and loaded into Delfin, when the create storage 
 Create Storages POST API contains a request body model namely access_info, which contains fields ‘vendor’ & ‘model’. These fields are used to match and identify the driver from the ‘entry_points’ registered by the driver. Delfin loads this matched driver and registers the driver for the created backend. Any further API calls on this backend will use this newly loaded driver.
 
 Delfin class Driver Manager internally utilizes the Python module ‘stevedore’ for the loading of driver plugins.
+
+Delfin performance metrics collection starts when storage is successfully registered. Delfin will query `get_capability()` interface of driver to get supported metrics and its details. And periodically call `collect_perf_metrics` interface to collect those metrics.
+
+Delfin performance metrics collection interfaces (`get_capability()` & `collect_perf_metrics()`) sample implementation is available in the fake_storage driver `<delfin path>/delfin/drivers/fake_storage/__init__.py`
+
+* Example Response for collect performance metrics interface:
+
+  ```bash
+  # A list of delfin.common.constants.metric_struct
+  [
+    "name=""throughput",
+    "labels="{
+      "storage_id":"7c0aa42c-d744-4353-84da-3c9b7f631f5a",
+      "resource_type":"storage",
+      "resource_id":"storage_0",
+      "type":"RAW",
+      "unit":"MB/s",
+      "name":"fake_driver",
+      "serial_number":"c83228e5-77d8-40c5-aa4b-2d6067d73c8b"
+    },
+    "values="{
+      "1624874092000":75.63737435785605
+    }
+  ]
+  ```
 
 ## Conclusion
 
