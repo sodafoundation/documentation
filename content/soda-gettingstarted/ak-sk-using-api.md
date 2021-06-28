@@ -16,7 +16,8 @@ Assuming that the user have access to cURL, the API execution is displayed using
 
 
 #### 1. Create the Token for the "admin" User.
-API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
+API URI Format : 'http://<HOST>/identity/v3/auth/tokens'
+                 where HOST is the IP address of the host where Keystone is running. 
 
 ```bash
 curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
@@ -44,8 +45,8 @@ curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
 Similarly, tokens can be generated for any of the users. To generate token for any specific user, replace the "name": "admin" with the <user-name> of the "user" and the user's corresponding password. 
 
 #### 2. Generate the Scoped Tokens 
-API URI Format : 'http://<HOST:PORT>/identity/v3/auth/tokens'
-
+API URI Format : 'http://<HOST>/identity/v3/auth/tokens'
+                  where HOST is the IP address of the host where Keystone is running. 
   ```bash
   curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
   --header 'X-Auth-Token: gAAAAABg1Ybtbnk2NEbyewe_mOILyo5v0PnaTWGoSyMhq75NaWR_L111111111111111111111_I222222222_M3333333333_ICZUHCIDLtU0pIcKGAvN9zJKXaXBQQIf27a3uq2WM8eQroQ-CMc1-riHbCbrs_iFucc2Z4RCGEzxL6YqTvlzBoarjIsx5' \
