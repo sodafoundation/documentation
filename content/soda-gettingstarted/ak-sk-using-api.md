@@ -77,7 +77,7 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
 #### 3. Using the token AK/ SK can be generated using the POST API 
 
-  After the Scoped Tokens are generated, ProjectID and UserID can be obtained from them. 
+  After the Scoped Tokens are generated, ProjectID and UserID can be obtained from them. ProjectID is same as the tenant_id used in the other SODA APIs.
   For eg, if the ProjectID and UserID obtained are 
 
   ```bash
@@ -89,6 +89,7 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
   API URI Format : 'http://"HOST_IP:PORT"/v1/<project_id>/aksks'
                     where HOST_IP is the IP address of the host where Keystone is running.
+                    project_id is the Id of Project that the user is part of. It is same as the tenant_id.
  
   BODY Format :
   ```bash
