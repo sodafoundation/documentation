@@ -23,7 +23,7 @@ Delfin has standardized common API services.
 | NetApp                                              | Cluster mode              | ONTAP 9.X                          | SSH                     | Unified | √                        | √            | √   | √          | √    | √    | √     | √     | √           | √     | √                    | √         | √           | √               | ×                   |                                                                                                                                                                                                         |   |
 | Simulated Sample Driver (for testing the framework) | NA                        | NA                                 | NA                      | NA      | √                        | √            | √   | √          | √    | √    | √     | √     | √           | √     | √                    | √         | √           | √               | √                   | 1\. Used only for framework testing purpose                                                                                                                                                             |   |                                                           |                                                          |
 
-Support matrix of each storage drivers are grouped by their vendor name.
+Below are the support matrix of each storage drivers grouped by their vendor name.
 Each driver support matrix includes below topics.
 
 
@@ -36,7 +36,7 @@ Each driver support matrix includes below topics.
 7. Performance metric data: Table illustrates performance metrics supported for each resource.
 
 {{% notice note %}}
-Support matrix of drivers for Dell EMC VNX/VPLEX/Unity, IBM Storwize/SVC, Hitachi VSP, HPE 3PAR are currently not updated here. 
+Detailed support matrix of some drivers are not updated here. 
 For details on any of these drivers, please contact slack channel [here](https://app.slack.com/client/T2YSV6N2J/C01FW6Y7YTD/thread/C01D1L72Z8D-1613845945.021400?cdn_fallback=1)  
 {{% /notice %}}
 
