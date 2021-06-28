@@ -16,8 +16,8 @@ Assuming that the user have access to cURL, the API execution is displayed using
 
 
 #### 1. Create the Token for the "admin" User.
-API URI Format : 'http://<HOST>/identity/v3/auth/tokens'
-                 where HOST is the IP address of the host where Keystone is running. 
+API URI Format : 'http://"HOST_IP"/identity/v3/auth/tokens'
+                 where HOST_IP is the IP address of the host where Keystone is running. 
 
 ```bash
 curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
@@ -45,8 +45,8 @@ curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
 Similarly, tokens can be generated for any of the users. To generate token for any specific user, replace the "name": "admin" with the <user-name> of the "user" and the user's corresponding password. 
 
 #### 2. Generate the Scoped Tokens 
-API URI Format : 'http://<HOST>/identity/v3/auth/tokens'
-                  where HOST is the IP address of the host where Keystone is running. 
+API URI Format : 'http://"HOST_IP"/identity/v3/auth/tokens'
+                  where HOST_IP is the IP address of the host where Keystone is running. 
   ```bash
   curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
   --header 'X-Auth-Token: gAAAAABg1Ybtbnk2NEbyewe_mOILyo5v0PnaTWGoSyMhq75NaWR_L111111111111111111111_I222222222_M3333333333_ICZUHCIDLtU0pIcKGAvN9zJKXaXBQQIf27a3uq2WM8eQroQ-CMc1-riHbCbrs_iFucc2Z4RCGEzxL6YqTvlzBoarjIsx5' \
@@ -87,8 +87,8 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
   then the command would look like this. 
 
-  API URI Format : 'http://<HOST:PORT>/v1/<project_id>/aksks'
-
+  API URI Format : 'http://"HOST_IP:PORT"/v1/<project_id>/aksks'
+                    where HOST_IP is the IP address of the host where Keystone is running.
   BODY Format :
 
   ```bash
@@ -115,7 +115,10 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
  Upon execution of the POST API, the AK/SK would be generated in string format. For example the generated AK/SK would look like 
 ```bash
-"{\"access\":\"iyxK68dhCM94Js5X\",\"secret\":\"ZgvcRIhPAlb7fm10xX4xzdO8zhuDZu6y\"}"
+{
+    "access_key": "l4ayVHYQ4TKFTLPW",
+    "secret_key": "RymTqjJUyBZJq6LzlYZgck1e2m4gSloc"
+}
 ```
 The AK/SK should be used any further API calls to SODA.
 
