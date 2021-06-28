@@ -14,7 +14,7 @@ This document is to help third party clients who wants to integrate [Delfin](htt
 
 ## Goals
 
- - To capture changes required by third party softwares to interface with Delfin APIs and use Delfin services to manage heterogeneous storage backends.
+- To capture changes required by third party softwares to interface with Delfin APIs and use Delfin services to manage heterogeneous storage backends.
 
 ## Non Goals
 
@@ -56,14 +56,14 @@ Important configurations that users want change may be,
 |           | alert_exporters       | AlertExporterPrometheus     | Uncomment to enable Alert Exporters   |
 | database  | connection            | sqlite:////var/delfin/delfin.sqlite   | Database file   |
 |           | db_backend            | sqlalchemy                  | DB backend module         |
-| scheduler | config_path           | /etc/scheduler_config.json  | Scheduler configuration file   |
-| KAFKA_EXPORTER | kafka_topic_name | "delfin-kafka"              | KAFKA topic name          |
+| TELEMETRY | performance_collection_interval | 900               | Metrics collection interval   |
+| KAFKA_EXPORTER | kafka_topic_name | "delfin-kafka"              | KAFKA topic name |
 |           | kafka_ip              | '<KAFKA_IP>'                | KAFKA installations IP    |
 |           | kafka_port            | '9092'                      | KAFKA installations PORT  |
 | PROMETHEUS_EXPORTER | metric_server_ip | 0.0.0.0                | PROMETHEUS IP             |
 |           | metric_server_port    | 8195                        | PROMETHEUS PORT           |
-|           | metrics_cache_file    | /etc/delfin/delfin_exporter.txt | Metrics cache  |
-| PROMETHEUS_ALERT_MANAGER_EXPORTER | alert_manager_host | '<AlertManager_IP>'  | Alert Manater IP    |
+|           | metrics_dir           | /var/lib/delfin/metrics     | Directory for Metrics files |
+| PROMETHEUS_ALERT_MANAGER_EXPORTER | alert_manager_host | '<AlertManager_IP>'  | Alert Manager IP    |
 |           | alert_manager_port    | '9093'                      | Alert Manager PORT        |
 |           |                       |                             |                           |
 
@@ -84,8 +84,8 @@ api_max_limit = 1000
 connection = sqlite:////var/delfin.sqlite
 db_backend = sqlalchemy
 
-[scheduler]
-config_path = /etc/scheduler_config.json
+[TELEMETRY]
+performance_collection_interval = 900
 
 [KAFKA_EXPORTER]
 kafka_topic_name = "delfin-kafka"
@@ -95,7 +95,7 @@ kafka_port = '9092'
 [PROMETHEUS_EXPORTER]
 metric_server_ip = 0.0.0.0
 metric_server_port = 8195
-metrics_cache_file = /etc/delfin/delfin_exporter.txt
+metrics_dir = /tmp/delfin-metrics
 
 [PROMETHEUS_ALERT_MANAGER_EXPORTER]
 alert_manager_host = '<Delfin_IP>'
@@ -285,17 +285,11 @@ http://<Delfin_IP>:8190/v1/disks/<disk_id>
 
 ### Performance collection
 
-Enable Delfin to collect performance metrics using this API. Once registered with a an interval , polling will be happening on these intervals and the data will be pushed through configured exporters
-
-```bash
-curl -X PUT \
-http://<Delfin_IP>:8190/v1/storages/<storage_id>/metrics-config 
--d ‘{ "array_polling": {"perf_collection": true, "interval": 900, "is_historic": true }}’
-```
+After successful registration of a storage Delfin will automatically starts performance metrics collection. Delfin framework will call driver interface to get the capabilities of the storage for supported metrics. Delfin framework periodically call driver interface of collect metrics for performance metrics. Performance metrics collection interval can be configured from delfin configuration file as above.
 
 ### Security & Certificates
 
-The backends may support secure access, using SSL/TLS certificates. 
+The backends may support secure access, using SSL/TLS certificates.
 
 Delfin drivers support specifying a certificate file or root certificate path while accessing backend storage. Also, Delfin drivers support reloading of certificate files if enabled, for supporting certificate expiry.
 
@@ -309,9 +303,9 @@ A Sample exporter implementation is provided in Delfin repo for reference. Also,
 
 ## Reference
 
-- Delfin [Design Spec](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/SODA_InfrastructureManagerDesign.md)
-- Delfin [OpenAPI Spec](https://github.com/sodafoundation/delfin/blob/master/openapi-spec/swagger.yaml)
-- [Exporter writing guide]()
-- Delfin [Developer Guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/) 
-- [Alert Spec](https://github.com/sodafoundation/architecture-analysis/pull/67)
-- [Performance metrics Spec](https://github.com/sodafoundation/architecture-analysis/pull/77)  
+- [Delfin Design Spec](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/SODA_InfrastructureManagerDesign.md)
+- [Delfin OpenAPI Spec](https://github.com/sodafoundation/delfin/blob/master/openapi-spec/swagger.yaml)
+- [Delfin Exporter writing guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/exporter-developer-guide/)
+- [Delfin Developer Guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/)
+- [Alert Spec](https://github.com/sodafoundation/architecture-analysis/blob/master/specs/SIM/alert_manager/SODA_AlertManagerDesign.md)
+- [Performance metrics Spec](https://github.com/sodafoundation/architecture-analysis/pull/77)
