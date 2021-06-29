@@ -141,7 +141,7 @@ To get the AK/SK of a particular user, execute the GET API of AK/SK using the cU
   ```bash
   curl --location --request GET 'http://192.168.xx.yy:8089/v1/94b280022d0c4401bcf3b0ea858777777/aksks/555557c4256555bd8a307c374644444' \
   --header 'X-Auth-Token: gAAAAABg1Ybtbnk2NEbyewe_mOILyo5v0PnaTWGoSyMhq75NaWR_L111111111111111111111_I222222222_M3333333333_ICZUHCIDLtU0pIcKGAvN9zJKXaXBQQIf27a3uq2WM8eQroQ-CMc1-riHbCbrs_iFucc2Z4RCGEzxL6YqTvlzBoarjIsx5' \
-  --data-raw '' -output=aksk.txt
+  --data-raw '' --output <filename>
   ```
 
 
