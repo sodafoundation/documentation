@@ -100,6 +100,9 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
       }
   }'
   ```
+{{% notice info %}}
+**_Please make sure that the project_id and user_id are valid and exist before creating the AK / SK for them_**  <br />
+{{% /notice %}}
 
   ```bash
   curl --location --request POST 'http://192.168.xx.yy:8089/v1/94b280022d0c4401bcf3b0ea858777777/aksks' \
