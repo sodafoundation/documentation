@@ -1,5 +1,5 @@
 ---
-title: Access Key, Secret Key Generation using APIs.
+title: Access Key, Secret Key.
 description: This document describes how to generate Access Key and Secret Key (AK/SK) using APIs.
 weight: 20
 ---
