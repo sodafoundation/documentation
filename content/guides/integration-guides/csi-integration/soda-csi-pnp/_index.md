@@ -15,7 +15,8 @@ provisioning the Volumes for Pods.
   
 ## Prerequisite
  - An installation of Kubernetes (V1.17+)  
- - SODA installation (you can refer to quick start guide over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the ports of etcd in osdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s etcd.
+ - SODA installation (you can refer to quick start guide over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the ports of etcd in osdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s etcd.  
+ - Soda-proxy needs to be installed, you can follow the quick start guide over [here](https://github.com/sodafoundation/nbp/blob/master/csi-plug-n-play/sidecars/soda-proxy/Readme.md) to bring up the soda-proxy.
 
 ## Selecting the vendor CSI driver
 You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/guides/user-guides/nbp/csi-pnp/) Once selected follow the instruction 

@@ -450,7 +450,9 @@ osdsctl fileshare delete <fileshare id>
 
 SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud and Delfin are also supported by dashboard.
 
+
 ### Things to Note
+
 {{% notice note %}}
 **_To use the multicloud service, an AK/SK must be generated before anything else. To do this you can follow the steps below:_**  <br />
 1. Go to AK/SK Management<br />
@@ -458,7 +460,13 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to 
 3. Save the file (Do not forget to save this file and keep it safe.)<br />
 {{% /notice %}}
 
+
 {{% notice note %}}
+**_To generate Access Key , Secret Key using ReST APIs, follow the link below:_**
+ AK/SK Generation using APIs can be found [here](/guides/user-guides/multi-cloud/aksk/ak-sk-using-api/)
+{{% /notice %}}
+
+{{% notice info %}}
 **_To use the Block and File service, respective profile must be created before using these services. To do this you can follow the steps below:_**  <br />
 1. Go to Profiles<br />
 2. Click on Create button.<br />
