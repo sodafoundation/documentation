@@ -26,7 +26,12 @@ To have more control of the installaton cofigurations, or try out various config
 
 ## Quick Installation and experience of SODA releases
 
-This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
+{{% notice info %}}
+**Ubuntu 16.04 support for SODA is deprecated as of SODA Jerba release v1.4.0.** <br />
+**If you have a requirement to install SODA on Ubuntu 16.04, please contact us on slack and we will try to help with the setup.**
+{{% /notice %}}
+
+This procedure applies to 18.04 Linux distributions.
 
 - **Prerequisite**
  
@@ -39,9 +44,6 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
       `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
 	    
      - Install Docker:
-       - Ubuntu 16.04:
-
-       `wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
 	
        - Ubuntu 18.04:
 
