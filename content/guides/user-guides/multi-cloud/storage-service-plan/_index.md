@@ -15,14 +15,11 @@ In other words, SSP is a policy for the users. A service provider can decide and
 
 ## Getting Started!
 This is a guide that shows how to install, configure, and use SSP management features in a simple SODA setup.
-By following this guide you will be able to install SODA multi-cloud with creating backends and buckets, uploading and archiving objects.
+By following this guide users will be able to install SODA multi-cloud and able to create backends, buckets, upload and archive objects.
 
 ## Installing SODA multi-cloud
 
 Follow the installation guide for multi-cloud installation.
-
-- [SODA Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
-
 
 * To enable SSP feature, and experience through SODA Dashboard modify the "enable_storage_service_plans" variable and then install:
 
@@ -32,7 +29,10 @@ Follow the installation guide for multi-cloud installation.
   enable_storage_service_plans: true
   ```
 
-## Open SODA User Interface Dashboard
+- [SODA Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
+
+
+## SODA Dashboard - Experience SODA features with GUI
 
 SODA UI can be accessed via
 
@@ -60,7 +60,7 @@ and then provide valid region, endpoint, Access and Secret Key parameters
 
 1. Once backends are registered, storage service plans can be created.
 
-  a.  Select the Storage Service Plan
+  a.  Click on "Storage Service Plan" from the user menu in the top right corner.
 
   ![SSP image  ](SSP.png?raw=true)
 
