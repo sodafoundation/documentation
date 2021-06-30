@@ -91,21 +91,7 @@ Currently SODA CSI PnP has been tested for the below CSI drivers, this is not th
 
 ## Sidecar Version Support
 
-<table>
-   <thead>
-      <tr>
-         <th>SODA Release version</th>
-         <th>Sidecar Image</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Isabela(v1.3.0)</td>
-         <td>`sodafoundation/soda-csi-provisioner:v2.1.0`</td>
-      </tr>
-      <tr>
-         <td>Jerba(v1.4.0)</td>
-         <td>`sodafoundation/soda-csi-provisioner:v2.2.0`</td>
-      </tr>
-   </tbody>
-</table>
+|  SODA Release version   |            Sidecar Image                     |
+|-------------------------|----------------------------------------------|
+|Jerba(v1.4.0)            | `sodafoundation/soda-csi-provisioner:v2.2.0` |
+|Isabela(v1.3.0)          | `sodafoundation/soda-csi-provisioner:v2.1.0` |
