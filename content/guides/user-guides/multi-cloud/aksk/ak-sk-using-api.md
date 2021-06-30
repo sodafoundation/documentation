@@ -45,7 +45,7 @@ curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
 Similarly, tokens can be generated for any of the users. To generate token for any specific user, replace the "name": "admin" with the <user-name> of the "user" and the user's corresponding password. 
 
 #### 2. Generate the Scoped Tokens 
-API URI Format : 'http://"HOST_IP"/identity/v3/auth/tokens'
+API URI Format : 'http://<HOST_IP>/identity/v3/auth/tokens'
                   where HOST_IP is the IP address of the host where Keystone is running. 
   ```bash
   curl --location --request POST 'http://192.168.xx.yy/identity/v3/auth/tokens' \
@@ -87,8 +87,9 @@ Generate the Scoped Tokens for the user. Here, the scoped token for the "admin" 
 
   then the command would look like this. 
 
-  API URI Format : 'http://"HOST_IP:PORT"/v1/<project_id>/aksks'
+  API URI Format : 'http://<HOST_IP>:<PORT>/v1/<project_id>/aksks'
                     where HOST_IP is the IP address of the host where Keystone is running.
+                    PORT is the port where SODA Multicloud service is listening eg. 8089
                     project_id is the Id of Project that the user is part of. It is same as the tenant_id.
  
   BODY Format :
