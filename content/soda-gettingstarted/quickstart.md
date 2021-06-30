@@ -16,6 +16,7 @@ To have more control of the installaton cofigurations, or try out various config
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
+	|Jerba            | v1.4.0         |
 	|Isabela          | v1.3.0         |
 	|Hawaii           | v1.2.0         |
 	|Greenland        | v1.1.0         |
@@ -25,7 +26,12 @@ To have more control of the installaton cofigurations, or try out various config
 
 ## Quick Installation and experience of SODA releases
 
-This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
+{{% notice info %}}
+**Ubuntu 16.04 support for SODA is deprecated as of SODA Jerba release v1.4.0.** <br />
+**If you have a requirement to install SODA on Ubuntu 16.04, please contact us on slack and we will try to help with the setup.**
+{{% /notice %}}
+
+This procedure applies to 18.04 Linux distributions.
 
 - **Prerequisite**
  
@@ -38,9 +44,6 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
       `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
 	    
      - Install Docker:
-       - Ubuntu 16.04:
-
-       `wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
 	
        - Ubuntu 18.04:
 
@@ -62,7 +65,7 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 	- **Get and Install Release Binaries**
 	
 	{{% notice info %}}
-	Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.3.0 etc)
+	Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.4.0 etc)
 	{{% /notice %}}
 
 	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)**

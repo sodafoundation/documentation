@@ -32,8 +32,8 @@ As a root user
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.3.0 follow
-git checkout v1.3.0  
+# Checkout the required version. For example, to checkout v1.4.0 follow
+git checkout v1.4.0
 ```
 {{% notice warning %}}
 Checkout the latest stable release. Current stable release: stable/isabela. If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
@@ -44,7 +44,7 @@ Checkout the latest stable release. Current stable release: stable/isabela. If y
  - Open the common.yml file
    - Add the IP of the host (which is reachable from the Kubernetes node)
    - export the `HOST_IP=<IP-of-the-Host>`
-   - Change `gelato_ha: false` to `gelato_ha: true` to install Multi-Cloud services in HA mode. 
+   - Change `gelato_ha: false` to `gelato_ha: true` to install Multi-Cloud services in HA mode.
 
  - Open the gelato-ha.yml file
    - Add the user that has access to the Kubernete Cluster to deploy the services.
@@ -56,7 +56,7 @@ Checkout the latest stable release. Current stable release: stable/isabela. If y
     - Eg. [k8smaster]
           `master ansible_port=22 ansible_user=root ansible_host=192.168.xx.yy`
           The above line is commented out in the file `installer/ansible/local.hosts`.
-          Please un-comment it and replace the ansible_host with the correct IP address.   
+          Please un-comment it and replace the ansible_host with the correct IP address.
      - Ensure the passwordless ssh is configured between the Installer node and the Kubernetes Master nodes.
 
   -  Execute the ansible-playbook command as follows, to start the deploy:
