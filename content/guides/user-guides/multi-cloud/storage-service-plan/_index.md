@@ -52,7 +52,7 @@ Click on (+) for registering a storage backend
 
 and then provide valid region, endpoint, Access and Secret Key parameters
 
-![multi-cloud backend image  ](register-backend.png?raw=true)
+![multi-cloud backend image  ](registerBackend.png?raw=true)
 
 ### Create Storage Service Plan: [Admin Operation]
 
