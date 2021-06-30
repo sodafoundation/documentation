@@ -14,7 +14,7 @@ SSP management allows service providers to abstract actual cloud or on-premise e
 In other words, SSP is a policy for the users. A service provider can decide and create different types of SSP policy for different tenants of users.
 
 ## Getting Started!
-This is a guide that shows how to install, configure, and use SSP management feature in a simple SODA setup.
+This is a guide that shows how to install, configure, and use SSP management features in a simple SODA setup.
 By following this guide you will be able to install SODA multi-cloud with creating backends and buckets, uploading and archiving objects.
 
 ## Installing SODA multi-cloud
@@ -24,7 +24,7 @@ Follow the installation guide for multi-cloud installation.
 - [SODA Local Cluster Installation through Ansible On Ubuntu](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible) (Recommended)
 
 
-* To enable SSP feature, and experince through SODA Dashboard modify the "enable_storage_service_plans" variable and then install:
+* To enable SSP feature, and experience through SODA Dashboard modify the "enable_storage_service_plans" variable and then install:
 
   group_vars/common.yml
 
@@ -80,7 +80,7 @@ After creating new backend follow the steps given below to create a bucket and u
 
 	![multi-cloud object image  ](SSP_Upload.png?raw=true)
 
-4. Click on Archive button to upload and archive an object in the selected bucket
+4. Click on Archive button to upload and archive an object in the  selected bucket
 
   ![multi-cloud object image  ](SSP_Archive.png?raw=true)
 
