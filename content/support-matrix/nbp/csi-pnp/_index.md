@@ -47,8 +47,8 @@ osdsctl profile create
   }
 }
 ```
-
-Currently SODA CSI PnP has been tested for the below CSI drivers, this is not the exhaustive list but it will keep growing as other vendors verifies the soda-csi-provisioner.  
+## Vendor CSI Support
+Currently SODA CSI PnP has been tested for the below CSI drivers, this is not the exhaustive list but it will keep growing as other vendors verify the soda-csi-provisioner.
 
 
 <table>
@@ -84,6 +84,28 @@ Currently SODA CSI PnP has been tested for the below CSI drivers, this is not th
          <td><a href="https://github.com/wavezhang/k8s-csi-lvm">K8s-csi-lvm</a></td>
          <td><a href="https://github.com/sodafoundation/examples/tree/master/soda-csi-plug-n-play-poc/deploy/kubernetes/lvm">Operator</a></td>
          <td><a href="https://github.com/sodafoundation/examples/tree/master/soda-csi-plug-n-play-poc/deploy/kubernetes/demo">Demo</a></td>
+      </tr>
+   </tbody>
+</table>
+
+
+## Sidecar Version Support
+
+<table>
+   <thead>
+      <tr>
+         <th>SODA Release version</th>
+         <th>Sidecar Image</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Isabela(v1.3.0)</td>
+         <td>`sodafoundation/soda-csi-provisioner:v2.1.0`</td>
+      </tr>
+      <tr>
+         <td>Jerba(v1.4.0)</td>
+         <td>`sodafoundation/soda-csi-provisioner:v2.2.0`</td>
       </tr>
    </tbody>
 </table>
