@@ -20,6 +20,7 @@ Volumes for Pods.
   over [here](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)), you need to change the
   ports of etcd in osdsdb.yaml while installing SODA on an existing K8s environment as the ports cause conflict with k8s
   etcd.
+- SODA CSI provisioner image to be used based on SODA release version. Refer support matrix over [here](/support-matrix/nbp/csi-pnp/#sidecar-version-support)
 
 ## Selecting the vendor CSI driver
 

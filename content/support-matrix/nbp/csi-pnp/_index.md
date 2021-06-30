@@ -47,8 +47,8 @@ osdsctl profile create
   }
 }
 ```
-
-Currently SODA CSI PnP has been tested for the below CSI drivers, this is not the exhaustive list but it will keep growing as other vendors verifies the soda-csi-provisioner.  
+## Vendor CSI Support
+Currently SODA CSI PnP has been tested for the below CSI drivers, this is not the exhaustive list but it will keep growing as other vendors verify the soda-csi-provisioner.
 
 
 <table>
@@ -87,3 +87,11 @@ Currently SODA CSI PnP has been tested for the below CSI drivers, this is not th
       </tr>
    </tbody>
 </table>
+
+
+## Sidecar Version Support
+
+|  SODA Release version   |            Sidecar Image                     |
+|-------------------------|----------------------------------------------|
+|Jerba(v1.4.0)            | `sodafoundation/soda-csi-provisioner:v2.2.0` |
+|Isabela(v1.3.0)          | `sodafoundation/soda-csi-provisioner:v2.1.0` |

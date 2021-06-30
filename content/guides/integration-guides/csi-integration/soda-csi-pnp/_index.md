@@ -19,7 +19,7 @@ provisioning the Volumes for Pods.
  - Soda-proxy needs to be installed, you can follow the quick start guide over [here](https://github.com/sodafoundation/nbp/blob/master/csi-plug-n-play/sidecars/soda-proxy/Readme.md) to bring up the soda-proxy.
 
 ## Selecting the vendor CSI driver
-You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/guides/user-guides/nbp/csi-pnp/) Once selected follow the instruction 
+You can select the CSI driver supported by SODA Plug-N-Play from [here](https://docs.sodafoundation.io/guides/user-guides/csi/ceph-csi/) Once selected follow the instruction
 given in the document to deploy the CSI driver in K8s.  
 
 ## Note

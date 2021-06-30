@@ -37,7 +37,6 @@ The recommended method of installation is using ansible in Ubuntu 16.04 or Ubunt
 
 * [https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux](https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux)
 * [https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work](https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work)
-* [https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI](https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI)
 
 ## Reference
 
