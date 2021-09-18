@@ -72,6 +72,10 @@ More details [here](https://sodafoundation.io/projects/soda-controller/)
 It is a docking station for heterogeneous storage backends! This is where all the different storage vendors’ drivers for various backends get attached.
 More details [here](https://sodafoundation.io/projects/soda-dock/)
 
+- **SODA Delfin**
+It is storage infrastructure management solution to provide unified, intelligent and scalable resource management as well as alerting and performance monitoring of the underlying storage infrastruture. 
+More details [here](https://sodafoundation.io/projects/delfin-soda-infrastructure-manager/)
+
 - **SODA Plugin**
 SODA North-Bound Plugin Project focuses to extend all the industry platforms and application solutions to interface with SODA API or be compliant with it.
 More details [here](https://sodafoundation.io/projects/soda-plugins/)
@@ -80,16 +84,8 @@ More details [here](https://sodafoundation.io/projects/soda-plugins/)
 SODA Multicloud project provides a cloud vendor agnostic data management for hybrid cloud, crosscloud or incloud. It can be hosted on prem or cloud native.
 More details [here](https://sodafoundation.io/projects/soda-multicloud-dds/)
 
-- **SODA Telemetry**
-Provides monitoring  via standard interfaces to pull the statistical and health data from the infrastructure (including storage, host, ports) and a highly configurable alert management system
-More details [here](https://sodafoundation.io/projects/soda-experiments/)
-
 - **SODA Orchestration**
 The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
-More details [here](https://sodafoundation.io/projects/soda-experiments/)
-
-- **SODA Intelligence**
-It is a reference implementation of intelligent monitoring which can utilize SODA Telemetry, exporter with Kafka (or similar) and a standard ML algorithm.
 More details [here](https://sodafoundation.io/projects/soda-experiments/)
 
 
@@ -104,5 +100,6 @@ Contact us through any of the following channels:
  - [SODA Slack](https://sodafoundation.io/slack)
  - [SODA Twitter](https://twitter.com/sodafoundation)  
  - [SODA Mailing List](https://lists.sodafoundation.io)
+ - [SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
 
  **For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) website**.

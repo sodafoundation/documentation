@@ -16,14 +16,22 @@ To have more control of the installaton cofigurations, or try out various config
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
+	|Jerba            | v1.4.0         |
+	|Isabela          | v1.3.0         |
+	|Hawaii           | v1.2.0         |
 	|Greenland        | v1.1.0         |
 	|Faroe            | v1.0.0         |
 	|Elba             | v0.20.0        |
-	Use the **RELEASE TAG** in the commands below.
+	Use the **RELEASE TAG** in the commands below wherever mentioned RELEASE-TAG.
 
 ## Quick Installation and experience of SODA releases
 
-This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
+{{% notice info %}}
+**Ubuntu 16.04 support for SODA is deprecated as of SODA Jerba release v1.4.0.** <br />
+**If you have a requirement to install SODA on Ubuntu 16.04, please contact us on slack and we will try to help with the setup.**
+{{% /notice %}}
+
+This procedure applies to 18.04 Linux distributions.
 
 - **Prerequisite**
  
@@ -36,9 +44,6 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
       `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
 	    
      - Install Docker:
-       	- Ubuntu 16.04:
-
-       `wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
 	
        	- Ubuntu 18.04:
 
@@ -59,12 +64,16 @@ This procedure applies to Ubuntu 16.04 and 18.04 Linux distributions.
 
 	- **Get and Install Release Binaries**
 	
-	 - wget  **[https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz](https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-<RELEASE_TAG>.tar.gz)**
- **OR** Download the installer binaries from  
- [https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>](https://github.com/sodafoundation/installer/releases/tag/<RELEASE_TAG>)
+	{{% notice info %}}
+	Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.4.0 etc)
+	{{% /notice %}}
 
-	 - tar xvzf installer-<RELEASE_TAG>.tar.gz
-	 - cd installer-<RELEASE_TAG>/ansible/
+	 - wget  **[https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)**
+ **OR** Download the installer binaries from  
+ [https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG]](https://github.com/sodafoundation/installer/releases/tag/[RELEASE_TAG])
+
+	 - tar xvzf installer-[RELEASE_TAG].tar.gz
+	 - cd installer-[RELEASE_TAG]/ansible/
 	 - chmod +x ./install_ansible.sh && ./install_ansible.sh
 	 - ansible --version # Ansible version 2.4.x is required
 	 - The HOST_IP need to be set to the real_host_ip of your host (ex: 192.168.1.10 or 127.0.0.1 for localhost)

@@ -16,7 +16,8 @@ The recommended method of installation is using ansible in Ubuntu 16.04 or Ubunt
 
 * [Local Cluster installation using ansible](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)
 * [Multitenant installation](https://github.com/sodafoundation/api/wiki/SODA-core-projects-Local-Cluster-with-Multi-tenants-Installation)
-
+* [Multi-Cloud HA installation using ansible](https://docs.sodafoundation.io/soda-gettingstarted/multicloud-ha-installation-using-ansible/)
+  
 ## 2. Installation using Salt
 
 * [https://github.com/sodafoundation/installer/tree/master/salt](https://github.com/sodafoundation/installer/tree/master/salt)
@@ -36,7 +37,6 @@ The recommended method of installation is using ansible in Ubuntu 16.04 or Ubunt
 
 * [https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux](https://github.com/sodafoundation/api/wiki/OpenSDS-Cluster-Installation-On-Red-Hat-Enterprise-Linux)
 * [https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work](https://github.com/sodafoundation/api/wiki/How-to-Run-Containerized-OpenSDS-for-Testing-Work)
-* [https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI](https://github.com/sodafoundation/api/wiki/OpenSDS-Integration-with-Kubernetes-CSI)
 
 ## Reference
 

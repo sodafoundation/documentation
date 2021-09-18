@@ -42,12 +42,6 @@ Authentication strategy: `opensds_auth_strategy` in `ansible/group_vars/auth.yml
 # OpenSDS authentication strategy, support 'noauth' and 'keystone'.
 opensds_auth_strategy: keystone
 ```
-#### Telemetry
-Enable Telemetry: `enable_telemetry_tools` in `ansible/group_vars/telemetry.yml`
-```yml
-# Do you need to install or clean up telemetry tools?
-enable_telemetry_tools: true 
-```
 #### Orchestration
 Enable Orchestration: `enable_orchestration` in `ansible/group_vars/orchestration.yml`
 ```yml
@@ -100,9 +94,6 @@ st2actionrunner PID: 956
 mistral-server PID: 1400
 mistral.api PID: 1522
 ```
-
-###  3. Telemetry
-The package repository for Grafana (in Capri v0.6.0) may not be accessible and this causes the installation to fail.
 
 #### Workaround 
 A workaround is suggested in [wiki](https://github.com/opensds/opensds/wiki/OpenSDS-Cluster-Installation-through-Ansible)
