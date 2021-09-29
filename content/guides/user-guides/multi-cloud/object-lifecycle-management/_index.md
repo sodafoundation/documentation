@@ -79,14 +79,9 @@ Click on (+) for registering a storage backend
 
 and then provide valid region, endpoint, Access and Secret Key parameters
 
-##### Note:
-For cloud vendors like AWS, Azure, Huawei and GCP remote cloud buckets need not be created manually by user prior to backend registration. Remote cloud buckets can be created from SODA for these cloud vendors
+### Register a cloud backends as follows
 
 ![multi-cloud backend image  ](register-backend.png?raw=true)
-
-For other cloud vendors like IBM, Ceph, YIG and Alibaba, register backend using remote cloud bucket
-
-![multi-cloud backend image  ](opensds_backend.PNG?raw=true)
 
 ### Create bucket and upload the object
 After creating new backend follow the steps given below to create a bucket and upload an object in that bucket:
