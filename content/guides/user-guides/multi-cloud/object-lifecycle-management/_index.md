@@ -79,7 +79,7 @@ Click on (+) for registering a storage backend
 
 and then provide valid region, endpoint, Access and Secret Key parameters
 
-##### Register a cloud backends as follows
+### Register a cloud backends as follows
 
 ![multi-cloud backend image  ](register-backend.png?raw=true)
 
