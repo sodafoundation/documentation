@@ -17,7 +17,7 @@ Please join us through one of the following channels:
 	- Using your github id, you can raise issues, contribute code, do review, test the soda projects under github.com/sodafoundation
 	- Basic steps of contributing to one project is explained here -["How to contribute"](https://github.com/sodafoundation/documentation/blob/master/content/community/how-to-contribute.md)
 - **SODA Slack**: 
-	- Join the [SODA Foundation Slack](%28https://sodafoundation.io/slack%29) and contact us through #general channel. We will guide you.
+	- Join the [SODA Foundation Slack](https://sodafoundation.io/slack/) and contact us through #general channel. We will guide you.
 
 ### Partners / Vendors / Supporters
 You can join SODA Foundation in various capacities individual or organization level. [Please check out our website for the value proposition and the contact form to reach us](https://sodafoundation.io/the-foundation/join/)
