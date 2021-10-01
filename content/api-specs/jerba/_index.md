@@ -2,7 +2,7 @@
 title: Jerba Release API Specification
 menuTitle: Jerba (v1.4.0)
 description: "API Specification for the Jerba release (v1.4.0) of various SODA Projects"
-weight: 5
+weight: 10
 disableToc: false
 ---
 
