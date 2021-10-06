@@ -16,6 +16,7 @@ To have more control of the installaton cofigurations, or try out various config
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
+	|Kalpeni          | v1.5.0         |
 	|Jerba            | v1.4.0         |
 	|Isabela          | v1.3.0         |
 	|Hawaii           | v1.2.0         |
