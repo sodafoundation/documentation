@@ -1,6 +1,6 @@
 ---
-title: delfin-kubernetes
-description: "delfin deployment on kubernetes guide."
+title: delfin deployment on kubernetes
+description: "Dedploying delfin services on kubernetes ."
 tags: ["installation guide", "delfin","kubernetes"] 
 ---
 
