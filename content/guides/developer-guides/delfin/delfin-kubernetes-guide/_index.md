@@ -91,6 +91,7 @@ Server Version: v1.21.1 <br />
 ---
 
 ### Build the delfin docker image locally
+To build the delfin docker image, source code and  Dockerfile are needed. Dockerfile contains instructions on how the image is built.<br />
 **Download the source code of delfin:**
 ```bash
 git clone https://github.com/sodafoundation/delfin.git
@@ -99,8 +100,18 @@ git clone https://github.com/sodafoundation/delfin.git
 **Build Delfin Image with k8s tag locally:**
 ```bash
 cd delfin
-# this builds the whole delfin code into the image with name as sodafoundation/delfin with tag as k8s
+# this builds the whole delfin code into the image with name as sodafoundation/delfin with tag as k8s and saves into local environment
 docker build -t sodafoundation/delfin:k8s .
+```
+
+**Run the docker images command to verify that the build was successful:**
+```bash
+docker images
+```
+Output:
+```bash
+REPOSITORY                                                 TAG     IMAGE ID       CREATED          SIZE
+sodafoundation/delfin    			           k8s     25cfadb1bf28   10 seconds ago   652 MB
 ```
 
 ### Get all kubernetes object files required for delfin deployment:
