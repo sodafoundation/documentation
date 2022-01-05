@@ -10,7 +10,7 @@ The documentation is about how to deploy delfin on a single node kind kubernetes
 ## The steps to deploy delfin on a kubernetes cluster 
 
 ### Pre-requisites
-- SODA installation is tested on `Ubuntu 18.04`.
+- This  installation is tested on `Ubuntu 18.04`.
 - `root` user is REQUIRED before the installation work starts.
 
 This is test on a single node kind kubernetes cluster.<br />
@@ -172,7 +172,9 @@ curl -X GET http://<IP of k8s node>:<nodePort of delfin-api-service SVC>/v1/stor
 ---
 
 {{% notice note %}}
-**For accessing cluster from outside, endpoint should be set which can be connected from outside the cluster**
+**For accessing cluster from outside, endpoint should be set which can be connected from outside the cluster**<br />
+Follow the below link:<br />
+https://kind.sigs.k8s.io/docs/user/quick-start/#creating-a-cluster
 {{% /notice %}}
 
 ### Deleting the delfin on k8s
