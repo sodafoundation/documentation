@@ -118,7 +118,7 @@ sodafoundation/delfin    			           k8s     25cfadb1bf28   10 seconds ago   6
 ### Get all kubernetes object files required for delfin deployment:
 ```bash
 git clone https://github.com/sodafoundation/examples.git
-# examples/delfin-kubernetes directory contains all the object files of delfin k8s delpoyment
+# examples/delfin-kubernetes/deploy directory contains all the object files of delfin k8s delpoyment
 ```
 ### Commands to bring up the delfin services:
 All the object files gets added to the kubernetes cluster<br />
@@ -133,7 +133,7 @@ kubectl create configmap delfin-config --from-file=../delfin/etc/delfin/
 Brings up the api,task,alert,exporter,redis and rabbitmq services of delfin
 
 ```bash
-# cd to the examples/delfin-kubernetes directory.
+# cd to the examples/delfin-kubernetes/deploy directory.
 kubectl apply -f delfin-api-deployment.yaml
 kubectl apply -f delfin-task-deployment.yaml
 kubectl apply -f delfin-exporter-deployment.yaml
@@ -182,9 +182,10 @@ https://kind.sigs.k8s.io/docs/user/quick-start/#creating-a-cluster
 Steps to delete all the delfin k8s objects and k8s cluster created.
 #### Delete all the config Maps from files.
 ```bash
-kubectl delete configmap delfin-config --from-file=../delfin/etc/delfin/
+kubectl delete configmap delfin-config
 ```
 #### Delete all pods 
+cd to the examples/delfin-kubernetes/deploy directory.
 ```bash
 kubectl delete -f delfin-api-deployment.yaml
 kubectl delete -f delfin-task-deployment.yaml
