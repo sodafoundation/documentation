@@ -65,8 +65,10 @@ For further kind installation information refer the below link:**
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
- **Note:
- If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:**
+{{% notice note %}}
+**If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:**
+{{% /notice %}}
+
 ```bash
 chmod +x kubectl
 mkdir -p ~/.local/bin/kubectl
@@ -77,11 +79,10 @@ Test to ensure the version you installed is up-to-date:
 ```bash
 kubectl version --client
 ```
-**Note:
-For detail kubectl installation information refer the below link:**
-
+{{% notice note %}}
+**For detail kubectl installation information refer the below link:**<br />
 [Kubectl Installation reference](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
-
+{{% /notice %}}
 {{% notice note %}}
 The installation is tested on the kubectl version <br />
 Client Version: v1.22.4 <br />
