@@ -122,7 +122,7 @@ kubectl create configmap delfin-config --from-file=../delfin/etc/delfin/
 ### Get all kubernetes object files required for delfin deployment:
 ```bash
 #Navigate out of delfin folder
-cd..
+cd ..
 git clone https://github.com/sodafoundation/examples.git
 # examples/delfin-kubernetes/deploy directory contains all the object files of delfin k8s delpoyment
 ```
