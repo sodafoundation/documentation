@@ -1,7 +1,7 @@
 ---
 title: SODA API Project API Spec
 menuTitle: API
-description: "Check out the API spec for the Jerba Release and try out the APIs without having to install the system."
+description: "Check out the API spec for the Kalpeni Release and try out the APIs without having to install the system."
 weight: 1
 disableToc: false
 ---
