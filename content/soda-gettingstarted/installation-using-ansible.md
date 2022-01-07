@@ -13,8 +13,8 @@ This document describes how to install SODA projects in a local cluster with det
 {{% /notice %}}
 
 {{% notice info %}}
-**Ubuntu 20.04 support for SODA is in the pipeline and will be GA in the next SODA release.** <br />
-**If you have a requirement to install SODA on Ubuntu 20.04, please contact us on slack and we will try to help with the setup.**
+**Ubuntu 20.04 support for SODA is added as experimental in Lamu v1.6.0 release through branch `ubuntu2004-experimental`.** <br />
+**If you have a requirement to install SODA on Ubuntu 20.04, please [refer](https://github.com/sodafoundation/installer/tree/ubuntu2004-experimental) or contact us on slack and we will try to help with the setup.**
 {{% /notice %}}
 
 ---

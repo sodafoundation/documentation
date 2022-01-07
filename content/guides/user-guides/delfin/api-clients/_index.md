@@ -6,8 +6,6 @@ disableToc: false
 tags: ["user guide", "delfin", "api-clients"] 
 ---
 
-# Delfin Thirdparty Integration Guide
-
 ## Scope
 
 This document is to help third party clients who wants to integrate [Delfin](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/SODA_InfrastructureManagerDesign.md) into their Storage Management system
