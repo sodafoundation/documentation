@@ -1,6 +1,6 @@
 ---
 title: Deployment on kubernetes cluster
-description: "Dedploying delfin services on kubernetes ."
+description: "Deploying delfin services on kubernetes ."
 tags: ["installation guide", "delfin","kubernetes"] 
 ---
 
@@ -107,13 +107,13 @@ image: sodafoundation/delfin:<tag required>
 {{% /notice %}}
 
 
-#### If the user wants to build image from source code manually(optional)
+#### Build image from source code manually(optional)
 To build the delfin docker image, source code and  Dockerfile are needed. Dockerfile contains instructions on how the image is built.<br />
 **Download the source code of delfin:**
 ```bash
 git clone https://github.com/sodafoundation/delfin.git
 ```
-**Build Delfin Image and get into local:**
+**Build Delfin image and get into local environment:**
 ```bash
 cd delfin
 # this builds the whole delfin code into the image with name as sodafoundation/delfin with tag as mentioned and saves into local environment
@@ -139,9 +139,9 @@ kind load docker-image sodafoundation/delfin:<tag>
 ---
 
 ### Commands to bring up the delfin services:
-All the object files gets added to the kubernetes cluster<br />
+All the object files get added to the kubernetes cluster<br />
 
-#### Create all config Maps
+#### Create all configMaps
 ```bash
 cd examples/delfin-kubernetes/deploy
 kubectl apply -f configMap.yaml
@@ -176,7 +176,8 @@ kubectl get all
 Open the `configMap.yaml` file 
 ```bash
 # Uncomment the line in configMap.yaml file
-performance_exporters = PerformanceExporterPrometheus, PerformanceExporterKafka
+# For prometheus exporter only 
+performance_exporters = PerformanceExporterPrometheus
 ```
 Follow the below site:<br />
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
