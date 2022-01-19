@@ -91,18 +91,41 @@ Server Version: v1.21.1 <br />
 
 ---
 
-### Build the delfin docker image locally
+### Regarding the delfin image of deployment
+{{% notice note %}}
+**The default version of delfin used for deployment here is v1.5.0**
+{{% /notice %}}
+
+#### Get delfin image into local(Optional)
+If user needs to use different version of delfin image:<br />
+Download the  delfin image from delfin project <br />
+
+**Run the docker images command to verify that the build was successful:**
+```bash
+docker images
+```
+Output:
+```bash
+REPOSITORY                                                 TAG     IMAGE ID       CREATED          SIZE
+sodafoundation/delfin    			           <tag>     25cfadb1bf28   10 seconds ago   652 MB
+```
+Now,load the image downloaded with the tag into the kind node
+```bash
+# replace tag with downloaded version
+kind load docker-image sodafoundation/delfin:<tag>
+```
+#### If the user wants to build image from source code manually(optional)
 To build the delfin docker image, source code and  Dockerfile are needed. Dockerfile contains instructions on how the image is built.<br />
 **Download the source code of delfin:**
 ```bash
 git clone https://github.com/sodafoundation/delfin.git
 ```
-
-**Build Delfin Image with k8s tag locally:**
+**Build Delfin Image and get into local:**
 ```bash
 cd delfin
-# this builds the whole delfin code into the image with name as sodafoundation/delfin with tag as k8s and saves into local environment
-docker build -t sodafoundation/delfin:k8s .
+# this builds the whole delfin code into the image with name as sodafoundation/delfin with tag as mentioned and saves into local environment
+# in the place of tag give the desired tag
+docker build -t sodafoundation/delfin:<tag> .
 ```
 
 **Run the docker images command to verify that the build was successful:**
@@ -112,28 +135,43 @@ docker images
 Output:
 ```bash
 REPOSITORY                                                 TAG     IMAGE ID       CREATED          SIZE
-sodafoundation/delfin    			           k8s     25cfadb1bf28   10 seconds ago   652 MB
+sodafoundation/delfin    			           <tag>     25cfadb1bf28   10 seconds ago   652 MB
 ```
-#### Create all the config Maps from files.
+Now,load the image downloaded with the tag into the kind node
 ```bash
-kubectl create configmap delfin-config --from-file=../delfin/etc/delfin/
+# replace tag with downloaded version
+kind load docker-image sodafoundation/delfin:<tag>
 ```
+---
 
 ### Get all kubernetes object files required for delfin deployment:
 ```bash
-#Navigate out of delfin folder
-cd ..
 git clone https://github.com/sodafoundation/examples.git
 # examples/delfin-kubernetes/deploy directory contains all the object files of delfin k8s delpoyment
 ```
 ### Commands to bring up the delfin services:
 All the object files gets added to the kubernetes cluster<br />
 
+#### Create all config Maps
+```bash
+cd examples/delfin-kubernetes/deploy
+kubectl apply -f configMap.yaml
+```
+
 #### Create all pods
 Brings up the api,task,alert,exporter,redis and rabbitmq services of delfin
 
+{{% notice note %}}
+**The default version of delfin used is v1.5.0**
+**To use a specific version of delfin replace the tags of delfin image in `delfin-api-deployment.yaml` ,`delfin-task-deployment.yaml`, `delfin-exporter-deployment.yaml` and `delfin-alert-deployment.yaml` files to desired tag(optional)** <br />
+
 ```bash
-cd examples/delfin-kubernetes/deploy 
+# replace tag with required tag in each of the above mentioned files
+image: sodafoundation/delfin:<tag required>
+```
+{{% /notice %}}
+
+```bash
 kubectl apply -f delfin-api-deployment.yaml
 kubectl apply -f delfin-task-deployment.yaml
 kubectl apply -f delfin-exporter-deployment.yaml
@@ -156,8 +194,12 @@ kubectl get all
 ---
 
 ### To monitor the performance metrics on prometheus
-Follow the below site:
-
+Open the `configMap.yaml` file 
+```bash
+# Uncomment the line in configMap.yaml file
+performance_exporters = PerformanceExporterPrometheus, PerformanceExporterKafka
+```
+Follow the below site:<br />
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
 
 ---
