@@ -105,6 +105,14 @@ Existing Delfin Drivers for reference:
 | **clear_alert()** | `context`: Delfin framework context, `alert`: alert to clear | Success/Failure |   Clear alert from storage system |
 | **get_capabilities()** | `context`: Delfin framework context | Capabilities schema defined in `delfin/api/schemas/storage_capabilities_schema.py` | Return metrics collection capabilites of the storage system |
 | **collect_perf_metrics()** | `context`: Delfin framework context, `storage_id`: delfin storage id, `resource_metrics`: required metrics, `start_time`: metrics start time, `end_time`: metrics end time | Collected metrics |   Collects metrics from storage system |
+| **list_storage_host_initiators()** | `context`: Delfin framework context | StorageHostInitiator dict with schema defined in `delfin/db/sqlalchemy/model.py` `StorageHostInitiator` |  List all storage host initiators from storage system |
+| **list_storage_hosts()** | `context`: Delfin framework context | StorageHost dict with schema defined in `delfin/db/sqlalchemy/model.py` `StorageHost` |    List all storage hosts from storage system |
+| **list_storage_host_groups()** | `context`: Delfin framework context | StorageHostGroup dict with schema defined in `delfin/db/sqlalchemy/model.py` ` StorageHostGroup` |   List all storage host groups from storage system |
+| **list_port_groups()** | `context`: Delfin framework context | PortGroup dict with schema defined in `delfin/db/sqlalchemy/model.py` `PortGroup`  |   List all port groups from storage system |
+| **list_volume_groups()** | `context`: Delfin framework context | VolumeGroup dict with schema defined in `delfin/db/sqlalchemy/model.py` `VolumeGroup`  |   List all volume groups from storage system |
+| **list_masking_views()** | `context`: Delfin framework context | MaskingView dict with schema defined in `delfin/db/sqlalchemy/model.py` `MaskingView`  |    List all masking views from storage system |
+| **get_alert_sources()** | `context`: Delfin framework context  | AlertSource dict with schema defined in `delfin/db/sqlalchemy/model.py` `AlertSource`  |    List all the alert soures from storage system |
+| **get_latest_perf_timestamp()** | `context`: Delfin framework context |   |  Get the timestamp of the latest performance data of the device |
 
   ```python
 
@@ -292,7 +300,153 @@ Existing Delfin Drivers for reference:
     def collect_perf_metrics(self, context, storage_id, metrics, start, stop):
         pass
 
-    def get_capabilities(self, context):
+    def get_capabilities(context, filters=None):
+        pass
+	
+    def list_storage_host_initiators(self, context):
+        storage_host_initiators_list = []
+        for idx in range(1, 3):
+            s = {
+                "name": "storage_host_initiator_" + str(idx),
+                "description": "storage_host_initiator_" + str(idx),
+                "alias": "storage_host_initiator_" + str(idx),
+                "storage_id": self.storage_id,
+                "native_storage_host_initiator_id": "storage_host_initiator_" + str(idx),
+                "wwn": "wwn_" + str(idx),
+                "status": "Normal",
+                "native_storage_host_id": "storage_host_" + str(idx),
+            }
+            storage_host_initiators_list.append(s)
+        return storage_host_initiators_list
+
+    def list_storage_hosts(self, context):
+        storage_hosts_list = []
+        for idx in range(1, 3):
+            s = {
+                "name": "storage_host_" + str(idx),
+                "description": "storage_host_" + str(idx),
+                "storage_id": self.storage_id,
+                "native_storage_host_id": "storage_host_" + str(idx),
+                "os_type": "linux",
+                "status": "Normal",
+                "ip_address": "1.2.3." + str(idx)
+            }
+            storage_hosts_list.append(s)
+        return storage_hosts_list
+
+    def list_storage_host_groups(self, context):
+        host_groups = [{
+            "name": "storage_host_group_1",
+            "description": "storage_host_group_1",
+            "storage_id": self.storage_id,
+            "native_storage_host_group_id": "storage_host_group_1",
+            "storage_hosts": "host1,host2"
+        },
+            {
+                "name": "storage_host_group_2",
+                "description": "storage_host_group_2",
+                "storage_id": self.storage_id,
+                "native_storage_host_group_id": "storage_host_group_2",
+                "storage_hosts": "host3,host4"
+            }]
+
+        storage_host_group_relation_list = [{
+            'storage_id': self.storage_id,
+            'native_storage_host_group_id': "storage_host_group_1",
+            'native_storage_host_id': "host1"
+        },
+            {
+                'storage_id': self.storage_id,
+                'native_storage_host_group_id': "storage_host_group_1",
+                'native_storage_host_id': "host2"
+            }]
+        result = {
+            'storage_host_groups': host_groups,
+            'storage_host_grp_host_rels': storage_host_group_relation_list
+        }
+        return result
+
+    def list_port_groups(self, context):
+        port_group_list = [{
+            "name": "port_group_1",
+            "description": "port_group_1",
+            "storage_id": self.storage_id,
+            "native_port_group_id": "port_group_1",
+            "ports": "port_1,port_2"
+        }]
+        port_group_relation = [{
+            'storage_id': self.storage_id,
+            'native_port_group_id': "storage_port_group_1",
+            'native_port_id': "port_1"
+        },
+            {
+                'storage_id': self.storage_id,
+                'native_port_group_id': "storage_port_group_1",
+                'native_port_id': "port_2"
+            }]
+        result = {
+            'port_groups': port_group_list,
+            'port_grp_port_rels': port_group_relation
+        }
+        return result
+
+    def list_volume_groups(self, context):
+        volume_group_list = [{
+            "name": "volume_group_1",
+            "description": "volume_group_1",
+            "storage_id": self.storage_id,
+            "native_volume_group_id": "volume_group_1",
+            "volumes": "volume1,volume2"
+        }]
+        volume_group_relation = [
+            {
+
+                'storage_id': self.storage_id,
+                'native_volume_group_id': "volume_group_1",
+                'native_volume_id': "volume1"
+
+            },
+            {
+                'storage_id': self.storage_id,
+                'native_volume_group_id': "volume_group_1",
+                'native_volume_id': "volume2"
+
+            }]
+        result = {
+            'volume_groups': volume_group_list,
+            'vol_grp_vol_rels': volume_group_relation
+        }
+        return result
+
+    def list_masking_views(self, context):
+        masking_view_list = [{
+            "name": "masking_view_1",
+            "description": "masking_view_1",
+            "storage_id": self.storage_id,
+            "native_masking_view_id": "masking_view_1",
+            "native_storage_host_group_id": "storage_host_group_1",
+            "native_volume_group_id": "volume_group_1",
+            "native_port_group_id": "port_group_1",
+            "native_storage_host_id": "",
+            "native_volume_id": "",
+        },
+            {
+                "name": "masking_view_2",
+                "description": "masking_view_2",
+                "storage_id": self.storage_id,
+                "native_masking_view_id": "masking_view_2",
+                "native_storage_host_group_id": "storage_host_group_2",
+                "native_volume_group_id": "volume_group_2",
+                "native_port_group_id": "port_group",
+                "native_storage_host_id": "storage_host_1",
+                "native_volume_id": "volume_1",
+            }]
+        return masking_view_list
+
+    def get_alert_sources(self, context):
+        return []
+
+    def get_latest_perf_timestamp(self, context):
         pass
 
   ```
@@ -300,9 +454,8 @@ Existing Delfin Drivers for reference:
 * Install delfin and start delfin services of api.py, task.py and alert.py.
 
   ```bash
-  cd <delfin directory>
-  ./script/start.sh
-
+  export PYTHONPATH=$(pwd)
+  installer/install
   ```
 
 * Ensure create storages API call from Delfin, can load the driver successfully.

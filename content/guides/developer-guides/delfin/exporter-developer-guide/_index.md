@@ -68,8 +68,8 @@ performance_exporters = PerformanceExporterThirParty, #PerformanceExporterPromet
 * Step 5:Install delfin and start delfin services of api.py, task.py and alert.py.
 
   ```bash
-  cd <delfin directory>
-  ./script/start.sh
+   export PYTHONPATH=$(pwd)
+   installer/install
 
   ```
 * Step 6 : Testing
@@ -166,11 +166,10 @@ alert_exporters = AlertExporterThirParty
 * Step 5: Install delfin and start delfin services of api.py, task.py and alert.py.
 
   ```bash
-  cd <delfin directory>
-  ./script/start.sh
+   export PYTHONPATH=$(pwd)
+   installer/install
 
   ```
-
 * Step 6: Testing
 
 Register storage (fake storage for test)
