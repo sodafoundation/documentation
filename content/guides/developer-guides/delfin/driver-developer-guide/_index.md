@@ -304,62 +304,93 @@ Existing Delfin Drivers for reference:
         pass
 	
     def list_storage_host_initiators(self, context):
-        storage_host_initiators_list = []
-        for idx in range(1, 3):
-            s = {
-                "name": "storage_host_initiator_" + str(idx),
-                "description": "storage_host_initiator_" + str(idx),
-                "alias": "storage_host_initiator_" + str(idx),
+        storage_host_initiators_list = [
+            {
+                "name": "storage_host_initiator_1",
+                "description": "storage_host_initiator_1",
+                "alias": "storage_host_initiator_1",
                 "storage_id": self.storage_id,
-                "native_storage_host_initiator_id": "storage_host_initiator_" + str(idx),
-                "wwn": "wwn_" + str(idx),
+                "native_storage_host_initiator_id": "storage_host_initiator_1",
+                "wwn": "wwn_1",
                 "status": "Normal",
-                "native_storage_host_id": "storage_host_" + str(idx),
+                "native_storage_host_id": "storage_host_1",
+            },
+            {
+                "name": "storage_host_initiator_2",
+                "description": "storage_host_initiator_2",
+                "alias": "storage_host_initiator_2",
+                "storage_id": self.storage_id,
+                "native_storage_host_initiator_id": "storage_host_initiator_2",
+                "wwn": "wwn_2",
+                "status": "Normal",
+                "native_storage_host_id": "storage_host_2",
             }
-            storage_host_initiators_list.append(s)
+        ]
         return storage_host_initiators_list
 
     def list_storage_hosts(self, context):
-        storage_hosts_list = []
-        for idx in range(1, 3):
-            s = {
-                "name": "storage_host_" + str(idx),
-                "description": "storage_host_" + str(idx),
+        storage_hosts_list = [
+            {
+                "name": "storage_host_1",
+                "description": "storage_host_1",
                 "storage_id": self.storage_id,
-                "native_storage_host_id": "storage_host_" + str(idx),
+                "native_storage_host_id": "storage_host_1",
                 "os_type": "linux",
                 "status": "Normal",
-                "ip_address": "1.2.3." + str(idx)
+                "ip_address": "1.2.3.4"
+            },
+            {
+                "name": "storage_host_2",
+                "description": "storage_host_2",
+                "storage_id": self.storage_id,
+                "native_storage_host_id": "storage_host_2",
+                "os_type": "linux",
+                "status": "Normal",
+                "ip_address": "1.2.3.5"
             }
-            storage_hosts_list.append(s)
+        ]
         return storage_hosts_list
 
     def list_storage_host_groups(self, context):
-        host_groups = [{
-            "name": "storage_host_group_1",
-            "description": "storage_host_group_1",
-            "storage_id": self.storage_id,
-            "native_storage_host_group_id": "storage_host_group_1",
-            "storage_hosts": "host1,host2"
-        },
+        host_groups = [
+            {
+                "name": "storage_host_group_1",
+                "description": "storage_host_group_1",
+                "storage_id": self.storage_id,
+                "native_storage_host_group_id": "storage_host_group_1",
+                "storage_hosts": "host1,host2"
+            },
             {
                 "name": "storage_host_group_2",
                 "description": "storage_host_group_2",
                 "storage_id": self.storage_id,
                 "native_storage_host_group_id": "storage_host_group_2",
                 "storage_hosts": "host3,host4"
-            }]
+            }
+        ]
 
-        storage_host_group_relation_list = [{
-            'storage_id': self.storage_id,
-            'native_storage_host_group_id': "storage_host_group_1",
-            'native_storage_host_id': "host1"
-        },
+        storage_host_group_relation_list = [
+            {
+                'storage_id': self.storage_id,
+                'native_storage_host_group_id': "storage_host_group_1",
+                'native_storage_host_id': "host1"
+            },
             {
                 'storage_id': self.storage_id,
                 'native_storage_host_group_id': "storage_host_group_1",
                 'native_storage_host_id': "host2"
-            }]
+            },
+            {
+                'storage_id': self.storage_id,
+                'native_storage_host_group_id': "storage_host_group_2",
+                'native_storage_host_id': "host3"
+            },
+            {
+                'storage_id': self.storage_id,
+                'native_storage_host_group_id': "storage_host_group_2",
+                'native_storage_host_id': "host4"
+            }
+        ]
         result = {
             'storage_host_groups': host_groups,
             'storage_host_grp_host_rels': storage_host_group_relation_list
@@ -367,23 +398,27 @@ Existing Delfin Drivers for reference:
         return result
 
     def list_port_groups(self, context):
-        port_group_list = [{
-            "name": "storage_port_group_1",
-            "description": "storage_port_group_1",
-            "storage_id": self.storage_id,
-            "native_port_group_id": "storage_port_group_1",
-            "ports": "port_1,port_2"
-        }]
-        port_group_relation = [{
-            'storage_id': self.storage_id,
-            'native_port_group_id': "storage_port_group_1",
-            'native_port_id': "port_1"
-        },
+        port_group_list = [
+            {
+                "name": "port_group_1",
+                "description": "port_group_1",
+                "storage_id": self.storage_id,
+                "native_port_group_id": "storage_port_group_1",
+                "ports": "port_1"
+            }
+        ]
+        port_group_relation = [
+            {
+                'storage_id': self.storage_id,
+                'native_port_group_id': "storage_port_group_1",
+                'native_port_id': "port_1"
+            },
             {
                 'storage_id': self.storage_id,
                 'native_port_group_id': "storage_port_group_1",
                 'native_port_id': "port_2"
-            }]
+            }
+        ]
         result = {
             'port_groups': port_group_list,
             'port_grp_port_rels': port_group_relation
@@ -391,27 +426,28 @@ Existing Delfin Drivers for reference:
         return result
 
     def list_volume_groups(self, context):
-        volume_group_list = [{
-            "name": "storage_volume_group_1",
-            "description": "storage_volume_group_1",
-            "storage_id": self.storage_id,
-            "native_volume_group_id": "storage_volume_group_1",
-            "volumes": "volume1,volume2"
-        }]
+        volume_group_list = [
+            {
+                "name": "volume_group_1",
+                "description": "volume_group_1",
+                "storage_id": self.storage_id,
+                "native_volume_group_id": "volume_group_1",
+                "volumes": "volume1,volume2"
+            }
+        ]
         volume_group_relation = [
             {
-
                 'storage_id': self.storage_id,
-                'native_volume_group_id': "storage_volume_group_1",
+                'native_volume_group_id': "volume_group_1",
                 'native_volume_id': "volume1"
-
             },
             {
                 'storage_id': self.storage_id,
-                'native_volume_group_id': "storage_volume_group_1",
+                'native_volume_group_id': "volume_group_1",
                 'native_volume_id': "volume2"
 
-            }]
+            }
+        ]
         result = {
             'volume_groups': volume_group_list,
             'vol_grp_vol_rels': volume_group_relation
@@ -419,17 +455,18 @@ Existing Delfin Drivers for reference:
         return result
 
     def list_masking_views(self, context):
-        masking_view_list = [{
-            "name": "masking_view_1",
-            "description": "masking_view_1",
-            "storage_id": self.storage_id,
-            "native_masking_view_id": "masking_view_1",
-            "native_storage_host_group_id": "storage_host_group_1",
-            "native_volume_group_id": "volume_group_1",
-            "native_port_group_id": "port_group_1",
-            "native_storage_host_id": "",
-            "native_volume_id": "",
-        },
+        masking_view_list = [
+            {
+                "name": "masking_view_1",
+                "description": "masking_view_1",
+                "storage_id": self.storage_id,
+                "native_masking_view_id": "masking_view_1",
+                "native_storage_host_group_id": "storage_host_group_1",
+                "native_volume_group_id": "volume_group_1",
+                "native_port_group_id": "port_group_1",
+                "native_storage_host_id": "",
+                "native_volume_id": "",
+            },
             {
                 "name": "masking_view_2",
                 "description": "masking_view_2",
@@ -440,7 +477,8 @@ Existing Delfin Drivers for reference:
                 "native_port_group_id": "port_group",
                 "native_storage_host_id": "storage_host_1",
                 "native_volume_id": "volume_1",
-            }]
+            }
+        ]
         return masking_view_list
 
     def get_alert_sources(self, context):
