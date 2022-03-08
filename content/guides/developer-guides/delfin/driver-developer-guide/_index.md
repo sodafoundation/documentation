@@ -368,10 +368,10 @@ Existing Delfin Drivers for reference:
 
     def list_port_groups(self, context):
         port_group_list = [{
-            "name": "port_group_1",
-            "description": "port_group_1",
+            "name": "storage_port_group_1",
+            "description": "storage_port_group_1",
             "storage_id": self.storage_id,
-            "native_port_group_id": "port_group_1",
+            "native_port_group_id": "storage_port_group_1",
             "ports": "port_1,port_2"
         }]
         port_group_relation = [{
@@ -392,23 +392,23 @@ Existing Delfin Drivers for reference:
 
     def list_volume_groups(self, context):
         volume_group_list = [{
-            "name": "volume_group_1",
-            "description": "volume_group_1",
+            "name": "storage_volume_group_1",
+            "description": "storage_volume_group_1",
             "storage_id": self.storage_id,
-            "native_volume_group_id": "volume_group_1",
+            "native_volume_group_id": "storage_volume_group_1",
             "volumes": "volume1,volume2"
         }]
         volume_group_relation = [
             {
 
                 'storage_id': self.storage_id,
-                'native_volume_group_id': "volume_group_1",
+                'native_volume_group_id': "storage_volume_group_1",
                 'native_volume_id': "volume1"
 
             },
             {
                 'storage_id': self.storage_id,
-                'native_volume_group_id': "volume_group_1",
+                'native_volume_group_id': "storage_volume_group_1",
                 'native_volume_id': "volume2"
 
             }]
