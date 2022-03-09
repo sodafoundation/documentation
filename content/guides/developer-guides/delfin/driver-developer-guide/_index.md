@@ -404,7 +404,7 @@ Existing Delfin Drivers for reference:
                 "description": "port_group_1",
                 "storage_id": self.storage_id,
                 "native_port_group_id": "storage_port_group_1",
-                "ports": "port_1"
+                "ports": "port_1,port_2"
             }
         ]
         port_group_relation = [
