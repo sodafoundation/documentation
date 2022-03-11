@@ -60,7 +60,7 @@ Important configurations that users want change may be,
 |           | kafka_port            | '9092'                      | KAFKA installations PORT  |
 | PROMETHEUS_EXPORTER | metric_server_ip | 0.0.0.0                | PROMETHEUS IP             |
 |           | metric_server_port    | 8195                        | PROMETHEUS PORT           |
-|           | metrics_dir           | /var/lib/delfin/metrics     | Directory for Metrics files |
+|           | metrics_cache_file    | /var/lib/delfin/delfin_exporter.txt     | Metrics files |
 | PROMETHEUS_ALERT_MANAGER_EXPORTER | alert_manager_host | '<AlertManager_IP>'  | Alert Manager IP    |
 |           | alert_manager_port    | '9093'                      | Alert Manager PORT        |
 |           |                       |                             |                           |
@@ -93,7 +93,7 @@ kafka_port = '9092'
 [PROMETHEUS_EXPORTER]
 metric_server_ip = 0.0.0.0
 metric_server_port = 8195
-metrics_dir = /tmp/delfin-metrics
+metrics_cache_file = /var/lib/delfin/delfin_exporter.txt
 
 [PROMETHEUS_ALERT_MANAGER_EXPORTER]
 alert_manager_host = '<Delfin_IP>'
