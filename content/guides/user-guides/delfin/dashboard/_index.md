@@ -43,7 +43,7 @@ It provides unified APIs to access, export and connect with clients as well as a
 ### Register Storage Device  
 ##### [\[Back to top\]](#delfin-features)  
 
-Currently supported vendors include `Dell EMC`, `Huawei`, `HPE`, `Hitachi`, `IBM`.  
+Currently supported vendors include `Fake Storage`,`Fujitsu Eternus`,`Pure Storgae `,NetApp`,`Dell EMC`, `Huawei`, `HPE`, `Hitachi`, `IBM`.  
 To register a storage device select one of the Vendor and one of the models listed.
 ![Select vendor and model](delfin-user-guide-6.png)
 
