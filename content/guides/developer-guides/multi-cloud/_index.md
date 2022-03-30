@@ -61,7 +61,7 @@ docker-compose version 1.22.0, build 1719ceb
 ### Install and start SODA Multi-cloud Server
 Download the source code:
 ```bash
-mkdir -p /root/gopath/src/github.com/sodafoundation/
+mkdir cd -p /root/gopath/src/github.com/sodafoundation/
 git clone https://github.com/sodafoundation/multi-cloud.git
 cd /root/gopath/src/github.com/sodafoundation/multi-cloud
 ```
