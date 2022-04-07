@@ -1,7 +1,7 @@
-# How to Contribute to SODA Projects
+# How to Contribute to all soda foundation codes
 This is an example of basic steps of contributing to any project under SODA Foundation through github.
 
-## Step 1: Fork  repository
+## Step 1: Fork  repository 
 
 Before making modifications of SODA Foundation projects, you need to make sure that this project have been forked to your own
 repository. It means that there will be parallel development between the respective SODA Foundation repo and your own repo, so be careful
