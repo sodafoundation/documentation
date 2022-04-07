@@ -1,4 +1,4 @@
-# How to Contribute to SODA Projects
+# How to Contribute to all the projects in SODA foundation
 This is an example of basic steps of contributing to any project under SODA Foundation through github.
 
 ## Step 1: Fork  repository
@@ -23,7 +23,7 @@ git remote add upstream https://github.com/sodafoundation/api.git
 git fetch upstream
 ```
 
-## Step 4: Develop code locally
+## Step 4: Develop code loccally
 
 To avoid inconsistency between multiple branches, we SUGGEST checking out to a new branch:
 ```
