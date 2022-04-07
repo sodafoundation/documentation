@@ -5,7 +5,7 @@ This is an example of basic steps of contributing to any project under SODA Foun
 
 Before making modifications of SODA Foundation projects, you need to make sure that this project have been forked to your own
 repository. It means that there will be parallel development between the respective SODA Foundation repo and your own repo, so be careful
-to avoid the inconsistency between these two repos.
+to avoid the inconsistency between these two repose.
 
 ## Step 2: Clone the remote repository
 
