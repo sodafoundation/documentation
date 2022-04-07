@@ -1,4 +1,4 @@
-# How to Contribute to SODA Projects
+# How to Contribute on all the SODA projects
 This is an example of basic steps of contributing to any project under SODA Foundation through github.
 
 ## Step 1: Fork  repository
