@@ -1,4 +1,4 @@
-baseURL = "https://soda-docs.netlify.app/"
+baseURL = "https://docs.sodafoundation.io/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 googleAnalytics = "UA-138679091-1"
