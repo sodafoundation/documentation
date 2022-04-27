@@ -9,7 +9,6 @@ weight: 50
 
 This document describes how to install SODA Multi-cloud project in a local cluster using Ansible. These steps will help you to install / uninstall Multi-Cloud project. After installation using these steps, you can test either through SODA Dashboard UI or CLI.
 
-`Hereafter, Hotpot refers to API, Controller and Dock projects`
 
 {{% notice info %}}
 **Ubuntu 16.04 support for SODA is deprecated as of SODA Jerba release v1.4.0.** <br />
@@ -93,10 +92,10 @@ ansible --version # Ensure Ansible version 2.5.1 for Ubuntu 18.04.
 ```
 --- 
 
-### Configure SODA installer and environment variables
+### Configure SODA Multi-cloud installer and environment variables
 
 A SODA release conists of various projects which have their own release cycles and versions.
-To install SODA  projects and enabled the features following variables have to be enabled in the respective files as below:
+To install SODA  multi-cloud, the following variables have to be enabled in the respective files as below:
 
 #### Set Host IP address
 
@@ -117,17 +116,13 @@ host_ip: 127.0.0.1
 
 ---
 
-### Select SODA Projects to install
-In the same `group_vars/common.yml` file, modify the `deploy_project` variable to select the projects to install. 
-Currently the `deploy_project` variable takes `all`, `hotpot` and `gelato` as values. By default it is set to `all`.  
-`all` installs SODA On Premise and SODA Multicloud (gelato).  
-`hotpot` installs SODA On Premise only.  
-`gelato` installs SODA Multicloud only.  
+### Select SODA Multi-cloud Project to install
+In the same `group_vars/common.yml` file, modify the `deploy_project` variable to select the multi-cloud project to install.
 
 ```bash
 # This field indicates which project should be deploy
 # 'hotpot', 'gelato' or 'all'
-deploy_project: all  #all refers to hotpot + gelato
+deploy_project: 'gelato' # 'gelato' for multi-cloud
 ```
 
 ### Install SODA
@@ -146,17 +141,10 @@ ansible-playbook site.yml -i local.hosts
 ansible-playbook site.yml -i local.hosts -vvv
 ```
 
-SODA ansible installer supports installation using tags. To install a particular service use the playbook as follows
-```bash
-# This installs only delfin
-ansible-playbook site.yml -i local.hosts -vvv --tags delfin
-```
-Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
-
 
 ### SODA Dashboard UI
 
-SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to the dashboard using the default admin credentials: `admin/opensds@123.` Create `tenant`, `user`, and `profiles` as admin. Multi-Cloud and Delfin are also supported by dashboard.
+SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to the dashboard using the default admin credentials: `admin/opensds@123.`
 
 
 ### Things to Note
@@ -168,24 +156,6 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to 
 3. Save the file (Do not forget to save this file and keep it safe.)<br />
 {{% /notice %}}
 
-
-{{% notice note %}}
-**_To generate Access Key , Secret Key using ReST APIs, follow the link below:_**
- AK/SK Generation using APIs can be found [here](/guides/user-guides/multi-cloud/aksk/ak-sk-using-api/)
-{{% /notice %}}
-
-{{% notice info %}}
-**_To use the Block and File service, respective profile must be created before using these services. To do this you can follow the steps below:_**  <br />
-1. Go to Profiles<br />
-2. Click on Create button.<br />
-3. Enter the details and select the Storage type as Block or File. <br />
-4. Create one profile for Block type and  name it `default_block`.<br />
-5. Create one profile for File type and  name it `default_file`.<br />
-6. Save the profile and select it when you are creating a new volume or file share.<br />
-7. Make sure you enable the snapshot policy and replication policy in the profile if you intend to create either.<br />
-{{% /notice %}}
-
-Logout of the dashboard as admin and login the dashboard again as a non-admin user to manage storage resources.
 
 ---
 
