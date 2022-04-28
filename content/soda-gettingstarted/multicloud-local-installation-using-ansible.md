@@ -2,7 +2,7 @@
 title: Multi-cloud Local Cluster Installation using Ansible
 menuTitle: ""
 disableToc: true
-tags: ["user guide", "multi-cloud", "ansible"] 
+tags: ["installation guide", "multi-cloud", "ansible"] 
 description: "This document describes how to install SODA Multi-cloud project in a local cluster using Ansible. These steps will help you to install / uninstall Multi-Cloud project. After installation using these steps, you can test either through SODA Dashboard UI or CLI"
 weight: 50
 ---
@@ -94,7 +94,7 @@ ansible --version # Ensure Ansible version 2.5.1 for Ubuntu 18.04.
 
 ### Configure SODA Multi-cloud installer and environment variables
 
-A SODA release conists of various projects which have their own release cycles and versions.
+A SODA release consists of various projects which have their own release cycles and versions.
 To install SODA  multi-cloud, the following variables have to be enabled in the respective files as below:
 
 #### Set Host IP address
