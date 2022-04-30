@@ -305,7 +305,7 @@ performance_exporters: PerformanceExporterPrometheus
 performance_exporters: PerformanceExporterKafka
 ```
 
-To enable delfin to push alerts to alert manager change the value of `alert_exporters`
+To enable delfin to push alerts to Alertmanager change the value of `alert_exporters`
 ```
 alert_exporters: AlertExporterPrometheus
 ```
@@ -316,7 +316,7 @@ The performance collection interval for Delfin can be set here. This sets the in
 performance_collection_interval: 900
 ```
 The Kafka or Prometheus exporters endpoints can be configured here
-In case of the Prometheus exporter, the dir `/var/lib/delfin/metrics` will be used by Delfin to save the file with time series data for all the resources to be scraped by promtheus. 
+In case of the Prometheus exporter, the dir `/var/lib/delfin/metrics` will be used by Delfin to save the file with time series data for all the resources to be scraped by Promtheus. 
 ```
 # Exporter configurations for Kafka
 delfin_exporter_kafka_ip: 'localhost'
@@ -329,7 +329,7 @@ delfin_exporter_prometheus_port: 8195
 delfin_exporter_prometheus_metrics_dir: '/var/lib/delfin/metrics'
 ```
 
-The delfin alert manager exporter endpoint can be configured here
+The delfin Alertmanager exporter endpoint can be configured here
 
 ```
 #Exporter configurations for Alert Manager
@@ -340,7 +340,7 @@ delfin_exporter_alertmanager_port: 9093
 
 ### Configure SRM Toolchain installation
 
-Installing the SRM toolchain will install Prometheus, alert Manager and Grafana versions as per the configuration below and can be changed. 
+Installing the SRM toolchain will install Prometheus, AlertManager and Grafana versions as per the configuration below and can be changed. 
 
 ```
 prometheus_image_tag: v2.23.0
