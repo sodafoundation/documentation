@@ -71,12 +71,12 @@ go version
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.6.0 follow
-git checkout v1.6.0
+# Checkout the required version. For example, to checkout v1.7.0 follow
+git checkout v1.7.0
 ```
 
 {{% notice note %}}
-Checkout the latest stable release. Current stable release: [Lamu (v1.6.0)](https://github.com/sodafoundation/soda/releases/tag/v1.6.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+Checkout the latest stable release. Current stable release: [Madagascar (v1.7.0)](https://github.com/sodafoundation/soda/releases/tag/v1.7.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
 {{% /notice %}}
 
 #### Install ansible

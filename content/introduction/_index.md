@@ -11,7 +11,7 @@ disableToc: false
 ## What is SODA
 SODA is SODA Open Data Autonomy. It is an open source unified autonomous data framework for data mobility from edge to core to cloud.
 
-<img src="https://sodafoundation.io/wp-content/uploads/2020/04/sodaautonomy1960-1536x1138.jpg">
+<img src="https://www.sodafoundation.io/wp-content/uploads/2022/05/2022autonomy2560.png">
 
 ## Focus Areas
 
