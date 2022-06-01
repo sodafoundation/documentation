@@ -15,4 +15,4 @@ This is a quickstart guide for users and new contributors to get the first and q
 
 
 ### [Installation Guide](https://docs.sodafoundation.io/soda-gettingstarted/installation/)
-This guide explains how to configure and install the SODA Foundation Projects with its components. You will have more configuratio options and control over the installation.
+This guide explains how to configure and install the SODA Foundation Projects with its components. You will have more configuration options and control over the installation.

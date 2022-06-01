@@ -8,7 +8,7 @@ This is a quickstart guide for users and new contributors to try and get familia
 
 ***Note**: *At present, this document also provides the installation steps to try out older OpenSDS releases. Soon, the support for old opensds releases shall be removed.**
 
-To have more control of the installaton cofigurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
+To have more control of the installation configurations, or try out various configurations refer a detailed installation guide [here](/soda-gettingstarted/installation)
 
 ## Supported SODA releases
 

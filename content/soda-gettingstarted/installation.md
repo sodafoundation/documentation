@@ -4,7 +4,7 @@ description: "This guide explains how to configure and install the SODA Foundati
 weight: 30
 ---
 
-This guide lists the installation steps for the SODA Foundation Projects and its components.It provides the cofiguration steps and enable users to test the basic features.
+This guide lists the installation steps for the SODA Foundation Projects and its components. It provides the configuration steps and enable users to test the basic features.
 
 SODA Foundation Projects can be installed, deployed and tested using multiple tools, such as Ansible, Salt, Helm, bash scripts etc. The [SODA-installer](https://github.com/sodafoundation/installer) project contains resources and tools listed in this guide.
 

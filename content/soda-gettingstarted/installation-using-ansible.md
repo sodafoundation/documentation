@@ -1,9 +1,9 @@
 ---
 title: Installation Guide using Ansible
-description: "This document describes how to install SODA projects in a local cluster with detailed configuraiton options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI"
+description: "This document describes how to install SODA projects in a local cluster with detailed configuration options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI"
 weight: 40
 ---
-This document describes how to install SODA projects in a local cluster with detailed configuraiton options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
+This document describes how to install SODA projects in a local cluster with detailed configuration options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 
 `Hereafter, Hotpot refers to API, Controller and Dock projects`
 
@@ -92,7 +92,7 @@ ansible --version # Ensure Ansible version 2.5.1 for Ubuntu 18.04.
 ### Configure SODA installer and environment variables
 
 A SODA release conists of various projects which have their own release cycles and versions.
-To install SODA  projects and enabled the features following variables have to be enabled in the respective files as below:
+To install SODA Projects and enable the different features, variables have to be modified in the respective files as below:
 
 #### Set Host IP address
 
@@ -153,7 +153,7 @@ install_srm_toolchain: true
 
 #### Enable Storage Service Plans in multi-cloud (optional)
 
-SODA Multi-cloud eseentially allows users to register cloud storage backends, create buckets and upload objects.  
+SODA Multi-cloud essentially allows users to register cloud storage backends, create buckets and upload objects.  
 This process can be abstracted from the end users. SODA Multi-cloud now supports Storage Service Plans.  With this an admin can create Storage Service Plans and assign them to particular tenants and attach storage backends. Using Storage Service Plans abstracts the actual cloud storage backend from the end user and they will only see the service plan name assigned to their tenants. To enable storage service plans Update the file `ansible/group_vars/common.yml` and change the value of `enable_storage_service_plans` to `true`.
 
 ```bash
@@ -163,7 +163,7 @@ For more information on how to use SSP you can check out the [user guide](/guide
 
 ---
 #### Multi-Cloud installation in High Availability (HA) Mode.
-The default SODA installation of the multicloud project is on a single node (the same node is used for all projects).  
+The default SODA installation of the multi-cloud project is on a single node (the same node is used for all projects).  
 To install SODA Multi-Cloud in HA mode please refer to the [Multi-Cloud HA installation guide](https://docs.sodafoundation.io/soda-gettingstarted/multicloud-ha-installation-using-ansible/)
 
 ---
@@ -329,7 +329,7 @@ delfin_exporter_prometheus_port: 8195
 delfin_exporter_prometheus_metrics_dir: '/var/lib/delfin/metrics'
 ```
 
-The delfin alertmanager exporter endpoint can be configured here
+The delfin Alertmanager exporter endpoint can be configured here
 
 ```
 #Exporter configurations for Alert Manager
@@ -463,7 +463,7 @@ SODA Dashboard UI is available at `http://{your_host_ip}:8088`, please login to 
 
 
 {{% notice note %}}
-**_To generate Access Key , Secret Key using ReST APIs, follow the link below:_**
+**_To generate Access Key , Secret Key using REST APIs, follow the link below:_**
  AK/SK Generation using APIs can be found [here](/guides/user-guides/multi-cloud/aksk/ak-sk-using-api/)
 {{% /notice %}}
 
