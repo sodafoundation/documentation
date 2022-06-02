@@ -16,6 +16,7 @@ To have more control of the installation configurations, or try out various conf
 
 	|**RELEASE NAME** | **RELEASE TAG**|
 	|-----------------|----------------|
+	|Madagascar       | v1.7.0         |
 	|Lamu             | v1.6.0         |
 	|Kalpeni          | v1.5.0         |
 	|Jerba            | v1.4.0         |
