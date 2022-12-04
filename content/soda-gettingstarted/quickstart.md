@@ -44,7 +44,7 @@ This procedure applies to 18.04 Linux distributions.
     
     - Install Basic Dependencies:
       
-      `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk`
+      `apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk python3-pip`
 	    
      - Install Docker:
 	
