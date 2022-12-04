@@ -48,7 +48,7 @@ This procedure applies to 18.04 Linux distributions.
 	    
      - Install Docker:
 	
-       - Ubuntu 18.04:
+       	- Ubuntu 18.04:
 
        `wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb && dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb`
     
