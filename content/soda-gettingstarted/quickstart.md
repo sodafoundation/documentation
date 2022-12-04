@@ -86,12 +86,16 @@ This procedure applies to 18.04 Linux distributions.
 		 - vim group_vars/common.yml # Modify `host_ip` address if needed
 
  - **Run the installer**
-	 - ansible-playbook site.yml -i local.hosts
-	 - Note: If you want to clean up and test again, run
-		 - ansible-playbook clean.yml -i local.hosts -vvv
-	 - and then run:
-		 - ansible-playbook site.yml -i local.hosts
 
+      - Run the installer:
+      
+      `ansible-playbook site.yml -i local.hosts`
+            
+      - Rerun clean install again if desired:
+      
+      `ansible-playbook clean.yml -i local.hosts -vvv && ansible-playbook site.yml -i local.hosts`
+      
+      
  -   **How to do a quick test**
 
       - Open Your Browser and use the http://< actual host ip>:8088 to access the SODA Dashboard (this IP should be the IP Address of the host if you have updated the config file) Example: [http://127.0.0.1:8088](http://127.0.0.1:8088)
