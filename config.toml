@@ -22,6 +22,18 @@ defaultContentLanguageInSubdir= true
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
 
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = false
+    path = "github.com/anvithks/soda-cdm-docs"
+  [[module.imports.mounts]]
+    source = "kahu"
+    target = "content/soda-cdm/kahu"
+  [[module.imports.mounts]]
+    source = "kahu/resources"
+    target = "content/soda-cdm/kahu/design_spec/resources"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
