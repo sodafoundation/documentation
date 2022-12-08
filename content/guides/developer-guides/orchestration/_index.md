@@ -6,7 +6,7 @@ disableToc: false
 tags: ["developer guide", "orchestration", "automation"] 
 ---
 ## Overview
-This guide is intended for Orchestration and Automation developers. It provides detailed steps to write new workflows for sequence of actions and Orchestrate them through OpenSDS. To undestand the feature and requirements in detail, please refer to the Orchestration user guide and Orchestration design doc. OpenSDS currently uses StackStorm as the Orchestration manager. It uses Mistral workflows of StackStorm. 
+This guide is intended for Orchestration and Automation developers. It provides detailed steps to write new workflows for sequence of actions and Orchestrate them through SODA. To undestand the feature and requirements in detail, please refer to the Orchestration user guide and Orchestration design doc. SODA currently uses StackStorm as the Orchestration manager. It uses Mistral workflows of StackStorm. 
 
 ## Workflows and Actions  
 
