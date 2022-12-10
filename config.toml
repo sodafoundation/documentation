@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir= true
     disable = false
     ignoreConfig = false
     ignoreImports = false
-    path = "github.com/anvithks/soda-cdm-docs"
+    path = "github.com/soda-cdm/documentation"
   [[module.imports.mounts]]
     source = "kahu"
     target = "content/soda-cdm/kahu"
