@@ -9,6 +9,9 @@ Please find the summary of all the major official releases here. If you need to 
 
 The releases Zealand, Aruba, Bali, Capri and Daito were made under OpenSDS project (previous name for SODA Foundation). The releases from Elba on wards, the releases are from SODA Foundation.The SODA foundation releases are released from the repository: github.com/sodafoundation/soda
 
+### Navarino (v1.8.0)
+Release details available [here](https://github.com/sodafoundation/soda/releases/tag/v1.8.0)
+
 ### Madagascar (v1.7.0)
 Release details available [here](https://github.com/sodafoundation/soda/releases/tag/v1.7.0)
 
