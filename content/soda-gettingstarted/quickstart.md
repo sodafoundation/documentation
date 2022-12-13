@@ -30,33 +30,33 @@ To have more control of the installation configurations, or try out various conf
 
 ## Quick Installation and experience of SODA releases
 
-This procedure applies to 18.04 & 20.04 Linux distributions.
+This procedure applies to Ubuntu 18.04 & 20.04 Linux distributions.
 
 - **Prerequisite**
 
-    - Install Basic Dependencies:
+	- Install Basic Dependencies:
+		
+		`sudo apt-get update && sudo apt-get install -y git`
+
+- **Install SODA**  
+
+{{% notice info %}}  
+
+We can install SODA by using Release Binary or Installer from GitHub\
+Please replace **RELEASE_TAG** with the corresponding value from Release Tag table above (ex: v1.8.0 etc).  
+
+{{% /notice %}}  
+
+- Get Release Binary  
+	`wget  https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz`  
+	`tar xvzf installer-[RELEASE_TAG].tar.gz`  
+	`cd installer-[RELEASE_TAG]/ansible/`
+- Get Installer from GitHub  
+	`git clone https://github.com/sodafoundation/installer.git`  
+	`cd installer/ansible/`\
+	`git checkout [RELEASE_TAG]`
       
-      `sudo apt-get update && sudo apt-get install -y git`
-
-	- **Get and Install Release Binaries**
-	
-
-
-**_NOTE:_**  The note content.Please replace RELEASE_TAG with the corresponding value from Release Tag table above (ex: v1.8.0 etc)
-
-
-```bash
-wget  [https://github.com/sodafoundation/installer/releases/download/<RELEASE_TAG>/installer-[RELEASE_TAG].tar.gz](https://github.com/sodafoundation/installer/releases/download/[RELEASE_TAG]/installer-[RELEASE_TAG].tar.gz)
-tar xvzf installer-[RELEASE_TAG].tar.gz
-```
-<p style="text-align:center">OR</p>
-
-```bash        
-git clone https://github.com/sodafoundation/installer.git
-cd installer/ansible/
-git checkout [RELEASE_TAG]
-```
-
+         
 ```bash
 chmod +x install_dependencies.sh && source install_dependencies.sh
 export PATH=$PATH:/home/$USER/.local/bin
@@ -64,18 +64,30 @@ export PATH=$PATH:/home/$USER/.local/bin
 export HOST_IP = <your_real_host_ip>
 vim group_vars/common.yml # Modify `host_ip` address if needed
 ```
-     Enable following configurations
-       - In file installer/ansible/group_vars/delfin.yml enable_delfin: true
-       - In file installer/ansible/group_vars/srm-toolchain.yml install_srm_toolchain: true
-       - In file installer/ansible/group_vars/dashboard.yml enable_dashboard: true
-       - In file installer/ansible/group_vars/common.yml host_ip: <User's IP address, eg. 192.168.0.2>
 
- - **Run the installer**
-	 - sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -v
-	 - Note: If you want to clean up and test again, run
-		 - sudo -E env "PATH=$PATH" ansible-playbook clean.yml -i local.hosts -vvv
-	 - and then run:
-		 - sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts
+- **Enable configurations to install Soda Products**
+	- **DELFIN**  
+		- In file installer/ansible/group_vars/delfin.yml  `enable_delfin: true`
+		- In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`
+		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
+
+	- **STRATO (SODA MultiCloud)**  
+		- In file installer/ansible/group_vars/gelato.yml  `enable_gelato: true`  
+		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
+	
+	- **Terra**  
+		- In file installer/ansible/group_vars/hotpop.yml  `enable_hotpot: true`  
+		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
+
+
+
+	
+ - **Run the installer**  
+	- `sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -v`
+	- Note: If you want to clean up and test again, run
+		- `sudo -E env "PATH=$PATH" ansible-playbook clean.yml -i local.hosts -vvv`
+	- and then run:
+		- `sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts`
 
  -   **How to do a quick test**
 
