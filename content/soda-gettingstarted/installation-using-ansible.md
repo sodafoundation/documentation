@@ -5,94 +5,47 @@ weight: 40
 ---
 This document describes how to install SODA projects in a local cluster with detailed configuration options. These steps will help you to enable / disable projects. After installation using these steps, you can get the features of all the enabled projects. You can test either through SODA Dashboard UI or CLI
 
-`Hereafter, Hotpot refers to API, Controller and Dock projects`
 
 {{% notice info %}}
-**Ubuntu 16.04 support for SODA is deprecated as of SODA Jerba release v1.4.0.** <br />
-**If you have a requirement to install SODA on Ubuntu 16.04, please contact us on slack and we will try to help with the setup.**
-{{% /notice %}}
-
-{{% notice info %}}
-**Ubuntu 20.04 support for SODA is added as experimental in Lamu v1.6.0 release through branch `ubuntu2004-experimental`.** <br />
-**If you have a requirement to install SODA on Ubuntu 20.04, please [refer](https://github.com/sodafoundation/installer/tree/ubuntu2004-experimental) or contact us on slack and we will try to help with the setup.**
+**Below process of installation will support for Ubuntu 20.04 & Ubuntu 18.04.** <br />
 {{% /notice %}}
 
 ---
 
 ### Pre-requisites
-- SODA installation is tested on `Ubuntu 18.04`. 
-- `root` user is REQUIRED before the installation work starts.
-
-#### Install following packages:
+- SODA installation is tested on `Ubuntu 18.04`& `Ubuntu 20.04`. 
+- Python 3.6 or above should be installed
 
 ```bash
-apt-get update && apt-get install -y git make curl wget libltdl7 libseccomp2 libffi-dev gawk
+sudo apt-get update && sudo apt-get install -y git
 ```
----
-
-#### Install docker:
+- Ensure no ansible & docker installed, OR Lastest ansible and docker tools are installed with versions listed below or later. If ansible & docker is not installed in the OS, script          install_dependencies.sh will install it.
 
 
-##### For Ubuntu 18.04
 
-```bash
-wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
-```
-
-```bash
-dpkg -i docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
-```
----
-####  Install docker-compose:
-
-```bash
-curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-```
----
-####  Install golang
-
-**golang 1.13.x is supported. To install golang 1.13.9, please follow these steps**
-
-```bash
-wget https://storage.googleapis.com/golang/go1.13.9.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.13.9.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
-echo 'export GOPATH=$HOME/gopath' >> /etc/profile
-source /etc/profile
-```
-`Check if golang exists`
-```bash
-go version
-```
-***
 
 ### Download SODA Installer code
+
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.7.0 follow
-git checkout v1.7.0
+# Checkout the required version. For example, to checkout v1.8.0 follow
+git checkout v1.8.0
+chmod +x install_dependencies.sh && source install_dependencies.sh
+export PATH=$PATH:/home/$USER/.local/bin
 ```
 
 {{% notice note %}}
-Checkout the latest stable release. Current stable release: [Madagascar (v1.7.0)](https://github.com/sodafoundation/soda/releases/tag/v1.7.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+Checkout the latest stable release. Current stable release: [Navarino (v1.8.0)](https://github.com/sodafoundation/soda/releases/tag/v1.8.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
 {{% /notice %}}
 
-#### Install ansible
 
-This step is needed to install ansible version 2.5.1 for Ubuntu 18.04 which is required for the "include_tasks" ansible command.
-
-```bash
-chmod +x ./install_ansible.sh && ./install_ansible.sh
-ansible --version # Ensure Ansible version 2.5.1 for Ubuntu 18.04.
-```
 --- 
 
 ### Configure SODA installer and environment variables
 
 A SODA release conists of various projects which have their own release cycles and versions.
-To install SODA Projects and enable the different features, variables have to be modified in the respective files as below:
+
 
 #### Set Host IP address
 
@@ -110,48 +63,87 @@ By default the `host_ip` is set to `127.0.0.1` i.e. localhost.
 host_ip: 127.0.0.1
 ```
 
-
 ---
 
 ### Select SODA Projects to install
-In the same `group_vars/common.yml` file, modify the `deploy_project` variable to select the projects to install. 
-Currently the `deploy_project` variable takes `all`, `hotpot` and `gelato` as values. By default it is set to `all`.  
-`all` installs SODA On Premise and SODA Multicloud (gelato).  
-`hotpot` installs SODA On Premise only.  
-`gelato` installs SODA Multicloud only.  
 
-```bash
-# This field indicates which project should be deploy
-# 'hotpot', 'gelato' or 'all'
-deploy_project: all  #all refers to hotpot + gelato
-```
-**_Note: Delfin and other member projects will be added shortly._**
+
+To install SODA Projects and enable the different features, variables have to be modified in the respective files as below:
+
+**_Note: Hotpot ,Gelato & Delfin can be used either through dashboard or REST APIs._**
 
 ---
 #### Enable Delfin installation
 delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open source project to provide unified, intelligent and scalable resource management, alert and performance monitoring. It covers the resource management of all the backends & other infrastructures under SODA deployment. It also provides alert management and metric data (performance/health) for monitoring and further analysis.
 
-To install Delfin, update the file `group_vars/delfin.yml` and change the value of `enable_delfin` to `true`
+  -Enable following configration  
+    - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
+    - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
+    - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
+    - **[Click here](#configure-delfin-installation) for more config**
+
+---
+
+
+#### Enable Hotpot  
+ Hotpot installs SODA On Premise only.  
+- Enable following configurations
+  - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
+  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
+  - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
+  - **[Click here](#configure-soda-on-premise-installation) for more config**  
+
+#### Enable Gelato
+Gelato installs SODA Multicloud only.
+- Enable following configurations  
+  - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
+  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
+  - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
+  - **[Click here](#enable-storage-service-plans-in-multicloud-\(optional\)) for more config** 
+
+---
+### Install SODA
+Run SODA installer ansible playbook to start the deployment
+
+Check if the hosts can be reached
+
+```bash  
+sudo -E env "PATH=$PATH" ansible all -m ping -i local.hosts
+```
 
 ```bash
-# Install delfin (true/false)
-enable_delfin: true
+sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts
+# You can use the -vvv or -vv option to enable verbose display and debug mode.
+[verbosity level: -vv < -vvv]
+sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -vvv
 ```
 
----
+SODA ansible installer supports installation using tags. To install a particular service use the playbook as follows
+```bash
+# This installs only delfin
+sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -vvv --tags delfin
+```
+Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
 
-#### Enable SRM Toolchain installation (optional)  
-Delfin produces metrics which can be consumed by any of the exporters that are supported. Currently Delfin supports the Prometheus and Kafka exporters.
-The SRM Toolchain is required to view the metrics and visualization in the SODA Dashboard.  
-Update the file `ansible/group_vars/srm-toolchain.yml` and change the value of `install_srm_toolchain` to `true`.  
-If this value is set to false then the metrics and visualization will not be available using SODA Dashboard. 
+
+
+
+
+#### Enable dashboard installation (optional)
+
+
+Update the file `installer/ansible/group_vars/dashboard.yml` and change the value of `enable_dashboard` to `true`
+
+
+```bash
+# Install dashboard (true/false)
+enable_dashboard: true
 
 ```
-install_srm_toolchain: true
-```
----
+--- 
 
-#### Enable Storage Service Plans in multi-cloud (optional)
+
+#### Enable Storage Service Plans in MultiCloud (Optional)
 
 SODA Multi-cloud essentially allows users to register cloud storage backends, create buckets and upload objects.  
 This process can be abstracted from the end users. SODA Multi-cloud now supports Storage Service Plans.  With this an admin can create Storage Service Plans and assign them to particular tenants and attach storage backends. Using Storage Service Plans abstracts the actual cloud storage backend from the end user and they will only see the service plan name assigned to their tenants. To enable storage service plans Update the file `ansible/group_vars/common.yml` and change the value of `enable_storage_service_plans` to `true`.
@@ -339,10 +331,13 @@ delfin_exporter_alertmanager_port: 9093
 --- 
 
 ### Configure SRM Toolchain installation
-
+Delfin produces metrics which can be consumed by any of the exporters that are supported. Currently Delfin supports the Prometheus and Kafka exporters.
+The SRM Toolchain is required to view the metrics and visualization in the SODA Dashboard.\  
 Installing the SRM toolchain will install Prometheus, AlertManager and Grafana versions as per the configuration below and can be changed. 
 
 ```
+install_srm_toolchain: true
+
 prometheus_image_tag: v2.23.0
 prometheus_port: 9090
 
@@ -360,30 +355,6 @@ grafana_port: 3000
 {{% /notice %}}
 
 --- 
-
-
-### Install SODA
-Run SODA installer ansible playbook to start the deployment
-
-Check if the hosts can be reached
-
-```bash
-ansible all -m ping -i local.hosts
-```
-
-```bash
-ansible-playbook site.yml -i local.hosts
-# You can use the -vvv or -vv option to enable verbose display and debug mode.
-[verbosity level: -vv < -vvv]
-ansible-playbook site.yml -i local.hosts -vvv
-```
-
-SODA ansible installer supports installation using tags. To install a particular service use the playbook as follows
-```bash
-# This installs only delfin
-ansible-playbook site.yml -i local.hosts -vvv --tags delfin
-```
-Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
 
 ### How to test SODA On Premise (Hotpot)
 
