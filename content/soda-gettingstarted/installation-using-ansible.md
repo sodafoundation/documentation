@@ -19,8 +19,7 @@ This document describes how to install SODA projects in a local cluster with det
 ```bash
 sudo apt-get update && sudo apt-get install -y git
 ```
-- Ensure no ansible & docker installed, OR Lastest ansible and docker tools are installed with versions listed below or later. If ansible & docker is not installed in the OS, script          install_dependencies.sh will install it.
-
+- Ensure no ansible & docker installed, OR Lastest ansible and docker tools are installed with versions listed below or later. If ansible & docker are not installed in the OS, script `install_dependencies.sh` will install it.  
 
 
 
@@ -68,41 +67,40 @@ host_ip: 127.0.0.1
 ### Select SODA Projects to install
 
 
-To install SODA Projects and enable the different features, variables have to be modified in the respective files as below:
+To install SODA Projects and enable the different features, installer needs to be configured using the respective files as below:
 
-**_Note: Hotpot ,Gelato & Delfin can be used either through dashboard or REST APIs._**
+**_Note: Terra (previously known as Hotpot) ,Strato (SODA Multicloud project, previously known as Gelato) & Delfin can be used either through dashboard or REST APIs._**
 
 ---
 #### Enable Delfin installation
 delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open source project to provide unified, intelligent and scalable resource management, alert and performance monitoring. It covers the resource management of all the backends & other infrastructures under SODA deployment. It also provides alert management and metric data (performance/health) for monitoring and further analysis.
 
-  -Enable following configration  
+  -Enable following configurations  
     - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
     - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
     - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
-    - **[Click here](#configure-delfin-installation) for more config**
-
+    - **[Click here](#configure-delfin-installation) for other supported configuration details**
 ---
 
 
-#### Enable Hotpot  
- Hotpot installs SODA On Premise only.  
+#### Enable Terra  
+ Terra installs SODA On Premise only.  
 - Enable following configurations
   - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#configure-soda-on-premise-installation) for more config**  
+  - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details** 
 
-#### Enable Gelato
-Gelato installs SODA Multicloud only.
+#### Enable Strato
+Strato installs SODA Multicloud only.
 - Enable following configurations  
   - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#enable-storage-service-plans-in-multicloud-\(optional\)) for more config** 
+  - **[Click here](#enable-storage-service-plans-in-multicloud) other supported configuration details**
 
 ---
-### Install SODA
+### Run SODA Installer
 Run SODA installer ansible playbook to start the deployment
 
 Check if the hosts can be reached
@@ -143,7 +141,7 @@ enable_dashboard: true
 --- 
 
 
-#### Enable Storage Service Plans in MultiCloud (Optional)
+#### Enable Storage Service Plans in MultiCloud
 
 SODA Multi-cloud essentially allows users to register cloud storage backends, create buckets and upload objects.  
 This process can be abstracted from the end users. SODA Multi-cloud now supports Storage Service Plans.  With this an admin can create Storage Service Plans and assign them to particular tenants and attach storage backends. Using Storage Service Plans abstracts the actual cloud storage backend from the end user and they will only see the service plan name assigned to their tenants. To enable storage service plans Update the file `ansible/group_vars/common.yml` and change the value of `enable_storage_service_plans` to `true`.
