@@ -75,21 +75,21 @@ To install SODA Projects and enable the different features, installer needs to b
 #### Enable Delfin installation
 delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open source project to provide unified, intelligent and scalable resource management, alert and performance monitoring. It covers the resource management of all the backends & other infrastructures under SODA deployment. It also provides alert management and metric data (performance/health) for monitoring and further analysis.
 
-  -Enable following configurations  
-    - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
-    - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
-    - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
-    - **[Click here](#configure-delfin-installation) for other supported configuration details**
+- Enable following configurations  
+  - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
+  - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
+  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
+  - **[Click here](#configure-delfin-installation) for other supported configuration details**
 ---
 
 
 #### Enable Terra  
  Terra installs SODA On Premise only.  
-- Enable following configurations
+- Enable following configurations  
   - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details** 
+  - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details**   
 
 #### Enable Strato
 Strato installs SODA Multicloud only.
