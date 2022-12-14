@@ -75,7 +75,7 @@ vim group_vars/common.yml # Modify `host_ip` address if needed
 		- In file installer/ansible/group_vars/gelato.yml  `enable_gelato: true`  
 		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
 	
-	- **Terra**  
+	- **Terra (SODA Hotpot)**  
 		- In file installer/ansible/group_vars/hotpop.yml  `enable_hotpot: true`  
 		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
 
