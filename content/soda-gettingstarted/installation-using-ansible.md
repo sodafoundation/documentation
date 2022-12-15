@@ -7,19 +7,26 @@ This document describes how to install SODA projects in a local cluster with det
 
 
 {{% notice info %}}
-**Below process of installation will support for Ubuntu 20.04 & Ubuntu 18.04.** <br />
+**This installation guide is supported on Ubuntu 18.04 & Ubuntu 20.04.** <br />
 {{% /notice %}}
 
 ---
 
 ### Pre-requisites
 - SODA installation is tested on `Ubuntu 18.04`& `Ubuntu 20.04`. 
-- Python 3.6 or above should be installed
+
 
 ```bash
 sudo apt-get update && sudo apt-get install -y git
 ```
-- Ensure no ansible & docker installed, OR Lastest ansible and docker tools are installed with versions listed below or later. If ansible & docker are not installed in the OS, script `install_dependencies.sh` will install it.  
+
+- Python 3.6 or above should be installed 
+- If Ansible, Docker & Go are not installed in the OS, script `install_dependencies.sh` will install it.
+- If Ansible, Docker & Go are installed ensure that the version as listed below.
+  - Docker: Latest (Verfied on 20.10.21)
+  - Ansible: Latest (Verfied on 5.10.0 )
+  - Go: go1.17.9
+ 
 
 
 
