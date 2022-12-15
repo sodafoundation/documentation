@@ -65,13 +65,13 @@ export HOST_IP = <your_real_host_ip>
 vim group_vars/common.yml # Modify `host_ip` address if needed
 ```
 
-- **Enable configurations to install Soda Products**
+- **Enable configurations to install SODA Products**
 	- **DELFIN**  
 		- In file installer/ansible/group_vars/delfin.yml  `enable_delfin: true`
 		- In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`
 		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
 
-	- **STRATO (SODA MultiCloud)**  
+	- **STRATO (SODA Multicloud)**  
 		- In file installer/ansible/group_vars/gelato.yml  `enable_gelato: true`  
 		- In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
 	
