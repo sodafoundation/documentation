@@ -105,7 +105,7 @@ Strato installs SODA Multicloud only.
   - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#enable-storage-service-plans-in-multicloud) other supported configuration details**
+  - **[Click here](#enable-storage-service-plans-in-multicloud) for other supported configuration details**
 ---
 
 ### Run SODA Installer
