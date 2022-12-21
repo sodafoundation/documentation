@@ -24,7 +24,7 @@ sudo apt-get update && sudo apt-get install -y git
 - If Ansible, Docker & Go are not installed in the OS, script `install_dependencies.sh` will install it.
 - If Ansible, Docker & Go are installed ensure that the version as listed below.
   - Docker: Latest (Verfied on 20.10.21)
-  - Ansible: Latest (Verfied on 5.10.0 )
+  - Ansible: Latest (Verfied on 5.10.0, Ansible Core 2.13.5)
   - Go: go1.17.9
  
 
@@ -86,9 +86,9 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
   - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
   - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
-  - **[Click here](#configure-delfin-installation) for other supported configuration details**
----
+  - **[Click here for other](#configure-delfin-installation) supported configuration details**
 
+---
 
 #### Enable Terra  
  Terra installs SODA On Premise only.  
@@ -96,7 +96,8 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
   - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details**   
+  - **[Click here for other](#configure-soda-on-premise-installation) supported configuration details**   
+---
 
 #### Enable Strato
 Strato installs SODA Multicloud only.
@@ -104,9 +105,9 @@ Strato installs SODA Multicloud only.
   - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here](#enable-storage-service-plans-in-multicloud) other supported configuration details**
-
+  - **[Click here for other](#enable-storage-service-plans-in-multicloud) supported configuration details**
 ---
+
 ### Run SODA Installer
 Run SODA installer ansible playbook to start the deployment
 
@@ -130,7 +131,7 @@ sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -vvv --tags de
 ```
 Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
 
-
+---
 
 
 
