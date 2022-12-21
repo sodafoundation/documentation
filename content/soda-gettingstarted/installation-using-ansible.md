@@ -86,7 +86,7 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
   - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
   - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
-  - **[Click here for other](#configure-delfin-installation) supported configuration details**
+  - **[Click here](#configure-delfin-installation) for other supported configuration details**
 
 ---
 
@@ -96,7 +96,7 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
   - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here for other](#configure-soda-on-premise-installation) supported configuration details**   
+  - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details**   
 ---
 
 #### Enable Strato
@@ -105,7 +105,7 @@ Strato installs SODA Multicloud only.
   - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
-  - **[Click here for other](#enable-storage-service-plans-in-multicloud) supported configuration details**
+  - **[Click here](#enable-storage-service-plans-in-multicloud) for other supported configuration details**
 ---
 
 ### Run SODA Installer
