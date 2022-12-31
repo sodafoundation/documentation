@@ -61,14 +61,15 @@ Some of the important ones are :
 SODA Dashboard provides a front end UI which integrates with the different APIs provided by SODA API. This dashboard can be used to test basic SODA functionality.
 More details [here](https://sodafoundation.io/projects/soda-dashboard/)
 
-- **SODA API**
+- **SODA Terra**
+  - **API**
 The key external interface to platforms, which can do a seamless integration with heterogeneous storage backends. Provides the standardization for Data / Storage Management APIs. More details [here](https://sodafoundation.io/projects/soda-api/)
 
-- **SODA Controller**
+  - **Controller**
 In the API flow, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements.
 More details [here](https://sodafoundation.io/projects/soda-controller/)
 
-- **SODA Dock**
+  - **Dock**
 It is a docking station for heterogeneous storage backends! This is where all the different storage vendors’ drivers for various backends get attached.
 More details [here](https://sodafoundation.io/projects/soda-dock/)
 
@@ -80,9 +81,14 @@ More details [here](https://sodafoundation.io/projects/delfin-soda-infrastructur
 SODA North-Bound Plugin Project focuses to extend all the industry platforms and application solutions to interface with SODA API or be compliant with it.
 More details [here](https://sodafoundation.io/projects/soda-plugins/)
 
-- **SODA Multicloud**
-SODA Multicloud project provides a cloud vendor agnostic data management for hybrid cloud, crosscloud or incloud. It can be hosted on prem or cloud native.
+- **SODA Strato**
+SODA Strato project provides a cloud vendor agnostic data management for hybrid cloud, crosscloud or incloud. It can be hosted on prem or cloud native.
 More details [here](https://sodafoundation.io/projects/soda-multicloud-dds/)
+
+- **SODA CDM Kahu**
+SODA CDM Kahu project provides a solution for seamless backup/restore of Kubernetes resources and data.
+More details [here](https://docs.sodafoundation.io/soda-cdm/kahu/)
+
 
 - **SODA Orchestration**
 The Orchestration framework provides flexibility to use existing workflows or define customized workflows to get the simplified execution of tasks.
