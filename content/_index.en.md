@@ -9,4 +9,4 @@ title: "SODA Foundation Documentation"
 
 ## Table of Contents
 
-{{% children depth="4" %}}
+{{% children depth="2" %}}
