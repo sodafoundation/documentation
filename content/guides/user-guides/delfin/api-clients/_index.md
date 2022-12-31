@@ -21,7 +21,7 @@ This document is to help third party clients who wants to integrate [Delfin](htt
 
 ## Prerequisite
 
-- Ubuntu 16.04+
+- Ubuntu  18.04+/Ubuntu  20.04+
 - Python 3.6+
 - Delfin and its dependencies [installed](https://docs.sodafoundation.io/soda-gettingstarted/installation)
 

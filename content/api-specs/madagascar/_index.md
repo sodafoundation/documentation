@@ -2,7 +2,7 @@
 title: Madagascar Release API Specification
 menuTitle: Madagascar (v1.7.0)
 description: "API Specification for the Madagascar release (v1.7.0) of various SODA Projects"
-weight: 5
+weight: 3
 disableToc: false
 ---
 
