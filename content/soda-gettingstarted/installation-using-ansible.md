@@ -93,7 +93,7 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
 #### Enable Terra  
  Terra installs SODA On Premise only.  
 - Enable following configurations  
-  - In file installer/ansible/hotpot.yml  update the value  `enable_hotpot : true`.
+  - In file installer/ansible/group_vars/hotpot.yml  update the value  `enable_hotpot : true`.
   - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
   - **[Click here](#configure-soda-on-premise-installation) for other supported configuration details**   
