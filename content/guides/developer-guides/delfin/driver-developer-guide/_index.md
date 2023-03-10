@@ -301,54 +301,42 @@ Existing Delfin Drivers for reference:
         pass
 
     def collect_perf_metrics(self, context, storage_id, metrics, start, stop):
-	perf_metrics_list = [
+        perf_metrics_list = [
             constants.metric_struct(name='iops',
                                     labels={
                                         'storage_id': '12345',
                                         'resource_type': 'storage',
                                         'resource_id': '00112233',
-                                        'resource_name': 'VMAX00112233',
+                                        'resource_name': 'sample_name',
                                         'type': 'RAW',
                                         'unit': 'IOPS'},
                                     values={1566550500000: 417.42667}
                                     ),
-            constants.metric_struct(name='iops',
+            constants.metric_struct(name='throughput',
                                     labels={
                                         'storage_id': '12345',
-                                        'resource_type': 'storagePool',
-                                        'resource_id': 'SRP_1',
-                                        'resource_name': 'SRP_1',
+                                        'resource_type': 'storage',
+                                        'resource_id': '00112233',
+                                        'resource_name': 'sample_name',
                                         'type': 'RAW',
-                                        'unit': 'IOPS'},
-                                    values={1566550800000: 304.8}
+                                        'unit': 'MB/s'},
+                                    values={1647328866000: 19.577821594841986}
                                     ),
-            constants.metric_struct(name='iops',
+            constants.metric_struct(name='responseTime',
                                     labels={
                                         'storage_id': '12345',
-                                        'resource_type': 'controller',
-                                        'resource_id': 'DF-1C',
-                                        'resource_name': 'BEDirector_DF-1C',
+                                        'resource_type': 'storage',
+                                        'resource_id': '00112233',
+                                        'resource_name': 'sample_name',
                                         'type': 'RAW',
-                                        'unit': 'IOPS'
-                                    },
-                                    values={1566987000000: 248.40666}
-                                    ),
-            constants.metric_struct(name='iops',
-                                    labels={
-                                        'storage_id': '12345',
-                                        'resource_type': 'port',
-                                        'resource_id': '12',
-                                        'resource_name': 'BEPort_DF-1C_12',
-                                        'type': 'RAW',
-                                        'unit': 'IOPS'
-                                    },
-                                    values={1566987000000: 6.693333}
+                                        'unit': 'ms'},
+                                    values={1647328926000: 92.26780724142674}
                                     ),
         ]
         return perf_metrics_list
 
     def get_capabilities(context, filters=None):
-	return {
+        return {
             'is_historic': False,
             'performance_metric_retention_window': 4500,
             'resource_metrics': {
@@ -368,117 +356,7 @@ Existing Delfin Drivers for reference:
                         "description": "Input/output operations per second"
                     },
                 },
-                "storagePool": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "responseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for an IO "
-                                       "operation"
-                    },
-                },
-                "volume": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "responseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for an IO "
-                                       "operation"
-                    },
-                    "iops": {
-                        "unit": "IOPS",
-                        "description": "Read and write  operations per"
-                                       " second"
-                    },
-                    "cacheHitRatio": {
-                        "unit": "%",
-                        "description": "Percentage of io that are cache "
-                                       "hits"
-                    },
-                    "ioSize": {
-                        "unit": "KB",
-                        "description": "The average size of IO requests in KB"
-                    },
-                },
-                "controller": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "responseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for an IO "
-                                       "operation"
-                    },
-                    "iops": {
-                        "unit": "IOPS",
-                        "description": "Read and write  operations per "
-                                       "second"
-                    },
-                },
-                "port": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "responseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for an IO "
-                                       "operation"
-                    },
-                    "iops": {
-                        "unit": "IOPS",
-                        "description": "Read and write  operations per "
-                                       "second"
-                    },
-                },
-                "disk": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "responseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for an IO "
-                                       "operation"
-                    },
-                    "iops": {
-                        "unit": "IOPS",
-                        "description": "Read and write  operations per"
-                                       " second"
-                    },
-                },
-                "filesystem": {
-                    "throughput": {
-                        "unit": "MB/s",
-                        "description": "Total data transferred per second "
-                    },
-                    "readResponseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for a read"
-                                       "operation"
-                    },
-                    "writeResponseTime": {
-                        "unit": "ms",
-                        "description": "Average time taken for a write "
-                                       "operation"
-                    },
-                    "iops": {
-                        "unit": "IOPS",
-                        "description": "Read and write  operations per"
-                                       " second"
-                    },
-                    "ioSize": {
-                        "unit": "KB",
-                        "description": "The average size of IO requests "
-                                       "in KB."
-                    },
-                },
-            },
+	    },
         }
 	
     def list_storage_host_initiators(self, context):
