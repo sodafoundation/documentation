@@ -57,6 +57,19 @@ A SODA release conists of various projects which have their own release cycles a
 
 Set the environment variable `HOST_IP` by using the steps below. 
 
+
+To set the HOST_IP environment variable, you first need to find your machine's IP address.
+Use the following command to display network interface information:
+
+```bash
+ifconfig
+```
+Look for the IP address associated with the network interface you are using (e.g. eth0 or wlan0) and find the inet address,
+which will be the IP address assigned to that interface.
+
+
+Once you have the IP address, set the HOST_IP environment variable using the following commands:
+
 ```bash
 export HOST_IP={your_real_host_ip}
 echo $HOST_IP 
