@@ -62,6 +62,7 @@ docker-compose version 1.22.0, build 1719ceb
 Download the source code:
 ```bash
 mkdir -p /root/gopath/src/github.com/sodafoundation/
+cd /root/gopath/src/github.com/sodafoundation
 git clone https://github.com/sodafoundation/multi-cloud.git
 cd /root/gopath/src/github.com/sodafoundation/multi-cloud
 ```
