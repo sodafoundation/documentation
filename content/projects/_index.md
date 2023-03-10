@@ -10,7 +10,7 @@ disableToc: false
 ![SODA Projects Architecture](soda-project-architecture.png)
 
 - ### SODA Dashboard 
-    SODA Dashboard provides a unified interface to the underlying capabilities from the SODA Framework components. This dashboard is built mainly to illustrate/showcase various use cases that could run on SODA ecosystem projects.
+    SODA Dashboard provides a unified interface and reference arch to the underlying capabilities from the SODA Framework components. This dashboard is built mainly to illustrate/showcase various use cases that could run on SODA ecosystem projects.
 
     Technically, it is a direct client to SODA API and other projects which are getting integrated to SODA Ecosystem. It will be reference integration of all the underlying projects to realize various use cases.
 
