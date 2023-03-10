@@ -30,7 +30,8 @@ disableToc: false
     
     [Support Matrix](https://docs.sodafoundation.io/support-matrix/delfin/)
 
-- ### SODA API
+- ### SODA Terra
+- #### SODA API
      The SODA API, Provides the standardization for Data / Storage Management APIs. At present, block and file APIs for key features of data management (provisioning, migration, fileshare, etc) are supported. 
 
     This is the key external interface to platforms which can do a seamless integration with heterogeneous storage backends. 
@@ -41,7 +42,7 @@ disableToc: false
 
     [Source Code Repository](https://github.com/sodafoundation/api)
 
-- ### SODA Controller
+- #### SODA Controller
     The SODA Controller, provides metadata management, control/configurations, scheduler and all such book-keeping features and utilities. In the API flow from SODA API to SODA Dock, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements. This is a layer to keep addons to new facilities or utilities for the SODA platform.
 
     At present, this layer can be optional or similar modules can be used from users(if they have such software components). However, users need to integrate the Controller modules with SODA API and SODA Dock.
@@ -50,7 +51,7 @@ disableToc: false
 
     [Source Code Repository](https://github.com/sodafoundation/controller)
 
-- ### SODA Dock
+- #### SODA Dock
     SODA Dock is a docking station for heterogeneous storage backends! This is where all the different storage vendors drivers for various storage backend models get attached.
 
     The goal is to make most of the protocols and backends supported as close as ‘plug n play’. Currently, each storage backend needs a thin, easy to develop SODA Driver Plugin to connect the storage backend to the Dock. SODA Driver Plugin and Storage vendor driver together it can be called SODA Driver for xxx vendor yy model storage.SODA Driver can support one or more or multiple classes of storage backends.
@@ -76,18 +77,18 @@ disableToc: false
 
      [Support Matrix](https://docs.sodafoundation.io/support-matrix/nbp/)
 
-- ### SODA Multicloud
-    SODA Multicloud provides a cloud vendor agnostic data management for hybrid cloud, intercloud, or intracloud. The goal is to provide a unified interface to support file, block,and object services across multiple cloud vendors. It can be hosted on-premise or in the cloud.
+- ### SODA Strato
+    SODA Strato provides a cloud vendor agnostic data management for hybrid cloud, intercloud, or intracloud. The goal is to provide a unified interface to support file, block,and object services across multiple cloud vendors. It can be hosted on-premise or in the cloud.
 
     For object data management, it provides a backend manager which is S3 compatible APIs to connect with any cloud vendors. Currently, MS Azure, GCP, AWS, Huawei, IBM, Alibaba backends are supported and getting updated with new backends regularly.
 
-    It also supports Ceph backed to enable on-prem. China Unicom has integrated their YIG project into SODA Multicloud, enabling Ceph to be used as a massively scalable backend object storage.
+    It also supports Ceph backed to enable on-prem. China Unicom has integrated their YIG project into SODA Strato, enabling Ceph to be used as a massively scalable backend object storage.
 
-    SODA multi-cloud also supports creating Storage Service Plans(SSP) for creating tenant based access to multi-cloud storages.
+    SODA Strato also supports creating Storage Service Plans(SSP) for creating tenant based access to multi-cloud storages.
 
     Basic file service support is added for AWS, Azure, GCP and Huawei and basic block service support is added for AWS EBS and Huawei.
 
-    The technical team is exploring to extend SODA Multicloud and other key layers of SODA into a distributed data store which can support block, file and object data management across the edge, on-premise, and cloud 
+    The technical team is exploring to extend SODA Strato and other key layers of SODA into a distributed data store which can support block, file and object data management across the edge, on-premise, and cloud
 
     [Source Code Repository](https://github.com/sodafoundation/multi-cloud)
 
@@ -95,3 +96,11 @@ disableToc: false
 
  - Source code for other projects are maintained under [SODA Foundation github organization](https://github.com/sodafoundation)
  
+- ### SODA CDM Kahu
+    Kahu is part of SODA Container Data Management(CDM). Kahu provides seamless backup/restore for Kubernetes resources and data.
+
+    Data protection is a key aspect for most of the stateful applications. In containerized deployments, due to the nature of applications, this aspect becomes even more important. Backup and restore features can significantly help for the application lifecycle management.
+
+    [Source Code Repository](https://github.com/soda-cdm/kahu)
+
+ - Source code for other projects are maintained under [SODA CDM github organization](https://github.com/soda-cdm/)

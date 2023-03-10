@@ -1,6 +1,6 @@
 ---
-title: SODA API Project API Spec
-menuTitle: API
+title: SODA Terra Project API Spec
+menuTitle: Terra
 description: "Check out the API spec for the Navarino Release and try out the APIs without having to install the system."
 weight: 1
 disableToc: false
