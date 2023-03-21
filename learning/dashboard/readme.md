@@ -1,3 +1,9 @@
-## This directory is the placeholder for all Dashboard and frontend related learnings
+## Create Simple Hello World app in Angular
 
-### Please use this directory to raise PRs for the learning issues created.
+https://drive.google.com/file/d/1ccsbeen64POdsQV3EkfsNniHbTc4GoLv/view?usp=sharing
+
+## References
+
+https://github.com/nvm-sh/nvm
+https://code.visualstudio.com/
+
