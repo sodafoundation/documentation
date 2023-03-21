@@ -1,3 +1,24 @@
+## Installing Node.js , NPM (Node Package Manager) and Angular
+
+
+bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+
+bash
+nvm install --lts
+
+
+bash
+npm install -g @angular/cli
+
+
+bash
+ng version
+
+
+---
+
 ## Create and Run your first angular project:
 
 STEP 1->Create a new Angular project using the `ng new` command.
