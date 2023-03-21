@@ -1,21 +1,49 @@
+## Installing Visual Studio Code in Ubuntu
+
+
+```bash
+sudo apt-get install software-properties-common apt-transport-https wget
+```
+```baash
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+```
+
+
+```bash
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+```
+
+```bash
+sudo apt-get install code
+```
+
+```bash
+code
+```
+
+---
+
+
+
 ## Installing Node.js , NPM (Node Package Manager) and Angular
 
 
-bash
+```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
 
-
-bash
+```bash
 nvm install --lts
+```
 
 
-bash
+```bash
 npm install -g @angular/cli
+```
 
-
-bash
+```bash
 ng version
-
+```
 
 ---
 
