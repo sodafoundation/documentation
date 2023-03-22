@@ -1,0 +1,39 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page-intro {
+    margin-left: 150vh;
+    margin-top: -42vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: 900;
+    position: relative;
+    color: rgba(123, 188, 226, 0.996);
+
+}
+.intro h1{
+    font-size: 3vh;
+    font-weight: 900;
+    position: relative;
+    color: rgba(123, 188, 226, 0.996); 
+}
+svg {
+    z-index: -1;
+}
+.section{
+    padding: 2vh;
+    margin-top: 31vh;
+    height: 90vh;}
+p{
+    font-size: 2vh;
+    padding: 2vh;
+}
+li{
+    list-style-type: none;
+    font-size: 2vh;
+}
+

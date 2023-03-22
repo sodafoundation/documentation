@@ -1,0 +1,49 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page-intro {
+    margin-left: 150vh;
+    margin-top: -42vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: 900;
+    position: relative;
+    color: rgba(123, 188, 226, 0.996);
+
+}
+
+svg {
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    margin-top: 30vh;
+    height: 25vh;
+    padding: 3vh;
+
+}
+.card{
+margin: 5vh;
+    padding:6vh;
+    border: none;
+    border-right: 1px solid rgb(50, 49, 49);
+    border-bottom: 1px solid rgb(52, 51, 51);
+}
+.section-tagline {
+    display: block;
+    margin-top: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-tagline p {
+    font-size: 2.5vh;
+    text-transform: uppercase;
+}

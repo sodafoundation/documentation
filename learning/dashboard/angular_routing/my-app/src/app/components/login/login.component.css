@@ -1,0 +1,108 @@
+
+body {
+    background-color: rgba(17, 17, 62, 0.963);
+    height: 100vh;
+}
+
+.name {
+    color: white;
+    background-color: none;
+    margin-left: 150vh;
+    margin-top:2.5vh ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    background-color: rgba(3, 3, 80, 1);
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: 900;
+    position: relative;
+    color: rgba(123, 188, 226, 0.996);
+}
+
+svg {
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-area {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    margin-top: 15vh;
+    margin-left: 7vh;
+}
+
+.box input {
+    background: none;
+    border: 0ch;
+}
+
+.box i {
+    width: 4vh;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: rgb(3, 53, 74);
+    color: black;
+}
+
+.box {
+    padding: 1vh;
+    border-bottom: 0.1vh solid white;
+}
+
+.feild {
+    height: 5vh;
+    color: white;
+    width: 49vh;
+    font-size: 2.3vh;
+}
+
+.button {
+    display: flex;
+}
+
+
+.btn {
+    padding: 1vh;
+    display: block;
+    background: none;
+    margin: 2vh;
+    border: 2px solid white;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.6vh;
+
+}
+
+.btn2 {
+    padding: 1vh;
+    display: block;
+    background: none;
+    margin: 2vh;
+    border: 2px solid white;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.6vh;
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: rgb(3, 53, 74);
+    color: black;
+}

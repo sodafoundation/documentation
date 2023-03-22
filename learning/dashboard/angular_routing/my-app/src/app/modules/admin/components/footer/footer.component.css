@@ -1,0 +1,18 @@
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 7vh;
+    height: 6vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+li {
+    margin-top: 20px;
+    font-size: 2vh;
+    text-transform: uppercase;
+    list-style-type: none;
+}

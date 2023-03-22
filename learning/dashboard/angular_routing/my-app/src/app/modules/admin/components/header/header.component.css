@@ -1,0 +1,24 @@
+.navbar {
+    height: 8vh;
+    background-color:rgba(3, 3, 80, 1);
+    display: flex;
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 2.2vh;
+   
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
