@@ -16,11 +16,11 @@ HTML stands for **Hyper Text Markup Language**. It is used to design web pages u
 -   Easy DOCTYPE declaration i.e., <!doctype html>
 
 
-- **Supported Browsers:**  It is supported by all modern browsers.
+- Supported Browsers: It is supported by all modern browsers.
 
 
 
-## * Some of removed elements from html5:*
+## *Some of removed elements from html5:*
 
 
 | Removed Elements                  |   Use Instead Elements |                    
