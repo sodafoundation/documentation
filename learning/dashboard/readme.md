@@ -60,3 +60,16 @@ To run the application enter the following lines on your terminal,
 After this the Angular application will be launched on your browser at localhost:4200,
 (default port for Angular based apps).
 
+
+**Data passing in Angular**
+
+In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.
+
+Methods:
+
+Parent to Child: via Input
+Child to Parent: via Output() and EventEmitter
+Child to Parent: via ViewChild
+Unrelated Components: via a Service
+
+The contents were taken from dotnettricks, to learn more about data passing in angular visit: https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods .
