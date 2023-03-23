@@ -24,6 +24,27 @@ https://stackblitz.com/run?file=src%2Fapp%2Fapp.component.html
 
 Reference link :  https://angular.io/guide/router-tutorial
 
+**How to pass the data between angular  routes?**
+
+The task is to share data variables between two or more controllers by using AngularJS. There are many procedures to achieve this. Here we will discuss the most popular ones. 
+
+Approach: 
+
+To share data between the controllers in AngularJS we have two main cases:
+
+Share data between parent and child: Here, the sharing of data can be done simply by using controller inheritance as the scope of a child controller inherits from the scope of the parent controller.
+Share data between controllers without having a relation: Here, the sharing of data can be done in a few ways some of them are: 
+
+By using the rootScope variable:
+
+We can use the rootScope variable to hold shared data and then can reference it from any controller. Here, at the start of the Angular app, we initialized the rootScope variable with some value and then refer it from every controller and thus binding scope variables in both controllers to the rootScope variable.
+
+By using factory or service:
+
+The $rootscope method is not preferred for data transfer or sharing data because it has a global scope that is available for the entire application. So, we use another method in which we create a factory or service to hold share data. AngularJS factories and services are JS functions that perform a specific task containing both methods & properties and can be injected into other components (e.g. your controllers) using dependency injection. In this way we can define a shared variable in a factory, inject it into both controllers and thus bind scope variables in both controllers to this factory data.
+
+Reference:https://www.geeksforgeeks.org/
+
 **Installation** 
 
 To install Angular using CLI write this line on your terminal,
