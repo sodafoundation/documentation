@@ -1,3 +1,20 @@
+**Installation** 
+
+
+To install Angular using CLI write this line on your terminal,
+    npm install -g @angular/cli
+
+To create  workspace named my-app,
+    ng new my-app
+
+To run the application enter the following lines on your terminal,
+    cd my-app
+    ng serve --open
+    
+After this the Angular application will be launched on your browser at localhost:4200,
+(default port for Angular based apps).
+
+
 **What is Angular Routing**
 
 
@@ -27,6 +44,36 @@ https://stackblitz.com/run?file=src%2Fapp%2Fapp.component.html
 Reference link :  https://angular.io/guide/router-tutorial
 
 
+
+**Data passing in Angular**
+
+
+In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.
+
+Methods:
+
+Parent to Child: via Input,
+
+Child to Parent: via Output() and EventEmitter,
+
+Child to Parent: via ViewChild,
+
+Unrelated Components: via a Service.
+
+The contents were taken from dotnettricks, to learn more about data passing in angular visit: https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods .
+
+
+
+**Why is data passed between Angular components:**
+
+
+Angular provides component based architecture that allows modularizing the application. It means you can create multiple chunks, and convert your large component to a smaller segment that can be easily maintained. The main advantage to do this is easily understanding the component and maintenance of code. In this scenario, it is important for communication between components or share the data between the component. 
+
+Angular provides multiple ways to share the data between the components. Based on your need and kind of component relation, you can select any of the methods. It is recommended to use the service method as it is independent of component relation and helps you to send data to multiple components. 
+
+Reference: https://www.c-sharpcorner.com/article/sharing-the-data-between-components-in-angular
+
+
 **How to pass the data between angular  routes?**
 
 
@@ -48,39 +95,3 @@ By using factory or service:
 The $rootscope method is not preferred for data transfer or sharing data because it has a global scope that is available for the entire application. So, we use another method in which we create a factory or service to hold share data. AngularJS factories and services are JS functions that perform a specific task containing both methods & properties and can be injected into other components (e.g. your controllers) using dependency injection. In this way we can define a shared variable in a factory, inject it into both controllers and thus bind scope variables in both controllers to this factory data.
 
 Reference:https://www.geeksforgeeks.org/
-
-
-
-**Installation** 
-
-
-To install Angular using CLI write this line on your terminal,
-    npm install -g @angular/cli
-
-To create  workspace named my-app,
-    ng new my-app
-
-To run the application enter the following lines on your terminal,
-    cd my-app
-    ng serve --open
-    
-After this the Angular application will be launched on your browser at localhost:4200,
-(default port for Angular based apps).
-
-
-**Data passing in Angular**
-
-
-In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.
-
-Methods:
-
-Parent to Child: via Input,
-
-Child to Parent: via Output() and EventEmitter,
-
-Child to Parent: via ViewChild,
-
-Unrelated Components: via a Service.
-
-The contents were taken from dotnettricks, to learn more about data passing in angular visit: https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods .
