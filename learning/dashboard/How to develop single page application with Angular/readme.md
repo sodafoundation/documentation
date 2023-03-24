@@ -81,7 +81,10 @@ ng serve
 
 ## Create Simple Hello World app in Angular
 
-https://drive.google.com/file/d/1ccsbeen64POdsQV3EkfsNniHbTc4GoLv/view?usp=sharing
+[![Alt text](https://img.youtube.com/vi/U815Ur5IhyQ/0.jpg)](https://www.youtube.com/watch?v=U815Ur5IhyQ)
+
+
+Download link- https://drive.google.com/file/d/1ccsbeen64POdsQV3EkfsNniHbTc4GoLv/view?usp=sharing
 
 ## References
 
