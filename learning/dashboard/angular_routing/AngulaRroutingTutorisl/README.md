@@ -1,4 +1,4 @@
-#ANGULAR
+# ANGULAR
 
 
 Angular is a development platform, built on TypeScript. As a platform, Angular includes:
@@ -29,7 +29,7 @@ After this the Angular application will be launched on your browser at localhost
 (default port for Angular based apps).
 
 
-#ROUTING IN ANGULAR
+# ROUTING IN ANGULAR
 
 
 **What is Angular Routing**
@@ -54,7 +54,7 @@ In a Single Page Application (SPA), all of your application's functions exist in
 To define how users navigate through your application, you use routes. Add routes to define how users navigate from one part of your application to another. You can also configure routes to guard against unexpected or unauthorized behavior.
 
 
-#DATA PASSING 
+# DATA PASSING 
 
 
 **Data passing in Angular**
@@ -102,13 +102,15 @@ By using factory or service:
 The $rootscope method is not preferred for data transfer or sharing data because it has a global scope that is available for the entire application. So, we use another method in which we create a factory or service to hold share data. AngularJS factories and services are JS functions that perform a specific task containing both methods & properties and can be injected into other components (e.g. your controllers) using dependency injection. In this way we can define a shared variable in a factory, inject it into both controllers and thus bind scope variables in both controllers to this factory data.
 
 
+# TUTORIAL APP
+
 
 Link for a simple Angular application to demonstrate routing: <br>
 
 (https://github.com/ShambhaviVijay/AngularAce)
 
 
-**References**:
+# REFERENCES:
 
 (https://www.geeksforgeeks.org) <br>
 (https://angular.io/guide/router-tutorial) <br>
