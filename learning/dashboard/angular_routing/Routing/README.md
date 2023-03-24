@@ -1,4 +1,4 @@
-**Angular**
+# ANGULAR
 
 
 Angular is a development platform, built on TypeScript. As a platform, Angular includes:
@@ -29,6 +29,9 @@ After this the Angular application will be launched on your browser at localhost
 (default port for Angular based apps).
 
 
+# ROUTING IN ANGULAR
+
+
 **What is Angular Routing**
 
 
@@ -49,6 +52,9 @@ It describes how to build a single-page application, SPA that uses multiple Angu
 In a Single Page Application (SPA), all of your application's functions exist in a single HTML page. As users access your application's features, the browser needs to render only the parts that matter to the user, instead of loading a new page. This pattern can significantly improve your application's user experience.
 
 To define how users navigate through your application, you use routes. Add routes to define how users navigate from one part of your application to another. You can also configure routes to guard against unexpected or unauthorized behavior.
+
+
+# DATA PASSING 
 
 
 **Data passing in Angular**
@@ -96,13 +102,21 @@ By using factory or service:
 The $rootscope method is not preferred for data transfer or sharing data because it has a global scope that is available for the entire application. So, we use another method in which we create a factory or service to hold share data. AngularJS factories and services are JS functions that perform a specific task containing both methods & properties and can be injected into other components (e.g. your controllers) using dependency injection. In this way we can define a shared variable in a factory, inject it into both controllers and thus bind scope variables in both controllers to this factory data.
 
 
-References:
+# TUTORIAL APP
 
-https://www.geeksforgeeks.org
-https://angular.io/guide/router-tutorial
-https://www.c-sharpcorner.com/article/sharing-the-data-between-components-in-angular
-https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods
-https://stackblitz.com/run?file=src%2Fapp%2Fapp.component.html
-https://angular.io/guide/routing-overview
-https://angular.io/guide/what-is-angular
+
+Link for a simple Angular application to demonstrate routing: <br>
+
+(https://github.com/ShambhaviVijay/AngularAce-))
+
+
+# REFERENCES:
+
+(https://www.geeksforgeeks.org) <br>
+(https://angular.io/guide/router-tutorial) <br>
+(https://www.c-sharpcorner.com/article/sharing-the-data-between-components-in-angular) <br>
+(https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods) <br>
+(https://stackblitz.com/run?file=src%2Fapp%2Fapp.component.html) <br>
+(https://angular.io/guide/routing-overview) <br>
+(https://angular.io/guide/what-is-angular) <br>
 
