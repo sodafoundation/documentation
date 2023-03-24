@@ -97,8 +97,7 @@ The $rootscope method is not preferred for data transfer or sharing data because
 
 
 
-[Link for a simple Angular application to demonstrate routing:]
-(https://github.com/ShambhaviVijay/AngularAce)
+[Link for a simple Angular application to demonstrate routing:](https://github.com/ShambhaviVijay/AngularAce)
 
 
 **References**:
@@ -109,5 +108,5 @@ The $rootscope method is not preferred for data transfer or sharing data because
 [4. ] (https://www.dotnettricks.com/learn/angular/sharing-data-between-angular-components-methods)
 [5. ] (https://stackblitz.com/run?file=src%2Fapp%2Fapp.component.html)
 [6. ] (https://angular.io/guide/routing-overview)
-[7. ] (https://angular.io/guide/what-is-angular)
+[7. ](https://angular.io/guide/what-is-angular)
 
