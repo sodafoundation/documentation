@@ -1,8 +1,8 @@
-#  *INTRODUCTION TO HTML5!*
+#  INTRODUCTION TO HTML5!
 
 HTML stands for **Hyper Text Markup Language**. It is used to design web pages using a markup language. HTML is an abbreviation of Hypertext and Markup language. Hypertext defines the link between the web pages. **HTML 5** is the <u> fifth and current version of HTML.
 
-## *FEATURES:* 
+## FEATURES:
   
 - By utilising the `<audio>` and `<video>` tags, it has added new multimedia features that support both audio and video controls.
 
@@ -20,7 +20,7 @@ HTML stands for **Hyper Text Markup Language**. It is used to design web pages u
 
 
 
-## *Some of removed elements from html5:*
+## Some of removed elements from html5:
 
 
 | Removed Elements                  |   Use Instead Elements |                    
@@ -91,6 +91,35 @@ SCSS also supports variables. Variables can be used to store values that will be
 
 In SCSS, mixins allow you to create groups of CSS declarations that can be reused throughout the stylesheet. This can be helpful when working with vendor prefixes, complex animations, and other code that might need to be used in multiple places
 
-. 
+# COMMONLY USED HTML TAGS
+ **Document structure tag:**
+
+**1.HTML tag**: It is the root of the HTML document which is used to specify that the document is HTML.
+
+**Syntax:**
+
+`<html> Statements... </html>`
+
+**2.Head tag:** The head tag is used to contain all the head elements in the HTML file. It contains the title, style, meta, … etc tag.
+
+**Syntax:**
+
+`<head> Statements... </head>`
+
+**3.Body tag:** It is used to define the body of an HTML document. It contains images, tables, lists, … etc.
+
+**Syntax:**
+
+`<body> Statements... </body>`
+
+**4.Title tag:** It is used to define the title of an HTML document.
+
+**Syntax:**
+
+`<title> Statements... </title>`
+
+
+
+
 
 
