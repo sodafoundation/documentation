@@ -107,7 +107,7 @@ The $rootscope method is not preferred for data transfer or sharing data because
 
 Link for a simple Angular application to demonstrate routing: <br>
 
-(https://github.com/ShambhaviVijay/AngularAce)
+(https://github.com/ShambhaviVijay/AngularAce-))
 
 
 # REFERENCES:
