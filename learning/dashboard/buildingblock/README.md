@@ -55,7 +55,7 @@ HTML stands for **Hyper Text Markup Language**. It is used to design web pages u
 - Variables in Less are defined with an [at sign]  (@). Variable programming is done with a Colon (:).
 
 
-         }
+         
 
 
 
