@@ -73,24 +73,6 @@ HTML stands for **Hyper Text Markup Language**. It is used to design web pages u
 
 
 
-# SCSS
-
-
-- SCSS (Sassy Cascading Style Sheets) is one of  two syntaxes available or the popular CSS preprocessor Sass (Syntactically Awesome Stylesheets).
--  It can be used to style the visual elements of a webpage, including buttons, sliders, images, color schemes, fonts, themes, and layouts. As a true superset of CSS, all valid CSS is also valid SCSS.
-
-
-
-## FEATURES
-
-### 1. VARIABLES
-
-SCSS also supports variables. Variables can be used to store values that will be used throughout the stylesheet. This can be helpful when working with colors, sizes, and other values that might need to be changed frequently.
-
-
-### 2. MIXINS 
-
-
-In SCSS, mixins allow you to create groups of CSS declarations that can be reused throughout the stylesheet. This can be helpful when working with vendor prefixes, complex animations, and other code that might need to be used in multiple places. 
+. 
 
 
