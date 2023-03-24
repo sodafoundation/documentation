@@ -86,6 +86,12 @@ ng serve
 
 Download link- https://drive.google.com/file/d/1ccsbeen64POdsQV3EkfsNniHbTc4GoLv/view?usp=sharing
 
+
+## Simple Hello World App Using Angular
+
+https://github.com/rishibaghel25/Simple-Hello-World-Using-Angular
+
+
 ## References
 
 https://github.com/nvm-sh/nvm
