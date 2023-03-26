@@ -39,3 +39,55 @@ HTML stands for *Hyper Text Markup Language. It is used to design web pages usin
 - Remove plugins like Flash for functionality that are universally required. 
 - Ensure uniformity across all devices and browsers.
 - Make every effort to be as transparent as you can.
+  
+  #  INTRODUCTION TO LSS
+- Less (Leaner Style Sheets) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side.
+-   It was Designed by Alexis Sellier.
+
+- ESS is an abbreviated `Learner Style styles`, is an opensource pre-processor language for CSS, The preprocessor is writing a code using a superset of CSS features, compiling this code to native CSS, and browser understanding CSS styles.
+
+## FEATURES OF LSS
+
+
+### 1.Variables
+
+- Less allows variables to be defined. 
+- Variables in Less are defined with an [at sign]  (@). Variable programming is done with a Colon (:).
+
+
+
+
+
+
+### 2. Mixins
+
+- Mixins allows embedding all the properties of a class into another class by including the class name as one of its property, thus behaving as a sort of constant or variable. 
+- They can also behave like functions, and take arguments.
+
+
+
+### 3.Functions and operations
+
+- Less allows operations and functions. Operations allow addition, subtraction, division and multiplication of property values and colors, which can be used to create complex relationships between properties. 
+- Functions map one-to-one with JavaScript code, allowing manipulation of values.
+
+# SCSS
+
+
+- SCSS (Sassy Cascading Style Sheets) is one of  two syntaxes available or the popular CSS preprocessor Sass (Syntactically Awesome Stylesheets).
+-  It can be used to style the visual elements of a webpage, including buttons, sliders, images, color schemes, fonts, themes, and layouts. As a true superset of CSS, all valid CSS is also valid SCSS.
+
+
+
+## FEATURES
+
+### 1. VARIABLES
+
+SCSS also supports variables. Variables can be used to store values that will be used throughout the stylesheet. This can be helpful when working with colors, sizes, and other values that might need to be changed frequently.
+
+
+### 2. MIXINS 
+
+
+In SCSS, mixins allow you to create groups of CSS declarations that can be reused throughout the stylesheet. This can be helpful when working with vendor prefixes, complex animations, and other code that might need to be used in multiple places
+
