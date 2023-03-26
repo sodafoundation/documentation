@@ -221,7 +221,7 @@ In SCSS, mixins allow you to create groups of CSS declarations that can be reuse
 
 
   # A SIMPLE RESUME USING HTML
- `
+ ````
   <div class="resume">
   <div class="base">
     <div class="profile">
@@ -323,8 +323,9 @@ In SCSS, mixins allow you to create groups of CSS declarations that can be reuse
     </div>
   </div>
 </div>
-  `
-
+ ````
+  
+  
   ###OUTPUT:
 
 
