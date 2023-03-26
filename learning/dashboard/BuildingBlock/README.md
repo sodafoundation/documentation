@@ -219,6 +219,133 @@ In SCSS, mixins allow you to create groups of CSS declarations that can be reuse
 
 `<title> Statements... </title>`
 
+  
+# CSS
+
+- CSS is the language we use to style an HTML document.
+
+- CSS describes how HTML elements should be displayed.
+
+- CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+There are three ways of inserting a style sheet:
+
+-   External CSS
+-   Internal CSS
+-   Inline CSS
+
+## CSS Example
+
+body {  
+background-color: lightblue;  
+}h1 {  
+color: white;  
+text-align: center;  
+}p {  
+font-family: verdana;  
+font-size: 20px;  
+}
+
+# CSS PROPERTIES
+
+## CSS accent-color Property:
+
+The `accent-color` property specifies the accent color for user-interface controls like: `<input type="checkbox">, <input type="radio">, <input type="range"> and <progress>.`
+
+### Example
+
+Set the accent color for different user-interface controls:
+
+input[type=checkbox] {  
+accent-color: red;  
+}input[type=radio] {  
+accent-color: green;  
+}input[type=range] {  
+accent-color: rgb(0, 0, 255);  
+}progress {  
+accent-color: hsl(39, 100%, 50%);  
+}
+
+## CSS Syntax
+
+accent-color: auto|color|initial|inherit;
+
+## CSS align-content Property
+
+The `align-content` property specifies how flex lines are distributed along the cross axis in a flexbox container.
+
+### Example
+
+Pack lines toward the center of the flex container:
+
+div{  
+width: 70px;  
+height: 300px;  
+border: 1px solid #c3c3c3;  
+display: flex;  
+flex-wrap: wrap;  
+align-content: center;  
+}
+## CSS backdrop-filter Property
+
+The `backdrop-filter` property is used to apply a graphical effect to the area behind an element.
+
+### Example
+
+Add a graphical effect to the area behind an element:
+
+div.transbox {  
+background-color: rgba(255, 255, 255, 0.4);  
+-webkit-backdrop-filter: blur(5px);  
+backdrop-filter: blur(5px);  
+}
+
+
+## CSS Syntax
+
+backdrop-filter: none|filter|initial|inherit;
+
+
+## CSS border-block Property
+
+The border-block property is a shorthand property for these properties:
+
+-   border-block-width
+-   border-block-style
+-   border-block-color
+
+If values for color or width are omitted, default values will be used.
+
+The CSS border-block property is very similar to CSS property [border], but the border-block property is dependent on block direction.
+
+
+## CSS Syntax
+
+border-block: border-block-width border-block-style border-block-color |initial|inherit;
+
+## CSS border-top Property
+
+The `border-top` shorthand property sets all the top border properties in one declaration.
+
+The properties that can be set must be in the following order:
+
+-   border-top-width
+-   border-top-style
+-   border-top-color
+If border-top-color is omitted, the color applied will be the color of the text.
+
+
+### Example
+
+Set the style of the top border for different elements:
+
+h1 {  
+border-top: 5px solid red;  
+}h2 {  
+border-top: 4px dotted blue;  
+}div {  
+border-top: double;  
+}
 
   # A SIMPLE RESUME USING HTML
  ````
