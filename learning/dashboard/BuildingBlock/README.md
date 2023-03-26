@@ -90,4 +90,32 @@ SCSS also supports variables. Variables can be used to store values that will be
 
 
 In SCSS, mixins allow you to create groups of CSS declarations that can be reused throughout the stylesheet. This can be helpful when working with vendor prefixes, complex animations, and other code that might need to be used in multiple places
+  
+  # COMMONLY USED HTML TAGS
+ *Document structure tag:*
+
+*1.HTML tag*: It is the root of the HTML document which is used to specify that the document is HTML.
+
+*Syntax:*
+
+`<html> Statements... </html>`
+
+*2.Head tag:* The head tag is used to contain all the head elements in the HTML file. It contains the title, style, meta, … etc tag.
+
+*Syntax:*
+
+`<head> Statements... </head>`
+
+*3.Body tag:* It is used to define the body of an HTML document. It contains images, tables, lists, … etc.
+
+*Syntax:*
+
+`<body> Statements... </body>`
+
+*4.Title tag:* It is used to define the title of an HTML document.
+
+*Syntax:*
+
+`<title> Statements... </title>`
+
 
