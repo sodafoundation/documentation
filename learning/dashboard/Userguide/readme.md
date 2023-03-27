@@ -271,3 +271,41 @@ Displaying hycth.md.
 - Description(optional): information about the specific feature and functionality that are availanle to the user.
 - Tenant : used to group and manage resources and users.
 - Password : use a strong password.
+
+
+## Infrastructure
+---
+
+### Block
+
+- Block storage is a storage architecture that is commonly used to store structured data like databases and virtual machine disc images. Block storage allows for the reading and writing of data in fixed-size blocks, allowing for more efficient allocation and utilization of storage resources. 
+
+- The block storage system, which includes the block storage software, the physical or virtual storage infrastructure that supports the block storage, and the APIs and interfaces that allow users to interact with the block storage system. 
+
+- Many cloud-native applications that require high performance and low latency storage solutions rely on block storage. The SODA Foundation provides a platform for developers and organizations to collaborate on developing and improving cloud-native block storage solutions. 
+
+ 
+ ### Object
+
+ - Object storage is a type of storage architecture that uses a flat address space rather than a traditional file hierarchy to store data in a non-hierarchical manner. Object storage is a critical component for managing unstructured data in cloud-native environments, such as images, videos, and audio files. 
+
+- It refers to various components of an object storage system, such as object storage software, physical or virtual storage infrastructure that supports object storage, and APIs and interfaces used to interact with the object storage system. 
+
+- To provide scalable and resilient storage solutions for modern cloud applications, object storage is frequently used in conjunction with other cloud-native technologies such as Kubernetes. The SODA Foundation serves as a collaboration platform for developers and organizations. 
+
+ ### File 
+
+ - The Software Heritage project, hosted by the Software Freedom Conservancy and a member project of the Open-Source Initiative, helps to keep an archive of source code files for many open-source projects, including those hosted by the SODA Foundation. 
+
+- Files are typically used to refer to source code files or other related artefacts that are used to build and deploy the SODA software stack, which includes projects such as SODA Opens DS and SODA Fabric. Configuration files, scripts, libraries, and other components required to build, test, and deploy the software may be included in these files. 
+
+- Furthermore, the SODA Foundation keeps documentation files such as user guides, developer documentation, and other resources. These files are frequently kept in several different forms such as Markdown, HTML, and PDF. 
+
+
+#### Region :- 
+- Several regions are frequently used by cloud service providers and businesses to divide their infrastructure over various places, reducing the impact of outages 
+
+#### Availability zones:-
+ - Availability zones are frequently used to provide fault tolerance and high availability for cloud-native applications. 
+
+[Referance]https://www.google.com/
