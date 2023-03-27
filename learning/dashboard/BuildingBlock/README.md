@@ -1,6 +1,8 @@
-#  INTRODUCTION TO HTML5!
+# INTRODUCTION TO HTML5!
 
-HTML stands for *Hyper Text Markup Language. It is used to design web pages using a markup language. HTML is an abbreviation of Hypertext and Markup language. Hypertext defines the link between the web pages. **HTML 5* is the <u> fifth and current version of HTML.
+- HTML stands for **Hyper Text Markup Language**. 
+- It is used to design web pages using a markup language. Hypertext defines the link between the web pages.
+- **HTML 5** is the <u> fifth and current version of HTML.
 
 ## FEATURES:
 
@@ -41,7 +43,7 @@ HTML stands for *Hyper Text Markup Language. It is used to design web pages usin
 - Make every effort to be as transparent as you can.
   
   
-   # CSS3 Introduction
+   # INTRODUCTION TO CSS3!
 
 A document produced in any markup language can have its appearance, style, and format demonstrated using CSS, a language. It is used to organize and style the design of Web pages, to put it simply. The most recent version of CSS is CSS3, which replaced CSS2.
 Some of the key modules of CSS3 are:
@@ -95,7 +97,7 @@ This feature contains parameters for the column-count, column-gap, and column- w
   A Web Font is just a technique to use any font in your page, being downloaded instantly by the browser.This will be a radical departure from web design's prior use of just 10 to 15 generally accepted fonts. Yet, because only typefaces with valid licences should be used, this new function raises questions about copyright.
 
 
-    @font-face  {
+    @font-face    {
     font-family:  'Name of the new font';
     src:  url('https://designshack.net/fonts/font.ttf');
     }
@@ -108,55 +110,59 @@ This feature contains parameters for the column-count, column-gap, and column- w
 
 With CSS3, you can quickly apply resizing to any element to make it cross-browser compatible.
 
-    .ui_resizable  {
+    .ui_resizable        {
     padding:  20px;
     border:  1px  solid;
     resize:  both;
     overflow:  auto;
+  
     }
 
 
 
-#### Multiple Columns Using CSS3
+## Multiple Columns Using CSS3
 Although CSS2 already has the ability to set an element's outline, CSS3 adds the ability to offset the outline from the element by a value you specify. It varies from a boundary in two ways:
 
 Outlines don't occupy any columns.
 Not all outlines must be rectangular.
 Multi-column layout is a new module added to CSS3 that is suitably named. It lets you to select how many columns text should be divided down into and how they should appear.
 
-    .multiplecolumns  {
+    -multiplecolumns       {
     -moz-column-width:  130px;;
     -webkit-column-width:  130px;
     -moz-column-gap:  20px;
     -webkit-column-gap:  20px;
     -moz-column-rule:  1px  solid  #ddccb5;
     -webkit-column-rule:  1px  solid  #ddccb5;
+  
+     }
 
    ![enter image description here](https://designshack.net/postimages/multiplecolumns.png)
 
 
-### Spanning Columns
+## Spanning Columns
 
 span more than one column – a heading, table or image for instance.
 
-    enter code hereh2  {
+    enter code hereh2     {
     column-span:  all
     }
 ![enter image description here](https://designshack.net/postimages/multiplecolumns_heading.jpg)
   
-  #  INTRODUCTION TO LSS
+  #  INTRODUCTION TO LESS!
 - Less (Leaner Style Sheets) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side.
 -   It was Designed by Alexis Sellier.
 
-- ESS is an abbreviated `Learner Style styles`, is an opensource pre-processor language for CSS, The preprocessor is writing a code using a superset of CSS features, compiling this code to native CSS, and browser understanding CSS styles.
+- LESS is an opensource pre-processor language for CSS, The preprocessor is writing a code using a superset of CSS features, compiling this code to native CSS, and browser understanding CSS styles.
 
-## FEATURES OF LSS
+## FEATURES OF LESS
 
 
 ### 1.Variables
 
 - Less allows variables to be defined. 
-- Variables in Less are defined with an [at sign]  (@). Variable programming is done with a Colon (:).
+- Variables in LESS are defined with an (@).
+- Variable programming is done with a (:).
 
 
 
@@ -193,34 +199,34 @@ SCSS also supports variables. Variables can be used to store values that will be
 In SCSS, mixins allow you to create groups of CSS declarations that can be reused throughout the stylesheet. This can be helpful when working with vendor prefixes, complex animations, and other code that might need to be used in multiple places
   
   # COMMONLY USED HTML TAGS
- *Document structure tag:*
+ **Document structure tag:**
 
-*1.HTML tag*: It is the root of the HTML document which is used to specify that the document is HTML.
+**1.HTML tag**: It is the root of the HTML document which is used to specify that the document is HTML.
 
-*Syntax:*
+**Syntax:**
 
 `<html> Statements... </html>`
 
-*2.Head tag:* The head tag is used to contain all the head elements in the HTML file. It contains the title, style, meta, … etc tag.
+**2.Head tag:** The head tag is used to contain all the head elements in the HTML file. It contains the title, style, meta, … etc tag.
 
-*Syntax:*
+**Syntax:**
 
 `<head> Statements... </head>`
 
-*3.Body tag:* It is used to define the body of an HTML document. It contains images, tables, lists, … etc.
+**3.Body tag:** It is used to define the body of an HTML document. It contains images, tables, lists, … etc.
 
-*Syntax:*
+**Syntax:**
 
 `<body> Statements... </body>`
 
-*4.Title tag:* It is used to define the title of an HTML document.
+**4.Title tag:** It is used to define the title of an HTML document.
 
-*Syntax:*
+**Syntax:**
 
 `<title> Statements... </title>`
 
   
-# CSS
+# INTRODUCTION TO CSS!
 
 - CSS is the language we use to style an HTML document.
 
@@ -236,74 +242,83 @@ There are three ways of inserting a style sheet:
 
 ## CSS Example
 
-body {  
-background-color: lightblue;  
-}h1 {  
-color: white;  
-text-align: center;  
-}p {  
-font-family: verdana;  
-font-size: 20px;  
-}
-
+      body  {  
+             background-color: lightblue;  
+            } h1   {  
+             color: white;  
+             text-align: center;  
+             }  p   {  
+             font-family: verdana;  
+             font-size: 20px;  
+        }
+       
+        
 # CSS PROPERTIES
 
 ## CSS accent-color Property:
 
-The `accent-color` property specifies the accent color for user-interface controls like: `<input type="checkbox">, <input type="radio">, <input type="range"> and <progress>.`
+The accent-color property specifies the accent color for user-interface controls like: `<input type="checkbox">`, `<input type="radio">`, `<input type="range">` and `<progress>`.
 
+ 
+## CSS Syntax
+
+accent-color: auto|color|initial|inherit;
+  
 ### Example
 
 Set the accent color for different user-interface controls:
 
-input[type=checkbox] {  
-accent-color: red;  
-}input[type=radio] {  
-accent-color: green;  
-}input[type=range] {  
-accent-color: rgb(0, 0, 255);  
-}progress {  
-accent-color: hsl(39, 100%, 50%);  
-}
+    input[type=checkbox]   {  
+    accent-color: red;  
+                           }
+    input[type=radio]      {  
+    accent-color: green;  
+                           }  
+    input[type=range]      {  
+    accent-color: rgb(0, 0, 255);  
+                           }  
+   
+    progress               {  
+    accent-color: hsl(39, 100%, 50%);  
+                            }
 
-## CSS Syntax
-
-accent-color: auto|color|initial|inherit;
 
 ## CSS align-content Property
 
-The `align-content` property specifies how flex lines are distributed along the cross axis in a flexbox container.
+The align-content property specifies how flex lines are distributed along the cross axis in a flexbox container.
 
 ### Example
 
 Pack lines toward the center of the flex container:
 
-div{  
-width: 70px;  
-height: 300px;  
-border: 1px solid #c3c3c3;  
-display: flex;  
-flex-wrap: wrap;  
-align-content: center;  
-}
+      div                   {  
+      width: 70px;  
+      height: 300px;  
+      border: 1px solid #c3c3c3;  
+      display: flex;  
+      flex-wrap: wrap;  
+      align-content: center;
+                      }
+  
+  
 ## CSS backdrop-filter Property
 
-The `backdrop-filter` property is used to apply a graphical effect to the area behind an element.
-
-### Example
-
-Add a graphical effect to the area behind an element:
-
-div.transbox {  
-background-color: rgba(255, 255, 255, 0.4);  
--webkit-backdrop-filter: blur(5px);  
-backdrop-filter: blur(5px);  
-}
-
+The backdrop-filter property is used to apply a graphical effect to the area behind an element.
+  
 
 ## CSS Syntax
 
 backdrop-filter: none|filter|initial|inherit;
+  
+### Example
+
+Add a graphical effect to the area behind an element:
+
+     div.transbox                        {  
+     background-color: rgba(255, 255, 255, 0.4);  
+     -webkit-backdrop-filter: blur(5px);  
+     backdrop-filter: blur(5px);  
+                                         }
 
 
 ## CSS border-block Property
@@ -318,14 +333,13 @@ If values for color or width are omitted, default values will be used.
 
 The CSS border-block property is very similar to CSS property [border], but the border-block property is dependent on block direction.
 
-
 ## CSS Syntax
 
 border-block: border-block-width border-block-style border-block-color |initial|inherit;
 
 ## CSS border-top Property
 
-The `border-top` shorthand property sets all the top border properties in one declaration.
+The border-top shorthand property sets all the top border properties in one declaration.
 
 The properties that can be set must be in the following order:
 
@@ -339,121 +353,118 @@ If border-top-color is omitted, the color applied will be the color of the text.
 
 Set the style of the top border for different elements:
 
-h1 {  
-border-top: 5px solid red;  
-}h2 {  
-border-top: 4px dotted blue;  
-}div {  
-border-top: double;  
+       h1                {  
+       border-top: 5px solid red;  
+       }  h2               {  
+       border-top: 4px dotted blue;  
+        }   div {  
+       border-top: double;  
+       }
+
+  # A SIMPLE RESUME USING HTML AND CSS
+  HTML CODE:
+ ````
+  <!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>John Doe</h1>
+		<p>Web Developer</p>
+	</header>
+
+	<section>
+		<h2>Skills</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PHP</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Experience</h2>
+		<h3>Web Developer, XYZ Company</h3>
+		<p>June 2020 - Present</p>
+		<ul>
+			<li>Developed and maintained company website</li>
+			<li>Collaborated with team members to design and implement new features</li>
+			<li>Improved website performance by optimizing code</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Education</h2>
+		<h3>Bachelor's Degree in Computer Science</h3>
+		<p>University of ABC, May 2020</p>
+	</section>
+</body>
+</html>
+  
+   ````
+  
+  CSS CODE: 
+ ```
+  header {
+	text-align: center;
+	margin-bottom: 20px;
+       color : #008080
 }
 
-  # A SIMPLE RESUME USING HTML
- ````
-  <div class="resume">
-  <div class="base">
-    <div class="profile">
-      <div class="photo">
-        <!--<img src="" /> -->
-        <i class="fas fa-rocket"></i>
-      </div>
-      <div class="info">
-        <h1 class="name">JOHN</h1>
-        <h2 class="job">Frontend Web Designer</h2>
-      </div>
-    </div>
-    <div class="about">
-      <h3>About Me</h3>I'm a web designer for Fiserv, specializing in web design, graphic design, and UX. Experienced with the Adobe Creative Suite, responsive design, social media management, and prototyping.
-    </div>
-    <div class="contact">
-      <h3>Contact Me</h3>
-      <div class="call"><a href="tel:123-456-7890"><i class="fas fa-phone"></i><span>phoneno-123-456-7890</span></a></div>
-      <div class="address"><a href="https://goo.gl/maps/fiTBGT6Vnhy"><i class="fas fa-map-marker"></i><span>address-canada</span></a>
-      </div>
-     
-      <div class="website"><a href="http://abc.com/" target="_blank"> <i class="fas fa-home"></i><span>website-abc.com</span></a></div>
-    </div>
-    <div class="follow">
-      <h3>Follow Me</h3>
-      <div class="box">
-        <a href="https://www.facebook.com/astronaomical/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/astronaomical/" target="_blank"><i class="fab fa-instagram "></i></a>
-        <a href="https://www.pinterest.com/astronaomical/" target="_blank"><i class="fab fa-pinterest"></i></a>
-        <a href="https://www.linkedin.com/in/naomi-weatherford-758385112/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://codepen.io/astronaomical/" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a href="https://www.behance.net/astronaomical" target="_blank"><i class="fab fa-behance"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="func">
-    <div class="work">
-      <h3><i class="fa fa-briefcase"></i>Experience</h3>
-      <ul>
-        <li><span>Technical Consultant -<br>Web Design,</span><small></small><small>   mar 2023 - Now</small></li>
-        <li><span>Web Designer,</span><small></small><small>  Jan 2018 - Apr 2018</small></li>
-        <li><span>Intern - Web Design,</span><small></small><small>  Aug 2017 - Dec 2017</small></li>
-      </ul>
-    </div>
-    <div class="edu">
-      <h3><i class="fa fa-graduation-cap"></i>Education</h3>
-      <ul>
-        <li><span>Bachelor of Science<br>Web Design and Development</span><small>,ABC university,</small><small>Jan. 2016 - Apr. 2018</small></li>
-        <li><span>Computer Science</span><small> ,Edward Community College,</small><small>Sept. 2014 - Dec. 2015</small></li>
-        <li><span>High School</span><small> ,M. Jackson High School,</small><small>Jan. 2013 - Jun. 2015</small></li>
-      </ul>
-    </div>
-    <div class="skills-prog">
-      <h3><i class="fas fa-code"></i>Programming Skills</h3>
-      <ul>
-        
-        <li data-percent="90"><span>CSS3 & SCSS</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="60"><span>JavaScript</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="50"><span>jQuery</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="40"><span>JSON</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="55"><span>PHP</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="40"><span>MySQL</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="interests">
-      <h3><i class="fas fa-star"></i>Interests</h3>
-      <div class="interests-items">
-        <div class="art"><i class="fas fa-palette"></i><span>Art</span></div>
-        <div class="art"><i class="fas fa-book"></i><span>Books</span></div>
-        <div class="movies"><i class="fas fa-film"></i><span>Movies</span></div>
-        <div class="music"><i class="fas fa-headphones"></i><span>Music</span></div>
-        <div class="games"><i class="fas fa-gamepad"></i><span>Games</span></div>
-      </div>
-    </div>
-  </div>
-</div>
- ````
+h1 {
+	font-size: 36px;
+	margin: 0;
+      color : #008080
+}
+
+p {
+	font-size: 24px;
+	margin: 0;
+      color : #fa8072;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+      color : #fa8072;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+      color : #008080
+}
+
+h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+      color : #008080
+}     
+
+p {
+	margin: 0;
+      color : #fa8072;
+}
+
+    body {background-color: #e3dac9;}
   
-  
+  ```
   # OUTPUT:
+  
 
 
-![FINAL 2](https://user-images.githubusercontent.com/123230416/227578598-e9f350b4-be7c-4e0d-870f-27631c15a15b.png)
+![ops](https://user-images.githubusercontent.com/123230416/227962532-fa8eaf75-42eb-4580-a526-ae62f3a273be.png)
+
