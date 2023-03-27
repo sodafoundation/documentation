@@ -110,7 +110,7 @@ This feature contains parameters for the column-count, column-gap, and column- w
 
 With CSS3, you can quickly apply resizing to any element to make it cross-browser compatible.
 
-    .ui_resizable        {
+    .ui_resizable    {
     padding:  20px;
     border:  1px  solid;
     resize:  both;
@@ -291,14 +291,14 @@ The align-content property specifies how flex lines are distributed along the cr
 
 Pack lines toward the center of the flex container:
 
-      div                   {  
+      div          {  
       width: 70px;  
       height: 300px;  
       border: 1px solid #c3c3c3;  
       display: flex;  
       flex-wrap: wrap;  
       align-content: center;
-                      }
+                   }
   
   
 ## CSS backdrop-filter Property
@@ -314,11 +314,11 @@ backdrop-filter: none|filter|initial|inherit;
 
 Add a graphical effect to the area behind an element:
 
-     div.transbox                        {  
+     div.transbox   {  
      background-color: rgba(255, 255, 255, 0.4);  
      -webkit-backdrop-filter: blur(5px);  
      backdrop-filter: blur(5px);  
-                                         }
+                     }
 
 
 ## CSS border-block Property
@@ -353,9 +353,9 @@ If border-top-color is omitted, the color applied will be the color of the text.
 
 Set the style of the top border for different elements:
 
-       h1                {  
+       h1      {  
        border-top: 5px solid red;  
-       }  h2               {  
+       }  h2       {  
        border-top: 4px dotted blue;  
         }   div {  
        border-top: double;  
