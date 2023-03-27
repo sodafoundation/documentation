@@ -60,3 +60,46 @@ To update NPM to the latest version, you can use the following command:
      `npm -v`
 
      If you want to update NPM for a specific project, you can navigate to the project directory and run the above command without the -g flag.
+## How to manage multiple versions of node.js and npm using nvm
+ 
+ - **Step1:**
+       Install nvm on your Ubuntu system by running the following command in your terminal:
+       
+      ` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
+       
+     This will download and install the latest stable version of nvm.
+ - **Step2:**
+Once nvm is installed, you can use it to install and manage different versions of Node.js by running the following command:
+
+     `nvm install <node_version>`
+     
+    Replace **<node_version>** with the version of Node.js you want to install, such as "14.18.1". This will download and install the specified version of Node.js.
+
+- **Step3:**
+ use a specific version of Node.js, you can run the following command:
+ 
+   `nvm use <node_version>`
+      
+  This will set the specified version of Node.js as the active version.
+
+- **Step4:**
+  You can also set a default version of Node.js by running the following command:
+
+     `nvm alias default <node_version>`
+
+    This will set the specified version of Node.js as the default version that will be used when you open a new terminal window.
+    
+- **Step5:**
+    To check the currently installed versions of Node.js, you can run the following command:
+
+      `nvm ls`
+      
+    This will show a list of all the installed versions of Node.js.
+- **Step6:**
+   To uninstall a specific version of Node.js, you can run the following command:
+
+    `nvm uninstall <node_version>`
+
+    Replace **<node_version>** with the version of Node.js you want to uninstall.
+
+     With these steps, you can manage multiple versions of Node.js and npm on Ubuntu using nvm.
