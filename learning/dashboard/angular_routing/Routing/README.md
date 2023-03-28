@@ -12,7 +12,7 @@ Angular is a development platform, built on TypeScript. As a platform, Angular i
 With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with minimal effort.
 
 
-### **Angular Installation** 
+## **Angular Installation** 
 
 
 To install Angular using CLI write this line on your terminal,
@@ -32,18 +32,18 @@ After this the Angular application will be launched on your browser at localhost
 # ROUTING IN ANGULAR
 
 
-### **What is Angular Routing**
+## **What is Angular Routing**
 
 
-In a single-page app, you change what the user sees by showing or hiding portions of the display that correspond to particular components, rather than going out to the server to get a new page. As users perform application tasks, they need to move between the different views that you have defined.
+<p>In a single-page app, you change what the user sees by showing or hiding portions of the display that correspond to particular components, rather than going out to the server to get a new page. As users perform application tasks, they need to move between the different views that you have defined.</p>
 
-To handle the navigation from one view to the next, you use the Angular Router. The Router enables navigation by interpreting a browser URL as an instruction to change the view.
+<p>To handle the navigation from one view to the next, you use the Angular Router. The Router enables navigation by interpreting a browser URL as an instruction to change the view.</p>
 
-To explore a sample app featuring the router's primary features, see the example below
-router.zip file with the reference link. 
+<p>To explore a sample app featuring the router's primary features, see the example below
+router.zip file with the reference link. </p>
  
  
-### **How to Use Angular Routes**
+## **How to Use Angular Routes**
 
 
 Using Angular routes in a single-page application
@@ -57,12 +57,12 @@ To define how users navigate through your application, you use routes. Add route
 # DATA PASSING 
 
 
-### **Data passing in Angular**
+## **Data passing in Angular**
 
 
-In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.
+<p>In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.</p>
 
-#### Methods:
+### Methods:
 
   Parent to Child: via Input,
 
@@ -73,25 +73,25 @@ In an Angular application, we may have multiple components with a variety of fun
   Unrelated Components: via a Service.
 
 
-### **Why is data passed between Angular components:**
+## **Why is data passed between Angular components:**
 
 
-Angular provides component based architecture that allows modularizing the application. It means you can create multiple chunks, and convert your large component to a smaller segment that can be easily maintained. The main advantage to do this is easily understanding the component and maintenance of code. In this scenario, it is important for communication between components or share the data between the component. 
+<p>Angular provides component based architecture that allows modularizing the application. It means you can create multiple chunks, and convert your large component to a smaller segment that can be easily maintained. The main advantage to do this is easily understanding the component and maintenance of code. In this scenario, it is important for communication between components or share the data between the component. </p>
 
-Angular provides multiple ways to share the data between the components. Based on your need and kind of component relation, you can select any of the methods. It is recommended to use the service method as it is independent of component relation and helps you to send data to multiple components. 
+<p>Angular provides multiple ways to share the data between the components. Based on your need and kind of component relation, you can select any of the methods. It is recommended to use the service method as it is independent of component relation and helps you to send data to multiple components. </p>
 
 
-### **How to pass the data between angular  routes?**
+## **How to pass the data between angular  routes?**
 
 
 The task is to share data variables between two or more controllers by using AngularJS. There are many procedures to achieve this. Here we will discuss the most popular ones. 
 
-#### Approach: 
+### Approach: 
 
-1.** Using a service**: We can design a shared service that has the information we want the controllers to exchange. The    controllers can inject the service to access the data, and the service may include methods to configure and obtain the data. This method is advised for data exchange across components without a clear parent-child relationship.
+1. ** Using a service**: We can design a shared service that has the information we want the controllers to exchange. The    controllers can inject the service to access the data, and the service may include methods to configure and obtain the data. This method is advised for data exchange across components without a clear parent-child relationship.
 
 
-*** Utilizing the @Input() and @Output() decorators**: We can transfer data between parent and child components using the @Input() and @Output() decorators. A parent component can supply data to a child component using the @Input() decorator, and a child component can emit events to a parent component using the @Output() decorator.
+* ** Utilizing the @Input() and @Output() decorators**: We can transfer data between parent and child components using the @Input() and @Output() decorators. A parent component can supply data to a child component using the @Input() decorator, and a child component can emit events to a parent component using the @Output() decorator.
 
 * **ViewChild**: ViewChild can be used to access the properties and methods of the child component from the parent component. When we need to use the data or methods of the child component from the parent component, this way is helpful.
 
@@ -102,7 +102,7 @@ The task is to share data variables between two or more controllers by using Ang
 
 Link for a simple Angular application to demonstrate routing: <br>
 
-[ANGULAR-ACE (demo app) ](https://github.com/ShambhaviVijay/AngularAce-))
+[ANGULAR-ACE (demo app)](https://github.com/ShambhaviVijay/AngularAce-)
 
 
 # REFERENCES:
