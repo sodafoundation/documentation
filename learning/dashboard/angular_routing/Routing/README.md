@@ -72,15 +72,14 @@ To define how users navigate through your application, you use routes. Add route
 
   Unrelated Components: via a Service.
 
-
-- ## Why is data passed between Angular components:
+## Why is data passed between Angular components:
 
 
 <p>Angular provides component based architecture that allows modularizing the application. It means you can create multiple chunks, and convert your large component to a smaller segment that can be easily maintained. The main advantage to do this is easily understanding the component and maintenance of code. In this scenario, it is important for communication between components or share the data between the component. </p>
 
 <p>Angular provides multiple ways to share the data between the components. Based on your need and kind of component relation, you can select any of the methods. It is recommended to use the service method as it is independent of component relation and helps you to send data to multiple components. </p>
     
-- ## How to pass the data between angular  routes?
+## How to pass the data between angular  routes?
 
 
 The task is to share data variables between two or more controllers by using AngularJS. There are many procedures to achieve this. Here we will discuss the most popular ones. 
