@@ -62,7 +62,7 @@ To define how users navigate through your application, you use routes. Add route
 <ul>
 <p>In an Angular application, we may have multiple components with a variety of functionality/features and while developing an application we may come across a situation where we need to share or pass the data from one component to another one, in that case, we can achieve that by using the concept of data sharing between the components, and for that in Angular, there are some provisions or ways to achieve the same.</p>
 
-<li>### Methods:
+- ### Methods:
 
   Parent to Child: via Input,
 
@@ -71,8 +71,7 @@ To define how users navigate through your application, you use routes. Add route
   Child to Parent: via ViewChild,
 
   Unrelated Components: via a Service.
-</li>
-  <li>
+
 
 - ## Why is data passed between Angular components:
 
