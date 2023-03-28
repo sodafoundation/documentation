@@ -1,6 +1,6 @@
 # How to install and setup NodeJS and npm?
 - **step 1:**
-Open the Terminal on your Ubuntu system. You can do this by pressing the **"Ctrl+Alt+T"** keys simultaneously.
+Open the Terminal on your Ubuntu system. You can do this by pressing the `Ctrl+Alt+T` keys simultaneously.
 - **step 2:**
 Update your package list by typing the following command in the Terminal:
 
@@ -8,7 +8,7 @@ Update your package list by typing the following command in the Terminal:
  - **step3:**
   Install Nodejs using the following command: 
   
-    `sudo apt get install node js`
+    `sudo apt get install nodejs`
   - **step4:**
    Check if Node.js is installed by typing the following command:
    
@@ -36,7 +36,7 @@ Open the Terminal on your Ubuntu system.
 - **step 2:**
 Check the currently installed versions of Node.js and NPM by typing the following commands:
 
-   `node -v npm -v`
+   `node -v && npm -v`
  - **step3:**
  To update Node.js, you can use the Node Version Manager (nvm) tool. If you do not have nvm installed, you can install it using the following command:
   
