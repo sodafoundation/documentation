@@ -1,4 +1,4 @@
-#How to create a PR in GitHub with multiple contributors?
+# How to create a PR in GitHub with multiple contributors?
 ## Start a new PR for an issue.
 
 To start a new PR (Pull Request) for an issue, you can follow these steps:
