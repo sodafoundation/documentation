@@ -1,15 +1,5 @@
 
-None selected 
 
-Skip to content
-Using Gmail with screen readers
-Enable desktop notifications for Gmail.
-   OK  No, thanks
-Conversations
-11.94 GB of 15 GB (79%) used
-Terms · Privacy · Programme Policies
-Last account activity: 0 minutes ago
-Open in 1 other location · Details
 # Resource Manager
 
 
