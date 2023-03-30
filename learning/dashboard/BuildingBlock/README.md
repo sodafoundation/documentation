@@ -150,7 +150,7 @@ span more than one column – a heading, table or image for instance.
 ![enter image description here](https://designshack.net/postimages/multiplecolumns_heading.jpg)
   
   #  INTRODUCTION TO LESS!
-- Less (Leaner Style Sheets) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side.
+- LESS (Leaner Style Sheets) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side.
 -   It was Designed by Alexis Sellier.
 
 - LESS is an opensource pre-processor language for CSS, The preprocessor is writing a code using a superset of CSS features, compiling this code to native CSS, and browser understanding CSS styles.
@@ -160,7 +160,7 @@ span more than one column – a heading, table or image for instance.
 
 ### 1.Variables
 
-- Less allows variables to be defined. 
+- LESS allows variables to be defined. 
 - Variables in LESS are defined with an (@).
 - Variable programming is done with a (:).
 
@@ -175,7 +175,7 @@ span more than one column – a heading, table or image for instance.
 
 ### 3.Functions and operations
 
-- Less allows operations and functions. Operations allow addition, subtraction, division and multiplication of property values and colors, which can be used to create complex relationships between properties. 
+- LESS allows operations and functions. Operations allow addition, subtraction, division and multiplication of property values and colors, which can be used to create complex relationships between properties. 
 - Functions map one-to-one with JavaScript code, allowing manipulation of values.
 
 # SCSS
