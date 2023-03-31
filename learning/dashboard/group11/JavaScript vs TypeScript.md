@@ -67,4 +67,68 @@ if (isNaN(age)) {
 }
 
 ```
+####  To manipulate the DOM (Document Object Model) content and CSS properties via JavaScript, you can use the following methods:
+
+**1.getElementById()**: This method returns a reference to the element with  the specified ID. You can use it to manipulate the content and CSS
+properties of the element.
+
+sample code: 
+                     var element = document.getElementById(\"myElement\");
+                     
+                      element.innerHTML = \"New content\"; // change content
+                      
+                      element.style.color = \"red\"; // change CSS property
+
+**2.querySelector()**: This method returns the first element that matches the specified CSS selector. You can use it to manipulate the content and CSS properties of the element.
+
+sample code: 
+                      var element = document.querySelector(\".myClass\");
+                      
+                      element.innerHTML = \"New content\"; // change content
+                      
+                      element.style.color = \"red\"; // change CSS property  
+
+**3.getElementsByClassName()**: This method returns a collection of elements with the specified class name. You can use it to manipulate the content and CSS properties of the elements.
+
+sample code: 
+                      var elements = document.getElementsByClassName(\"myClass\");
+                      
+                      for(var i = 0; i \< elements.length; i++)
+                      
+                      { 
+                             elements\[i\].innerHTML = \"New content\"; // change content 
+                             
+                             elements\[i\].style.color = \"red\"; // change CSS property 
+                     
+                     } 
+                      
+
+**4.getElementsByTagName()**: This method returns a collection of elements with the specified tag name. You can use it to manipulate the content and CSS properties of the elements.
+
+sample code: 
+                        var elements = document.getElementsByTagName(\"p\");
+                        
+                      for (var i =0; i \< elements.length; i++) 
+                     
+                     {
+                         
+                         elements\[i\].innerHTML = \"New content\"; // change content 
+                          
+                          elements\[i\].style.color = \"red\"; //change CSS property 
+                     } 
+
+These methods allow you to select elements on the page and manipulate their content and CSS properties dynamically with JavaScript.
+
+Here are some resources you can use to learn more about manipulating the DOM and CSS properties via JavaScript
+
+``<https://developer.mozilla.org/enUS/docs/Web/API/Document_Object_Model>``
+
+``<https://javascript.info/searching-elements-dom>``
+
+``<https://www.w3schools.com/js/js_htmldom_elements.asp>``
+
+
+
+
+
 
