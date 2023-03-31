@@ -123,3 +123,34 @@
 -  Availability Zone: a logical grouping of hosts within a data center or cloud environment.
 -  Port: A  virtual communication end point that is used to enable communication between host over a network.
 - Protocol: A set of rules and standarads that govern to communication betweeen host over a network.
+
+
+# Data flow 
+- The data flow in SODA typically involves the following steps:
+    1. Data is ingested from various sources such as files, databases, or streams.
+    2. The data is transformed and preprocessed using SODA's built-in data processing functions or custom user-defined functions.
+    3. The processed data is stored in SODA's distributed object store, which allows for efficient and scalable storage and retrieval of large datasets.
+    4. Data analytics applications are developed using SODA's APIs and libraries, which enable users to perform complex analytics tasks such as machine learning, graph processing, and real-time data processing.
+    5. The results of data analytics tasks are stored in SODA's object store or exported to external systems for further analysis or visualization.
+
+- Overall, SODA provides a flexible and scalable platform for managing and processing large datasets, enabling users to perform sophisticated data analytics tasks with ease.
+
+
+# Migration
+- Migration  refers to the process of transferring data and applications from one SODA environment to another, such as moving from a development environment to a production environment. 
+- Migration in SODA typically involves the following steps:
+    1. Exporting the data and applications from the source environment into a migration package, which is a compressed file that contains all the necessary files and metadata for the migration process.
+    2. Transferring the migration package to the target environment, typically via a secure file transfer protocol such as SFTP.
+    3. Importing the migration package into the target          environment, which involves unpacking the files and metadata and setting up the necessary configurations and dependencies.
+    4. Testing the migrated data and applications in the target 
+       environment to ensure that they function correctly and meet the desired performance criteria.
+- To create a migration plan click on the create button and fill the details:
+    1. Plan name: The plan name in creating a migration plan refers to the name or label assigned to the migration plan for identification and tracking purposes. The plan name should be unique and descriptive, and should reflect the scope and objective of the migration project. 
+    2.  Source bucket: a source bucket refers to the data storage container from which the data is being migrated in a migration plan. A bucket is a logical container used in SODA to store data objects, such as files, images, or documents. 
+
+    3. Destination bucket: a destination bucket refers to the data storage container to which the data is being migrated in a migration plan. The destination bucket is where the migrated data will reside after the migration is complete. 
+
+    4. Execution time: Execution time refers to the estimated or actual time required to complete a migration plan. It is the duration of time from the start of the migration process to the completion of the migration. The execution time can vary depending on the size and complexity of the data.
+
+
+
