@@ -94,7 +94,7 @@ To update NPM to the latest version, you can use the following command:
 
    `nvm --version`
    
-  ![image](https://user-images.githubusercontent.com/123230184/229030260-00137cae-f79b-47ae-8cb9-40dbdbebd641.png)
+    ![image](https://user-images.githubusercontent.com/123230184/229030260-00137cae-f79b-47ae-8cb9-40dbdbebd641.png)
 
 
 
@@ -104,7 +104,7 @@ To update NPM to the latest version, you can use the following command:
 
   `nvm install node`
   
-![image](https://user-images.githubusercontent.com/123230184/229030457-e3696f15-2576-4ce3-8959-00e64a791010.png)
+  ![image](https://user-images.githubusercontent.com/123230184/229030457-e3696f15-2576-4ce3-8959-00e64a791010.png)
 
 
 
