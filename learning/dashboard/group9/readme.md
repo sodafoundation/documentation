@@ -1,67 +1,97 @@
 # How to install and setup NodeJS and npm?
-- **step 1:**
-Open the Terminal on your Ubuntu system. You can do this by pressing the `Ctrl+Alt+T` keys simultaneously.
-- **step 2:**
-Update your package list by typing the following command in the Terminal:
+
+## Steps to Install nodejs and npm
+
+- **Step1:** Open the Terminal on your Ubuntu system. You can do this by pressing the `"Ctrl+Alt+T"`keys simultaneously.
+
+   ![image](https://user-images.githubusercontent.com/123230184/229181011-0af4ed65-601c-4c34-8e4e-d6a799b002db.png)
+
+
+- **Step2:**  Update your package list by typing the following command in the Terminal:
+
+ ` sudo apt-get update`
+
+   ![image](https://user-images.githubusercontent.com/123230184/229181292-71894ba1-e376-4f67-a655-d31639fc1fbc.png)
+
+
+ - **Step3:** Install Node.js  using the following command:
+
+ ` sudo apt-get install nodejs`
+ 
+   ![image](https://user-images.githubusercontent.com/123230184/229181443-eb49b39d-6c88-4fd6-84ce-3c67fb210c39.png)
+
+
+ - **Step4:** Check if Node.js is installed by typing the following command:
+ 
+ `node -v`
+ 
+   ![image](https://user-images.githubusercontent.com/123230184/229181792-afaa932b-630c-4b22-aaae-2267321cd568.png)
+
+ 
+ This will display the version number of Node.js installed on your system.
+
+- **Step5:** Check if NPM is installed by typing the following command:
+ 
+ `npm -v`
+ 
+   ![image](https://user-images.githubusercontent.com/123230184/229181871-7672e5ba-d3a6-47d7-a138-0530b498bcc0.png)
+
+ 
+  This will display the version number of NPM installed on your system.
 
 
 
-   `sudo apt-get update`
- - **step3:**
-  Install Nodejs using the following command: 
-  
-    `sudo apt get install nodejs`
-  - **step4:**
-   Check if Node.js is installed by typing the following command:
-   
-    `node -v`
-    
-    This will display the version number of Node.js installed on your system.
-   - **step5:**
-Install NPM (Node Package Manager) by typing the following command:
-
-      `sudo apt-get install npm`
-   - **step6:**
-    Check if NPM is installed by typing the following command:
-
-      `npm -v`
-   - **step7:**
-      If you encounter any issues with the installation, you can try updating the package list again by typing the following command:
-      
-        `sudo apt-get update`
-
-       Then repeat steps 3-6.
 ## Steps to update the nodejs and npm versions
 
-- **step 1:**
-Open the Terminal on your Ubuntu system.
-- **step 2:**
-Check the currently installed versions of Node.js and NPM by typing the following commands:
+ If you don't want to use NodeSource or nvm to update Node.js and npm on Ubuntu, you can try the following steps:
 
-   `node -v && npm -v`
- - **step3:**
- To update Node.js, you can use the Node Version Manager (nvm) tool. If you do not have nvm installed, you can install it using the following command:
-  
+- **Step1:** Remove the existing versions of Node.js and npm:
 
-   curl -o- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh) | bash
-  - **step4:**
- Once nvm is installed, you can use it to install the latest version of Node.js by typing the following command:
-   
-    `nvm install node`
-    
-    This will install the latest version of Node.js. You can verify the version by typing the following command:
-    
-    `node -v`
-   - **step5:**
-To update NPM to the latest version, you can use the following command:
+`sudo apt remove nodejs npm `
 
-     `npm install -g npm@latest`
+  ![image](https://user-images.githubusercontent.com/123230184/229185161-3a0cadd1-5c46-4c54-9fa1-d34cc3b54b7d.png)
 
-     This will install the latest version of NPM globally. You can verify the version by typing the following command:
  
-     `npm -v`
+- **Step2:** Download the latest version of Node.js from the official website:
 
-     If you want to update NPM for a specific project, you can navigate to the project directory and run the above command without the -g flag.
+`curl -o node-v16.14.0-linux-x64.tar.xz https://nodejs.org/dist/v16.14.0/node-v16.14.0-linux-x64.tar.xz `
+
+  ![image](https://user-images.githubusercontent.com/123230184/229185236-7be4e0ed-8a01-4bb6-a942-2dd5b901efce.png)
+
+Replace v16.14.0 with the version of Node.js you want to install.
+
+- **Step3:** Extract the downloaded tarball to the /opt directory:
+
+`sudo mkdir -p /opt/nodejs `
+`sudo tar -xJvf node-v16.14.0-linux-x64.tar.xz -C /opt/nodejs/ `
+
+  ![image](https://user-images.githubusercontent.com/123230184/229186282-c46b7e3a-dca3-402b-a1fd-ac94c0a4ac29.png)
+
+
+  ![image](https://user-images.githubusercontent.com/123230184/229185356-e61fe693-79ff-4cf6-bd2b-aa9833a06a29.png)
+
+
+- **Step4:** Create a symlink to the Node.js executable in /usr/local/bin:
+
+`sudo ln -s /opt/nodejs/node-v16.14.0-linux-x64/bin/node /usr/local/bin/node`
+` sudo ln -s /opt/nodejs/node-v16.14.0-linux-x64/bin/npm /usr/local/bin/npm `
+
+  ![image](https://user-images.githubusercontent.com/123230184/229185411-7509cb9c-f860-4778-ac1a-d2e61e1ed77e.png)
+
+- **step5:** Verify the installed versions of Node.js and npm:
+
+`node -v`
+` npm -v `
+
+
+
+  ![image](https://user-images.githubusercontent.com/123230184/229184107-8e7af3d5-6c86-4b21-9ef3-b778ffb63216.png)
+  ![image](https://user-images.githubusercontent.com/123230184/229185502-ebd90c78-c77d-443c-ab5d-660f05e6ed1a.png)
+
+
+This should install the latest version of Node.js and npm on your Ubuntu system without using NodeSource or nvm.
+
+
 
 ## How to manage multiple versions of node.js and npm using nvm
 
@@ -151,4 +181,21 @@ To update NPM to the latest version, you can use the following command:
  
    Replace **<node_version>** with the version of Node.js you want to uninstall.
 
-   With these steps, you can manage multiple versions of Node.js and npm on Ubuntu using nvm .
+   With these steps, you can manage multiple versions of Node.js and npm on Ubuntu using nvm.
+   
+  - **Step12:** To update NPM to the latest version, you can use the following command:
+   
+   `sudo npm install -g npm@<version>`
+  
+   ![image](https://user-images.githubusercontent.com/123230184/229187776-f7bfc2bd-8c63-4f19-826f-949f28018306.png)
+
+ 
+   This will install the latest version of NPM globally. You can verify the version by typing the following command:
+  
+   `npm -v`
+  
+   ![image](https://user-images.githubusercontent.com/123230184/229187824-147fd070-652d-48a6-919d-88bfd0079590.png)
+
+ 
+   If you want to update NPM for a specific project, you can navigate to the project directory and run the above command without the -g flag.
+
