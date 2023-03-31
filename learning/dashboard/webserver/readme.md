@@ -11,12 +11,16 @@ A web server is primarily used to deliver and display website content to users o
 • Server-side web scripting: This feature enables users to use scripting languages like Ruby, Python, and PHP to create dynamic web pages.
 • Virtual hosting: In order to run multiple applications, websites, and data, web servers can also be used as virtual servers.
 
+
 #	Why do we need web servers?
+
 
 The purpose of a web server is to store, process, and provide to users any requested data or webpages.
 Requests for static material (such as HTML pages, files, pictures, and videos) from a website are accepted by and handled by a web server.Just HTTP requests and answers are handled by web servers.
 
+
 # What are the different web servers available ?
+
 
 There are mainly 5 Types of Web Servers:
 •	Apache
