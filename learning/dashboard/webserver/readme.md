@@ -50,5 +50,3 @@ One of Lighttpd's primary characteristics is its modular architecture, which ena
 
 The World Wide Web Consortium (W3C) created the web server Jigsaw as a reference implementation of the HTTP/1.1 protocol. For programmers curious about HTTP protocols and web server technology, Jigsaw is still a popular option.
 Jigsaw's modular design, which enables customers to easily adapt and increase the server's capability, is one of its primary benefits. CGI, server-side programming languages like PHP and Python, and SSL/TLS encryption are just a few of the features it provides. Moreover, it includes built-in support for virtual hosting, which enables the hosting of numerous websites on a single server.
-
-
