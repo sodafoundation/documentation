@@ -206,3 +206,35 @@
 
 
 
+
+# Identity
+
+## Tenant
+- A tenant is used to group and manage resources and users .
+### Steps to create anew tenant
+1. To create a new tenant, click on create button.
+2. Enter the name and the description(optional).
+3. Then click OK button to createnew tenant or click on cancle button to cancel it. You can click the delete button to delete the created tenant.
+   
+
+- Name : NAme of the tenant.
+- Description(optional): information about the specific feature and functionality that are available to the tenant .
+
+
+
+## Users 
+### Steps to create new wsers
+1. To create a new user, click on create button.
+2. Enter the username and description(optional).
+3. Select the tenant ,enter the password and confirm the password .
+4. Then click on OK button to add the new user or click on the cancel button to cancel  it. You can click on the delete button to delete the aded user.
+
+
+ 
+- Username : Unique and consistent
+- Description(optional): information about the specific feature and functionality that are availanle to the user.
+- Tenant : used to group and manage resources and users.
+- Password : use a strong password.
+
+
+
