@@ -67,51 +67,103 @@ To update NPM to the latest version, you can use the following command:
 
 - **Step1:** Open the Terminal on your Ubuntu system.
 
-- **Step2:** Install the latest version of cURL (if not already installed) by running the following command:
+- **Step2:** Install the latest version of CURL (if not already installed) by running the following command:
 
    `sudo apt install curl`
+   
+   ![image](https://user-images.githubusercontent.com/123230184/229029849-3dcfe7c5-5f0e-4686-a62b-7aeab3fc702a.png)
+
+![image](https://user-images.githubusercontent.com/123230184/229026479-95a5b747-c48c-4bdd-a0fa-df4b81f38319.png)
+
 
 - **Step3**:To install NVM, run the following command in your terminal:
 
   ` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
+  
+  ![image](https://user-images.githubusercontent.com/123230184/229029938-4650f5e3-5830-4c7c-8815-b51ea473942e.png)
+
+
+  ![image](https://user-images.githubusercontent.com/123230184/229026671-6c1e7692-ba2f-47e1-930e-c6554c8c29b8.png)
+
 
 - **Step4:** Close and reopen your terminal or run the following command to load the new **PATH**:
 
    `source ~/.bashrc`
+   
+   ![image](https://user-images.githubusercontent.com/123230184/229030076-91df3b24-9ca2-4bfc-bda0-e8e4b126d5f3.png)
+
+   ![image](https://user-images.githubusercontent.com/123230184/229026933-8ec21844-30e3-4d05-b75a-827e75861a92.png)
+
 
 - **Step5:** You can now verify the installation by running the following command:
 
    `nvm --version`
+   
+  ![image](https://user-images.githubusercontent.com/123230184/229030260-00137cae-f79b-47ae-8cb9-40dbdbebd641.png)
+
+   ![image](https://user-images.githubusercontent.com/123230184/229027327-bfe77e80-9284-4b61-95f1-dc5b9a93c957.png)
+
 
   Now that you have installed NVM, you can use it to manage multiple versions of Node.js and NPM.
 
 - **Step6:** To install the latest stable version of Node.js, run:
 
   `nvm install node`
+  
+![image](https://user-images.githubusercontent.com/123230184/229030457-e3696f15-2576-4ce3-8959-00e64a791010.png)
+
+  ![image](https://user-images.githubusercontent.com/123230184/229027382-bbbbb0e6-6cb0-4238-a2b6-ce2da6ebe66b.png)
+
+  
 
  - **Step7:** Once nvm is installed, you can use it to install and manage different versions of Node.js by running the following command:
 
    `nvm install <node_version>`
+   
+   ![image](https://user-images.githubusercontent.com/123230184/229030514-ec921b38-fe67-4e5a-b6b9-bb96ea32a6dd.png)
+
+   ![image](https://user-images.githubusercontent.com/123230184/229029237-23726dc0-c3be-496b-bb9b-807989b0c959.png)
+
 
    Replace **<node_version>** with the version of Node.js you want to install, such as **"14.18.1"**. This will download and install the specified version of Node.js.
    
   -  **Step8:** To check the currently installed versions of Node.js, you can run the following command:
 
      `nvm list`
+     
+     ![image](https://user-images.githubusercontent.com/123230184/229030613-d6c6fcf4-2f26-4971-a2e4-fff02660f8cf.png)
+
+     ![image](https://user-images.githubusercontent.com/123230184/229029297-d830c1b4-852b-43a6-870c-cce2c5e006c5.png)
+
 
      This will show a list of all the installed versions of Node.js.
 
 - **Step9:** To switch to a specific version of Node.js, run:
 
   `nvm use <version>`
+  
+  ![image](https://user-images.githubusercontent.com/123230184/229030661-6b80c38d-514f-45bd-893c-6d4051cdad83.png)
+
+  ![image](https://user-images.githubusercontent.com/123230184/229029358-62e0af35-c719-4d4a-8671-7c1dfe3a1920.png)
+
 
 - **Step10:** To set a default version of Node.js to be used whenever a new terminal is opened, run:
 
   `nvm alias default <version>`
+  
+  ![image](https://user-images.githubusercontent.com/123230184/229030695-3b401590-0f2e-4c2d-945b-b8acee5a9658.png)
+
+  ![image](https://user-images.githubusercontent.com/123230184/229029386-6042beb5-90d2-4d97-9af5-7de4a9057055.png)
+
 
  - **Step11:** To uninstall a specific version of Node.js, you can run the following command:
 
    `nvm uninstall <node_version>`
+   
+   ![image](https://user-images.githubusercontent.com/123230184/229030723-f25ba3af-395e-4275-92b7-c8ce9086aee2.png)
+
+   ![image](https://user-images.githubusercontent.com/123230184/229029425-a74118ff-a453-4a8c-ac6f-a776450e3740.png)
+
 
    Replace **<node_version>** with the version of Node.js you want to uninstall.
 
