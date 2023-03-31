@@ -11,12 +11,12 @@ A web server is primarily used to deliver and display website content to users o
 • Server-side web scripting: This feature enables users to use scripting languages like Ruby, Python, and PHP to create dynamic web pages.
 • Virtual hosting: In order to run multiple applications, websites, and data, web servers can also be used as virtual servers.
 
-##	Why do we need web servers?
+#	Why do we need web servers?
 
 The purpose of a web server is to store, process, and provide to users any requested data or webpages.
 Requests for static material (such as HTML pages, files, pictures, and videos) from a website are accepted by and handled by a web server.Just HTTP requests and answers are handled by web servers.
 
-## What are the different web servers available ?
+# What are the different web servers available ?
 
 There are mainly 5 Types of Web Servers:
 •	Apache
@@ -35,8 +35,8 @@ Apache can be used to host dynamic material, such as websites created with serve
 
 Another well-liked open-source web server, Nginx, is renowned for both its great performance and minimal resource use. It can also be used to cache static information for quicker delivery to consumers. It is frequently used as a reverse proxy server, diverting traffic to other servers and services. High traffic websites are frequently hosted by Nginx, which is frequently used with Apache to distribute the load between the two servers.
 The capacity of Nginx to effectively handle a large number of concurrent connections is one of its important characteristics. It can handle requests asynchronously and has an event-driven architecture, making it well-suited to handle heavy traffic levels.
-**
-Microsoft IIS :**
+
+**Microsoft IIS :**
 
 A proprietary web server created by Microsoft for use with the Windows operating system is called IIS (Internet Information Services). With support for many different web technologies and protocols, it is a strong and feature-rich web server. Enterprise environments frequently employ IIS, which is connected with other Microsoft goods like Active Directory and Exchange.
 Static web pages, dynamic web pages, and web-based apps can all be hosted on IIS, a powerful and expandable web server. It may be customised with a range of modules and extensions to add new features and capabilities. It supports a variety of programming languages, including ASP.NET, PHP, and Python.
