@@ -122,22 +122,7 @@
 -  Availability Zone: a logical grouping of hosts within a data center or cloud environment.
 -  Port: A  virtual communication end point that is used to enable communication between host over a network.
 - Protocol: A set of rules and standarads that govern to communication betweeen host over a network.
-irin.md
-Displaying irin.md.
 
-
-
-None selected
-
-Skip to content
-Using Gmail with screen readers
-Enable desktop notifications for Gmail.
-   OK  No, thanks
-Conversations
-11.94 GB of 15 GB (79%) used
-Terms · Privacy · Programme Policies
-Last account activity: 0 minutes ago
-Open in 1 other location · Details
 # Data flow 
 - The data flow in SODA typically involves the following steps:
     1. Data is ingested from various sources such as files, databases, or streams.
@@ -169,22 +154,7 @@ Open in 1 other location · Details
 
 
 
-isha.md
-Displaying isha.md.
 
-
-
-None selected
-
-Skip to content
-Using Gmail with screen readers
-Enable desktop notifications for Gmail.
-   OK  No, thanks
-Conversations
-11.94 GB of 15 GB (79%) used
-Terms · Privacy · Programme Policies
-Last account activity: 0 minutes ago
-Open in 1 other location · Details
 ## Reource Monitor
 
 ### Storage Summary
@@ -226,8 +196,7 @@ Open in 1 other location · Details
  2. You can then specify the criteria for the silence, including the alert labels and the duration of the silence.
 
 
-hycth.md
-Displaying hycth.md.
+
 
 
 
