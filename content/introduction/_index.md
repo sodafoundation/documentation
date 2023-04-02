@@ -96,10 +96,10 @@ The official charter for SODA Foundation under Linux Foundation can be found [he
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
 Contact us through any of the following channels:
 
- - [SODA Website](https://sodafoundation.io/the-foundation/join/)  
- - [SODA Slack](https://sodafoundation.io/slack)
- - [SODA Twitter](https://twitter.com/sodafoundation)  
- - [SODA Mailing List](https://lists.sodafoundation.io)
- - [SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
+ - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/github.svg" width="20" height="20">&nbsp; [SODA Website](https://sodafoundation.io/the-foundation/join/)  
+ - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/slack.svg" width="20" height="20">&nbsp; [SODA Slack](https://sodafoundation.io/slack)
+ - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/twitter.svg" width="20" height="20">&nbsp; [SODA Twitter](https://twitter.com/sodafoundation)  
+ - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/regular/envelope.svg" width="20" height="20">&nbsp; [SODA Mailing List](https://lists.sodafoundation.io)
+ - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/linkedin.svg" width="20" height="20">&nbsp; [SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
 
  **For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) website**.
