@@ -96,10 +96,10 @@ The official charter for SODA Foundation under Linux Foundation can be found [he
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
 Contact us through any of the following channels:
 
- - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/github.svg" width="20" height="20">&nbsp; [SODA Website](https://sodafoundation.io/the-foundation/join/)  
- - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/slack.svg" width="20" height="20">&nbsp; [SODA Slack](https://sodafoundation.io/slack)
- - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/twitter.svg" width="20" height="20">&nbsp; [SODA Twitter](https://twitter.com/sodafoundation)  
- - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/regular/envelope.svg" width="20" height="20">&nbsp; [SODA Mailing List](https://lists.sodafoundation.io)
- - <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/linkedin.svg" width="20" height="20">&nbsp; [SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
+ - <img src="https://www.sodafoundation.io/wp-content/uploads/slider17/soda_logo_outline_white.png" style="background-color: black;padding:0.1em; border-radius: 10%" width="20" height="20">&nbsp; [SODA Website](https://sodafoundation.io/the-foundation/join/)  
+ - <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/0698449d50f2b95517562295a59d414afc68b369/svgs/brands/slack.svg" width="20" height="20">&nbsp; [SODA Slack](https://sodafoundation.io/slack)
+ - <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/0698449d50f2b95517562295a59d414afc68b369/svgs/brands/twitter.svg" width="20" height="20">&nbsp; [SODA Twitter](https://twitter.com/sodafoundation)  
+ - <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/0698449d50f2b95517562295a59d414afc68b369/svgs/regular/envelope.svg" width="20" height="20">&nbsp; [SODA Mailing List](https://lists.sodafoundation.io)
+ - <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/0698449d50f2b95517562295a59d414afc68b369/svgs/brands/linkedin.svg" width="20" height="20">&nbsp; [SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
 
  **For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) website**.
