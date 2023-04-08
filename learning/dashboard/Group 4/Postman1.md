@@ -6,7 +6,9 @@ Postman is one of the most popular software testing tools which is used for API 
 This tutorial will help in understanding why Postman is so famous and what makes it unique when compared to other API testing tools. All the examples in this tutorial are tested and can be imported in Postman.
 <br>
 <br>
+
 ## Reasons to use Postman
+
 Postman is based on a wide range of extremely user-friendly power tools. For more than 8 million users, Postman has become a tool of convenience. Following are the reasons why Postman is used
 - Accessibility: One can use it anywhere after installing Postman into the device by simply logging in to the account.
 - Using Collections: Postman allows users to build collections for their API-calls. Every set can create multiple requests and subfolders. It will help to organize the test suites.
@@ -19,17 +21,22 @@ Postman is based on a wide range of extremely user-friendly power tools. For mor
 - Application development: Accelerate application development with Postman eliminates dependencies and reduces the time taken by production by having the frontend and backend teams work in parallel.
 <br>
 <br>
+
 ## Audience
+
 This tutorial is created for those who would like to learn the basics of Postman. As the number of web and mobile applications is increasing, the importance of API testing is also growing. So this tutorial will help you to learn postman testing for testing APIs.
 
 After completion of this tutorial, you will get a basic level of understanding of Postman and API testing. This tutorial will also give you a good understanding of how to use Postman to execute APIs for any given URL for your daily work.
 <br>
 <br>
+
 ## Installation and Updates
+
  Postman can be downloaded for all major operating systems, including Mac, Linux, and Windows, as a native app (standalone application). Postman is also available as a chrome extension application, but it is preferable to install and use the native desktop app because the extension does not support all the features that the native app has.
  <br>
  <br>
-### Steps to download and install the native Postman application
+
+### Steps to download and install the native Postman application on Windows
 
 * Step 1: Go to the link https://www.postman.com/downloads/ and click download for Mac or Windows or Linux based on your operating system.<br><br>
 ![Javatpoint]( https://static.javatpoint.com/tutorial/postman/images/postman-installation-and-updates.png)
@@ -50,6 +57,19 @@ It is better to create an account as this will help you to save the work you do 
 ![Javatpoint](https://static.javatpoint.com/tutorial/postman/images/postman-installation-and-updates6.png)
 <br>
 <br>
+
+### Steps to download and install the native Postman application on Linux (Ubuntu)
+
+To install the latest version of the Postman desktop app, you need to install it via the Snap using the following commands.
+```
+$ sudo apt update
+$ sudo apt install snapd
+$ sudo snap install postman
+```
+This is the simplest way to install Postman on Linux/Ubuntu systems.
+<br>
+<br>
+
 ### Steps to update the Postman desktop client
 
 * You will receive a notification in your Postman app if any update is available.
