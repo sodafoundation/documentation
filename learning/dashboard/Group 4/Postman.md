@@ -132,6 +132,19 @@ Then all you need to do is press the *Send* button
 <br>
 Provided you followed all the above steps properly, you have now successfully used Postman to get a postive response from an API.
 
+<br>
+<br>
+
+---
+## References
+
+- https://www.postman.com
+- https://www.postman.com/downloads/
+- https://www.javatpoint.com/postman-installation-and-updates
+- https://learning.postman.com/docs/getting-started/installation-and-updates/
+- https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux
+- https://en.wikipedia.org/wiki/Postman_(software)
+- https://github.com/postmanlabs
 
 
 
