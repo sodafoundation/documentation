@@ -1,36 +1,29 @@
-# **POSTMAN**
+# Using Postman
 
-*I will show how easy it is to use postman as a beginner*
+The following tutorial will show you how to use Postman after properly installing and setting it up.
 
-**Just open your application**
-
+1. Open your Postman desktop application<br><br>
 ![](https://i.imgur.com/LRI7l6I.png) 
 
-*Open Postman and select "workspace"*
-
+2. Open Postman and select "workspace"<br><br>
 ![](https://i.imgur.com/JFzKUuq.png)
 
-*In workspace section section, click on new*
-
+3. In workspace section section, click on new<br><br>
 ![](https://i.imgur.com/mRfSIc4.png)
 
-*AFter that, click you will get an window like this ==> **Click on http Request***
-
+4. After that, you will be greeted by a dialog box as seen below, click on *HTTP Request*<br><br>
 ![](https://i.imgur.com/1wAT25e.png)
 
-*In The Get section : You will see Input box **( in Blue box you have to put api key or json )***
+5. You will see an input box in the Get section as highlighted below, you will have to put your API key or JSON in this box.<br><br>
+![](https://i.imgur.com/sRVBSoL.png)<br><br>
+Then all you need to do press the *Send* button
 
-![](https://i.imgur.com/sRVBSoL.png)
-
-*and then press the button send*
-
-*after that you will get an **json response with 200 success message***
-
+6. You will then be greeted with the following json response message, typically look for *200 OK* for a successful response<br><br>
 ![](https://i.imgur.com/ZapU4PC.png)
 
-*This is how you can use postman . 😊😊😊😊*
+<br>
+Provided you followed all the above steps properly, you have now successfully used Postman to get a postivie response from an API.
 
-*Open Your postman and come to workspace section and then click on new button and you will see get with input box. here you have to put yout api and then click on send button .. with 200 success message you will get an json response ( this is how you can use any api in postman)*
 
 
 
