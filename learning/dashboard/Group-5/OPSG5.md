@@ -50,12 +50,12 @@
 ## 2. Type Live Server and click on the first option and click install and wait for it to install. 
 ![image](https://user-images.githubusercontent.com/123230201/227724718-2e98ef5c-9d77-4c27-b256-dd16b9b5c71a.png)
 # 
-# How to install Prettifier extension in VS Code 
+# 
 
-## After you've finsihed installing the Live Server extension on VS Code, the next step is to install the Prettifier extension. In order to download the extension VS Code, we need to do the following steps. 
+## 
 
-## 1. Open VS Code and click on the extension button of the left side of VS Code. 
+## 1.
 ![image](https://user-images.githubusercontent.com/123230201/227721833-f5057b9e-7113-435c-add3-8ffdc125c82d.png)
 
-## 2. Type Prettifier extension and click on the third option and click install and wait for it to install. 
+## 2.  
 ![image](https://user-images.githubusercontent.com/123230201/227725006-fa388185-d482-4c14-b6ea-6101ad401c54.png)
