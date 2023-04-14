@@ -1,3 +1,69 @@
+# What are API
+- API stands for Application Program Interface, which developers use to access web tools or information on the cloud. It allows different cross-platform applications to talk to each other. APIs are accessible way to extract and share data within and across organization.
+
+![](https://www.cloudmanagementinsider.com/wp-content/uploads/2020/06/cloud-APIs.png)
+
+
+- APIs are that we can use to interact with GitHub. They allow us to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), we can call the API.
+ 
+ - Additionally, today APIs are treated more like products than code.Modern APIs stick to specific  standards(typically HTTPS and RESET), which enables API to be developer-friendly, self-described, easily accessible and understood broadly.
+
+ # How to create an API?
+Due diligence and effort are required to build an API that other developers will want to work with and trust. These are the five steps required for high-quality API design:
+
+### 1. Plan the API :
+API specifications, like OpenAPI, provide the blueprint for your API design. It is better to think about different use cases in advance and ensure the API adheres to current API development standards.
+
+### 2. Build the API :
+ API designers prototype APIs using boilerplate code. Once the prototype is tested, developers can customize it to internal specifications.
+
+### 3. Test the API :  
+API testing is the same as software testing and must be done to prevent bugs and defects. API testing tools can be used to strength test the API against cyber attacks.
+
+### 4. Document the API :  
+While APIs are self-explanatory, API documentation acts as a guide to improve usability. Well-documented APIs that offer a range of functions and use cases tend to be more popular in a service-oriented architecture.
+
+### 5. Market the API : 
+Just as Amazon is an online marketplace for retail, API marketplaces exist for developers to buy and sell other APIs. Listing your API can allow you to monetize it.
+
+## Types of APIs
+
+There are four types of APIs commonly used in web services-public,partner,private and composite. The APIs "type" indicates the intended scope of use.
+
+![](https://apponward.com/wp-content/uploads/2023/02/How-do-api-work-1.png)
+
+### Private APIs :
+These are internal to an enterprise and only used for connecting systems and data within the business.
+
+### Public APIs :
+These are open to the public and may be used by anyone. There may or not be some authorization and cost associated with these types of APIs.
+
+### Partner APIs :
+These are only accessible by authorized external developers to aid business-to-business partnerships.
+
+### Composite APIs : 
+These combine two or more different APIs to address complex system requirements or behaviors.
+
+# How to use an API?
+#### The steps to implement a new API include:
+
+- Obtaining an API key. This is done by creating a verified account with the API provider.
+
+- Set up an HTTP API client. This tool allows you to structure API requests easily using the API keys received.
+
+- If you don’t have an API client, you can try to structure the request yourself in your browser by referring to the API documentation.
+
+- Once you are comfortable with the new API syntax, you can start using it in your code.
+
+# REST APIs
+
+### What is REST?
+
+- Representational State Transfer (REST) is a software architecture that imposes conditions on how an API should work.
+
+- REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using HTTP.
+
+- REST was initially created as a guideline to manage communication on a complex network like the internet.
 ### What are REST APIs?
 
 - The main feature of REST API is statelessness. Statelessness means that servers do not save client data between requests.
@@ -22,7 +88,72 @@ RESTful APIs can be used across different systems, making it easier to integrate
 RESTful APIs are designed to be efficient, with low overheads and minimal processing requirements, making them ideal for use in high-performance applications.
 
 - #### Security :
-RESTful APIs can be secured using standard security protocols such as OAuth, SSL/TLS and HTTPS, providing a secure way to exchange data between systems. 
+R# What are API
+- API stands for Application Program Interface, which developers use to access web tools or information on the cloud. It allows different cross-platform applications to talk to each other. APIs are accessible way to extract and share data within and across organization.
+
+![](https://www.cloudmanagementinsider.com/wp-content/uploads/2020/06/cloud-APIs.png)
+
+
+- APIs are that we can use to interact with GitHub. They allow us to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), we can call the API.
+ 
+ - Additionally, today APIs are treated more like products than code.Modern APIs stick to specific  standards(typically HTTPS and RESET), which enables API to be developer-friendly, self-described, easily accessible and understood broadly.
+
+ # How to create an API?
+Due diligence and effort are required to build an API that other developers will want to work with and trust. These are the five steps required for high-quality API design:
+
+### 1. Plan the API :
+API specifications, like OpenAPI, provide the blueprint for your API design. It is better to think about different use cases in advance and ensure the API adheres to current API development standards.
+
+### 2. Build the API :
+ API designers prototype APIs using boilerplate code. Once the prototype is tested, developers can customize it to internal specifications.
+
+### 3. Test the API :  
+API testing is the same as software testing and must be done to prevent bugs and defects. API testing tools can be used to strength test the API against cyber attacks.
+
+### 4. Document the API :  
+While APIs are self-explanatory, API documentation acts as a guide to improve usability. Well-documented APIs that offer a range of functions and use cases tend to be more popular in a service-oriented architecture.
+
+### 5. Market the API : 
+Just as Amazon is an online marketplace for retail, API marketplaces exist for developers to buy and sell other APIs. Listing your API can allow you to monetize it.
+
+## Types of APIs
+
+There are four types of APIs commonly used in web services-public,partner,private and composite. The APIs "type" indicates the intended scope of use.
+
+![](https://apponward.com/wp-content/uploads/2023/02/How-do-api-work-1.png)
+
+### Private APIs :
+These are internal to an enterprise and only used for connecting systems and data within the business.
+
+### Public APIs :
+These are open to the public and may be used by anyone. There may or not be some authorization and cost associated with these types of APIs.
+
+### Partner APIs :
+These are only accessible by authorized external developers to aid business-to-business partnerships.
+
+### Composite APIs : 
+These combine two or more different APIs to address complex system requirements or behaviors.
+
+# How to use an API?
+#### The steps to implement a new API include:
+
+- Obtaining an API key. This is done by creating a verified account with the API provider.
+
+- Set up an HTTP API client. This tool allows you to structure API requests easily using the API keys received.
+
+- If you don’t have an API client, you can try to structure the request yourself in your browser by referring to the API documentation.
+
+- Once you are comfortable with the new API syntax, you can start using it in your code.
+
+# REST APIs
+
+### What is REST?
+
+- Representational State Transfer (REST) is a software architecture that imposes conditions on how an API should work.
+
+- REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using HTTP.
+
+- REST was initially created as a guideline to manage communication on a complex network like the internet.ESTful APIs can be secured using standard security protocols such as OAuth, SSL/TLS and HTTPS, providing a secure way to exchange data between systems. 
 
 ![](https://xtracta.com/wp-content/uploads/2021/09/building-integration-xtractas-api.jpg)
 
