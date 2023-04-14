@@ -192,7 +192,10 @@ OAuth combines passwords and tokens for highly secure login access to any system
 - The response body contains the resource representation. The server selects an appropriate representation format based on what the request headers contain. 
 - Clients can request information in XML or JSON formats, which define how the data is written in plain text. For example, if the client requests the name and age of a person named John, the server returns a JSON representation as follows:
 
-    '{"name":"John", "age":30}'
+    {
+    "name" : "John",
+    "age" : 30
+    }
 
 ### Headers
 - The response also contains headers or metadata about the response.
