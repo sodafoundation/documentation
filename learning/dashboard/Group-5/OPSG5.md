@@ -8,7 +8,7 @@
 
 3. Wait for the download to start and finish.
 
-4. After the VS Code has finsihed downloading go through the setup process by clicking next and wait for it to download. 
+4. After the VS Code has finisihed downloading go through the setup process by clicking next and wait for it to download. 
 
 # How to install Angular Snippets extensions in VS Code 
 
