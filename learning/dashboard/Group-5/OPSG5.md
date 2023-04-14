@@ -57,5 +57,5 @@ After you've finished installing the JSON extension on VS Code, the next step is
 1. Open VS Code and click on the extension button of the left side of VS Code. 
 ![image](https://user-images.githubusercontent.com/123230201/227721833-f5057b9e-7113-435c-add3-8ffdc125c82d.png)
 
-2. Type Prettifier extension and click on the third option and click install and wait for it to install. 
-![image](https://user-images.githubusercontent.com/123230201/227725006-fa388185-d482-4c14-b6ea-6101ad401c54.png)
+2. Type Prettifier extension and click on the first option and click install and wait for it to install. 
+![image](https://user-images.githubusercontent.com/123230201/231944685-85936ec5-4187-48db-9c22-b93fa28bf462.png)
