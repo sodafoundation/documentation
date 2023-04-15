@@ -271,11 +271,6 @@ search from an already-known point on a map than do a full search.
 For example, selecting a child element from its parent is easier and
 more efficient than searching for it thr oughout the entire tree.
 
-A Sample Document to Traverse\
-Once you have access to a given node in the DOM tree, you can access its
-related nodes in different way s. You can move downwards, upwards, or
-sideways in the DOM tree from your selected node.
-
 The first method involves searching for an element starting with a
 top-most node (like the document node) and moving downwards.
 
