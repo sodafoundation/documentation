@@ -154,7 +154,11 @@ You can try visiting both domains to test the modifications and check to see if 
 The installation of Nginx on Ubuntu 20.04 can now begin.
 
 
+##Reference
 
+https://www.techtarget.com/whatis/definition/Web-server#:~:text=A%20web%20server%20is%20software,and%20delivering%20webpages%20to%20users.
+
+https://www.solarwinds.com/resources/it-glossary/web-server#:~:text=servers%20used%20for%3F-,What%20are%20web%20servers%20used%20for%3F,website%20data%20from%20unauthorized%20users.
 
 
 
