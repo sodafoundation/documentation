@@ -160,6 +160,8 @@ https://www.techtarget.com/whatis/definition/Web-server#:~:text=A%20web%20server
 
 https://www.solarwinds.com/resources/it-glossary/web-server#:~:text=servers%20used%20for%3F-,What%20are%20web%20servers%20used%20for%3F,website%20data%20from%20unauthorized%20users.
 
+https://ubuntu.com/tutorials/install-and-configure-nginx#2-installing-nginx
+
 
 
 
