@@ -63,11 +63,11 @@ A package manager is typically included with every operating system. You have a 
 
 Step 1 :  Upgrade the package management to the most recent version that is compatible:
 You can either use the apt or apt-get package manager to install Nginx.
-sudo apt updatesudo apt-get update
+```sudo apt updatesudo apt-get update```
 Now, you are ready to install Ngnix. When you are logged in with a non-root account with sudo rights, you will need to prefix every task that requires admin privileges with sudo.
 
 Step 2 : Install Ngnix web server using apt:	
-sudo apt install nginxsudo apt-get install nginx
+```sudo apt install nginxsudo apt-get install nginx```
 
 Although the service starts automatically after installing Nginx, before you can test whether Nginx is working correctly or not, you will need to configure the OS firewall to access Nginx.
 
@@ -76,7 +76,7 @@ Although the service starts automatically after installing Nginx, before you can
 The most popular method for creating iptables' ingress and egress rules. Uncomplicated Firewall, or ufw, is a user-friendly wrapper for iptables that is available in Ubuntu 20.04. Although it comes installed with Ubuntu 20.04 but to make sure that it is appropriately installed, install it manually. After installing Nginx, follow the instructions below to set up the firewall
 
 Step 1: Install ufw:
-sudo apt install ufw
+```sudo apt install ufw```
 
 Step 2: Check if ufw is working fine:
 sudo ufw status
