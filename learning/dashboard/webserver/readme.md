@@ -185,6 +185,15 @@ Nginx will begin handling requests for both domains from the appropriate blocks 
 You can try visiting both domains to test the modifications and check to see if the contents of index.html are rendered correctly.
 The installation of Nginx on Ubuntu 20.04 can now begin.
 
+## References :
+
+- https://www.techtarget.com/whatis/definition/Web-server
+
+- https://en.wikipedia.org/wiki/Web_server
+
+- https://www.solarwinds.com/resources/it-glossary/web-server#:~:text=The%20primary%20role%20of%20a,server%20to%20ensure%20its%20safety
+
+- https://ubuntu.com/tutorials/install-and-configure-nginx
 
 
 
