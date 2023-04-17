@@ -66,14 +66,14 @@ Jigsaw's modular design, which enables customers to easily adapt and increase th
 
 A package manager is typically included with every operating system. You have a choice between using apt or apt-get with Ubuntu 20.04. As this is a new server, you first need to update the package manager.
 
-Step 1 :  Upgrade the package management to the most recent version that is compatible:
+**Step 1 :**   Upgrade the package management to the most recent version that is compatible:
 You can either use the apt or apt-get package manager to install Nginx.
 ```
 sudo apt updatesudo apt-get update
 ```
 Now, you are ready to install Ngnix. When you are logged in with a non-root account with sudo rights, you will need to prefix every task that requires admin privileges with sudo.
 
-Step 2 : Install Ngnix web server using apt:	
+**Step 2 :**  Install Ngnix web server using apt:	
 ```
 sudo apt install nginxsudo apt-get install nginx
 ```
@@ -84,27 +84,27 @@ Although the service starts automatically after installing Nginx, before you can
 
 The most popular method for creating iptables' ingress and egress rules. Uncomplicated Firewall, or ufw, is a user-friendly wrapper for iptables that is available in Ubuntu 20.04. Although it comes installed with Ubuntu 20.04 but to make sure that it is appropriately installed, install it manually. After installing Nginx, follow the instructions below to set up the firewall
 
-Step 1: Install ufw:
+**Step 1 :** Install ufw:
 ```
 sudo apt install ufw
 ```
 
-Step 2: Check if ufw is working fine:
+**Step 2 :** Check if ufw is working fine:
 ```
 sudo ufw status
 ```
 
-Step 3: Allow traffic over HTTP and recheck the status:
+**Step 3 :** Allow traffic over HTTP and recheck the status:
 ```
 sudo ufw allow ‘Nginx HTTP’ 
 ```
 
-Step 4: Allow traffic over TCP (OpenSSH) too if you want to log into the machine again:
+**Step 4 :** Allow traffic over TCP (OpenSSH) too if you want to log into the machine again:
 ```
 sudo ufw allow ‘OpenSSH’
 ```
 
-Step 5: If the status was inactive when you checked earlier, activate it:
+**Step 5 :** If the status was inactive when you checked earlier, activate it:
 ```
 sudo ufw enable
 ```
@@ -113,22 +113,22 @@ The choice of whether to implement the changes or not will be presented to you. 
 
 ## Nginx Installation and Management :
 
-Step 1: Check the status of the Nginx server:
+**Step 1 :** Check the status of the Nginx server:
 ```
 sudo systemctl status nginx
 ```
                
-Step 2: You can also check if Nginx is working by accessing your website using the browser. Visit the following link:
+**Step 2 :** You can also check if Nginx is working by accessing your website using the browser. Visit the following link:
 ```
 http://servermania_server_ip
 ```
                
-Step 3: Use systemctl to start, stop, or restart your Nginx  server:
+**Step 3 :** Use systemctl to start, stop, or restart your Nginx  server:
 ```
 sudo systemctl stop nginxsudo systemctl start 
 nginxsudo systemctl restart nginx
 ```
-Step 4: The Nginx configuration file is found at /etc/nginx/nginx.conf. If you make changes to the configuration, you can either restart the Nginx server or reload the configuration file.
+**Step 4 :** The Nginx configuration file is found at /etc/nginx/nginx.conf. If you make changes to the configuration, you can either restart the Nginx server or reload the configuration file.
 ```
 systemctl reload nginx # reloads Nginx configuration
 ```
@@ -149,16 +149,16 @@ Nginx only creates one server block by default, and it points to the /var/www/ht
 sudo mkdir -p /var/www/domainone.com/htmlsudo mkdir -p /var/www/domaintwo.com/html
 ```
 
-Step 1: Change ownership of the directories:
+**Step 1 :** Change ownership of the directories:
 Doing this will enable the user to create and edit the contents of these new directories.
 
-Step 2: Modify permissions for both the domain directories:
+**Step 2 :** Modify permissions for both the domain directories:
 This step is important to make sure that you don’t need root privileges to make changes to any of the sites.
 ```
 sudo chmod -R 755 /var/www
 ```
 
-Step 3: Create sample web pages for each domain/site:
+**Step 3 :** Create sample web pages for each domain/site:
 Create a landing page index.html for both domains. Create a basic HTML snippet for a welcome page for both sites.
 ```
 nano /var/www/domainone.com/html/index.html
@@ -169,17 +169,17 @@ Once the editor is open, paste the following into the editor:
 ```
 Save the index.html file and create a similar one for the second domain. Make sure you change the welcome message.
 
-Step 4: Create Server Blocks:
+**Step 4 :** Create Server Blocks:
 As mentioned earlier, by default, Nginx has only one server block. You can find it here — /etc/nginx/sites-available/default. So, we'll need two server blocks because we have two sites to support. The server restricts access to port 80. For our new server blocks, let's replicate the default server block.
 ```
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/domainone.com
 ```
 Similarly, copy the default file and create the second server block too.
 
-Step 5: Mark One of the Two Servers as Default:
+**Step 5 :** Mark One of the Two Servers as Default:
 You can only have a single default server with the default_server option enabled. Please remove it from one of the server blocks.
 
-Step 6: Enable Server Blocks & Restart Nginx:
+**Step 6 :** Enable Server Blocks & Restart Nginx:
 You can enable the server blocks by creating symbolic links from the server block configuration files to the sites-enabled directory.
 ```
 sudo ln -s /etc/nginx/sites-available/domainone.com /etc/nginx/sites-enabled/
