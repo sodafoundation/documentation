@@ -973,7 +973,10 @@ alert(checkVotingEligibility(age));
 }
 ```
 ## REFERENCE
-https://www.tutorialspoint.com/javascript/javascript_overview.htm
-https://www.makeuseof.com/dom-javascript-traverse/#:~:text=DOM%20traversal%20(also%20called%20walking,querySelector()%20and%20document.
-https://www.javascripttutorial.net/es6/
-https://www.udemy.com/course/java-tutorial/
+* https://www.tutorialspoint.com/javascript/javascript_overview.htm
+
+* https://www.makeuseof.com/dom-javascript-traverse/#:~:text=DOM%20traversal%20(also%20called%20walking,querySelector()%20and%20document.
+
+* https://www.javascripttutorial.net/es6/
+
+* https://www.udemy.com/course/java-tutorial/
