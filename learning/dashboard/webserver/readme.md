@@ -23,10 +23,15 @@ Requests for static material (such as HTML pages, files, pictures, and videos) f
 
 
 There are mainly 5 Types of Web Servers:
+
 •	Apache
+
 •	Nginx
+
 •	Microsoft IIS
+
 •	Lighttpd
+
 •	Jigsaw
 
 
