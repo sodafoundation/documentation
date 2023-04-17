@@ -144,6 +144,9 @@ Some common Markdown elements such as headings and code blocks include extended 
 You can choose from these types of note blocks to draw attention to specific content:
 
 ![Note Blocks](https://github.com/Ryder-37/Group-6/blob/master/learning/dashboard/group-6/Markdown%20Images/Note%20Blocks.png?raw=true)
+### **Markdown Cheatsheets**
+
+This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic syntax and extended syntax.
 
 ### **Basic Syntax**
 
