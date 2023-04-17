@@ -4,11 +4,17 @@
 The Hyper Text Transfer Protocol (HTTP) and other protocols are used by the web server, a piece of hardware and software, to accept and process requests from clients all over the world. The web server displays contents by storing them, then gives users access to the webpages via text, images, videos, and other media. It employs
 Physical Storage: To ensure the security of website data, all data is kept on a physical web server. A request is created and sent to the web server to process the data when an end user types the URL of your website into their browser or searches for it using a keyword.
 Finding the web server on which to host a website is the responsibility of web browsers like Firefox, Chrome, or Internet Explorer.
+
 ## Use of a web server:-
+
 A web server is primarily used to deliver and display website content to users or clients. The following are additional applications for web servers:
+
 • Store and safeguard website data: A web server has the capacity to store and safeguard sensitive website data from unauthorised users.
+
 • Manage bandwidth to control network traffic: A web server can assist in removing downtime brought on by heavy web traffic. In order to control the rate of data transmission over the internet and reduce unnecessary network traffic, web hosts can configure bandwidth.
+
 • Server-side web scripting: This feature enables users to use scripting languages like Ruby, Python, and PHP to create dynamic web pages.
+
 • Virtual hosting: In order to run multiple applications, websites, and data, web servers can also be used as virtual servers.
 
 
