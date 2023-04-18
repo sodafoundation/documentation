@@ -26,7 +26,7 @@ After completion of this tutorial, you will get a basic level of understanding o
 
 ## Installation, Setup and Updates
 
-<br> 
+<br>
 
  > Postman can be downloaded for all major operating systems, including Mac, Linux, and Windows, as a native app (standalone application). Postman is also available as a chrome extension application, but it is preferable to install and use the native desktop app because the extension does not support all the features that the native app has.
 
