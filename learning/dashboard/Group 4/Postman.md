@@ -6,7 +6,7 @@
 
 <br>
 
-Postman is one of the most popular software testing tools which is used for API testing. With the help of this tool, developers can easily create, test, share, and document APIs. Here are some of the reasons why Postman is used by over 8 million users today: 
+Postman is one of the most popular software testing tools used for API testing. With the help of this tool, developers can easily create, test, share, and document APIs. Here are some of the reasons why Postman is used by over 8 million users today: 
 
 - Accessibility: One can use it anywhere after installing Postman into the device by simply logging in to the account.
 - Using Collections: Postman allows users to build collections for their API-calls. Every set can create multiple requests and subfolders. It will help to organize the test suites.
@@ -327,23 +327,34 @@ This code in JSON format constitutes the **request body**. Any special input sen
 <br>
 
 - Follow the syntax by providing a name and corresponding email address and hit *Send*. You will receive an access token. <br><br>
-> The text you entered in
 ![](https://i.postimg.cc/sxtXsRDZ/image-2023-04-18-193110014.png)
 > Notice the different status message.
 
 The API will provide you (your current credentials) with an access token only **once**, meaning that if you try to repeat the previous steps you will be met with an error message. So it is recommeded that you save the access token as a variable immediately. 
 
-- Copy the value of the access token (without the quotes), then navigate to your colelction, enter it as a variable and name it. Save your collection after doing so. <br><br>
-![](https://i.postimg.cc/9FN21tCL/image-2023-04-18-204203978.png) 
+### *Environments*
+*An environment is a set of variables that you can use in your Postman requests. You can use environments to group related sets of values together and manage access to shared Postman data if you are working as part of a team.*
+
+Since your access token is sensitive data, we can assign the same to a variable in an environment. You will have to make an environment for this.
+
+- Navigate to *Environments* and click on the '+' icon, or click on *Create Environment*. Give your new environment a name <br><br>
+![](https://i.postimg.cc/NfRSd2m3/image-2023-04-19-113613571.png)
+![](https://i.postimg.cc/0j7f8mCD/image-2023-04-19-113925040.png) <br><br>
+
+- Now copy the value of the access token (without the quotes), then enter it as a variable in your environment using the table and save it. <br><br>
+![](https://i.postimg.cc/pXPBzsYn/image-2023-04-19-114537404.png) 
 > Leave your *initial value* as `---` here. The initial value of a variable is usually visible to all clients in a public API and in most cases it is not advisable to make sensitive information like your access token public.
 
 - Go back to your previous request tab, and navigate to *Authorization*. Change the *Type* to *Bearer Token* in the drop-down menu. <br><br>
 ![](https://i.postimg.cc/Rhvmb4sm/image-2023-04-18-205613211.png) <br><br>
 
-- Assign the access token variable you created earlier to the the value of *Token*. Save after doing so.<br><br>
-![](https://i.postimg.cc/RVZ0dLJY/image-2023-04-18-210027905.png) <br><br>
+- Set your environment as *active* by hovering over your environment in the *environments* pane and clicking the tick mark, or by changing the value in the drop down menu in the top right corner from *No environment* to the name that you gave your environment. <br><br>
+![](https://i.postimg.cc/fTVsvfvB/image-2023-04-19-115029189.png) <br><br>
 
-Now that we've set up our access token, we can use another endpoint with the `POST` method. 
+- Now navigate to your current request tab and go to *Authorization*. Change the value of *type* to *Bearer Token*, then assign to *Token* the variable you created just now in double curly braces. <br><br>
+![](https://i.postimg.cc/B6YYQ6vN/image-2023-04-19-120224052.png) <br><br>
+
+Now that we've set up our environment and our access token, we can use another endpoint with the `POST` method. 
 
 - Now use the `orders` endpoint to order a book, following the syntax as seen in the image. <br><br>
 ![](https://i.postimg.cc/h41xqd68/image-2023-04-18-214341800.png) <br><br>
@@ -363,7 +374,7 @@ We will now look at the `PATCH` request method. The `PATCH` request method is es
 - Update the path variable for `orderId` under *Params* with the order ID you just copied. <br><br>
 ![](https://i.postimg.cc/PrqpQSyL/image-2023-04-18-224919588.png) <br><br>
 
-- Navigate to *Body*, set to *raw* and change it's format to *JSON*. Then update it your order by changing the customer name and hit *Send*. <br><br>
+- Navigate to *Body*, set to *raw* and change it's format to *JSON*. Then update your order by changing the customer name and hit *Send*. <br><br>
 ![](https://i.postimg.cc/BnxQHzkf/image-2023-04-18-225531804.png) <br><br>
 If you use `orders` with `GET` again, you will be able to see the change you just made. <br><br>
 ![](https://i.postimg.cc/5y7st185/image-2023-04-18-230043700.png)
@@ -374,17 +385,17 @@ Lastly, let's use the `DELETE` method to delete the order we just made. The `DEL
 
 - When used in the `DELETE` method, the `order` endpoint with the `ordersId` path variable can be used to delete an existing order. You will need the ID of the order to do this.
 
-> Notice how the same endpoint has had different use cases across different request methods.
+> Notice how the endpoint `orders` has had multiple use cases across different request methods.
 
 - Specify `orderId`'s value under *Params* and hit *Send* <br><br>
 ![](https://i.postimg.cc/g2W64bDc/image-2023-04-18-232248749.png) 
 
 > Unlike in `POST` and `PATCH`, you will not need to include or specify a request body in this request.
 
-- As you can see here, from sending a `GET` request with the `orders` endpoint, the order has been deleted. <br><br>
+- As you can see here, from sending a `GET` request with the `orders` endpoint, the order you made just now has been deleted. <br><br>
 ![](https://i.postimg.cc/g2W64bDc/image-2023-04-18-232248749.png) <br><br>
 
-Provided you followed this section properly you should now a have better understanding of the usage of Postman
+Provided you followed this section properly, you should now have a better understanding of the usage of Postman.
 
 <br>
 <br>
@@ -398,6 +409,7 @@ Provided you followed this section properly you should now a have better underst
 - https://learning.postman.com/docs/getting-started/installation-and-updates/
 - https://learning.postman.com/docs/getting-started/creating-the-first-collection
 - https://learning.postman.com/docs/collaborating-in-postman/using-workspaces/creating-workspaces
+- https://learning.postman.com/docs/sending-requests/managing-environments
 - https://en.wikipedia.org/wiki/Postman_(software)
 - https://github.com/postmanlabs
 
