@@ -91,6 +91,10 @@ Your text will look like this:
 
 When your Markdown file is rendered to HTML, the image will be embedded directly into the body text.
 
+### **Blockquotes**
+
+Sometimes in Markdown, we will want to reference an external source using quotation marks. This is called a blockquote. You represent any blockquote by preceding the first line of the block quote with a greater-than sign or angle bracket (>). Gruber recommends inserting the angle bracket before every line of your blockquote.
+
 ### **Tables**
 
 Tables are not part of the core Markdown specification, but Adobe supports them to an extent. Markdown doesn’t support multiple lines lists in cells. Best practice is to avoid using multiple lines in tables. You can create tables by using the pipe (|) character to delineate columns and rows. Hyphens create each column’s header, while pipes separate each column. Include a blank line before your table so it’s rendered correctly.
