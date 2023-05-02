@@ -14,7 +14,7 @@ https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/
 ### Video Tutuorial:
 Follow this step-by-step video tutorial to install and start working with SODA.
 
-[![Unable to load thumbnail, Click here for the video](https://i9.ytimg.com/vi_webp/eHgOYzqBRs8/mqdefault.webp?v=6423c5e3&sqp=CMDezqEG&rs=AOn4CLAEDxKDfRHZ9qmO39YeD13PpMVb4A)](https://www.youtube.com/watch?v=eHgOYzqBRs8)
+[![Unable to load thumbnail, Click here for the video](https://i.ytimg.com/vi/eHgOYzqBRs8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAFPo8QcSReOEu3MzScBf1GRIJAkQ)](https://www.youtube.com/watch?v=eHgOYzqBRs8)
 
 Video Link:  https://www.youtube.com/watch?v=eHgOYzqBRs8
 
