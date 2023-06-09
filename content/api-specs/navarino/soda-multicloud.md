@@ -7,4 +7,4 @@ disableToc: false
 ---
 ### Release v1.8.0  
 
-{{< swagger-spec id="multicloud" url="https://raw.githubusercontent.com/sodafoundation/multi-cloud/v1.8.0/openapi-spec/swagger.yaml" >}}
+{{< swagger-spec id="multicloud" url="https://raw.githubusercontent.com/sodafoundation/multi-cloud/1.8.0/openapi-spec/swagger.yaml" >}}
