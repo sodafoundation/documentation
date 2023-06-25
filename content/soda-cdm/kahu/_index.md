@@ -2,7 +2,7 @@
 title: Kahu - The SODA container data backup and restore project
 menuTitle: Kahu
 description: "All the guides and detailed documentation for Kahu Project"
-weight: 7
+weight: 1
 disableToc: false
 ---
 

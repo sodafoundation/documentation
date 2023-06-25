@@ -1,7 +1,7 @@
 ---
 title: Releases and Roadmaps
 description: "SODA Releases and Roadmap"
-weight: 8
+weight: 10
 disableToc: false
 ---
 ## Releases

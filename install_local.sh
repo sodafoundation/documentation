@@ -24,19 +24,19 @@ then
     elif [ $? = '1' ]
     then
         printf "Hugo is not installed \n"
-        printf "Downloading hugo_0.55.6_Linux-64bit.deb ... \n"
-        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
+        printf "Downloading hugo_0.92.2_Linux-64bit.deb ... \n"
+        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.92.2/hugo_0.92.2_Linux-64bit.deb
         printf "Download complete. \n"
         printf "Unpacking... \n"
-        sudo dpkg -i hugo_0.55.6_Linux-64bit.deb &> /dev/null
+        sudo dpkg -i hugo_0.92.2_Linux-64bit.deb &> /dev/null
         printf "Unpacking complete. \n"
         printf "Installing Hugo... \n"
         sudo apt-get install -f &> /dev/null
         printf "Installation complete. \n"
         hugo version
         printf "Cleaning up...\n"
-        printf "Deleting hugo_0.55.6_Linux-64bit.deb ... \n"
-        rm hugo_0.55.6_Linux-64bit.deb*
+        printf "Deleting hugo_0.92.2_Linux-64bit.deb ... \n"
+        rm hugo_0.92.2_Linux-64bit.deb*
         printf "Clean up complete. \n"
         printf "\n\n"
     fi

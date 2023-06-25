@@ -1,7 +1,7 @@
 ---
 title: SODA Architecture
 description: ""
-weight: 3
+weight: 4
 disableToc: false
 ---
 

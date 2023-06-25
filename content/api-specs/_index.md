@@ -1,7 +1,7 @@
 ---
 title: SODA API Specification
 description: "Provides SODA API Standards for Data and Storage"
-weight: 3
+weight: 5
 disableToc: false
 ---
 
