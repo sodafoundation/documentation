@@ -1,5 +1,5 @@
 ---
-title:  support matrix
+title:  Support Matrix
 menuTitle: Support matrix
 description: "Matrix data for supported cloud vendors and features"
 weight: 15
