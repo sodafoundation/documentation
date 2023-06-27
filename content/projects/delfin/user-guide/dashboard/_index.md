@@ -15,7 +15,7 @@ It provides unified APIs to access, export and connect with clients as well as a
 
 - [Register a Storage Device](#register-storage-device)
     - [REST Access](#rest-access)
-  - [SSH Access](#ssh-access)
+    - [SSH Access](#ssh-access)
 - [Storage Summary](#storage-summary)
     - [Grid View](#grid-view)
         - [Tree View Widget](#storage-array-tree-view-widget)
