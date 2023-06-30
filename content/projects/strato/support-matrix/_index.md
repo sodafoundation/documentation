@@ -1,6 +1,6 @@
 ---
 title:  Support Matrix
-menuTitle: Support matrix
+menuTitle: support matrix
 description: "Matrix data for supported cloud vendors and features"
 weight: 15
 disableToc: false

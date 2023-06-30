@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-description: "Start here if you want to know about developing for/with SODA Foundation Projects."
+description: "Start here if you want to know about developing for Dashboard"
 weight: 30
 disableToc: true
 ---
