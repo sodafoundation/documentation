@@ -1,6 +1,6 @@
 ---
 title: Developer Guide 
-description: "Developer guide for Multi Cloud service."
+description: "Developer guide for Multi Cloud service(strato)."
 weight: 10
 disableToc: false
 tags: ["user guide", "multicloud"] 

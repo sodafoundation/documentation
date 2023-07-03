@@ -2,7 +2,7 @@
 title: Delfin
 menuTitle: Delfin
 description: "All  guides for the Delfin project can be found here"
-weight: 10
+weight: 2
 disableToc: false
 tags: ["user guide", "delfin", "dashboard"] 
 ---

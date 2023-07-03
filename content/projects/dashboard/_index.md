@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Start here if you want to know about developing for Dashboard"
-weight: 30
+weight: 4
 disableToc: true
 ---
 

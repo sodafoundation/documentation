@@ -1,7 +1,7 @@
 ---
 title: Strato
 description: "The guides of features of strato SODA Project"
-weight: 20
+weight: 1
 disableToc: true
 ---
 
