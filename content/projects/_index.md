@@ -32,7 +32,6 @@ disableToc: false
 
     [Support Matrix](https://docs.sodafoundation.io/support-matrix/delfin/)
 
-
 - ### SODA Plugin
 
     SODA Plugins enable awareness and seamless integration between SODA and compute platforms or application frameworks.
@@ -47,7 +46,7 @@ disableToc: false
 
      [Support Matrix](https://docs.sodafoundation.io/support-matrix/nbp/)
 
-- ### SODA Multicloud
+- ### SODA Multicloud(Strato)
 
     SODA Multicloud provides a cloud vendor agnostic data management for hybrid cloud, intercloud, or intracloud. The goal is to provide a unified interface to support file, block,and object services across multiple cloud vendors. It can be hosted on-premise or in the cloud.
 
