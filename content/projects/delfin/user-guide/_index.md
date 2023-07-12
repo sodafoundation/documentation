@@ -2,7 +2,7 @@
 title: User Guide
 menuTitle: User Guide
 description: "All user guides for the Delfin project can be found here"
-weight: 10
+weight: 20
 disableToc: false
 tags: ["user guide", "delfin", "dashboard"] 
 ---

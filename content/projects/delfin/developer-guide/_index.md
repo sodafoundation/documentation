@@ -2,7 +2,7 @@
 title: Delfin Developer Guides
 menuTitle: Developer Guide
 description: "This section will contain developer guides for delfin project"
-weight: 30
+weight: 10
 disableToc: true
 ---
 

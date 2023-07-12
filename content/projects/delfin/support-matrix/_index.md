@@ -2,7 +2,7 @@
 title: Support Matrix
 menuTitle: Support Matrix
 description: "Support matrix data for drivers of Delfin project"
-weight: 10
+weight: 30
 disableToc: false
 tags: ["support matrix", "delfin", "drivers"] 
 ---
