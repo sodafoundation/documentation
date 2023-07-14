@@ -131,21 +131,24 @@ sudo -E env "PATH=$PATH" ansible-playbook site.yml -i local.hosts -vvv --tags de
 ```
 Supported tags: `keystone`, `hotpot`, `dock`, `delfin`, `srm_toolchain`, `gelato`, `sushi`, `dashboard`, `orchestration`
 
----
+---  
+
+### Enable SODA Dashboard (optional)
 
 
-
-#### Enable dashboard installation (optional)
-
-
-Update the file `installer/ansible/group_vars/dashboard.yml` and change the value of `enable_dashboard` to `true`
-
+Update the file `installer/ansible/group_vars/dashboard.yml` and change the value of `enable_dashboard` to `true`  
 
 ```bash
 # Install dashboard (true/false)
 enable_dashboard: true
 
-```
+```  
+
+{{% notice info %}}
+  Starting with the Okinawa release of SODA two new user interfaces can be installed; Delfin UI and Strato UI. These allows users to install only those components required for the respective projects. The SODA Dashboard can be installed alongside these user interfaces. The features are currently the same.
+  Users who wish to test Terra features will have to use the SODA Dashboard. Users who wish to test Strato and Delfin features can use the SODA Dashboard or the respective independent UI.
+{{% /notice %}}  
+
 --- 
 
 
@@ -158,6 +161,24 @@ This process can be abstracted from the end users. SODA Multi-cloud now supports
 enable_storage_service_plans: true
 ```
 For more information on how to use SSP you can check out the [user guide](/guides/user-guides/multi-cloud/storage-service-plan)
+
+---  
+
+### Enable Strato UI (optional)
+
+Starting with the Okinawa release (v1.9.0) of SODA a separate user interface is available to experience the SODA Strato project. 
+This project is called the Strato UI and can be enabled by updating the file `installer/ansible/group_vars/strato-ui.yml` and change the value of `enable_strato_ui` to `true`  
+The Strato UI console is served on port 9003. This can be changed in the same config file.
+
+```bash
+enable_strato_ui: true
+
+strato_ui_port: 9003
+```  
+
+{{% notice info %}}
+  Strato UI requires a working Strato installation and the SODA Keystone authentication to be installed. 
+{{% /notice %}}  
 
 ---
 #### Multi-Cloud installation in High Availability (HA) Mode.
@@ -359,6 +380,25 @@ grafana_port: 3000
 **If you already have any of the above running then please make the appropriate changes to the docker container name and ports in the file `ansible/srm-toolchain/docker-compose.yml`.**
 
 {{% /notice %}}
+
+---  
+
+### Enable Delfin UI (optional)
+
+Starting with the Okinawa release (v1.9.0) of SODA a separate user interface is available to experience the SODA Delfin project. 
+This project is called the Delfin UI and can be enabled by updating the file `installer/ansible/group_vars/delfin-ui.yml` and change the value of `enable_delfin_ui` to `true`  
+The Delfin UI console is served on port 9001. This can be changed in the same config file.
+
+```bash
+enable_delfin_ui: true
+
+delfin_ui_port: 9001
+```  
+
+{{% notice info %}}
+  Delfin UI requires a working Delfin installation and the SRM toolchain to be installed. 
+{{% /notice %}}  
+
 
 --- 
 
