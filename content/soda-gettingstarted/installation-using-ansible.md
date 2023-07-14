@@ -85,7 +85,8 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
 - Enable following configurations  
   - In file installer/ansible/group_vars/delfin.yml `enable_delfin: true`  
   - In file installer/ansible/group_vars/srm-toolchain.yml `install_srm_toolchain: true`  
-  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  
+  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  **OR**
+  - In file installer/ansible/group_vars/delfin-ui.yml `enable_delfin_ui: true`  
   - **[Click here](#configure-delfin-installation) for other supported configuration details**
 
 ---
@@ -103,8 +104,9 @@ delfin (Dolphin in Spanish!), the SODA Infrastructure Manager project is an open
 Strato installs SODA Multicloud only.
 - Enable following configurations  
   - In file installer/ansible/group_vars/gelato.yml  update the value  `enable_gelato : true`.
-  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`
   - In file installer/ansible/group_vars/common.yml `host_ip : <User's IP address, eg. 127.0.0.1>`  
+  - In file installer/ansible/group_vars/dashboard.yml `enable_dashboard: true`  **OR**
+  - In file installer/ansible/group_vars/strato-ui.yml `enable_strato_ui: true`    
   - **[Click here](#enable-storage-service-plans-in-multicloud) for other supported configuration details**
 ---
 
