@@ -1,6 +1,6 @@
 ---
-title: User Guide
-menuTitle: User Guide
+title: User Guides
+menuTitle: User Guides
 description: "All user guides for the Delfin project can be found here"
 weight: 20
 disableToc: false
