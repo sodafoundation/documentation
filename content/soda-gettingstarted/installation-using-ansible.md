@@ -35,14 +35,14 @@ sudo apt-get update && sudo apt-get install -y git
 ```bash
 git clone https://github.com/sodafoundation/installer.git
 cd installer/ansible
-# Checkout the required version. For example, to checkout v1.8.0 follow
-git checkout v1.8.0
+# Checkout the required version. For example, to checkout v1.9.0 follow
+git checkout v1.9.0
 chmod +x install_dependencies.sh && source install_dependencies.sh
 export PATH=$PATH:/home/$USER/.local/bin
 ```
 
 {{% notice note %}}
-Checkout the latest stable release. Current stable release: [Navarino (v1.8.0)](https://github.com/sodafoundation/soda/releases/tag/v1.8.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
+Checkout the latest stable release. Current stable release: [Okinawa (v1.9.0)](https://github.com/sodafoundation/soda/releases/tag/v1.9.0). If you want to get the master branch of all components, you can skip this step. (Master may not be stable or tested fully)
 {{% /notice %}}
 
 
