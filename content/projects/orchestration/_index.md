@@ -1,6 +1,6 @@
 ---
-title: Developer Guides
-description: "Start here if you want to know about developing for/with SODA Foundation Projects."
+title: Orchestration
+description: "Developer guide for orchestration"
 weight: 30
 disableToc: true
 ---

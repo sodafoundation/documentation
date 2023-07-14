@@ -1,6 +1,6 @@
 ---
-title: File Share 
-description: "Installation & Developer Guide for File Share"
+title: Developer Guide for file share
+description: "Developer Guide for File Share"
 weight: 10
 disableToc: false
 tags: ["developer guide", "file share"] 

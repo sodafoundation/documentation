@@ -1,5 +1,6 @@
 ---
-title: Developer Guide 
+title: Installation and Testing
+menuTitle: Installation 
 description: "Developer guide for Multi Cloud service(strato)."
 weight: 10
 disableToc: false

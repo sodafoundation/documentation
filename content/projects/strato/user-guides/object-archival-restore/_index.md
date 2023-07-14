@@ -24,7 +24,7 @@ To refer the API specs, please check [Cloud Object Archival API Specs](https://g
 
 ## Installing SODA multi-cloud
 Please refer [SODA installation using Ansible](https://docs.sodafoundation.io/soda-gettingstarted/installation-using-ansible/)
-Or Check the developer guide [multi-cloud local cluster installation through repo](https://docs.sodafoundation.io/guides/developer-guides/multi-cloud/)
+Or Check the developer guide [multi-cloud local cluster installation through repo](https://docs.sodafoundation.io/projects/strato/developer-guides/)
 
 ##### SODA Dashboard UI can be accessed via
 	http://{your_host_ip}:8088/#/home

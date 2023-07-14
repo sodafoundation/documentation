@@ -1,7 +1,7 @@
 ---
-title: File Share
+title: User Guide for File Share
 description: "User guide for File Share feature."
-weight: 10
+weight: 20
 disableToc: false
 tags: ["user guide", "file share"] 
 ---

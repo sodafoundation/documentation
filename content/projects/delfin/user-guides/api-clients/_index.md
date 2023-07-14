@@ -300,6 +300,6 @@ A Sample exporter implementation is provided in Delfin repo for reference. Also,
 - [Delfin Design Spec](https://github.com/sodafoundation/architecture-analysis/blob/master/arch-design/delfin/SODA_InfrastructureManagerDesign.md)
 - [Delfin OpenAPI Spec](https://github.com/sodafoundation/delfin/blob/master/openapi-spec/swagger.yaml)
 - [Delfin Exporter writing guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/exporter-developer-guide/)
-- [Delfin Developer Guide](https://docs.sodafoundation.io/guides/developer-guides/delfin/)
+- [Delfin Developer Guide](https://docs.sodafoundation.io/projects/delfin/developer-guides/)
 - [Alert Spec](https://github.com/sodafoundation/architecture-analysis/blob/master/specs/SIM/alert_manager/SODA_AlertManagerDesign.md)
 - [Performance metrics Spec](https://github.com/sodafoundation/architecture-analysis/pull/77)

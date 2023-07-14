@@ -1,5 +1,5 @@
 ---
-title:  User Guide 
+title:  User Guides 
 description: "The user guides for SODA multi-cloud(strato) Project features"
 weight: 20
 disableToc: true
