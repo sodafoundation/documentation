@@ -1,5 +1,5 @@
 ---
-title: NBP
+title: SODA NBP
 menuTitle: NBP
 description: "All user guides for the North Bound Plugin(NBP) project can be found here"
 weight: 15
