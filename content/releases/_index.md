@@ -30,7 +30,24 @@ Release details available [here](https://github.com/sodafoundation/soda/releases
 ### Isabela (v1.3.0)
 Release details available [here](https://github.com/sodafoundation/soda/releases/tag/v1.3.0)
 
-{{%children style="h3" description="true" %}}  
+### OLDER Releases
+[Hawaii](https://docs.sodafoundation.io/releases/hawaii/)
+
+[Greenland](https://docs.sodafoundation.io/releases/greenland/)
+
+[Faroe](https://docs.sodafoundation.io/releases/faroe/)
+
+[Elba](https://docs.sodafoundation.io/releases/elba/)
+
+[Daito](https://docs.sodafoundation.io/releases/daito/)
+
+[Capri](https://docs.sodafoundation.io/releases/capri/)
+
+[Bali](https://docs.sodafoundation.io/releases/bali/)
+
+[Aruba](https://docs.sodafoundation.io/releases/aruba/)
+
+[Zealand](https://docs.sodafoundation.io/releases/zealand/)
 
 ## Roadmap
 [The SODA Foundation Release Roadmap is available here](https://github.com/sodafoundation/releases/blob/master/roadmap.md)
