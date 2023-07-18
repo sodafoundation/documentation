@@ -31,23 +31,24 @@ Release details available [here](https://github.com/sodafoundation/soda/releases
 Release details available [here](https://github.com/sodafoundation/soda/releases/tag/v1.3.0)
 
 ### OLDER Releases
-[Hawaii](https://docs.sodafoundation.io/releases/hawaii/)
+[Hawaii](https://github.com/sodafoundation/soda/releases/tag/v1.2.0)
 
-[Greenland](https://docs.sodafoundation.io/releases/greenland/)
+[Greenland](https://github.com/sodafoundation/soda/releases/tag/v1.1.0)
 
-[Faroe](https://docs.sodafoundation.io/releases/faroe/)
+[Faroe](https://github.com/sodafoundation/soda/releases/tag/v1.0.0)
 
-[Elba](https://docs.sodafoundation.io/releases/elba/)
+[Elba](https://github.com/sodafoundation/soda/releases/tag/v0.20.0)
 
-[Daito](https://docs.sodafoundation.io/releases/daito/)
+[Daito](https://github.com/sodafoundation/api/releases/tag/v0.10.0)
 
-[Capri](https://docs.sodafoundation.io/releases/capri/)
+[Capri](https://github.com/sodafoundation/api/releases/tag/v0.6.0)
 
-[Bali](https://docs.sodafoundation.io/releases/bali/)
+[Bali](https://github.com/sodafoundation/api/releases/tag/v0.4.0)
 
-[Aruba](https://docs.sodafoundation.io/releases/aruba/)
+[Aruba](https://github.com/sodafoundation/api/releases/tag/v0.2.0)
 
-[Zealand](https://docs.sodafoundation.io/releases/zealand/)
+[Zealand](https://github.com/sodafoundation/api/releases/tag/v0.1.0)
+
 
 ## Roadmap
 [The SODA Foundation Release Roadmap is available here](https://github.com/sodafoundation/releases/blob/master/roadmap.md)
