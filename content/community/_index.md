@@ -1,7 +1,7 @@
 ---
 title: Community
 description: "SODA Foundation Introduction"
-weight: 9
+weight: 11
 disableToc: false
 ---
 SODA Foundation Community comprises of Partnering Organizations, Collaborating Organizations, Developers, Supporters and more. There are different channels through which you can be part of this community to collaborate, contribute and grow.

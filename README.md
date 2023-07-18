@@ -23,7 +23,7 @@
 
 SODA Documentation provides documentation for SODA Foundation and all the SODA Core projects.
 
-This repo consists of all the code to generate the documentation website and repsective contents. ([https://docs.sodafoundation.io](https://docs.sodafoundation.io/))
+This repo consists of all the code to generate the Documentation [Website](https://docs.sodafoundation.io/) and its repsective contents.
 
 This is maintained by SODA Foundation directly.
 
