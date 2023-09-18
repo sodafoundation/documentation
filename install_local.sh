@@ -1,6 +1,6 @@
 echo "This script will setup a local development environment for working on the SODA Foundation documentation."
 echo "Please select the operating system that you are working on."
-echo "1. Ubuntu 16.04 / 18.04"
+echo "1. Ubuntu 18.04 / 20.04"
 echo "2. CentOS / RHEL"
 
 # Accept the OS from the user.
@@ -24,11 +24,11 @@ then
     elif [ $? = '1' ]
     then
         printf "Hugo is not installed \n"
-        printf "Downloading hugo_0.55.6_Linux-64bit.deb ... \n"
-        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
+        printf "Downloading hugo_extended_0.92.2_Linux-64bit ... \n"
+        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.92.2/hugo_extended_0.92.2_Linux-64bit.deb
         printf "Download complete. \n"
         printf "Unpacking... \n"
-        sudo dpkg -i hugo_0.55.6_Linux-64bit.deb &> /dev/null
+        sudo dpkg -i hugo_extended_0.92.2_Linux-64bit.deb &> /dev/null
         printf "Unpacking complete. \n"
         printf "Installing Hugo... \n"
         sudo apt-get install -f &> /dev/null
@@ -36,7 +36,7 @@ then
         hugo version
         printf "Cleaning up...\n"
         printf "Deleting hugo_0.55.6_Linux-64bit.deb ... \n"
-        rm hugo_0.55.6_Linux-64bit.deb*
+        rm hugo_extended_0.92.2_Linux-64bit.deb*
         printf "Clean up complete. \n"
         printf "\n\n"
     fi
@@ -74,17 +74,17 @@ then
         hugo version
     else
         printf "Hugo is not installed \n"
-        printf "Downloading hugo_0.55.6_Linux-64bit.tar.gz ... \n"
-        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz
+        printf "Downloading hugo_extended_0.92.2_Linux-64bit.deb ... \n"
+        curl --progress-bar --remote-name --location https://github.com/gohugoio/hugo/releases/download/v0.92.2/hugo_0.92.2_Linux-64bit.tar.gz
         printf "Download complete. \n"
         printf "Unpacking and installing... \n"
-        sudo tar -C /usr/local/bin/ -xvzf hugo_0.55.6_Linux-64bit.tar.gz &> /dev/null
+        sudo tar -C /usr/local/bin/ -xvzf hugo_0.92.2_Linux-64bit.tar.gz &> /dev/null
         printf "Unpack Hugo complete. \n"
         printf "Installing Hugo complete. \n"
         hugo version
         printf "Cleaning up...\n"
-        printf "Deleting hugo_0.55.6_Linux-64bit.tar.gz ... \n"
-        rm hugo_0.55.6_Linux-64bit.tar.gz*
+        printf "Deleting hugo_0.92.2_Linux-64bit.tar.gz ... \n"
+        rm hugo_0.92.2_Linux-64bit.tar.gz*
         printf "Clean up complete. \n"
         printf "\n\n"
     fi
