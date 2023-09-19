@@ -101,10 +101,12 @@ The official charter for SODA Foundation under Linux Foundation can be found [he
 Please join us to collaborate, research, develop and lead for unified data framework and standards.
 Contact us through any of the following channels:
 
-- [<img src="https://www.vectorlogo.zone/logos/wmtransfer/wmtransfer-icon.svg" alt="Icon" width="16"> SODA Website](https://sodafoundation.io/the-foundation/join/)
-- [<img src="https://www.vectorlogo.zone/logos/slack/slack-icon.svg" alt="Icon" width="16"> SODA Slack](https://sodafoundation.io/slack)
-- [<img src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="Icon" width="16"> SODA Twitter](https://twitter.com/sodafoundation)
-- [<img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="Icon" width="16"> SODA Mailing List](https://lists.sodafoundation.io)
-- [<img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="Icon" width="16"> SODA LinkedIn](https://www.linkedin.com/company/sodafoundation/)
+<ul style="list-style: none; ">
+  <li><a href="https://sodafoundation.io/the-foundation/join/"><i class="fas fa-globe" style="margin-right: 8px;"></i> SODA Website</a></li>
+  <li><a href="https://sodafoundation.io/slack"><i class="fab fa-slack" style="margin-right: 8px;"></i> SODA Slack</a></li>
+  <li><a href="https://twitter.com/sodafoundation"><i class="fab fa-twitter" style="margin-right: 8px;"></i> SODA Twitter</a></li>
+  <li><a href="https://lists.sodafoundation.io"><i class="fas fa-envelope" style="margin-right: 8px;"></i> SODA Mailing List</a></li>
+  <li><a href="https://www.linkedin.com/company/sodafoundation/"><i class="fab fa-linkedin" style="margin-right: 8px;"></i> SODA LinkedIn</a></li>
+</ul>
 
   **For more details, please refer to the [SODA Foundation](https://sodafoundation.io/) website**.
