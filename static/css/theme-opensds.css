@@ -134,3 +134,12 @@ div#menu-footer-social-links-container{
 a.footer-social-links{
     padding: 0.35rem;
 }
+
+.social-list {
+    list-style: none;
+  }
+  
+  .social-list-item {
+    margin-right: 8px;
+  }
+  
