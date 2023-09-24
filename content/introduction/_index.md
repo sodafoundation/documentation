@@ -73,7 +73,7 @@ It is a docking station for heterogeneous storage backends! This is where all th
 More details [here](https://sodafoundation.io/projects/soda-dock/)
 
 - **SODA Delfin**
-It is storage infrastructure management solution to provide unified, intelligent and scalable resource management as well as alerting and performance monitoring of the underlying storage infrastructure. 
+It is a storage infrastructure management solution to provide unified, intelligent and scalable resource management as well as alerting and performance monitoring of the underlying storage infrastructure. 
 More details [here](https://sodafoundation.io/projects/delfin-soda-infrastructure-manager/)
 
 - **SODA Plugin**
