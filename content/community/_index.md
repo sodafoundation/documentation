@@ -8,5 +8,5 @@ SODA Foundation Community comprises of Partnering Organizations, Collaborating O
 
 
 # How to start?
-All the community and contribution starter information available [here](http://bit.ly/soda-starter)
+All the community and contribution starter information [here](http://bit.ly/soda-starter)
 You may ask and add more inputs in the above thread, so as to incrementally update it based on all our learning.
