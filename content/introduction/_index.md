@@ -102,7 +102,7 @@ Please join us to collaborate, research, develop and lead for unified data frame
 Contact us through any of the following channels:
 
 <ul class="social-list">
-  <li class="social-list-item"><a href="https://sodafoundation.io/the-foundation/join/"><i class="fas fa-globe"></i> SODA Website</a></li>
+  <li class="social-list-item"><a href="https://sodafoundation.io/the-foundation/join/"><i class="fas fa-globe"></i> Join SODA</a></li>
   <li class="social-list-item"><a href="https://sodafoundation.io/slack"><i class="fab fa-slack"></i> SODA Slack</a></li>
   <li class="social-list-item"><a href="https://twitter.com/sodafoundation"><i class="fab fa-twitter"></i> SODA Twitter</a></li>
   <li class="social-list-item"><a href="https://lists.sodafoundation.io"><i class="fas fa-envelope"></i> SODA Mailing List</a></li>
