@@ -6,7 +6,7 @@ disableToc: false
 ---
 
 ## Introduction
-[SODA Foundation](http://github.com/sodafoundation) is an open source project under Linux Foundation that aims to foster an ecosystem of open source data management and storage software for data autonomy. SODA Foundation offers a neutral forum for cross-projects collaboration and integration and provides end users quality end-to-end solutions.
+[SODA Foundation](http://github.com/sodafoundation) is an open source project under the Linux Foundation that aims to foster an ecosystem of open source data management and storage software for data autonomy. SODA Foundation offers a neutral forum for cross-project collaboration and integration and provides end users with quality end-to-end solutions.
 
 ## What is SODA
 SODA is SODA Open Data Autonomy. It is an open source unified autonomous data framework for data mobility from edge to core to cloud.
@@ -15,7 +15,7 @@ SODA is SODA Open Data Autonomy. It is an open source unified autonomous data fr
 
 ## Focus Areas
 
-SODA Foundation focuses to build unified frameworks, APIs and solutions in the areas of 
+SODA Foundation focuses on building unified frameworks, APIs and solutions in the areas of 
 
 - Data Mobility
 - Data Protection
@@ -30,20 +30,20 @@ It envisions to provide data autonomy through its open source solutions and stan
 More details [here](https://sodafoundation.io/)
 
 ## SODA Projects
-SODA Foundation is a home of all the projects for storage and data. It hosts many projects and also extends the ecosystem through partners and third party projects which can help to build unified data solutions for various use cases.
+SODA Foundation is the home of all the projects for storage and data. It hosts many projects and also extends the ecosystem through partners and third-party projects, which can help to build unified data solutions for various use cases.
 
 
 ## SODA Architecture
 <!--- TODO : Brief description and architecture snapshot needed here...-->
-SODA (SODA Open Data Autonomy) Architecture is getting evolved to realize a challenging goal of building a unified framework for data and storage management. It connects the application platforms and solutions to the backend storages seamlessly, be it on prem or cloud through unified API layer. This enables the application platforms to focus to build more valuable use cases rather than worrying about managing the underlying storage backends and data management.
+SODA (SODA Open Data Autonomy) Architecture is evolving to realize the challenging goal of building a unified framework for data and storage management. It connects the application platforms and solutions to the backend storage seamlessly, be it on-prem or cloud, through a unified API layer. This enables the application platforms to focus on building more valuable use cases rather than worrying about managing the underlying storage backends and data management.
 
-The key architecture tenets are:
+The key architectural tenets are:
 
 - Application Platform agnostic
 - Unified API for Data and Storage Management, which are scalable and can evolve
 - The overall platform is microservice based, so as to build data solutions for different use cases and technologies
 - Future ready-Unified Distributed Data Store
-- Seamless vendor agnostic storage backends
+- Storage backends that are vendor agnostic 
 
 As mentioned, SODA Architecture is getting refined and optimized for different application technologies, use cases, platforms and storage backends. If you have any comments and inputs, please join us [here](https://github.com/sodafoundation/).
 
