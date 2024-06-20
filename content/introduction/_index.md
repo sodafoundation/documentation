@@ -9,7 +9,7 @@ disableToc: false
 [SODA Foundation](http://github.com/sodafoundation) is an open source project under Linux Foundation that aims to foster an ecosystem of open source data management and storage software for data autonomy. SODA Foundation offers a neutral forum for cross-projects collaboration and integration and provides end users quality end-to-end solutions.
 
 ## What is SODA
-SODA is SODA Open Data Autonomy. It is an open source unified autonomous data framework for data mobility from edge to core to cloud.
+SODA is SODA Open Data Autonomy(It is a recursive acronym). It is an open source unified autonomous data framework for data mobility from edge to core to cloud.
 
 <img src="https://www.sodafoundation.io/wp-content/uploads/2022/05/2022autonomy2560.png">
 
